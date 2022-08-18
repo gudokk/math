@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Математический анализ</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="../style.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <nav>
+      <div class="hamburger" id="toggle-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="side-menu" id="main-menu">
+        <ul>
+          <li class="sub-menu">
+            <a href="#"
+              >Равномерная по параметру сходимость функции.<img
+                src="../icons/down.png"
+                class="submenu-icon submenu-trigger"
+            /></a>
+            <ul>
+              <li>
+                <a
+                  href="1.1. Критерии равномерной сходимости.html"
+                  >1.1. Критерии равномерной сходимости.</a
+                >
+              </li>
+              <li>
+                <a
+                  href="1.2. Свойства равномерно сходящихся функций.html"
+                  >1.2. Свойства равномерно сходящихся функций.</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="#"
+              >Интегралы, зависящие от параметра.<img
+                src="../icons/down.png"
+                class="submenu-icon submenu-trigger"
+            /></a>
+            <ul>
+              <li>
+                <a
+                  href="2.1. Собственные интегралы.html"
+                  >2.1. Собственные интегралы.</a
+                >
+              </li>
+              <li class="sub-menu">
+                <a href="#"
+                  >2.2 Несобственные интегралы.<img
+                    src="../icons/down.png"
+                    class="submenu-icon submenu-trigger"
+                /></a>
+                <ul>
+                  <li>
+                    <a
+                      href="2.2.1. Основные определения.html"
+                      >2.2.1. Основные определения.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="2.2.2. Равномерная сходимость несобственных интегралов.html"
+                      >2.2.2. Равномерная сходимость несобственных
+                      интегралов.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="2.2.3. Признаки равномерной сходимости.html"
+                      >2.2.3. Признаки равномерной сходимости.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="2.2.4. Свойства равномерно сходящихся интегралов.html"
+                      >2.2.4. Свойства равномерно сходящихся интегралов.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="2.2.5. Эйлеровы интегралы.html"
+                      >2.2.5. Эйлеровы интегралы.</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <div id="size">
+            <img src="../icons/enlarge.png" class="size-icon" />
+          </div>
+          <div id="level" class="container">
+            <p><strong>Выберите уровень:</strong></p>
+            <button class='level-easy' type="button">Минимальный</button>
+            <button class='level-normal' type="button">Средний</button>
+            <button class='level-hard' type="button">Углубленный</button>
+          </div>
+        </ul>
+      </div>
+    </nav>
+	<main class="main small">
+		<h2 class="centered">Равномерная по параметру сходимость функций</h2>
+		<div>
+			<p class="margin-top">Пусть функция \(\displaystyle f(x,\gamma )\) определена на множестве
+				 \(\displaystyle X\times\) <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+				луч, числовая ось).</span></a> и
+				\(\displaystyle {{x}_{0}}\) – некоторая предельная точка множества \(\displaystyle X\).
+			</p>
+			<p class="margin-top">Функция \(\displaystyle f(x,\gamma )\) при \(\displaystyle x\to {{x}_{0}}\) <strong><i>стремится к
+						предельной функции</i></strong> \(\displaystyle \varphi \left( \gamma \right)\)
+				<strong><i>равномерно относительно</strong></i> \(\displaystyle \gamma \) в области \( \Gamma \), если:</p>
+					<p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) \(\displaystyle\,\forall \gamma \in  \Gamma \scriptscriptstyle\underset{x\to {{x}_{0}}}{\lim
+				}\!f(x,\gamma )=\varphi \left( \gamma \right)<\infty \),</p>
+				<p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) \(\displaystyle \forall \varepsilon >0\) \(\displaystyle\exists \delta >0\)
+						\(\displaystyle\forall x\in X\) \(\displaystyle\forall \gamma \in \Gamma \displaystyle\left| x-{{x}_{0}} \right|<\delta \) \(\displaystyle\Rightarrow \)
+							\(\displaystyle\left| f\left( x,\gamma \right)-\varphi \left( \gamma \right)
+							\right|<\varepsilon \).</p>
+							<p class="margin-top" ><span class="em-wide">Замечание.</span> Второе условие эквивалентно тому, что
+								</h2>
+								\begin{eqnarray*}
+								\lim\limits_{x\to {{x}_{0}}}\!\underset{\gamma \in \Gamma
+								}{\sup }\,\left| f(x,\gamma )-\varphi \left( \gamma \right) \right|=0.
+								\end{eqnarray*}
+							</p>
+						
+		</div>
+
+		<section class="theorem">
+			<p class="margin-top"><strong>Теорема 1 (Критерий равномерной сходимости Коши).</strong>
+				 Для того чтобы функция \(\displaystyle
+				f(x,\gamma )\) при \(\displaystyle x\,\to \,{{x}_{0}}\) имела предельную функцию и стремилась к ней
+				равномерно относительно \(\displaystyle \gamma \) в области <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+					луч, числовая ось).</span></a>, необходимо и
+				достаточно, чтобы
+				\begin{eqnarray*}
+				\displaystyle \forall \varepsilon >0 \quad \displaystyle\exists \delta >0\quad  \displaystyle \forall x\in X
+				\quad \displaystyle \forall {x}'\in X \displaystyle
+         \quad \forall \gamma \in \Gamma \quad \displaystyle \left| x-{x}' \right|<\delta \quad \displaystyle \Rightarrow & 
+				\displaystyle \left| f\left( x,\gamma \right)-f\left( {x}',\gamma\right) \right|<\varepsilon.&
+				\end{eqnarray*}
+				</p>
+		</section>
+		<section class="theorem">
+			<p class="margin-top">
+				<strong>Теорема 2 (Критерий равномерной сходимости Гейне).</strong> Для того чтобы функция \(\displaystyle f(x,\gamma )\) при
+				\(\displaystyle x\to {{x}_{0}}\) стремилась
+				к \(\displaystyle\varphi \left( \gamma \right)\) равномерно относительно \(\displaystyle\gamma
+				\) в области <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+					луч, числовая ось).</span></a>, необходимо и достаточно, чтобы к \(\displaystyle\varphi
+				\left( \gamma \right)\) равномерно сходилась каждая ФП
+				\( \left\{ f({{x}_{n}},\gamma )\right\} \), где \(\displaystyle\left\{ {{x}_{n}} \right\}\) – произвольная
+				сходящаяся к \(\displaystyle{{x}_{0}}\) последовательность.
+			</p>
+		</section>
+	<br>
+	</main>
+	<footer class="footer">
+	  <p>Учебные материалы </p>
+		<p>Автор материалов - Рояк Светлана Хаимовна.</p>
+	</footer>
+	<script src="../main.js"></script>
+</body>
+
+</html>
