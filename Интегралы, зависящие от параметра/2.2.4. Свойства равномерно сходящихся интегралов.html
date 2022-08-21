@@ -85,13 +85,13 @@
                      >2.2.4. Свойства равномерно сходящихся интегралов.</a
                    >
                  </li>
-                 <li>
-                   <a
-                     href="2.2.5. Эйлеровы интегралы.html"
-                     >2.2.5. Эйлеровы интегралы.</a
-                   >
-                 </li>
                </ul>
+               <li>
+                  <a
+                    hhref="2.3. Интегралы Эйлера.html"
+                    >2.3. Интегралы Эйлера.</a
+                  >
+                </li>
              </li>
            </ul>
          </li>
@@ -111,19 +111,19 @@
 
 
          <h2 class="centered">Свойства равномерно сходящихся интегралов</h2>
+         <p class="margin-top">
+         \(\Gamma\)– произвольный промежуток (интервал, полуинтервал, отрезок, луч, числовая ось).
+         </p>
          <div>
             <p class="margin-top">1. Если интегралы \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) и \(\displaystyle
-               \int\limits_{a}^{\mathbf{B}}{g(x,\gamma )dx}\) равномерно сходятся на <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-                  луч, числовая ось).</span></a>, то и
+               \int\limits_{a}^{\mathbf{B}}{g(x,\gamma )dx}\) равномерно сходятся на \( \Gamma \), то и
                интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\left( \alpha f(x,\gamma )+\beta g(x,\gamma )
                \right)dx}\), \(\displaystyle \alpha ,\beta \in \mathbb{R}\) равномерно сходится на \( \Gamma \)
                </p>
                <p class="margin-top">2. Если интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) равномерно сходится на
-                  <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-                     луч, числовая ось).</span></a>, то он равномерно сходится на любом \( \Gamma \).</p>
+                  \( \Gamma \), то он равномерно сходится на любом \( \Gamma \).</p>
                <p class="margin-top">3. Если интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) <em>сходится</em> на
-                  <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-                     луч, числовая ось).</span></a> и сходится неравномерно на некотором \( \Gamma \), то он
+                  \( \Gamma \) и сходится неравномерно на некотором \( \Gamma \), то он
                сходится неравномерно и на \( \Gamma \).</p>
                <p class="margin-top">4. Если интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) равномерно сходится на
                каждом из множеств \(\displaystyle {{\Gamma }_{1}}\), \(\displaystyle {{\Gamma }_{2}}\), то он равномерно
@@ -156,9 +156,7 @@
 			 <section>
 				<details>
 					  <summary class="margin-top">Если \(\displaystyle {{\gamma }_{0}}\in \)<a class="tooltip-1">\( \partial \Gamma \)<span class="classic">
-					  Граничные точки (граница) множества \(\displaystyle \Gamma \)</span></a>  \( \bigcap\)
-					   <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-					  луч, числовая ось).</span></a>, то в выражении  <a class="shortcut" href="#0.9">(0.9)</a> все пределы
+					  Граничные точки (граница) множества \(\displaystyle \Gamma \)</span></a>  \( \bigcap  \Gamma \), то в выражении  <a class="shortcut" href="#0.9">(0.9)</a> все пределы
 				   надо заменить на соответствующие односторонние.
 				 </summary>
                <div class="proof hard">
@@ -299,7 +297,7 @@
                         \( \displaystyle =\int\limits_{0}^{1}{\left( 1+{{x}^{2}}
                       \right)\sum\limits_{n=0}^{\infty }{{{\left( -1 \right)}^{n}}{{x}^{4n}}\,}dx}=
                       \int\limits_{0}^{1}{\frac{1+{{x}^{2}}}{1+{{x}^{4}}}dx}\)
-                      <a class="tooltip-1">\(=\)<span class="classic">
+                      <a class="tooltip-1">\(=\cdots=\)<span class="classic">
                         \[\displaystyle=\int\limits_{0}^{1}{\frac{1\,+\frac{1}{{{x}^{2}}}}{{{x}^{2}}+\,\frac{1}{{{x}^{2}}}}dx}=
                            \int\limits_{0}^{1}{\frac{d\left(
                            x\,-\frac{1}{x}
@@ -319,7 +317,7 @@
                         интеграла от частичной суммы ряда. Так как
                         \begin{eqnarray*}
                         \displaystyle
-                        {{S}_{N}}\,=\sum\limits_{n=0}^{N}{{{\left( -1 \right)}^{n}}{{x}^{4n}}\left( 1+{{x}^{2}} \right)}=\frac{1\pm {{x}^{4n}}}{1+{{x}^{4}}}\left(
+                        {{S}_{N}}\,=\sum\limits_{n=0}^{N}{{{\left( -1 \right)}^{n}}{x}^{4n} \left( 1+{{x}^{2}} \right)}=\frac{1-{(-{{x}^{4}})^{n}}}{1+{{x}^{4}}}\left(
                         1+{{x}^{2}} \right)\le 2\frac{1+{{x}^{2}}}{1+{{x}^{4}}}\le 4,
                         \end{eqnarray*}
                   <span>то в роли мажоранты можно использовать константу 4.</span>
@@ -408,7 +406,7 @@
 
    <section class="remark">
       <div class="col-red hard">
-         <p class="margin-top"><span class="em-wide">Замечание</span> Предположение о существовании интеграла \(\displaystyle
+         <p class="margin-top"><span class="em-wide">Замечание.</span> Предположение о существовании интеграла \(\displaystyle
          \int\limits_{a}^{\mathbf{B}}{g(x)dx}\) может быть заменено предположением о существовании</span ><em> конечного </em> <span>предела \(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim
          }}\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\). </span></p></div>
    </section>
@@ -434,7 +432,9 @@
             <details>
                <summary class="margin-top">
                         Считая известным, что <span>\(\displaystyle \sum\limits_{n=1}^{\infty }{\frac{1}{{{n}^{2}}}}=\frac{{{\pi }^{2}}}{6}\),
-                        с помощью разложения в ряд вычислим интеграл \(\displaystyle \int\limits_{0}^{1}{\frac{\ln x}{1-x}\,dx}\).</span>
+                        с помощью разложения в ряд вычислим интегралы: 
+                        \[1) \int\limits_{0}^{1}{\frac{\ln (1-x)}{x}\,dx},\qquad
+                        2) \int\limits_{0}^{1}{\frac{\ln x}{1-x}\,dx}.\]</span>
 
                   </summary>
                   <p>
@@ -590,18 +590,52 @@
          \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\). Тогда функция \(\displaystyle I(\gamma )\)
          непрерывна на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).</p>
    </section>
+
+   <section class="remark">
+      <div>
+     <details>
+            <summary class="margin-top"><span class="em-wide">Замечание.</span>
+               Непрерывность подынтегральной функции не является необходимым условием.</summary>
+            
+                     <div class="proof">
+                     <p>
+                        Например, интеграл \( F\left( y \right)=\int\limits_{0}^{1}{\operatorname{sign}\left( x-y \right)dx}\)
+                         от разрывной функции \( f\left( x,y \right)=\operatorname{sign}\left( x-y \right)\) является непрерывной функцией.
+                        Разобьем область изменения параметра на три части:
+                        \( \left( -\infty ,0 \right)\bigcup \left[ 0,1 \right]\bigcup \left( 1,+\infty  \right)\). Тогда
+                        \[F\left( y \right)=\left\{ \begin{matrix}
+                           \int\limits_{0}^{1}{dx}=1, & y\in \left( -\infty ,0 \right),  \\
+                           -\int\limits_{0}^{y}{dx}+\int\limits_{y}^{1}{dx}=1-2y, & y\in \left[ 0,1 \right],  \\
+                           -\int\limits_{0}^{1}{dx}=-1, & y\in \left( 1,+\infty  \right).  \\
+                        \end{matrix} \right.\]
+                        <p>
+                           Следовательно,
+                        </p>
+                        \[\underset{y\to 0-}{\mathop{\lim }}\,F\left( y \right)=\underset{y\to 0+}{\mathop{\lim }}\,F\left( y \right)=1,\]
+                        \[\underset{y\to 1-}{\mathop{\lim }}\,F\left( y \right)=\underset{y\to 1+}{\mathop{\lim }}\,F\left( y \right)=-1.\]
+                        </p>
+                     </div>
+                  </p>
+                </details>
+            </p>
+      </div>
+</section>
+
+
+
    <section class="consequence">
          <details>
             <summary class="margin-top">
-            <strong>Следствие 1. </strong>Если функция \(\displaystyle f(x,\gamma
-         )\) определена на \(\displaystyle \left[ a,\mathbf{B} \right)\times\) <a class="tooltip-1">\( \Gamma \)
-            <span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-            луч, числовая ось).</span></a> и
-         непрерывна на каждой полуполосе \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[
-         {{\gamma }_{1}},{{\gamma }_{2}} \right]\), где \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}}
-         \right]\subset \Gamma \), то функция \(\displaystyle I(\gamma
-         )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) непрерывна на \( \Gamma \).
-
+            <strong>Следствие 1. </strong>
+             Если функция \(f(x,\gamma )\) непрерывна в области \(\left[ a,\mathbf{B} \right)\times\) 
+             <a class="tooltip-1">\( \Gamma \)
+               <span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+               луч, числовая ось).</span></a>,
+              где \(\Gamma \) произвольный промежуток,
+               а интеграл \(\displaystyle (\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\)
+               сходится равномерно по параметру \(\gamma \) на промежутке \(\Gamma \)
+               (либо на любом сегменте \(\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\subset \Gamma \)),
+                то функция \(I(\gamma )\) непрерывна на \(\Gamma \).
          </summary>
          <div class="proof hard">
             <p>
@@ -646,9 +680,11 @@
             \end{eqnarray*}
             <p>Интеграл \(\displaystyle I\left( a \right)\,\) сходится равномерно на \(\displaystyle
                \left[ 0,+\infty \right)\) в силу признака Дирихле:</p>
-               <p class="margin-top">1) \(\displaystyle \left| \int\limits_{0}^{B}{\cos x\,dx} \right|\le \left| \sin B
+               <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  1) \(\displaystyle \left| \int\limits_{0}^{B}{\cos x\,dx} \right|\le \left| \sin B
                \right|\le 1\);</p>
-               <p class="margin-top">2) \(\displaystyle \forall a\in \left[ 0,+\infty \right)\) функция \(\displaystyle
+               <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  2) \(\displaystyle \forall a\in \left[ 0,+\infty \right)\) функция \(\displaystyle
                \frac{1-{{e}^{-ax}}}{x}\) монотонна по \(\displaystyle x\):
             </p>
             <h3 class="formula">
@@ -663,7 +699,8 @@
                     \(\frac{a}{{{x}^{2}}}\ge 0.\)
                </p>
                </h3>
-            <p class="margin-top">3) \(\displaystyle \underset{x\to \infty }{\mathop{\lim }}\,\underset{a\in \left[
+            <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               3) \(\displaystyle \underset{x\to \infty }{\mathop{\lim }}\,\underset{a\in \left[
                0,+\infty \right)}{\mathop{\sup }}\,\left| \frac{1-{{e}^{-ax}}}{x} \right|\)
                <a class="tooltip-1">\(=\)<span class="classic">
                \[ \left[ -ax\le
@@ -761,11 +798,14 @@
 
    <section class="theorem">
       <p class="margin-top"><strong>Теорема 17 (Дифференцируемость).</strong> Если</p>
-      <p class="margin-top">1) \(\displaystyle f\left( x,\gamma  \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\)
+      <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         1) \(\displaystyle f\left( x,\gamma  \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\)
           непрерывны на \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),</p>
-          <p class="margin-top">2) для некоторого \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+          <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2) для некоторого \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
              сходится интеграл \(\displaystyle I(\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\),</p>
-             <p class="margin-top">3) интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}\) 
+             <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               3) интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}\) 
                сходится равномерно по \(\displaystyle \gamma \) на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),</p>
       то функция \(\displaystyle I(\gamma )\) дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
        и ее производная может быть вычислена <strong><em>по правилу Лейбница:</em></strong>
@@ -1186,7 +1226,7 @@
              \( \displaystyle \int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\frac{\pi }{2}\,\,\operatorname{sign}a, 
             \displaystyle a\ne 0.\)
          </h3>
-          <span>(этот интеграл называют <strong><em>интегралом Дирихле</em></strong> и вычислим интегралы</span>
+          <span>(этот интеграл называют <strong><em>интегралом Дирихле</em></strong>) и вычислим интегралы</span>
           \begin{eqnarray}
             \displaystyle \int\limits_{0}^{+\infty }{\frac{\sin \left( {{x}^{3}} \right)}{x}dx} \quad \text{и}  
            \quad\displaystyle \int\limits_{0}^{+\infty }{\frac{{{\sin }^{3}}x}{x}dx}.
@@ -1203,10 +1243,13 @@
          \end{eqnarray*}
             <p>Этот интеграл при каждом фиксированном \(\displaystyle a\ne 0\) сходится равномерно по \(\displaystyle b\)
              на отрезке \(\displaystyle \left[ 0,1 \right]\) по признаку Дирихле:</p>
-            <p>1) \(\displaystyle \left| \int\limits_{0}^{B}{\sin ax\,dx} \right|=\left| \left. \frac{\cos ax}{a} \right|_{0}^{B} \right|\le
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               1) \(\displaystyle \left| \int\limits_{0}^{B}{\sin ax\,dx} \right|=\left| \left. \frac{\cos ax}{a} \right|_{0}^{B} \right|\le
                 \frac{2}{\left| a \right|}&lt;+\infty \),</p>
-            <p>2) \(\displaystyle \frac{{{e}^{-bx}}}{x}\) монотонно убывает по \(\displaystyle x\),</p>
-            <p>3) \(\displaystyle \frac{{{e}^{-bx}}}{x}\underset{\left[ 0,1\right]}\rightrightarrows\,0\) 
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               2) \(\displaystyle \frac{{{e}^{-bx}}}{x}\) монотонно убывает по \(\displaystyle x\),</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               3) \(\displaystyle \frac{{{e}^{-bx}}}{x}\underset{\left[ 0,1\right]}\rightrightarrows\,0\) 
             при \(\displaystyle x\to \infty \),
              так как \(\displaystyle
                \underset{x\to +\infty }{\mathop{\lim }}\,\underset{b\in \left[ 0,1
@@ -1241,11 +1284,22 @@
             </div>
           </details>
           </div>
-   
-   </div>			
-		
-</section>
+         </div>
+      </section>
 </div>
+
+<section class="remark">
+      <p="margin-top">
+         <span class="em-wide">Замечание.</span> 
+         \(\displaystyle \forall a\ne 0\) интеграл Дирихле 
+\[\displaystyle F\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\frac{\pi }{2}\,\,\operatorname{sign}a,\quad a\ne 0\]
+имеет нулевую производную. При этом формула Лейбница не работает,
+ так как при любом значении параметра интеграл 
+ \(\displaystyle \int\limits_{0}^{+\infty }{\frac{\partial }{\partial a}\left( \frac{\sin ax}{x} \right)dx}=
+ \int\limits_{0}^{+\infty }{\cos ax\,dx}\) расходится.
+
+   </p>
+</section>
 
 
    <section class="theorem">
@@ -1281,7 +1335,21 @@
          </summary>
          <div class="proof">
             <p>
-            Следует из теоремы в силу признака Дини.  
+            Следует из теоремы в силу <a class="tooltip-1">признака Дини<span class="classic">
+               Пусть функция \(\displaystyle f(x,\gamma )\) непрерывна и
+               неотрицательна в полуполосе \(\displaystyle \left[
+               a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},{{\gamma }_{2}}
+               \right]\), и пусть для каждого \(\displaystyle \gamma \in \left[
+               {{\gamma }_{1}},{{\gamma }_{2}} \right]\) сходится несобственный
+               интеграл \(\displaystyle I(\gamma
+               )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\), причем функция
+               \(\displaystyle I(\gamma )\) непрерывна на \(\displaystyle \left[
+               {{\gamma }_{1}},{{\gamma }_{2}} \right]\). Тогда интеграл
+               \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma
+               )dx}\) сходится равномерно по \(\displaystyle \gamma \) на
+               \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}}
+               \right]\).
+            </span></a>.  
             </p>
          </div>
        </details>
@@ -1467,7 +1535,7 @@
       2) для некоторого \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
              сходится интеграл \(\displaystyle I(\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\),<br>
       3) интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}\) 
-               сходится равномерно по \(\displaystyle \gamma \) на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),<br>
+               сходится равномерно по \(\displaystyle \gamma \) на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),
       то функция \(\displaystyle I(\gamma )\) дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
        и ее производная может быть вычислена по правилу Лейбница:
        \begin{eqnarray*}

@@ -597,7 +597,7 @@ hr {
 
 .tooltip-1 {
   border-bottom: 1px dotted #000000;
-  color: #000000;
+  color: #345ae3;
   outline: none;
   cursor: help;
   text-decoration: none;
@@ -613,10 +613,11 @@ hr {
   font-family: Calibri, Tahoma, Geneva, sans-serif;
   position: absolute;
   left: 1em;
+  color: #000000;
   top: 2em;
   z-index: 100;
   margin-left: 0;
-  width: 480px;
+  width: 490px;
   border-radius: 5px 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -669,6 +670,36 @@ section div p {
 
 button {
   display: inline-block;
+}
+
+.level-easy {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.level-easy.active {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.level-normal {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.level-normal.active {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.level-hard {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.level-hard.active {
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .hide {

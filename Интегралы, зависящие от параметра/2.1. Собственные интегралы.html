@@ -85,13 +85,13 @@
                       >2.2.4. Свойства равномерно сходящихся интегралов.</a
                     >
                   </li>
-                  <li>
-                    <a
-                      href="2.2.5. Эйлеровы интегралы.html"
-                      >2.2.5. Эйлеровы интегралы.</a
-                    >
-                  </li>
                 </ul>
+				<li>
+					<a
+					href="2.3. Интегралы Эйлера.html"
+					  >2.3. Интегралы Эйлера.</a
+					>
+				  </li>
               </li>
             </ul>
           </li>
@@ -251,9 +251,7 @@
 				<div class="normal proof">
 					<div class="col-blue"><p class="padding-top">Пусть <span class="col-black">\(\displaystyle {{\gamma }_{0}}\in\)
 						 <a class="tooltip-1">\(\Gamma' \)<span class="classic">Граничные точки (граница) множества \(\displaystyle \Gamma \)</span></a>
-						   \( \bigcap\)
-						 <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-						луч, числовая ось).</span></a></span>. Тогда
+						   \( \bigcap ( \Gamma \)</span>. Тогда
 						существует сегмент <span class="col-black">\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset
 						\,  \Gamma \)</span> такой,
 						что <span class="col-black">\(\displaystyle {{\gamma }_{0}}\,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).</span> В
@@ -295,9 +293,13 @@
 									{{\gamma }_{0}}}{\mathop{\lim }}\,\int\limits_{a}^{b}{f(x,\gamma )dx}=\int\limits_{a}^{b}{\left(
 									\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,f(x,\gamma )
 									\right)dx}=\int\limits_{a}^{b}{\varphi (x)dx}.\)
-								</h3>
-								
-
+								</h3>Если \(\displaystyle {{\gamma }_{0}}\in \) 
+									<a class="tooltip-1">\( \partial \Gamma \)<span class="classic">
+										Граничные точки (граница) множества \(\displaystyle \Gamma \)</span></a>  \( \bigcap\) 
+										<a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+										луч, числовая ось).</span></a>, то в выражении 
+									<a class="shortcut" href="#0.2">(0.2)</a> все
+										пределы надо заменить на соответствующие односторонние.
 					</summary>
 						<div class="proof normal">
 						<div class="col-blue">
@@ -326,19 +328,10 @@
 						</div>
 					</p>
 				</details>
-		</section>
-		<div class="conseq">
-			<p class="margin-top">Если \(\displaystyle {{\gamma }_{0}}\in \) 
-				<a class="tooltip-1">\( \partial \Gamma \)<span class="classic">
-					Граничные точки (граница) множества \(\displaystyle \Gamma \)</span></a>  \( \bigcap\) 
-					<a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-					луч, числовая ось).</span></a>, то в выражении 
-				<a class="shortcut" href="#0.2">(0.2)</a> все
-					пределы надо заменить на соответствующие односторонние.</p>
-		</div>
+		</section> 
 		<details>
 			<summary class="margin-top remark">
-					Замечание</span> Применять формулу <a class="shortcut" href="#0.2">(0.2)</a> 
+				<p class="margin-top"><span class="em-wide">Замечание.</span> Применять формулу <a class="shortcut" href="#0.2">(0.2)</a> 
 						для граничных точек, не входящих во множество
 						\( \Gamma \), на котором подынтегральная функция непрерывна, нельзя.
 				</summary>
