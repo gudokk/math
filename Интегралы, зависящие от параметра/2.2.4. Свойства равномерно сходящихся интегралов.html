@@ -124,7 +124,7 @@
                   \( \Gamma \), то он равномерно сходится на любом \(A \subset \Gamma \);</p>
                <p class="margin-top">3. Если интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) <em>сходится</em> на
                   \( \Gamma \) и сходится неравномерно на некотором \(A \subset \Gamma \), то он
-               сходится неравномерно и на \( \Gamma \).</p>
+               сходится неравномерно и на \( \Gamma \);</p>
                <p class="margin-top">4. Если интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) равномерно сходится на
                каждом из множеств \(\displaystyle {{\Gamma }_{1}}\), \(\displaystyle {{\Gamma }_{2}}\), то он равномерно
                сходится на \(\displaystyle {{\Gamma }_{1}}\bigcup {{\Gamma }_{2}}\).</p>
@@ -237,29 +237,29 @@
          </section>
 
          
-
-         <section class="remark">
-               <div>
-				  <details>
-                  	<summary class="margin-top"><span class="em-wide">Замечание 1.</span>
-                         Применять формулу для граничных точек, не входящих во множество
-                     \( \Gamma \), на котором выполняются
-					  условия теоремы <a class="shortcut" href="#0.9">(0.9)</a>, нельзя. </summary>
-                     
-                              <div class="proof">
-                              <p>
-                              \(\displaystyle \forall a&gt;0\) \(\displaystyle \int\limits_{0}^{+\infty
-                              }{a{{e}^{-ax}}dx}=\left. -{{e}^{-ax}} \right|_{0}^{+\infty }=1\), поэтому, \(\displaystyle
-                              \underset{a\to 0+}{\mathop{\lim }}\,\int\limits_{0}^{+\infty }{a{{e}^{-ax}}dx}=1\).</p>
-                              <p>При этом \(\displaystyle \int\limits_{0}^{+\infty }{\underset{a\to 0+}{\mathop{\lim
-                                 }}\,\left( a{{e}^{-ax}} \right)dx}=0\).</p>
-                              </div>
-                           </p>
-                         </details>
+         <br>
+            <section class="remark">
+                  <p>
+                 <details>
+                        <summary class="margin-top">
+                           <span class="em-wide">Замечание 1.</span>
+                            Применять формулу для граничных точек, не входящих во множество
+                        \( \Gamma \), на котором выполняются
+                    условия теоремы <a class="shortcut" href="#0.9">(0.9)</a>, нельзя. </summary>
+                        
+                                 <div class="proof">
+                                 <p>
+                                 \(\displaystyle \forall a&gt;0\) \(\displaystyle \int\limits_{0}^{+\infty
+                                 }{a{{e}^{-ax}}dx}=\left. -{{e}^{-ax}} \right|_{0}^{+\infty }=1\), поэтому, \(\displaystyle
+                                 \underset{a\to 0+}{\mathop{\lim }}\,\int\limits_{0}^{+\infty }{a{{e}^{-ax}}dx}=1\).</p>
+                                 <p>При этом \(\displaystyle \int\limits_{0}^{+\infty }{\underset{a\to 0+}{\mathop{\lim
+                                    }}\,\left( a{{e}^{-ax}} \right)dx}=0\).</p>
+                                 </div>
+                              </p>
+                            </details>
+                        </p>
                      </p>
-               </div>
-         </section>
-
+            </section>
 
          <section class="remark">
                <div>
@@ -813,6 +813,19 @@
        \displaystyle {I}'(\gamma )=\int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}.
        \end{eqnarray*}
    </section>
+
+   <section class="remark">
+      <p class="margin-top">
+         <span class="em-wide">Замечание.</span> 
+         \(\displaystyle \forall a\ne 0\) интеграл Дирихле 
+\[\displaystyle F\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\frac{\pi }{2}\,\,\operatorname{sign}a,\quad a\ne 0\]
+имеет нулевую производную. При этом формула Лейбница не работает,
+ так как при любом значении параметра интеграл 
+ \(\displaystyle \int\limits_{0}^{+\infty }{\frac{\partial }{\partial a}\left( \frac{\sin ax}{x} \right)dx}=
+ \int\limits_{0}^{+\infty }{\cos ax\,dx}\) расходится.
+
+   </p>
+</section>
    <section class="consequence">
       <p class="margin-top"><strong>Следствие</strong><strong> 1. </strong>Теорема остается справедливой, если
           \(\displaystyle f\left( x,\gamma   \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\) 
@@ -1288,18 +1301,7 @@
       </section>
 </div>
 
-<section class="remark">
-      <p="margin-top">
-         <span class="em-wide">Замечание.</span> 
-         \(\displaystyle \forall a\ne 0\) интеграл Дирихле 
-\[\displaystyle F\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\frac{\pi }{2}\,\,\operatorname{sign}a,\quad a\ne 0\]
-имеет нулевую производную. При этом формула Лейбница не работает,
- так как при любом значении параметра интеграл 
- \(\displaystyle \int\limits_{0}^{+\infty }{\frac{\partial }{\partial a}\left( \frac{\sin ax}{x} \right)dx}=
- \int\limits_{0}^{+\infty }{\cos ax\,dx}\) расходится.
 
-   </p>
-</section>
 
 
    <section class="theorem">
@@ -1382,7 +1384,7 @@
       <section class="example">   
       <button class="spoiler-button">Примеры 19-21</button>
       <div class="spoiler-content">
-         <p class="padding-top">Вычислим интегралы</p>
+         <p class="padding-top">Вычислим интегралы, используя теорему об интегрировании</p>
          \[ \displaystyle I\left( a
                \right)=\int\limits_{0}^{+\infty }{\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}dx},
                \displaystyle a\ge 0.\]
@@ -1521,29 +1523,14 @@
                               </p>
                            </div>
                         </details>
+                        <p class="margin-top"><span class="em-wide">Замечание.</span> Интегралы из примеров 19-21
+                           были решены ранее с помощью теоремы 17 
+                           о дифференцировании по параметру.
+                          </p>
 
       </div>			
       </section>
    </div>
-   <section class="remark">
-      <p class="margin-top"><span class="em-wide">Замечание.</span> Интегралы из примеров 19-21
-          были решены ранее с помощью теоремы 17 
-          <a class="tooltip-1">о дифференцировании по параметру<span class="classic">
-            Если<br>
-      1) \(\displaystyle f\left( x,\gamma  \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\)
-          непрерывны на \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),<br>
-      2) для некоторого \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-             сходится интеграл \(\displaystyle I(\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\),<br>
-      3) интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}\) 
-               сходится равномерно по \(\displaystyle \gamma \) на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),
-      то функция \(\displaystyle I(\gamma )\) дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-       и ее производная может быть вычислена по правилу Лейбница:
-       \begin{eqnarray*}
-       \displaystyle {I}'(\gamma )=\int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}.
-       \end{eqnarray*}
-         </span></a>.
-         </p>
-   </section>
 
    <div class="col-blue normal"><section class="theorem">
       <p class="margin-top"><strong>Теорема 19. (Интегрируемость в несобственном смысле)</strong><span>.
