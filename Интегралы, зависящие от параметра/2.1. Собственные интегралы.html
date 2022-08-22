@@ -146,53 +146,302 @@
 			</p>
 		  </div>
 
-		  <section class="theorem">
-			<p class="margin-top"><strong>Теорема 8 (Hепрерывность и интегрируемость). </strong>Если \(\displaystyle f(x,\gamma )\in \)
-				<a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
-					\(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
-				</span></a>
-			 \((\)<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
-				\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
-{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-			</span></a>\()\), то
-			функция \[\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}:\]</p>
-			<details>
-				<summary class="margin-top">
-					 1) непрерывна на сегменте\(\displaystyle
-					\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
-				</summary>
-				<p>
-					<div class="proof normal">
-					<div class="col-blue"><p class="padding-top">Докажем непрерывность в произвольной точке <span class="col-black"> \(\displaystyle {{\gamma }_{0}}\in
-						\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)</span>. Функция <span class="col-black"> \(\displaystyle f(x,\gamma )\)</span>
-						непрерывна
-						на замкнутом множестве, а значит, по теореме Кантора, она равномерно непрерывна на нем, т.е.</p>
-						<span class="col-black"> 
-							\begin{eqnarray*}
-							\displaystyle \forall \varepsilon &gt;0 \displaystyle \exists \delta &gt;0
-							\displaystyle
-							\forall \gamma \,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]
-							\displaystyle \left| \gamma \,-\,{{\gamma }_{0}} \right|\,&lt;\,\delta \ \Rightarrow
-							\ \left| f(x,\gamma )\,-\,f(x,{{\gamma }_{0}}) \right|\,&lt;\,\frac{\varepsilon
-							}{b\,-\,a}.
-							\end{eqnarray*}
-						</span>
-						<p>Следовательно,</p>
-						<span class="col-black">
-							\begin{eqnarray*}
-							\displaystyle \left| \Delta I \right|\,=\,\left| I\left( \gamma \right)\,-\,I
-							\left( {{\gamma }_{0}} \right) \right|\,\le \,\int\limits_{a}^{b}{\left| f\left( x,\gamma
-							\right)\,-\,f\left( x,{{\gamma }_{0}} \right) \right|dx\,<}
-							\frac{\varepsilon }{b\,-\,a} \left( b\,-\,a \right)\,=\,\varepsilon.
-							\end{eqnarray*}
-						</span>
-					</div></div>
+		  <br>
+		  <br>
+		  <h3 class="centered"><strong>Непрерывность и предельный переход </strong></h3>
+								<section class="theorem">
+  								<details>
+									  <summary class="margin-top">
+										<strong>Теорема 10 (Непрерывность). </strong> Если
+										<p>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											1) \(\displaystyle
+											f(x,\gamma ) \in\)
+											<a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
+												\(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
+											</span></a>\((\)<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
+												\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
+								{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+											</span></a>\(),\) 
 
+										</p>
+										<p>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										2) \(\displaystyle a(\gamma )\in \mathbb{C} \left( \left[ {{\gamma
+										 }_{1}},{{\gamma }_{2}} \right] \right),\quad b(\gamma ) \in \mathbb{C} \left( \left[ {{\gamma
+										 }_{1}},{{\gamma }_{2}} \right] \right).\)</p>
+										 <p>
+											 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										   3) \(\forall \gamma \in
+										   \Gamma\,\,\left\{ \begin{matrix} a\le a\left( \gamma \right)\le b, \\
+										   a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.\).</p>
+									   
+										   то функция \(\displaystyle I(\gamma
+										  )=\int\limits_{a(\gamma )} ^{b(\gamma )}{f(x,\gamma )dx}\) непрерывна
+										  на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
+									  </summary>
+									  <p>
+										<div class="proof">
+											Пусть
+											<span class="col-black"
+											  >\(\displaystyle {{\gamma }_{0}}\in \left[ {{\gamma
+											  }_{1}},{{\gamma }_{2}} \right]\)</span
+											>
+											– фиксировано. Представим
+											<span class="col-black">\(\displaystyle I(\gamma )\)</span> в
+											виде:
+											  <span class="col-black">
+												<h3 class="formula">
+													<strong class="float-r" id="0.6">(0.6)</strong></span>
+													  \( \displaystyle I(\gamma )\,=\,\int\limits_{a({{\gamma
+													  }_{0}})}^{b({{\gamma }_{0}})} {f(x,\gamma
+													  )dx}+\,\int\limits_{b({{\gamma }_{0}})}^{b(\gamma
+													  )}{f(x,\gamma )dx}-\,\int\limits_ {a({{\gamma
+													  }_{0}})}^{a(\gamma )}{f(x,\gamma
+													  )dx}\,=\,{{I}_{1}}\,+\,{{I}_{2}}\,+\,{{I}_{3}}.\)
+													</h3>
+												</span>
+										  <p>
+											Докажем отдельно непрерывность в точке   каждого из интегралов.</p>
+										<p>1. Функция <span class="col-black"> \(\displaystyle f(x,\gamma )\)</span>
+											непрерывна
+											на замкнутом множестве, а значит, по теореме Кантора, она равномерно непрерывна на нем, т.е.</p>
+											<span class="col-black"> 
+												\[ \displaystyle \forall \varepsilon &gt;0 \quad \displaystyle \exists \delta &gt;0
+												\quad \displaystyle
+												\forall \gamma \,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \quad
+												\displaystyle \left| \gamma \,-\,{{\gamma }_{0}} \right|\,&lt;\,\delta \ \Rightarrow
+												\ \left| f(x,\gamma )\,-\,f(x,{{\gamma }_{0}}) \right|\,&lt;\,\frac{\varepsilon
+												}{b\,-\,a}.\]
+											</span>
+											<p>Следовательно,</p>
+											<span class="col-black">
+												\[\displaystyle \left| \Delta I_1 \right|\,=\,\left| I_1\left( \gamma \right)\,-\,I_1
+												\left( {{\gamma }_{0}} \right) \right|\,\le \,\int\limits_{a}^{b}{\left| f\left( x,\gamma
+												\right)\,-\,f\left( x,{{\gamma }_{0}} \right) \right|dx\,<}
+												\frac{\varepsilon }{b\,-\,a} \left( b\,-\,a \right)\,=\,\varepsilon,\]
+											</span>
+											а значит, 
+											\[ \displaystyle\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,I_1(\gamma )=I(\gamma_0 ) \]
+											<p>
+												2. Так как \(\varPi\)  замкнутое множество, то в силу непрерывности функция 
+												\(f(x,\gamma)\)  ограничена на \(\varPi\). 
+											Пусть
+											<span class="col-black"
+											  >\(\displaystyle M=\underset{}{\mathop{\sup }}\,\left| f\left(
+											  x,\gamma \right) \right|\)</span
+											>, тогда для интегралов
+											<span class="col-black">\(\displaystyle {{I}_{2}}\)</span> и
+											<span class="col-black">\(\displaystyle {{I}_{3}}\)</span>
+											справедливы следующие оценки (теорема о среднем):
+										  </p>
+										  <span class="col-black"
+											>
+											\begin{eqnarray*}
+												\displaystyle \left| \int\limits_{b({{\gamma
+												}_{0}})}^{b(\gamma )}{f(x,\gamma )dx} \right|\le M\left|
+												b(\gamma )-b({{\gamma }_{0}}) \right|,\displaystyle
+												\left| \int\limits_{a({{\gamma } _{0}})}^{a(\gamma
+												)}{f(x,\gamma )dx} \right|\le M\left| a(\gamma )-a({{\gamma
+												}_{0}}) \right|.
+												\end{eqnarray*}
+											<p>
+											  Так как \(\displaystyle a(\gamma ),b(\gamma )\in  \mathbb{C} \)
+											  \(\left( \left[ {{\gamma }_{1}},{{\gamma }_ {2}}
+											  \right] \right)\), то
+											</p>
+											\begin{eqnarray*}
+												\displaystyle \underset{\gamma \to {{\gamma
+												}_{0}}}{\mathop{\lim }}\,\left| b(\gamma ) -b({{\gamma
+												}_{0}}) \right|=0 \text{и} \displaystyle \underset{\gamma \to
+												{{\gamma }_{0}}} {\mathop{\lim }}\,\left| a(\gamma
+												)-a({{\gamma }_{0}}) \right|=0,
+											\end{eqnarray*}
+											</span
+										  >
+										  а значит,
+										  <span class="col-black">
+											\( \displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop
+											{\lim }}\,{{I}_{2}}=0\), \(\displaystyle \underset{\gamma \to
+											{{\gamma }_{0}}} {\mathop{\lim }}\,{{I}_{3}}=0\).</span
+										  >
+										  <p>
+											Следовательно, предел правой части
+											<a class="shortcut" href="#0.6">(0.6)</a> при
+											<span class="col-black"
+											  >\(\displaystyle \gamma \to {{\gamma }_{0}}\)</span
+											>
+											существует и равен
+											<span class="col-black"
+											  >\(\displaystyle I\left( {{\gamma }_{0}} \right)\)</span
+											>, т.е. функция
+											<span class="col-black"
+											  >\(\displaystyle I\left( \gamma \right)\)</span
+											>
+											непрерывна в любой точке
+											<span class="col-black"
+											  >\(\displaystyle {{\gamma }_{0}}\in \left[ {{\gamma
+											  }_{1}},{{\gamma }_{2}} \right]\).</span
+											>
+										  </p>
+										</div>
+									  </p>
+									</details>
+								  </section>
+			<section class="consequence">
+				<p class="margin-top"><strong>Следствие 1.</strong> </p>
+			</section>
+			<section class="consequence">
+				<p class="margin-top">
+				  <strong>Следствие 2 (Предельный переход). </strong>Если \(\displaystyle
+				  a(\gamma )\,\in \, \mathbb{C} \)
+				  \( (\)
+				  <a class="tooltip-1">\( \Gamma \)<span class="classic"
+					  >Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+					  луч, числовая ось).</span
+					></a
+				  >
+				  \()\), \(\displaystyle b(\gamma )\,\in \,\mathbb{C}( \Gamma )\);
 				</p>
-			  </details>
+				\begin{eqnarray*}
+					\displaystyle f(x,\gamma )\in \mathbb{C}\left( \left[ a,b
+					\right]\times \Gamma \right),\quad \displaystyle \forall \gamma \in
+					\Gamma\,\,\left\{ \begin{matrix} a\le a\left( \gamma \right)\le b, \\
+					a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
+				\end{eqnarray*}
+				<p>
+				  то \(\displaystyle \forall {{\gamma }_{0}}\in \)
+				  <a class="tooltip-1">\(\operatorname{int} \Gamma \)<span class="classic"
+					  >Внутренние точки множества \(\Gamma\)</span
+					></a
+				  >
+				  справедливо равенство
+				</p>
+				<h3 class="formula">
+					<strong class="float-r" id="0.7">(0.7)</strong>
+					\( \displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim
+						}}\,\int\limits_{a(\gamma )}^{b(\gamma )}{f(x,\gamma
+						)dx}=
+						\int\limits_{\lim\limits_{\gamma \to \gamma_0}{a(\gamma )}}
+						^{\lim\limits_{\gamma \to \gamma_0}{b(\gamma )}}
+						{\left( \underset{\gamma \to
+						{{\gamma }_{0}}}{\mathop{\lim }}\,f(x,\gamma )
+						\right)dx}
+						=\int\limits_{a({{\gamma }_{0}})}^{b({{\gamma }_{0}})}
+						{f(x,{{\gamma }_{0}})dx}.\)
+					</h3>
+				<p>
+				  Если \(\displaystyle {{\gamma }_{0}}\in\)
+				  <a class="tooltip-1">\( \partial \Gamma \)<span class="classic"
+					  >Граничные точки (граница) множества \(\displaystyle \Gamma
+					  \)</span
+					></a
+				  >
+				  \( \bigcap\)
+				  <a class="tooltip-1">\( \Gamma \)<span class="classic"
+					  >Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+					  луч, числовая ось).</span
+					></a
+				  >, то в выражении <a class="shortcut" href="#0.7">(0.7)</a> все
+				  пределы надо заменить на соответствующие односторонние.
+				</p>
+			  </section>
+			  <br>
 			  <details>
-				<summary class="margin-top">
-					2) интегрируема
+				<summary class="margin-top remark">
+					<span class="em-wide">Замечание.</span> Применять формулу <a class="shortcut" href="#0.7">(0.7)</a> 
+							для граничных точек, не входящих во множество
+							\( \Gamma \), на котором подынтегральная функция непрерывна, нельзя.
+					</summary>
+					
+					<div class="proof">
+	
+						<p class="padding-top">Например, для функции <span class="col-black">\(\displaystyle I(\gamma
+							)=\int\limits_{0}^{1}{\frac{x}{{{\gamma }^{2}}}
+							{{e}^{-{{x}^{2}}/{{\gamma }^{2}}}}dx}\)</span> оба предела в выражении существуют,
+							но не равны:
+		
+							<span class="col-black">
+								\begin{eqnarray*}
+								\displaystyle \underset{\gamma \to 0+}{\mathop{\lim }}\,\int\limits_{0}^{1}{\frac{x}{{
+						{\gamma }^{2}}}{{e}^{-{{x}^{2}}/{{\gamma }^{2}}}}dx}=\underset{\gamma \to 0+}{\mathop{\lim }}
+							\,\left. \frac{-{{e}^{-{{x}^{2}}/{{\gamma }^{2}}}}}{2} \right|_{x=0}^{x=1}=\frac{1}{2},
+							\displaystyle \int\limits_{0}^{1}{\underset{\gamma \to 0+}{\mathop{\lim }}\,\left( \frac{
+							x}{{{\gamma }^{2}}}{{e}^{-{{x}^{2}}/{{\gamma }^{2}}}} \right)dx}=0.
+							\end{eqnarray*}
+						</span>
+						</p>
+					</div>
+				  </details>
+				  <section class="remark">
+					<p class="margin-top"><span class="em-wide">Замечание.</span> Теорема 
+						и ее следствия остаются справедливыми, если функция
+						\(\displaystyle f(x,\gamma )\) может быть доопределена до непрерывной на множестве
+						\(\displaystyle \left[ a,b \right]\times\) <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+							луч, числовая ось).</span></a> изменением ее значений не более чем
+						на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
+				</section>
+				<section class="example">
+					<div class="spoiler">
+					  <button class="spoiler-button">
+						Пример 1
+					  </button>
+					  <div class="spoiler-content">
+						<div class="col-black">
+						  <details>
+							<summary class="margin-top">
+							  Вычислим \(\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
+							  }}\, \int\limits_{1-\gamma }^{\pi \gamma }{\sqrt{1-{{\gamma
+							  }^{2}}{{\sin }^{2}}x}\,dx}\).
+			
+							</summary>
+							<div class="normal">
+							<p>
+							  <span class="col-blue">Для вычисления предела достаточно, чтобы требования
+							  предельного перехода выполнялись в некоторой окрестности
+							  предельного значения. Пусть</span
+							> \(\displaystyle
+							\gamma \in \left[ 0,1 \right] \),
+							<span class="col-blue">тогда</span> \(\displaystyle 1-\gamma \in  \mathbb{C} \)
+							\(\left( \left[ 0,1 \right] \right)\), \(\displaystyle \pi \gamma
+							\in \mathbb{C}\left( \left[ 0,1 \right] \right)\), \(\displaystyle
+							\sqrt{1-{{\gamma }^{2}}{{\sin }^{2}}x}\in \mathbb{C}\left(
+							\left[ 0,\pi \right]\times \left[ 0,1 \right] \right)\), \(\displaystyle
+							0\le 1-\gamma \le 1\le \pi \), \(\displaystyle 0\le \pi \gamma
+							\le \pi \), <span class="col-blue">а значит,</span>
+							\begin{eqnarray*}
+							\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
+							  }}\,\int\limits_{1-\gamma }^{\pi \gamma } {\sqrt{1-{{\gamma
+							  }^{2}}{{\sin }^{2}}x}\,dx}=\int\limits_{0}^{\pi
+							  }{\sqrt{1-{{\sin }^{2}}x}\,dx}=\int\limits_ {0}^{\pi }{\left|
+							  \cos x \right|\,dx}=2.
+							  \end{eqnarray*}
+			
+							</p></div>
+						  </details>
+						</div>
+					  </div>
+					</div>
+				  </section>
+
+				  <br>
+		  <br>
+		  <h3 class="centered"><strong>Интегрируемость</strong></h3>
+
+		  <section class="theorem">
+			  <details>
+				  <summary class="margin-top">
+					<strong>Теорема 10 (Интегрируемость). </strong>
+						Пусть \(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
+					{{\gamma }_{1}},{{\gamma }_{2}} \right]\).
+					Тогда если \(\displaystyle f(x,\gamma )\in\) <a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
+							\(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
+						</span></a>\((\)<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
+						\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
+		{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+					</span></a>\()\), то
+					функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\)
+					интегрируема
 					на сегменте \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и справедливо равенство
 					<h3 class="formula">
 						<strong class="float-r" id="0.1">(0.1)</strong>
@@ -217,321 +466,362 @@
 				</div>
 			  </details>
 		</section>
-
+		<br>
 		<section class="remark">
-			<p class="margin-top"><span class="em-wide">Замечание.</span> Теорема 
-				и ее следствия остаются справедливыми, если функция
-				\(\displaystyle f(x,\gamma )\) может быть доопределена до непрерывной на множестве
-				\(\displaystyle \left[ a,b \right]\times\) <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-					луч, числовая ось).</span></a> изменением ее значений не более чем
-				на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
-		</section>
-
-		<section class="consequence">
-			<details>
-				<summary class="margin-top">
-					<p><strong>Следствие 1.</strong> Если</p>
-					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						1) \(\displaystyle f(x,\gamma )\) определена
-					на
-					\(\displaystyle \left[ a,b \right]\times\) <a class="tooltip-1">\( \Gamma \)
-						<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-						луч, числовая ось).</span></a>;</p>
-					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						2) \(\displaystyle \forall \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \subset \Gamma\) \( f(x,\gamma )\in \)
-						<a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
-							\(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
-						</span></a>
-					\( \left( \left[ a,b \right]\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \right)\),</p>
-					<p>то функция \(\displaystyle I\left( \gamma
-					\right)=
-					\underset{a}{\overset{b}{\mathop \int }}\,f\left( x,\gamma \right)dx\) непрерывна на \( \Gamma \).</p>
-				</summary>
-				<p>
-				<div class="normal proof">
-					<div class="col-blue"><p class="padding-top">Пусть <span class="col-black">\(\displaystyle {{\gamma }_{0}}\in\)
-						 <a class="tooltip-1">\(\Gamma' \)<span class="classic">Граничные точки (граница) множества \(\displaystyle \Gamma \)</span></a>
-						   \( \bigcap ( \Gamma \)</span>. Тогда
-						существует сегмент <span class="col-black">\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset
-						\,  \Gamma \)</span> такой,
-						что <span class="col-black">\(\displaystyle {{\gamma }_{0}}\,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).</span> В
-						силу теоремы 8 о <a class="tooltip-1"> непрерывности<span class="classic">
-							Если \(\displaystyle f(x,\gamma )\in \mathbb{C}(\displaystyle \varPi)\), то
-							функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\)
-							непрерывна на сегменте\(\displaystyle
-									\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
-						</span></a>
-						 из непрерывности подынтегральной функции <span class="col-black">\(\displaystyle f(x,\gamma )\)</span> на <span class="col-black">\(\displaystyle
-						\left[ a,b \right]\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)</span> следует непрерывность
-						<span class="col-black">\(\displaystyle
-						I(\gamma )\)</span> на <span class="col-black">\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),</span> а значит, и
-						в точке
-						<span class="col-black">\(\displaystyle {{\gamma }_{0}}\,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).</span> В силу
-						произвольности
-						выбора точки <span class="col-black">\(\displaystyle {{\gamma }_{0}}\),</span> можно утверждать, что функция <span class="col-black">\(\displaystyle
-						I(\gamma )\)</span>
-						непрерывна на \( \Gamma \).</span>
-						</p>
-					</div> 
-				</div>
+			<p class="margin-top"><span class="em-wide">Замечание</span>. Теорема остается справедливой, если функции
+				\(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) могут
+				быть доопределены по непрерывности в прямоугольнике \(\displaystyle =\left[ a,b \right]\times \left[ {{\gamma 
+				}_{1}},{{\gamma }_{2}} \right]\), \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\subset\) 
+				\( \Gamma \)
+					изменением их значений не более чем на конечном множестве прямых
+					\(\displaystyle x=\text{const}\).
 				</p>
-			  </details>
-		</section>
-
-		<section class="consequence">
-		<details>
-			<summary class="margin-top">
-						<strong>Следствие 2 (Предельный переход).</strong> Если \(\displaystyle f(x,\gamma ) \in \)
-						<a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
-							\(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
-						</span></a>
-						\(\left( \left[ a,b \right] \times \Gamma \right) \), то \( \forall \gamma_0 \in \operatorname{int}\Gamma \)
-						справедливо равенство:
-						<h3 class="formula">
-							<strong class="float-r" id="0.2">(0.2)</strong>
-								 \( \displaystyle\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,I(\gamma )=\underset{\gamma \to
-									{{\gamma }_{0}}}{\mathop{\lim }}\,\int\limits_{a}^{b}{f(x,\gamma )dx}=\int\limits_{a}^{b}{\left(
-									\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,f(x,\gamma )
-									\right)dx}=\int\limits_{a}^{b}{\varphi (x)dx}.\)
-								</h3>Если \(\displaystyle {{\gamma }_{0}}\in \) 
-									<a class="tooltip-1">\( \partial \Gamma \)<span class="classic">
-										Граничные точки (граница) множества \(\displaystyle \Gamma \)</span></a>  \( \bigcap\) 
-										<a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-										луч, числовая ось).</span></a>, то в выражении 
-									<a class="shortcut" href="#0.2">(0.2)</a> все
-										пределы надо заменить на соответствующие односторонние.
-					</summary>
-						<div class="proof normal">
-						<div class="col-blue">
-							<p class="padding-top">Интегрируемость функции <span class="col-black">\(\displaystyle  \varphi (x)\)</span> следует из теоремы 8
-								<a class="tooltip-1" >об интегрируемости<span class="classic">
-									Если функция \(\displaystyle f\left( x,\gamma
-				\right)\) \(\displaystyle\forall x\in X\) интегрируема по \(\displaystyle\gamma \) на
-				\(\displaystyle\left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и при
-				\(\displaystyle x\to {{x}_{0}}\) \(\displaystyle f\left( x,\gamma\right)\!\underset{\left[\displaystyle
-					{{\gamma }_{1}},{{\gamma }_{2}} \right]}{\rightrightarrows}\!\displaystyle\varphi \left( \gamma \right)\), то \(\displaystyle\varphi \left( \gamma
-					\right) \in R(\displaystyle \left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]) \).
-								</span></a>. Пусть задано произвольное <span class="col-black"> \(\displaystyle \varepsilon > 0\)</span>. Тогда существует
-								<span class="col-black">\(\displaystyle \delta > 0\)</span>, не зависящее от <span class="col-black">\(\displaystyle x\)</span>, такое что
-								<span class="col-black">\(\displaystyle \forall \gamma \,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-								\(\displaystyle \left| \gamma \,-\,{{\gamma }_{0}} \right|\ < \delta \ \Rightarrow \
-								\left| f(x,\gamma )\,-\,\varphi (x) \right|\ < \varepsilon \)</span>, а значит, </p>
-								<span class="col-black">
-									\begin{eqnarray*}
-									\displaystyle \left| \int\limits_{a}^{b}{f\left( x,\gamma \right)dx\,}\,
-								-\,\int\limits_{a}^{b}{\varphi \left( x \right)dx\,} \right|\,\le \,\int\limits_{a}
-								^{b}{\left| f\left( x,\gamma \right)\,-\,\varphi \left( x \right) \right|dx}\,\le \
-								\varepsilon \left( b\,-\,a \right)\,
-								\end{eqnarray*}</span>
-							что и доказывает формулу <a class="shortcut" href="#0.2">(0.2)</a>
-						</div>
-						</div>
-					</p>
-				</details>
-		</section> 
-		<details>
-			<summary class="margin-top remark">
-				<p class="margin-top"><span class="em-wide">Замечание.</span> Применять формулу <a class="shortcut" href="#0.2">(0.2)</a> 
-						для граничных точек, не входящих во множество
-						\( \Gamma \), на котором подынтегральная функция непрерывна, нельзя.
-				</summary>
-				<div class="proof">
-
-					<p class="padding-top">Например, для функции <span class="col-black">\(\displaystyle I(\gamma
-						)=\int\limits_{0}^{1}{\frac{x}{{{\gamma }^{2}}}
-						{{e}^{-{{x}^{2}}/{{\gamma }^{2}}}}dx}\)</span> оба предела в выражении существуют,
-						но не равны:
+			</section>
+			<div class="spoiler">
+				<section class="example">
+				<button class="spoiler-button">Пример 2</button>
+				<div class="spoiler-content">
+					<div class="col-black">
+					</div>
+					<details>
+						<summary class="margin-top">
+								Вычислим интеграл
+								\begin{eqnarray*}
+								\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\sin \left( \ln
+									\frac{1}{x} \right)\,\,\frac{{{x}^{b}}-{{x}^{a}}}{\ln x}dx}, \displaystyle b&gt;a&gt;0.
+								\end{eqnarray*}
 	
-						<span class="col-black">
-							\begin{eqnarray*}
-							\displaystyle \underset{\gamma \to 0+}{\mathop{\lim }}\,\int\limits_{0}^{1}{\frac{x}{{
-					{\gamma }^{2}}}{{e}^{-{{x}^{2}}/{{\gamma }^{2}}}}dx}=\underset{\gamma \to 0+}{\mathop{\lim }}
-						\,\left. \frac{-{{e}^{-{{x}^{2}}/{{\gamma }^{2}}}}}{2} \right|_{x=0}^{x=1}=\frac{1}{2},
-						\displaystyle \int\limits_{0}^{1}{\underset{\gamma \to 0+}{\mathop{\lim }}\,\left( \frac{
-						x}{{{\gamma }^{2}}}{{e}^{-{{x}^{2}}/{{\gamma }^{2}}}} \right)dx}=0.
+							</summary>
+							<p>
+								Преобразуем интеграл следующим образом
+								\begin{eqnarray*}
+								\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\sin \left( \ln \frac{1}{x}
+										\right)\left( \int\limits_{a}^{b}{{{x}^{\gamma }}d\gamma } \right)dx}=\displaystyle 
+									\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} 
+									\right)d\gamma } \right)dx.}
+									\end{eqnarray*}
+									<div class="normal">
+									<p><span class="col-blue">Пусть</span> \(\displaystyle f\left( x,\gamma  \right)={{x}^{\gamma }}\sin 
+									\left( \ln \frac{1}{x} \right)\).<span class="col-blue"> Учитывая, что</span> \(\displaystyle \forall \gamma \in \left[ a,b \right]\)</p>
+									\begin{eqnarray*}
+									\displaystyle \underset{x\to +0}{\mathop{\lim }}\,f\left( x,\gamma  
+									\right)=\underset{x\to +0}{\mathop{\lim }}\,{{x}^{\gamma }}\sin \left( 
+									\ln \frac{1}{x} \right)=\underset{x\to +0}{\mathop{\lim }}\,{{e}^{\gamma 
+									\ln x}}\sin \left( \ln \frac{1}{x} \right)=0,
+									\end{eqnarray*}
+									<span class="col-blue">подынтегральную функцию </span> \(\displaystyle f\left( x,\gamma  \right)\)<span class="col-blue">
+										 можно доопределить
+									до непрерывной на прямоугольнике </span> \(\displaystyle 
+									\left[ 0,1 \right]\times \left[ a,b \right]\)<span class="col-blue"> функции:</span>
+									\begin{eqnarray*}
+									\displaystyle \tilde{f}\left( x,\gamma  \right)=\left\{ \begin{matrix}
+									f\left( x,\gamma  \right),\,\,x&gt;0,  \\
+									0,\,\,x=0.  \\
+									\end{matrix} \right.
+									\end{eqnarray*}
+									</div>
+									<p>В силу теоремы 10
+										<a class="tooltip-1">об интегрируемости<span class="classic">
+											Если \(\displaystyle f(x,\gamma )
+						\in \mathbb{C} \)
+						 \( \left( \left[ a,b \right]\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \right)\), то функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\) интегрируема
+						на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и справедливо равенство
+						\begin{eqnarray*}
+						& \int\limits_{\gamma_1}^{\gamma_2}I(\gamma )d\gamma
+							=\int\limits_{\gamma_1}^{\gamma_2} ( \int\limits_{a}^{b}f(x,\gamma )dx
+							)d\gamma = &\\
+							& \int\limits_{a}^{b} ( \int\limits_{\gamma_1}^{\gamma_2}f(x,\gamma
+							)d\gamma)dx. &
 						\end{eqnarray*}
+										</span></a>
+										с учетом замечания, получим</p>
+									\begin{eqnarray*}
+									\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^
+									{\gamma }}\sin \left( \ln \frac{1}{x} \right)d\gamma } \right)\,dx}=\int\limits_{a}^{b}{\left
+									( \int\limits_{0}^{1}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} \right)dx} \right)d\gamma }.
+									\end{eqnarray*}
+									<p>Вычислим внутренний интеграл:</p>
+									\(\qquad \qquad \qquad \qquad \qquad \qquad
+										\displaystyle \int\limits_{0}^{1}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} \right)dx=\left[ 
+									x={{e}^{-t}} \right]}=\int\limits_{0}^{+\infty }{{{e}^{-t\left( \gamma +1 \right)}}\sin t\,dt}\)
+									<a class="tooltip-1">\(=\)<span class="classic">
+										\[ \displaystyle =\left. \left( \frac{-{{e}^{-t\left( \gamma +1 \right)}}\cos t-\left( \gamma +1 
+									\right){{e}^{-t\left( \gamma +1 \right)}}\sin t}{{{\left( \gamma +1 \right)}^{2}}+1} \right) 
+									\right|_{0}^{+\infty }=\]
+								</span></a>
+									\( \frac{1}{{{\left( \gamma +1 \right)}^{2}}+1}.\)
+									<p>Следовательно, \[\displaystyle I\left( a,b \right)\,=\,\int\limits_{a}^{b}{\frac{d\gamma 
+									}{{{\left( \gamma \,+\,1 \right)}^{2}}\,+\,1}}\,=\,\operatorname{arctg}\left( b\,+\,1 
+									\right)\,-\,\operatorname{arctg}\left( a\,+\,1 \right)\].
+									</p>
+	
+							</p>
+						  </details>
+				</div>
+				</section>
+		</div>
+		<br>
+		<br>
+		<h3 class="centered"><strong>Дифференцируемость</strong></h3>
+		<section class="theorem">
+        
+			<details>
+			  <summary class="margin-top">
+				<strong>Теорема 11 (Дифференцируемость). </strong>
+				Пусть \(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
+			{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+			Тогда если
+				<p class="margin-top">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) \(\displaystyle
+					f(x,\gamma ) \in\)
+					<a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
+						\(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
+					</span></a>
+					\((\)<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
+						\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
+		{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+					</span></a>\(),\)
+				</p>
+					<p class="margin-top">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					2) \(\displaystyle \frac{\partial f(x,\gamma )}{\partial
+				\gamma }\in \mathbb{C} (\displaystyle \varPi),\) </p>
+				<p class="margin-top">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				3) \(\displaystyle
+				a(\gamma )\) и \(\displaystyle b(\gamma )\) дифференцируемы на
+				\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right],\)</p>
+				 то функция
+				\(\displaystyle I(\gamma )\,=\,\int\limits_{a(\gamma )}^{b(\gamma
+				)}{f(x,\gamma )dx}\) дифференцируема на \(\displaystyle \left[
+				{{\gamma }_{1}},{{\gamma }_{2}} \right]\) и ее производная 
+				может быть вычислена <strong><em>по правилу Лейбница:</em></strong>
+				<h3 class="formula">
+					<strong class="float-r" id="0.8">(0.8)</strong>
+					\( \displaystyle {I}'(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma
+						)}{\frac{\partial f\left( x,\gamma \right)}{\partial \gamma
+						}dx}+{b}'(\gamma )\cdot f(b(\gamma ),\gamma )-{a}'(\gamma )\cdot
+						f(a(\gamma ), \gamma ). \)
+					</h3>
+			</summary>
+			  <p>
+				<div class="proof normal">
+				  <div class="col-blue">
+					<p>
+					  Пусть
+					  <span class="col-black"
+						>\(\displaystyle {{\gamma }_{0}}\in \left[ {{\gamma
+						}_{1}},{{\gamma }_{2}} \right]\)</span
+					  >
+					  – фиксировано. Представим
+					  <span class="col-black">\(\displaystyle I(\gamma )\)</span> в
+					  виде
+					</p>
+					<h3 class="formula">
+						<strong class="float-r" id="0.6">(0.6)</strong></span>
+						  \( \displaystyle I(\gamma )\,=\,\int\limits_{a({{\gamma
+						  }_{0}})}^{b({{\gamma }_{0}})} {f(x,\gamma
+						  )dx}+\,\int\limits_{b({{\gamma }_{0}})}^{b(\gamma
+						  )}{f(x,\gamma )dx}-\,\int\limits_ {a({{\gamma
+						  }_{0}})}^{a(\gamma )}{f(x,\gamma
+						  )dx}\,=\,{{I}_{1}}\,+\,{{I}_{2}}\,+\,{{I}_{3}}.\)
+					</h3>
+					<p>
+						Рассмотрим функцию
+						\(\displaystyle g\left( \gamma   
+						\right)\,=\,\int\limits_{a}^{b}{\frac{\partial f(x,\gamma )}
+						{\partial \gamma }dx}\), \(\displaystyle \gamma \,\in \,\left[ {{\gamma }_{1}},
+						{{\gamma }_{2}} \right]\).
+					</p>
+						<p>Так как\(\displaystyle \frac{\partial f}{\partial \gamma }\in \mathbb{C}(\)
+							<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
+								\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
+				{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+							</span></a>\()\), то, согласно теореме 9, \( \displaystyle g\left( \gamma   
+		\right)\in \mathbb{C}\left( \left[ {{\gamma }_{1}},{{\gamma }_{2}}
+		\right] \right)\)<span class="col-blue"> и</span></p>
+		\[ \displaystyle \int\limits_{{{\gamma }_{1}}}^{\gamma }{g(t)\,dt}=\int\limits_
+						{{{\gamma }_{1}}}^{\gamma }{\left( \int\limits_{a}^{b}{\frac{\partial f(x,t)}{\partial t}dx}
+						\right)dt}=\int\limits_{a}^{b}{\left( \int\limits_{{{\gamma }_{1}}}^{\gamma }{\frac{\partial
+						f(x,t)}{\partial t}dt} \right)dx}=\]
+						\[ \displaystyle =\int\limits_{a}^{b}{f(x,\gamma )dx}-\int\limits_{a}^{b}{f(x,{{\gamma }_{1}})
+						dx}=I\left( \gamma \right)-I\left( {{\gamma }_{1}} \right)\]
+						<p><span class="col-blue">Следовательно,</span>
+							 \[\displaystyle \frac{d}{d\gamma}{{I}_{1}}\left( {{\gamma }_{0}}
+							 \right)\,=\,\frac{d}{d\gamma }\left(
+							\int\limits_{{{\gamma }_{1}}}^{\gamma }{g(t)dt}\,+\,I\left( {{\gamma }_{1}} \right)
+							\right)=\,\frac{d}{d\gamma }\int\limits_{{{\gamma }_{1}}}^{\gamma }{g(t)dt}\,+\,0\,=\,g\left(
+							\gamma \right)=\int\limits_ {a\left( {{\gamma }_{0}}
+							\right)}^{b\left( {{\gamma }_{0}} \right)}{\frac{\partial
+							f(x,{{\gamma }_{0}} )}{\partial \gamma }dx}.\]
+						</p>
+					<p>
+					  По определению производной для функции
+					  <span class="col-black"
+						>\(\displaystyle {{I}_{2}}\left( \gamma \right)\)</span
+					  >
+					  получим
+					</p>
+						<span class="col-black"
+						  >
+						  \begin{eqnarray*}
+						  \displaystyle \frac{d{{I}_{2}}\left( {{\gamma }_{0}}
+						  \right)}{d\gamma }=\underset{\gamma \to {{\gamma
+						  }_{0}}}{\mathop{\lim }}\,\frac{\int\limits_{b\left( {{\gamma
+						  }_{0}} \right)}^{b\left( \gamma \right)}{f(x,\gamma
+						  )dx}}{\gamma -{{\gamma }_{0}}}.
+						  \end{eqnarray*}
+						  </span
+						>
+					<p>По формуле среднего значения</p>
+						<span class="col-black"
+						  >
+						  \begin{eqnarray*}
+						  \displaystyle \int\limits_{b\left( {{\gamma }_{0}}
+						  \right)}^{b\left( \gamma \right)}{f(x,\gamma
+						  )dx}=f(\tilde{x},\gamma )\left( b\left( \gamma
+						  \right)-b\left( {{\gamma }_{0}} \right) \right),
+						  \displaystyle \tilde{x}\in \left[ b\left( {{\gamma }_{0}}
+						  \right),b\left( \gamma \right) \right].
+						  \end{eqnarray*}
+						  </span
+						>
+	  
+					<p>
+					  Из непрерывности функции
+					  <span class="col-black">\(\displaystyle f(x,\gamma )\)</span>
+					  следует, что
+					</p>
+						<span class="col-black"
+						  >
+						  \begin{eqnarray*}
+						  \displaystyle \underset{\gamma \to {{\gamma
+						  }_{0}}}{\mathop{\lim }}\, f(\tilde{x},\gamma )=f(b\left(
+						  {{\gamma }_{0}} \right),{{\gamma }_{0}});
+						  \end{eqnarray*}
+						  </span
+						>
+					а из дифференцируемости функции
+					<span class="col-black">\(\displaystyle b(\gamma )\)</span>
+					следует, что
+						<span class="col-black"
+						  >
+						  \begin{eqnarray*}
+						  \displaystyle \underset{\gamma \to {{\gamma
+						  }_{0}}}{\mathop{\lim }}\,\frac{b\left( \gamma
+						  \right)-b\left( {{\gamma }_{0}} \right)}{\gamma -{{\gamma
+						  }_{0}}}={b}'\left( {{\gamma }_{0}} \right).
+						  \end{eqnarray*}
+						  </span
+						>
+					<p>Поэтому</p>
+						<span class="col-black">
+						  \begin{eqnarray*}
+						  & \displaystyle \frac{d{{I}_{2}}\left( {{\gamma }_{0}}
+						  \right)}{d\gamma }=\underset{\gamma \to {{\gamma
+						  }_{0}}}{\mathop{\lim }}\,\frac{f(\tilde{x},\gamma )\left(
+						  b\left( \gamma \right)-b\left( {{\gamma }_{0}} \right)
+						  \right)}{\gamma -{{\gamma }_{0}}}= &\\
+						  & \displaystyle =\underset{\gamma \to {{\gamma
+						  }_{0}}}{\mathop{\lim }}\,\left( f(\tilde{x},\gamma
+						  )\frac{b\left( \gamma \right)-b\left( {{\gamma }_{0}}
+						  \right)}{\gamma -{{\gamma }_{0}}} \right)={b}'\left(
+						  {{\gamma }_{0}} \right)f(b\left( {{\gamma }_{0}}
+						  \right),{{\gamma }_{0}}). &
+						  \end{eqnarray*}
+					<p>
+						<span class="col-blue">Аналогично доказывается, что</span>
+					  <span class="col-black"
+						>\(\displaystyle \frac{d{{I}_{3}}\left( {{\gamma }_{0}}
+						\right)}{d\gamma }={a}'\left( {{\gamma }_{0}} \right)f(a\left(
+						{{\gamma }_{0}} \right),{{\gamma }_{0}})\).</span
+					  >
+					</p>
+					<p>
+						<span class="col-blue">
+					  Так как
+					  <span class="col-black">\(\displaystyle {{\gamma }_{0}}\)</span>
+					  произвольная точка сегмента
+					  <span class="col-black"
+						>\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}}
+						\right]\)</span
+					  >, то можно утверждать, что функция
+					  <span class="col-black"
+						>\(\displaystyle I(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma
+						)}{f(x,\gamma )dx}\)</span
+					  >
+					  дифференцируема на всем сегменте
+					  <span class="col-black"
+						>\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}}
+						\right]\)</span
+					  >
+					  и ее производная может быть вычислена по формуле
+					  <a class="shortcut" href="#0.8">(0.8)</a> .
 					</span>
 					</p>
+				  </div>
+	
 				</div>
-			  </details>
-		<div class="spoiler">
-			<section class="example">
-			<button class="spoiler-button">Пример 1</button>
-			<div class="spoiler-content">
-				<div class="col-black">
-				</div>
-				<details>
-					<summary class="margin-top">
-							Вычислим интеграл
-							\begin{eqnarray*}
-							\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\sin \left( \ln
-								\frac{1}{x} \right)\,\,\frac{{{x}^{b}}-{{x}^{a}}}{\ln x}dx}, \displaystyle b&gt;a&gt;0.
-							\end{eqnarray*}
-
-						</summary>
-						<p>
-							Преобразуем интеграл следующим образом
-							\begin{eqnarray*}
-							\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\sin \left( \ln \frac{1}{x}
-									\right)\left( \int\limits_{a}^{b}{{{x}^{\gamma }}d\gamma } \right)dx}=\displaystyle 
-								\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} 
-								\right)d\gamma } \right)dx.}
-								\end{eqnarray*}
-								<div class="normal">
-								<p><span class="col-blue">Пусть</span> \(\displaystyle f\left( x,\gamma  \right)={{x}^{\gamma }}\sin 
-								\left( \ln \frac{1}{x} \right)\).<span class="col-blue"> Учитывая, что</span> \(\displaystyle \forall \gamma \in \left[ a,b \right]\)</p>
-								\begin{eqnarray*}
-								\displaystyle \underset{x\to +0}{\mathop{\lim }}\,f\left( x,\gamma  
-								\right)=\underset{x\to +0}{\mathop{\lim }}\,{{x}^{\gamma }}\sin \left( 
-								\ln \frac{1}{x} \right)=\underset{x\to +0}{\mathop{\lim }}\,{{e}^{\gamma 
-								\ln x}}\sin \left( \ln \frac{1}{x} \right)=0,
-								\end{eqnarray*}
-								<span class="col-blue">подынтегральную функцию </span> \(\displaystyle f\left( x,\gamma  \right)\)<span class="col-blue">
-									 можно доопределить
-								до непрерывной на прямоугольнике </span> \(\displaystyle 
-								\left[ 0,1 \right]\times \left[ a,b \right]\)<span class="col-blue"> функции:</span>
-								\begin{eqnarray*}
-								\displaystyle \tilde{f}\left( x,\gamma  \right)=\left\{ \begin{matrix}
-								f\left( x,\gamma  \right),\,\,x&gt;0,  \\
-								0,\,\,x=0.  \\
-								\end{matrix} \right.
-								\end{eqnarray*}
-								</div>
-								<p>В силу теоремы 10
-									<a class="tooltip-1">об интегрируемости<span class="classic">
-										Если \(\displaystyle f(x,\gamma )
-					\in \mathbb{C} \)
-					 \( \left( \left[ a,b \right]\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \right)\), то функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\) интегрируема
-					на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и справедливо равенство
-					\begin{eqnarray*}
-					& \int\limits_{\gamma_1}^{\gamma_2}I(\gamma )d\gamma
-						=\int\limits_{\gamma_1}^{\gamma_2} ( \int\limits_{a}^{b}f(x,\gamma )dx
-						)d\gamma = &\\
-						& \int\limits_{a}^{b} ( \int\limits_{\gamma_1}^{\gamma_2}f(x,\gamma
-						)d\gamma)dx. &
-					\end{eqnarray*}
-									</span></a>
-									с учетом замечания, получим</p>
-								\begin{eqnarray*}
-								\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^
-								{\gamma }}\sin \left( \ln \frac{1}{x} \right)d\gamma } \right)\,dx}=\int\limits_{a}^{b}{\left
-								( \int\limits_{0}^{1}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} \right)dx} \right)d\gamma }.
-								\end{eqnarray*}
-								<p>Вычислим внутренний интеграл:</p>
-								\begin{eqnarray*}
-								&\displaystyle \int\limits_{0}^{1}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} \right)dx=\left[ 
-								x={{e}^{-t}} \right]}=\int\limits_{0}^{+\infty }{{{e}^{-t\left( \gamma +1 \right)}}\sin t\,dt}= &\\
-								& \displaystyle =\left. \left( \frac{-{{e}^{-t\left( \gamma +1 \right)}}\cos t-\left( \gamma +1 
-								\right){{e}^{-t\left( \gamma +1 \right)}}\sin t}{{{\left( \gamma +1 \right)}^{2}}+1} \right) 
-								\right|_{0}^{+\infty }=\frac{1}{{{\left( \gamma +1 \right)}^{2}}+1}.&
-								\end{eqnarray*}
-								<p>Следовательно, \(\displaystyle I\left( a,b \right)\,=\,\int\limits_{a}^{b}{\frac{d\gamma 
-								}{{{\left( \gamma \,+\,1 \right)}^{2}}\,+\,1}}\,=\,\operatorname{arctg}\left( b\,+\,1 
-								\right)\,-\,\operatorname{arctg}\left( a\,+\,1 \right)\).
+			  </p>
+			</details>
+		  </section>
+		  <section class="conseq">
+			<p class="margin-top"><strong>Следствие.</strong> Если
+				функции \(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}
+				{\partial \gamma }\) непрерывны на каждом прямоугольнике 
+				\(\left[\displaystyle a,b \right]\times \left[\displaystyle
+			{{\gamma }_{1}},{{\gamma }_{2}} \right]\), \(\displaystyle \left[
+				{{\gamma }_{1}},{{\gamma }_{2}} \right]\subset\) <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+					луч, числовая ось).</span></a>, то функция
+					\(\displaystyle I(\gamma )=\int\limits_{a(\gamma)}^{b(\gamma)}{f(x,\gamma )dx}\) непрерывно
+					дифференцируема на \( \Gamma \) и
+						ее производная может быть вычислена по правилу Лейбница. <a class="shortcut" href="#0.3">(0.3)</a> </p>
+						<div class="remark">
+							<p class="margin-top"><span class="em-wide">Замечание</span>. Утверждение теоремы и ее следствия остаются
+								справедливым, если функции
+								\(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) могут
+								быть доопределены по непрерывности в прямоугольнике \(\displaystyle \left[ a,b \right]\times \left[ {{\gamma 
+								}_{1}},{{\gamma }_{2}} \right]\), \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\subset\) 
+								\( \Gamma \)
+									изменением их значений не более чем на конечном множестве прямых
+									\(\displaystyle x=\text{const}\).
 								</p>
+							</div>
+						</section>	
 
-						</p>
-					  </details>
-			</div>
-			</section>
-	</div>
-
-		
-		<section class="theorem">
-			
-			<details>
-				<summary class="margin-top">
-					<strong>Теорема 9 (Дифференцируемость).</strong> Если функции \(\displaystyle 
-						f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) – непрерывны на 
-						прямоугольнике
-						
-						<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
-							\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
-			{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-						</span></a>,
-						 то функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\) непрерывно
-						дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и ее производная 
-						может быть вычислена <strong><em>по правилу Лейбница </em></strong>
-						<h3 class="formula">
-							<strong class="float-r" id="0.3">(0.3)</strong> 
-							\( \displaystyle {I}'\left( \gamma  \right)=\int\limits_{a}^{b}{\frac{\partial f(x,\gamma 
-								)}{\partial \gamma }dx}. \)                            
-							</h3>
-						</summary>
-					<p>
-					<div class="proof normal">
-						<div class="col-black"><span class="col-blue padding-top">Рассмотрим функцию </span>
-							\(\displaystyle g\left( \gamma   
-							\right)\,=\,\int\limits_{a}^{b}{\frac{\partial f(x,\gamma )}
-							{\partial \gamma }dx}\), \(\displaystyle \gamma \,\in \,\left[ {{\gamma }_{1}},
-							{{\gamma }_{2}} \right]\).
-							<p><span class="col-blue">Так как</span> \(\displaystyle \frac{\partial f}{\partial \gamma }\in \mathbb{C}(\)
-								<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
-									\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
-					{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-								</span></a>\()\)<span class="col-blue">, то, согласно теореме 9
-								<a class="tooltip-1">о непрерывности<span class="classic">
-									Если \(\displaystyle f(x,\gamma )\in  \mathbb{C} \)
-									\(\left( \left[ a,b \right]\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \right)\), то
-									функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\) непрерывна на \(\displaystyle
-					\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
-				</span></a>,
-			</span> \(\displaystyle g\left( \gamma   
-			\right)\in \mathbb{C}\left( \left[ {{\gamma }_{1}},{{\gamma }_{2}}
-			\right] \right)\)<span class="col-blue"> и</span></p>
-			\begin{eqnarray*}
-			\displaystyle \int\limits_{{{\gamma }_{1}}}^{\gamma }{g(t)\,dt}=\int\limits_
-							{{{\gamma }_{1}}}^{\gamma }{\left( \int\limits_{a}^{b}{\frac{\partial f(x,t)}{\partial t}dx}
-							\right)dt}=\int\limits_{a}^{b}{\left( \int\limits_{{{\gamma }_{1}}}^{\gamma }{\frac{\partial
-							f(x,t)}{\partial t}dt} \right)dx}=  \\
-							\qquad \displaystyle =\int\limits_{a}^{b}{f(x,\gamma )dx}-\int\limits_{a}^{b}{f(x,{{\gamma }_{1}})
-							dx}=I\left( \gamma \right)-I\left( {{\gamma }_{1}} \right)
-							\end{eqnarray*}
-							<p><span class="col-blue">Следовательно,</span> \(\displaystyle {I}'\left( \gamma \right)\,=\,\frac{d}{d\gamma }\left(
-								\int\limits_{{{\gamma }_{1}}}^{\gamma }{g(t)dt}\,+\,I\left( {{\gamma }_{1}} \right)
-								\right)=\,\frac{d}{d\gamma }\int\limits_{{{\gamma }_{1}}}^{\gamma }{g(t)dt}\,+\,0\,=\,g\left(
-								\gamma \right)\).
-							</p>
+						<div class="spoiler">
+							<section class="example">
+							  <button class="spoiler-button">Пример 3</button>
+							  <div class="spoiler-content">
+								<div class="col-black">
+								  <details>
+									<summary class="margin-top">
+									  Вычислим \(\displaystyle {I}'\left( a \right)\), если
+									  \(\displaystyle I\left( a
+									  \right)=\int\limits_{0}^{{{a}^{3}}}{\frac{\ln \left( 1+ax
+									  \right)}{x}dx}\).
+									</summary>
+									<p>
+									  \(\displaystyle {I}'\left( a
+								  \right)=\int\limits_{0}^{{{a}^{3}}}{\frac{x}{\left( 1+ax
+								  \right)x}dx}+ 3{{a}^{2}}\cdot \frac{\ln \left( 1+a\cdot {{a}^{3}}
+								  \right)}{{{a}^{3}}}=
+									\left. \frac{\ln \left( 1+ax
+									\right)}{a} \right|_{0}^ {{{a}^{3}}}+\frac{3\ln \left(
+									1+{{a}^{4}} \right)}{a}=\frac{4\ln \left( 1+{{a}^{4}}
+									\right)}{a}\).
+									</p>
+								  </details>
+								</div>
+							  </div>
+							</section>
 						</div>
 						
-					</div>
-				</p>
-				  </details>
-				</section>
-				
-				<section class="conseq">
-					<p class="margin-top"><strong>Следствие.</strong> Если
-						функции \(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}
-						{\partial \gamma }\) непрерывны на каждом прямоугольнике 
-						<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
-							\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
-			{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-						</span></a>, \(\displaystyle \left[
-						{{\gamma }_{1}},{{\gamma }_{2}} \right]\subset\) <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-							луч, числовая ось).</span></a>, то функция
-							\(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\) непрерывно
-							дифференцируема на \( \Gamma \) и
-								ее производная может быть вычислена по правилу Лейбница. <a class="shortcut" href="#0.3">(0.3)</a> </p>
-								<div class="remark">
-									<p class="margin-top"><span class="em-wide">Замечание</span>. Утверждение теоремы и ее следствия остаются
-										справедливым, если функции
-										\(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) могут
-										быть доопределены по непрерывности в прямоугольнике \(\displaystyle =\left[ a,b \right]\times \left[ {{\gamma 
-										}_{1}},{{\gamma }_{2}} \right]\), \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\subset\) 
-										\( \Gamma \)
-											изменением их значений не более чем на конечном множестве прямых
-											\(\displaystyle x=\text{const}\).
-										</p>
-									</div>
-								</section>
-
 
 								<div class="spoiler">
 									<section class="example">
-										<button class="spoiler-button">Примеры</button>
+										<button class="spoiler-button">Пример 4</button>
 		<div class="spoiler-content">
-			<div class="col-black">
-			</div>
 			<details>
 				<summary class="margin-top">
 					Найдем функцию \(\displaystyle g\left( x \right)=ax+b\),
@@ -565,9 +855,50 @@
 						</p>
 				</p>
 				</div>
-			  </details>
+			  </details></div></section></div>
+			  <div class="spoiler">
+				<section class="example">
+					<button class="spoiler-button">Пример 5</button>
+<div class="spoiler-content">
+	<details>
+		<summary class="margin-top">
+			Вычислим интеграл, применяя дифференцирование по параметру
+			<h3 class="formula">
+				<strong class="float-r" id="0.5">(0.5)</strong> 
+				\(I\left( a \right)=\displaystyle \int\limits_{0}^{\frac{\pi }{2}}
+				{\ln \left( \frac{1+a\cos x}{1-a\cos x} \right)\frac{dx}{\cos x}}, \left| a \right|< 1.\)
+			</h3>
+		</summary>
+		<div class="proof">
+			<p>
+				<div class="col-blue normal">
+						Пусть \( f\left( x,a \right)=\ln \left( \frac{1+a\cos x}{1-a\cos x} \right)\frac{1}{\cos x}\). Так как 
+						\begin{eqnarray*}
+&\underset{x\to \frac{\pi }{2}-0}{\mathop{\lim }}\,f\left( x,a \right)=\underset{x\to
+	 \frac{\pi }{2}-0}{\mathop{\lim }}\,\ln \left( \frac{1+a\cos x}{1-a\cos x} \right)\cdot \frac{1}{\cos x}=\left[ y=\cos x \right]= &\\
+	 &=\underset{y\to +0}{\mathop{\lim }}\,\ln \left( \frac{1+ay}{1-ay} \right)\cdot \frac{1}{y}=\underset{y\to +0}{\mathop{\lim }}\,
+	 \frac{2ay}{1-ay}\cdot \frac{1}{y}=2a,&
+	 \end{eqnarray*}
+подынтегральная функция может быть доопределена до непрерывной на произвольном прямоугольнике 
+\(  \varPi \subset \left[ 0,\pi /2 \right]\times \left( -1,1 \right)\).
+<p>Функция \( \frac{\partial f}{\partial a}=\frac{2}{1-{{a}^{2}}{{\cos }^{2}}x}\) непрерывна на произвольном прямоугольнике 
+\[\varPi \subset \left[ 0,\pi /2 \right]\times \left( -1,1 \right)\].</p></div>
+<p>Все условия теоремы о дифференцировании выполнены, поэтому
+\[{I}'\left( a \right)=2\int\limits_{0}^{\pi /2}{\frac{dx}{1-{{a}^{2}}{{\cos }^{2}}x}}=
+\left[ t=\operatorname{tg}x \right]=2\int\limits_{0}^{+\infty }{\frac{dt}{1+{{t}^{2}}-{{a}^{2}}}}=\frac{\pi }{\sqrt{1-{{a}^{2}}}}.\]</p>
+<p>Следовательно, \[I\left( a \right)=\int{\frac{\pi \,da}{\sqrt{1-{{a}^{2}}}}}=\pi \arcsin a+C.\]</p>
+<p>Согласно <a class="shortcut" href="#0.5">(0.5)</a>, \( I\left( 0 \right)=\int\limits_{0}^{\pi /2}{0dx}=0\), а значит, \( I\left( a \right)=\pi \arcsin a\).</p>
+			   </p>
+						</div>
+				</details>
+			</div>
+		</section>
+		</div>
 			  	
-			
+			  <div class="spoiler">
+				<section class="example">
+					<button class="spoiler-button">Пример 6</button>
+<div class="spoiler-content">
 			<div class="col-black">
 				<details>
 					<summary class="margin-top">
@@ -579,10 +910,11 @@
 						<div class="proof">
 					<p>
 						Пусть \(\displaystyle f\left( x,a \right)=\frac{\operatorname{arctg}\left(
-							a\operatorname{tg}x \right)}{\operatorname{tg}x}\).<div class="normal"><span class="col-blue"> Рассмотрим произвольный прямоугольник</span>
-							<span class="col-black">\(\displaystyle \varPi \subset \left[ 0,\pi /2 \right]\times \mathbb{R}\).</span><span class="col-blue">Так как</span>
-								<span class="col-blue">
-									<span class="col-black">
+							a\operatorname{tg}x \right)}{\operatorname{tg}x}\).
+							<div class="normal"><span class="col-blue"> Рассмотрим произвольный прямоугольник</span>
+							\(\displaystyle \varPi \subset \left[ 0,\pi /2 \right]\times \mathbb{R}\).
+
+							Так как
 										\begin{eqnarray*}
 									 \underset{x\to 0+}{\mathop{\lim }}\,f\left( 
 									x,a \right)=\underset{x\to 0+}{\mathop{\lim }}\,\frac{\operatorname{arctg}\left( 
@@ -591,10 +923,8 @@
 									\frac{\pi }{2}-0}{\mathop{\lim }}\,\frac{\operatorname{arctg}\left( a\operatorname{tg}x 
 									\right)}{\operatorname{tg}x}=0,
 									\end{eqnarray*}
-								</span>
-									подынтегральную функцию можно доопределить до непрерывной на <span class="col-black">\(\displaystyle П\)</span> функции:
-	
-									<span class="col-black">
+									подынтегральную функцию можно доопределить до непрерывной на 
+									\(\displaystyle \varPi\)функции:
 									\begin{eqnarray*}
 									\tilde{f}\left( x,a \right)= \begin{cases}
 									a,x=0,\\
@@ -602,24 +932,27 @@
 									0,\,\,x=\pi /2.
 									\end{cases} 
 									\end{eqnarray*} </div>
-									
-									
-								</span>
-									<p>Функции <span class="col-black">\(\displaystyle \tilde{f}\left( x,a \right)\), \(\displaystyle \frac{\partial 
+								<span class="col-blue normal"> Функции \(\displaystyle \tilde{f}\left( x,a \right)\),
+										 \(\displaystyle \frac{\partial 
 									\tilde{f}\left( x,a \right)}{\partial a}\,=\,\frac{1}{1\,+\,{{a}^{2}}{{\operatorname{tg}}^
-									{2}}x}\)</span> непрерывны на <span class="col-black">\(\displaystyle П\)</span>, 
-									поэтому<span class="col-black"> в силу теоремы 11 с учетом замечания, получим</span>
+									{2}}x}\) непрерывны на \(\displaystyle \varPi\), 
+									поэтому</span>
+									<p> В силу теоремы 11 с учетом замечания, получим
 									<div class="col-black">
-										\begin{eqnarray*}
-										& {I}'\left( a \right)=\int\limits_{0}^{\pi /2}{\frac{dx}{1+{{a}^{2}}
-										{{\operatorname{tg}}^{2}}x}}=\left[ t=\operatorname{tg}x \right]= &\\
-										& =\int\limits_{0}^{+\infty }{\frac{dt}{\left( 1+{{a}^{2}}{{t}^{2}} 
-										\right)\left( 1+{{t}^{2}} \right)}}=\frac{1}{{{a}^{2}}-1}\int\limits_{0}^{+\infty }
-										{\left( \frac{{{a}^{2}}}{1+{{a}^{2}}{{t}^{2}}}-\frac{1}{1+{{t}^{2}}} \right)dt}=&\\
-										& \displaystyle =\frac{1}{{{a}^{2}}-1}\left. \left( a\,\,\operatorname{arctg}\left( 
-										ta \right)-\operatorname{arctg}t \right) \right|_{0}^{+\infty }=\frac{\pi }{2\left( 
-										{{a}^{2}}-1 \right)}\left( a\operatorname{sign}a-1 \right)
-										\end{eqnarray*}
+										\(\qquad \qquad \qquad 
+										\displaystyle {I}'\left( a \right)=\int\limits_{0}^{\pi /2}{\frac{dx}{1+{{a}^{2}}
+										{{\operatorname{tg}}^{2}}x}}=\left[ t=\operatorname{tg}x \right]
+										 =\int\limits_{0}^{+\infty }{\frac{dt}{\left( 1+{{a}^{2}}{{t}^{2}} 
+										\right)\left( 1+{{t}^{2}} \right)}}\)
+										<a class="tooltip-1">\(=\)<span class="classic">
+											\[ =\frac{1}{{{a}^{2}}-1}\int\limits_{0}^{+\infty }
+										{\left( \frac{{{a}^{2}}}{1+{{a}^{2}}{{t}^{2}}}-\frac{1}{1+{{t}^{2}}} \right)dt}=\]
+										\[ \displaystyle =\frac{1}{{{a}^{2}}-1}\left. \left( a\,\,\operatorname{arctg}\left( 
+										ta \right)-\operatorname{arctg}t \right) \right|_{0}^{+\infty }=\]
+										 </span></a>
+										
+										\(\displaystyle \frac{\pi }{2\left( 
+										{{a}^{2}}-1 \right)}\left( a\operatorname{sign}a-1 \right)\)
 										<p>Следовательно, </p>
 										\begin{eqnarray*}
 										& I\left( a \right)-I\left( 0 \right)=\int\limits_{0}^{a}{\frac{\pi \left( 
@@ -639,7 +972,12 @@
 							</p>
 						</div>
 				</details>
-			</div>
+			</div></div></section></div>
+
+			<div class="spoiler">
+				<section class="example">
+					<button class="spoiler-button">Пример 7</button>
+<div class="spoiler-content">
 			<div class="col-black">
 				<details>
 					<summary class="margin-top">
@@ -735,498 +1073,7 @@
 				</p>
 				</div>
 			  </details>
-			</div>
-			
-
-			<div class="col-black">
-				<details>
-					<summary class="margin-top">
-						Применяя дифференцирование по параметру, вычислить интеграл 
-						<h3 class="formula">
-							<strong class="float-r" id="0.5">(0.5)</strong> 
-							\(I\left( a \right)=\displaystyle \int\limits_{0}^{\frac{\pi }{2}}
-							{\ln \left( \frac{1+a\cos x}{1-a\cos x} \right)\frac{dx}{\cos x}}, \left| a \right|< 1.\)
-						</h3>
-						</summary>
-						<div class="proof">
-					<p>
-						Пусть \( f\left( x,a \right)=\ln \left( \frac{1+a\cos x}{1-a\cos x} \right)\frac{1}{\cos x}\). Так как 
-						\begin{eqnarray*}
-&\underset{x\to \frac{\pi }{2}-0}{\mathop{\lim }}\,f\left( x,a \right)=\underset{x\to
-	 \frac{\pi }{2}-0}{\mathop{\lim }}\,\ln \left( \frac{1+a\cos x}{1-a\cos x} \right)\cdot \frac{1}{\cos x}=\left[ y=\cos x \right]= &\\
-	 &=\underset{y\to +0}{\mathop{\lim }}\,\ln \left( \frac{1+ay}{1-ay} \right)\cdot \frac{1}{y}=\underset{y\to +0}{\mathop{\lim }}\,
-	 \frac{2ay}{1-ay}\cdot \frac{1}{y}=2a,&
-	 \end{eqnarray*}
-подынтегральная функция может быть доопределена до непрерывной на произвольном прямоугольнике 
-\(  \varPi \subset \left[ 0,\pi /2 \right]\times \left( -1,1 \right)\).
-<p>Функция \( \frac{\partial f}{\partial a}=\frac{2}{1-{{a}^{2}}{{\cos }^{2}}x}\) непрерывна на произвольном прямоугольнике 
-\[\varPi \subset \left[ 0,\pi /2 \right]\times \left( -1,1 \right)\].</p>
-<p>Все условия теоремы 2 выполнены, поэтому
-\[{I}'\left( a \right)=2\int\limits_{0}^{\pi /2}{\frac{dx}{1-{{a}^{2}}{{\cos }^{2}}x}}=
-\left[ t=\operatorname{tg}x \right]=2\int\limits_{0}^{+\infty }{\frac{dt}{1+{{t}^{2}}-{{a}^{2}}}}=\frac{\pi }{\sqrt{1-{{a}^{2}}}}.\]</p>
-<p>Следовательно, \[I\left( a \right)=\int{\frac{\pi \,da}{\sqrt{1-{{a}^{2}}}}}=\pi \arcsin a+C.\]</p>
-<p>Согласно <a class="shortcut" href="#0.5">(0.5)</a>, \( I\left( 0 \right)=\int\limits_{0}^{\pi /2}{0dx}=0\), а значит, \( I\left( a \right)=\pi \arcsin a\).</p>
-               </p>
-						</div>
-				</details>
-			</div>
-
-
-
-
-
-		    </div>
-			</section>
-			</div>
-								<section class="theorem">
-									<details>
-									  <summary class="margin-top">
-										<strong>Теорема 10 (Непрерывность). </strong> Пусть \(\displaystyle
-										f(x,\gamma ) \in\)
-										<a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
-											\(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
-										</span></a>\((\)<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
-											\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
-							{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-										</span></a>\(),\) 
-										 \(\displaystyle a(\gamma )\in \mathbb{C} \left( \left[ {{\gamma
-										 }_{1}},{{\gamma }_{2}} \right] \right),\)
-										   \(\displaystyle b(\gamma ) \in \mathbb{C} \left( \left[ {{\gamma
-										   }_{1}},{{\gamma }_{2}} \right] \right).\)
-										 Тогда функция \(\displaystyle I(\gamma
-										)=\int\limits_{a(\gamma )} ^{b(\gamma )}{f(x,\gamma )dx}\) непрерывна
-										на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
-									  </summary>
-									  <p>
-										<div class="proof">
-											Пусть
-											<span class="col-black"
-											  >\(\displaystyle {{\gamma }_{0}}\in \left[ {{\gamma
-											  }_{1}},{{\gamma }_{2}} \right]\)</span
-											>
-											– фиксировано. Представим
-											<span class="col-black">\(\displaystyle I(\gamma )\)</span> в
-											виде:
-											  <span class="col-black">
-												<h3 class="formula">
-													<strong class="float-r" id="0.6">(0.6)</strong></span>
-													  \( \displaystyle I(\gamma )\,=\,\int\limits_{a({{\gamma
-													  }_{0}})}^{b({{\gamma }_{0}})} {f(x,\gamma
-													  )dx}+\,\int\limits_{b({{\gamma }_{0}})}^{b(\gamma
-													  )}{f(x,\gamma )dx}-\,\int\limits_ {a({{\gamma
-													  }_{0}})}^{a(\gamma )}{f(x,\gamma
-													  )dx}\,=\,{{I}_{1}}\,+\,{{I}_{2}}\,+\,{{I}_{3}}.\)
-													</h3>
-												</span>
-										  <p>
-											Так как
-											<span class="col-black">\(\displaystyle {{I}_{1}}\)</span> –
-											интеграл, зависящий от параметра
-											<span class="col-black">\(\displaystyle \gamma \)</span>, с
-											постоянными пределами интегрирования и с непрерывной
-											подынтегральной функцией, то в силу теоремы 9
-											<a class="tooltip-1">о непрерывности<span class="classic">
-																Если \(\displaystyle f(x,\gamma )\in \mathbb{C} \)
-												\(\left( \left[ a,b \right]\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \right)\), то
-												функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\) непрерывна на \(\displaystyle
-												\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
-															</span></a>
-											этот интеграл
-											является непрерывной функцией от
-											<span class="col-black">\(\displaystyle \gamma \)</span> и
-											поэтому
-											<span class="col-black"
-											  >\(\displaystyle \underset{\gamma \to {{\gamma
-											  }_{0}}}{\mathop{\lim }}\,{{I}_{1}}(\gamma )=I({{\gamma
-											  }_{0}})\).</span
-											>
-										  </p>
-										  <p>
-											Пусть
-											<span class="col-black"
-											  >\(\displaystyle M=\underset{}{\mathop{\sup }}\,\left| f\left(
-											  x,\gamma \right) \right|\)</span
-											>, тогда для интегралов
-											<span class="col-black">\(\displaystyle {{I}_{2}}\)</span> и
-											<span class="col-black">\(\displaystyle {{I}_{3}}\)</span>
-											справедливы следующие оценки (теорема о среднем):
-										  </p>
-										  <span class="col-black"
-											>
-											\begin{eqnarray*}
-												\displaystyle \left| \int\limits_{b({{\gamma
-												}_{0}})}^{b(\gamma )}{f(x,\gamma )dx} \right|\le M\left|
-												b(\gamma )-b({{\gamma }_{0}}) \right|,\displaystyle
-												\left| \int\limits_{a({{\gamma } _{0}})}^{a(\gamma
-												)}{f(x,\gamma )dx} \right|\le M\left| a(\gamma )-a({{\gamma
-												}_{0}}) \right|.
-												\end{eqnarray*}
-											<p>
-											  Так как \(\displaystyle a(\gamma ),b(\gamma )\in  \mathbb{C} \)
-											  \(\left( \left[ {{\gamma }_{1}},{{\gamma }_ {2}}
-											  \right] \right)\), то
-											</p>
-											\begin{eqnarray*}
-												\displaystyle \underset{\gamma \to {{\gamma
-												}_{0}}}{\mathop{\lim }}\,\left| b(\gamma ) -b({{\gamma
-												}_{0}}) \right|=0 \text{и} \displaystyle \underset{\gamma \to
-												{{\gamma }_{0}}} {\mathop{\lim }}\,\left| a(\gamma
-												)-a({{\gamma }_{0}}) \right|=0,
-											\end{eqnarray*}
-											</span
-										  >
-										  а значит,
-										  <span class="col-black">
-											\( \displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop
-											{\lim }}\,{{I}_{2}}=0\), \(\displaystyle \underset{\gamma \to
-											{{\gamma }_{0}}} {\mathop{\lim }}\,{{I}_{3}}=0\).</span
-										  >
-										  <p>
-											Следовательно, предел правой части
-											<a class="shortcut" href="#0.6">(0.6)</a> при
-											<span class="col-black"
-											  >\(\displaystyle \gamma \to {{\gamma }_{0}}\)</span
-											>
-											существует и равен
-											<span class="col-black"
-											  >\(\displaystyle I\left( {{\gamma }_{0}} \right)\)</span
-											>, т.е. функция
-											<span class="col-black"
-											  >\(\displaystyle I\left( \gamma \right)\)</span
-											>
-											непрерывна в любой точке
-											<span class="col-black"
-											  >\(\displaystyle {{\gamma }_{0}}\in \left[ {{\gamma
-											  }_{1}},{{\gamma }_{2}} \right]\).</span
-											>
-										  </p>
-										</div>
-									  </p>
-									</details>
-								  </section>
-							
-								  <section class="consequence">
-									<p class="margin-top">
-									  <strong>Следствие (Предельный переход). </strong>Если \(\displaystyle
-									  a(\gamma )\,\in \, \mathbb{C} \)
-									  \( (\)
-									  <a class="tooltip-1">\( \Gamma \)<span class="classic"
-										  >Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-										  луч, числовая ось).</span
-										></a
-									  >
-									  \()\), \(\displaystyle b(\gamma )\,\in \,\mathbb{C}( \Gamma )\);
-									</p>
-									\begin{eqnarray*}
-										\displaystyle f(x,\gamma )\in \mathbb{C}\left( \left[ a,b
-										\right]\times \Gamma \right), \displaystyle \forall \gamma \in
-										\Gamma\,\,\left\{ \begin{matrix} a\le a\left( \gamma \right)\le b, \\
-										a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
-									\end{eqnarray*}
-									<p>
-									  то \(\displaystyle \forall {{\gamma }_{0}}\in \)
-									  <a class="tooltip-1">\(\operatorname{int} \Gamma \)<span class="classic"
-										  >Внутренние точки множества \(\Gamma\)</span
-										></a
-									  >
-									  справедливо равенство
-									</p>
-									<h3 class="formula">
-										<strong class="float-r" id="0.7">(0.7)</strong>
-										\( \displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim
-											}}\,\int\limits_{a(\gamma )}^{b(\gamma )}{f(x,\gamma
-											)dx}=
-											\int\limits_{\lim\limits_{\gamma \to \gamma_0}{a(\gamma )}}
-											^{\lim\limits_{\gamma \to \gamma_0}{b(\gamma )}}
-											{\left( \underset{\gamma \to
-											{{\gamma }_{0}}}{\mathop{\lim }}\,f(x,\gamma )
-											\right)dx}
-											=\int\limits_{a({{\gamma }_{0}})}^{b({{\gamma }_{0}})}
-											{f(x,{{\gamma }_{0}})dx}.\)
-										</h3>
-									<p>
-									  Если \(\displaystyle {{\gamma }_{0}}\in\)
-									  <a class="tooltip-1">\( \partial \Gamma \)<span class="classic"
-										  >Граничные точки (граница) множества \(\displaystyle \Gamma
-										  \)</span
-										></a
-									  >
-									  \( \bigcap\)
-									  <a class="tooltip-1">\( \Gamma \)<span class="classic"
-										  >Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-										  луч, числовая ось).</span
-										></a
-									  >, то в выражении <a class="shortcut" href="#0.7">(0.7)</a> все
-									  пределы надо заменить на соответствующие односторонние.
-									</p>
-								  </section>
-
-
-								  <section class="example">
-									<div class="spoiler">
-									  <button class="spoiler-button">
-										Пример 5
-									  </button>
-									  <div class="spoiler-content">
-										<div class="col-black">
-										  <details>
-											<summary class="margin-top">
-											  Вычислим \(\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
-											  }}\, \int\limits_{1-\gamma }^{\pi \gamma }{\sqrt{1-{{\gamma
-											  }^{2}}{{\sin }^{2}}x}\,dx}\).
-							
-											</summary>
-											<div class="normal">
-											<p>
-											  <span class="col-blue">Для вычисления предела достаточно, чтобы требования
-											  предельного перехода выполнялись в некоторой окрестности
-											  предельного значения. Пусть</span
-											> \(\displaystyle
-											\gamma \in \left[ 0,1 \right] \),
-											<span class="col-blue">тогда</span> \(\displaystyle 1-\gamma \in  \mathbb{C} \)
-											\(\left( \left[ 0,1 \right] \right)\), \(\displaystyle \pi \gamma
-											\in \mathbb{C}\left( \left[ 0,1 \right] \right)\), \(\displaystyle
-											\sqrt{1-{{\gamma }^{2}}{{\sin }^{2}}x}\in \mathbb{C}\left(
-											\left[ 0,\pi \right]\times \left[ 0,1 \right] \right)\), \(\displaystyle
-											0\le 1-\gamma \le 1\le \pi \), \(\displaystyle 0\le \pi \gamma
-											\le \pi \), <span class="col-blue">а значит,</span>
-											\begin{eqnarray*}
-											\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
-											  }}\,\int\limits_{1-\gamma }^{\pi \gamma } {\sqrt{1-{{\gamma
-											  }^{2}}{{\sin }^{2}}x}\,dx}=\int\limits_{0}^{\pi
-											  }{\sqrt{1-{{\sin }^{2}}x}\,dx}=\int\limits_ {0}^{\pi }{\left|
-											  \cos x \right|\,dx}=2.
-											  \end{eqnarray*}
-							
-											</p></div>
-										  </details>
-										</div>
-									  </div>
-									</div>
-								  </section>
-								  <section class="theorem">
-        
-									<details>
-									  <summary class="margin-top">
-										<strong>Теорема 11 (Дифференцируемость). </strong>Если
-										<p class="margin-top">
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) \(\displaystyle
-											f(x,\gamma ) \in\)
-											<a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
-												\(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
-											</span></a>
-											\((\)<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
-												\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
-								{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-											</span></a>\(),\)
-										</p>
-											<p class="margin-top">
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											2) \(\displaystyle \frac{\partial f(x,\gamma )}{\partial
-										\gamma }\in \mathbb{C} (\displaystyle \varPi),\) </p>
-										<p class="margin-top">
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										3) \(\displaystyle
-										a(\gamma )\) и \(\displaystyle b(\gamma )\) дифференцируемы на
-										\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right],\)</p>
-										 то функция
-										\(\displaystyle I(\gamma )\,=\,\int\limits_{a(\gamma )}^{b(\gamma
-										)}{f(x,\gamma )dx}\) дифференцируема на \(\displaystyle \left[
-										{{\gamma }_{1}},{{\gamma }_{2}} \right]\) и
-										<h3 class="formula">
-											<strong class="float-r" id="0.8">(0.8)</strong>
-											\( \displaystyle {I}'(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma
-												)}{\frac{\partial f\left( x,\gamma \right)}{\partial \gamma
-												}dx}+{b}'(\gamma )\cdot f(b(\gamma ),\gamma )-{a}'(\gamma )\cdot
-												f(a(\gamma ), \gamma ). \)
-											</h3>
-									</summary>
-									  <p>
-										<div class="proof normal">
-										  <div class="col-blue">
-											<p>
-											  Пусть
-											  <span class="col-black"
-												>\(\displaystyle {{\gamma }_{0}}\in \left[ {{\gamma
-												}_{1}},{{\gamma }_{2}} \right]\)</span
-											  >
-											  – фиксировано. Представим
-											  <span class="col-black">\(\displaystyle I(\gamma )\)</span> в
-											  виде <a class="shortcut" href="#0.6">(0.6)</a>
-											</p>
-											<p>
-											  <span class="col-black">\(\displaystyle {{I}_{1}}\)</span> –
-											  интеграл, зависящий от параметра
-											  <span class="col-black">\(\displaystyle \gamma \)</span>, с
-											  постоянными пределами интегрирования и с непрерывной
-											  подынтегральной функцией, поэтому, в силу теоремы 9
-											  <a class="tooltip-1">о дифференцируемости<span class="classic">
-												Если функции \(\displaystyle 
-												f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) – непрерывны на 
-												прямоугольнике \(\displaystyle \varPi\),
-												 то функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\) непрерывно
-												дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и ее производная 
-												может быть вычислена по правилу Лейбница:
-												\[ \displaystyle {I}'\left( \gamma  \right)=\int\limits_{a}^{b}{\frac{\partial f(x,\gamma 
-													)}{\partial \gamma }dx}.\] 
-											</span></a>, функция
-											  <span class="col-black"
-												>\(\displaystyle {{I}_{1}}\left( \gamma \right)\)</span
-											  >
-											  дифференцируема на
-											  <span class="col-black"
-												>\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}}
-												\right]\)</span
-											  >
-											  и
-											</p>
-												<span class="col-black">
-												\begin{eqnarray*}
-												  \displaystyle \frac{d{{I}_{1}}\left( {{\gamma }_{0}}
-												  \right)}{d\gamma }=\int\limits_ {a\left( {{\gamma }_{0}}
-												  \right)}^{b\left( {{\gamma }_{0}} \right)}{\frac{\partial
-												  f(x,{{\gamma }_{0}} )}{\partial \gamma }dx}.
-												  \end{eqnarray*}
-												  </span>
-											<p>
-											  По определению производной для функции
-											  <span class="col-black"
-												>\(\displaystyle {{I}_{2}}\left( \gamma \right)\)</span
-											  >
-											  получим
-											</p>
-												<span class="col-black"
-												  >
-												  \begin{eqnarray*}
-												  \displaystyle \frac{d{{I}_{2}}\left( {{\gamma }_{0}}
-												  \right)}{d\gamma }=\underset{\gamma \to {{\gamma
-												  }_{0}}}{\mathop{\lim }}\,\frac{\int\limits_{b\left( {{\gamma
-												  }_{0}} \right)}^{b\left( \gamma \right)}{f(x,\gamma
-												  )dx}}{\gamma -{{\gamma }_{0}}}.
-												  \end{eqnarray*}
-												  </span
-												>
-											<p>По формуле среднего значения</p>
-												<span class="col-black"
-												  >
-												  \begin{eqnarray*}
-												  \displaystyle \int\limits_{b\left( {{\gamma }_{0}}
-												  \right)}^{b\left( \gamma \right)}{f(x,\gamma
-												  )dx}=f(\tilde{x},\gamma )\left( b\left( \gamma
-												  \right)-b\left( {{\gamma }_{0}} \right) \right),
-												  \displaystyle \tilde{x}\in \left[ b\left( {{\gamma }_{0}}
-												  \right),b\left( \gamma \right) \right].
-												  \end{eqnarray*}
-												  </span
-												>
-							  
-											<p>
-											  Из непрерывности функции
-											  <span class="col-black">\(\displaystyle f(x,\gamma )\)</span>
-											  следует, что
-											</p>
-												<span class="col-black"
-												  >
-												  \begin{eqnarray*}
-												  \displaystyle \underset{\gamma \to {{\gamma
-												  }_{0}}}{\mathop{\lim }}\, f(\tilde{x},\gamma )=f(b\left(
-												  {{\gamma }_{0}} \right),{{\gamma }_{0}});
-												  \end{eqnarray*}
-												  </span
-												>
-											а из дифференцируемости функции
-											<span class="col-black">\(\displaystyle b(\gamma )\)</span>
-											следует, что
-												<span class="col-black"
-												  >
-												  \begin{eqnarray*}
-												  \displaystyle \underset{\gamma \to {{\gamma
-												  }_{0}}}{\mathop{\lim }}\,\frac{b\left( \gamma
-												  \right)-b\left( {{\gamma }_{0}} \right)}{\gamma -{{\gamma
-												  }_{0}}}={b}'\left( {{\gamma }_{0}} \right).
-												  \end{eqnarray*}
-												  </span
-												>
-											<p>Поэтому</p>
-												<span class="col-black">
-												  \begin{eqnarray*}
-												  & \displaystyle \frac{d{{I}_{2}}\left( {{\gamma }_{0}}
-												  \right)}{d\gamma }=\underset{\gamma \to {{\gamma
-												  }_{0}}}{\mathop{\lim }}\,\frac{f(\tilde{x},\gamma )\left(
-												  b\left( \gamma \right)-b\left( {{\gamma }_{0}} \right)
-												  \right)}{\gamma -{{\gamma }_{0}}}= &\\
-												  & \displaystyle =\underset{\gamma \to {{\gamma
-												  }_{0}}}{\mathop{\lim }}\,\left( f(\tilde{x},\gamma
-												  )\frac{b\left( \gamma \right)-b\left( {{\gamma }_{0}}
-												  \right)}{\gamma -{{\gamma }_{0}}} \right)={b}'\left(
-												  {{\gamma }_{0}} \right)f(b\left( {{\gamma }_{0}}
-												  \right),{{\gamma }_{0}}). &
-												  \end{eqnarray*}
-											<p>
-												<span class="col-blue">Аналогично доказывается, что</span>
-											  <span class="col-black"
-												>\(\displaystyle \frac{d{{I}_{3}}\left( {{\gamma }_{0}}
-												\right)}{d\gamma }={a}'\left( {{\gamma }_{0}} \right)f(a\left(
-												{{\gamma }_{0}} \right),{{\gamma }_{0}})\).</span
-											  >
-											</p>
-											<p>
-												<span class="col-blue">
-											  Так как
-											  <span class="col-black">\(\displaystyle {{\gamma }_{0}}\)</span>
-											  произвольная точка сегмента
-											  <span class="col-black"
-												>\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}}
-												\right]\)</span
-											  >, то можно утверждать, что функция
-											  <span class="col-black"
-												>\(\displaystyle I(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma
-												)}{f(x,\gamma )dx}\)</span
-											  >
-											  дифференцируема на всем сегменте
-											  <span class="col-black"
-												>\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}}
-												\right]\)</span
-											  >
-											  и ее производная может быть вычислена по формуле
-											  <a class="shortcut" href="#0.8">(0.8)</a> .
-											</span>
-											</p>
-										  </div>
-							
-										</div>
-									  </p>
-									</details>
-								  </section>
-
-								  <div class="spoiler">
-									<section class="example">
-									  <button class="spoiler-button">Пример 6</button>
-									  <div class="spoiler-content">
-										<div class="col-black">
-										  <details>
-											<summary class="margin-top">
-											  Вычислим \(\displaystyle {I}'\left( a \right)\), если
-											  \(\displaystyle I\left( a
-											  \right)=\int\limits_{0}^{{{a}^{3}}}{\frac{\ln \left( 1+ax
-											  \right)}{x}dx}\).
-											</summary>
-											<p>
-											  \(\displaystyle {I}'\left( a
-										  \right)=\int\limits_{0}^{{{a}^{3}}}{\frac{x}{\left( 1+ax
-										  \right)x}dx}+ 3{{a}^{2}}\cdot \frac{\ln \left( 1+a\cdot {{a}^{3}}
-										  \right)}{{{a}^{3}}}=
-											\left. \frac{\ln \left( 1+ax
-											\right)}{a} \right|_{0}^ {{{a}^{3}}}+\frac{3\ln \left(
-											1+{{a}^{4}} \right)}{a}=\frac{4\ln \left( 1+{{a}^{4}}
-											\right)}{a}\).
-											</p>
-										  </details>
-										</div>
-									  </div>
-									</section>
-								</div>
-								
+			</div></div></section></div>
 
 	</main>
 	<footer class="footer">
