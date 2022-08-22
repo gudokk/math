@@ -112,18 +112,18 @@
 
          <h2 class="centered">Свойства равномерно сходящихся интегралов</h2>
          <p class="margin-top">
-         \(\Gamma\)– произвольный промежуток (интервал, полуинтервал, отрезок, луч, числовая ось).
+         Пусть \(\Gamma\)– произвольный промежуток (интервал, полуинтервал, отрезок, луч, числовая ось). Тогда
          </p>
          <div>
             <p class="margin-top">1. Если интегралы \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) и \(\displaystyle
                \int\limits_{a}^{\mathbf{B}}{g(x,\gamma )dx}\) равномерно сходятся на \( \Gamma \), то и
                интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\left( \alpha f(x,\gamma )+\beta g(x,\gamma )
-               \right)dx}\), \(\displaystyle \alpha ,\beta \in \mathbb{R}\) равномерно сходится на \( \Gamma \)
+               \right)dx}\), \(\displaystyle \alpha ,\beta \in \mathbb{R}\) равномерно сходится на \( \Gamma \);
                </p>
                <p class="margin-top">2. Если интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) равномерно сходится на
-                  \( \Gamma \), то он равномерно сходится на любом \( \Gamma \).</p>
+                  \( \Gamma \), то он равномерно сходится на любом \(A \subset \Gamma \);</p>
                <p class="margin-top">3. Если интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) <em>сходится</em> на
-                  \( \Gamma \) и сходится неравномерно на некотором \( \Gamma \), то он
+                  \( \Gamma \) и сходится неравномерно на некотором \(A \subset \Gamma \), то он
                сходится неравномерно и на \( \Gamma \).</p>
                <p class="margin-top">4. Если интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) равномерно сходится на
                каждом из множеств \(\displaystyle {{\Gamma }_{1}}\), \(\displaystyle {{\Gamma }_{2}}\), то он равномерно
@@ -137,13 +137,13 @@
                несобственном интеграле).</strong>
                Пусть \(\displaystyle f:\left[ a,\mathbf{B} \right)\times\) <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
                   луч, числовая ось).</span></a>
-               \( \to \mathbb{R}\), \(\displaystyle g:\left[ a,\mathbf{B} \right)\to \mathbb{R}\), \(\displaystyle
+               \( \to \mathbb{R}\), \(\displaystyle g:\left[ a,\mathbf{B} \right)\to \mathbb{R}\),<br> \(\displaystyle
                {{\gamma }_{0}}\) – предельная точка множества \( \Gamma \).
             Тогда, если
             <p class="margin-top">1) \(\displaystyle \forall \eta \in \left( a,\mathbf{B} \right)\,\ f\left( x,\gamma
-               \right)\underset{\left[ a,\eta \right]}{\rightrightarrows} g\left( x \right)\) при \(\displaystyle \gamma \to {{\gamma }_{0}} \);</p>
+               \right)\underset{\left[ a,\eta \right]}{\rightrightarrows} g\left( x \right)\) при \(\displaystyle \gamma \to {{\gamma }_{0}} \),</p>
                <p class="margin-top">2) \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) сходится равномерно на
-                  \( \Gamma \).
+                  \( \Gamma \),
             </p>
             <p>то \(\displaystyle \forall {{\gamma }_{0}}\in\) <a class="tooltip-1">\(\displaystyle \operatorname{int}\Gamma \)<span class="classic">Внутренние точки множества \(\displaystyle \Gamma \)</span></a>
                справедливо равенство </p>
@@ -632,7 +632,7 @@
                <span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
                луч, числовая ось).</span></a>,
               где \(\Gamma \) произвольный промежуток,
-               а интеграл \(\displaystyle (\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\)
+               а интеграл \(\displaystyle I(\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\)
                сходится равномерно по параметру \(\gamma \) на промежутке \(\Gamma \)
                (либо на любом сегменте \(\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\subset \Gamma \)),
                 то функция \(I(\gamma )\) непрерывна на \(\Gamma \).
@@ -740,7 +740,7 @@
       <p class="margin-top"><strong>Следствие 2 (достаточный признак неравномерной сходимости). </strong>
       Пусть
       <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-         луч, числовая ось).</span></a> – незамкнутое множество и \(f(x,\gamma )\,\in \qquad\)
+         луч, числовая ось).</span></a> – незамкнутое множество и \(f(x,\gamma )\,\in\)
          <a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
             \(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
          </span></a>\(\Big( \left[ a,\mathbf{B} \right)\,\times \,\) <a class="tooltip-1">\(\overline{\displaystyle Г}\)
