@@ -682,23 +682,23 @@ button {
   background-color: #000000;
 }
 
-.level-normal {
-  color: #000000;
-  background-color: #ffffff;
+.level-normal{
+  color: #276ecb;
+  background-color:#ffffff
 }
 
-.level-normal.active {
-  color: #ffffff;
+.level-normal.active{
+  color:#276ecb;
   background-color: #000000;
 }
 
-.level-hard {
-  color: #000000;
-  background-color: #ffffff;
+.level-hard{
+  color: #cf131d;
+  background-color:#ffffff
 }
 
-.level-hard.active {
-  color: #ffffff;
+.level-hard.active{
+  color:#cf131d;
   background-color: #000000;
 }
 
