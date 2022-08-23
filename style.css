@@ -603,7 +603,6 @@ hr {
   text-decoration: none;
   position: relative;
   text-align: justify;
-  z-index: 99;
 }
 .tooltip-1 span {
   margin-left: -999em;
@@ -639,12 +638,10 @@ hr {
   padding: 0.2em 0 0.6em 0;
 }
 .classic {
-  padding: 0.8em 1em;
-  text-align: left;
-}
-.classic {
   background: #d7d7d7;
   border: 1px solid #808080;
+  padding: 0.8em 1em;
+  text-align: left;
 }
 .statement {
   white-space: pre-wrap;
