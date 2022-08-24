@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Математический анализ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../style.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="hamburger" id="toggle-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="side-menu" id="main-menu">
+        <ul>
+          <li class="sub-menu">
+            <a href="#"
+              >Равномерная по параметру сходимость функции.<img
+                src="../icons/down.png"
+                class="submenu-icon submenu-trigger"
+            /></a>
+            <ul>
+              <li>
+                <a
+                  href="1.1. Критерии равномерной сходимости.html"
+                  >Критерии равномерной сходимости.</a
+                >
+              </li>
+              <li>
+                <a
+                  href="1.2. Свойства равномерно сходящихся функций.html"
+                  >Свойства равномерно сходящихся функций.</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="#"
+              >Интегралы, зависящие от параметра.<img
+                src="../icons/down.png"
+                class="submenu-icon submenu-trigger"
+            /></a>
+            <ul>
+              <li class="sub-menu">
+                <a href="#"
+                  >Собственные интегралы.<img
+                    src="../icons/down.png"
+                    class="submenu-icon submenu-trigger"
+                /></a>
+                <ul>
+				  <li>
+                    <a
+                      href="2.1. Собственные интегралы.html#opr"
+                      >Определение.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="2.1. Собственные интегралы.html#nepreriv"
+                      >Непрерывность и предельный переход.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="2.1. Собственные интегралы.html#integr"
+                      >Интегрируемость.</a
+                    >
+                  <li>
+                    <a
+                      href="2.1. Собственные интегралы.html#diff"
+                      >Дифференцируемость.</a
+                    >
+                  </li>
+                </ul>
+              <li class="sub-menu">
+                <a href="#"
+                  >Несобственные интегралы.<img
+                    src="../icons/down.png"
+                    class="submenu-icon submenu-trigger"
+                /></a>
+                <ul>
+                  <li>
+                    <a
+                      href="2.2.1. Основные определения.html"
+                      >Определение.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="2.2.2. Равномерная сходимость несобственных интегралов.html"
+                      >Равномерная сходимость несобственных
+                      интегралов.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="2.2.3. Признаки равномерной сходимости.html"
+                      >Признаки равномерной сходимости.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="2.2.4. Свойства равномерно сходящихся интегралов.html"
+                      >Свойства равномерно сходящихся интегралов.</a
+                    >
+                  </li>
+                </ul>
+                <li>
+                  <a
+                    href="2.3. Интегралы Эйлера.html"
+                    >Интегралы Эйлера.</a
+                  >
+                </li>
+              </li>
+            </ul>
+          </li>
+          <div id="size">
+            <img src="../icons/enlarge.png" class="size-icon" />
+          </div>
+          <div id="level" class="container">
+            <p><strong>Выберите уровень:</strong></p>
+            <button class='level-easy' type="button">Минимальный</button>
+            <button class='level-normal' type="button">Средний</button>
+            <button class='level-hard' type="button">Углубленный</button>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <main class="main small">
+      <h2 class="centered">Интегралы Эйлера</h2>
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <p><strong>Бета-функция</strong></p>
+              </td>
+              <td>
+                <p><strong>Гамма-функция</strong></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span
+                    >\(\displaystyle B\left( p,q
+                    \right)=\int\limits_{0}^{1}{{{x}^{p-1}}{{\left( 1-x
+                    \right)}^{q-1}}dx}\), \(\displaystyle p&gt;0,\ \
+                    q&gt;0\).</span
+                  >
+                </p>
+              </td>
+              <td>
+                <p>
+                  <strong
+                    >\(\displaystyle Г\left( p \right)=\int\limits_{0}^{+\infty
+                    }{{{e}^{-x}}{{x}^{p-1}}dx}\), \(\displaystyle
+                    p&gt;0\).</strong
+                  >
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p><strong>Другие представления</strong></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span
+                    >\(\displaystyle B\left( p,q
+                    \right)=\int\limits_{0}^{+\infty
+                    }{\frac{{{t}^{q-1}}}{{{\left( 1+t
+                    \right)}^{p+q}}}dt}=\int\limits_{0}^{+\infty
+                    }{\frac{{{t}^{p-1}}}{{{\left( 1+t
+                    \right)}^{p+q}}}dt}\)</span
+                  >
+                </p>
+                <p><span>(подстановка \(\displaystyle x=1/(1+t)\));</span></p>
+                <p>
+                  <span
+                    >\(\displaystyle B\left( p,q \right)=2\int\limits_{0}^{\pi
+                    /2}{{{\left( \sin t \right)}^{2p-1}}{{\left( \cos t
+                    \right)}^{2q-1}}dt}\)</span
+                  >
+                </p>
+                <p>
+                  <span>(подстановка \(\displaystyle x={{\sin }^{2}}t\))</span>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <strong
+                    >\(\displaystyle Г\left( p
+                    \right)=\int\limits_{0}^{1}{{{\left[ \ln \frac{1}{t}
+                    \right]}^{p-1}}dt}\)
+                  </strong>
+                </p>
+                <p>
+                  <span>(</span><span>подстановка</span
+                  ><span> \(\displaystyle t={{e}^{-x}}\)),</span>
+                </p>
+                <p>
+                  <strong
+                    >\(\displaystyle Г\left( p \right)=\int\limits_{-\infty
+                    }^{+\infty }{{{e}^{pt}}{{e}^{-{{e}^{t}}}}dt}\)
+                  </strong>
+                </p>
+                <p><span>(подстановка \(\displaystyle t=\ln x\)).</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>
+                  <strong
+                    >Связь между интегралами Эйлера \(\displaystyle B\left( p,q
+                    \right)=\frac{Г\left( p \right)\cdot Г\left( q
+                    \right)}{\left( p+q \right)}\)</strong
+                  ><span>.</span>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p><span>Непрерывна на всей области определения.</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span>Симметрична</span
+                  ><span>
+                    \(\displaystyle B\left( p,q \right)=B\left( q,p
+                    \right)\).</span
+                  >
+                </p>
+              </td>
+              <td>
+                <p>
+                  <span>Положительна</span
+                  ><span>
+                    \(\displaystyle Г\left( p \right)&gt;0\)<strong>
+                      \(\displaystyle \forall p&gt;0\)</strong
+                    >.</span
+                  >
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <p>
+                  <span>Бесконечно</span><span> </span
+                  ><span>дифференцируема</span><span> </span><span>и</span
+                  ><span> </span>
+                </p>
+                <p>
+                  <strong
+                    >\(\displaystyle Г{{}^{\left( m \right)}}\left( p
+                    \right)=\int\limits_{0}^{+\infty
+                    }{{{e}^{-x}}{{x}^{p-1}}{{\left( \ln x \right)}^{m}}dx}\),
+                    \(\displaystyle m\in \mathbb{N}\)</strong
+                  >
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <p>
+                  <span
+                    >\(\displaystyle \)\(\displaystyle Г\left( p \right)\sim
+                    1/p\) </span
+                  ><span>при</span><span> \(\displaystyle p\to +0\),</span>
+                </p>
+                <p>
+                  <span>\(\displaystyle Г\left( p \right)\to +\infty \) </span
+                  ><span>при</span
+                  ><span> \(\displaystyle p\to +\infty \).</span>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p><span>Формулы приведения</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span
+                    >\(\displaystyle B\left( p,q+1
+                    \right)=\,\frac{q}{p+q}B\left( p,q \right)\),
+                    \(\displaystyle p&gt;0,\ q&gt;0\);</span
+                  >
+                </p>
+                <p>
+                  <span
+                    >\(\displaystyle B\left( p+1,q
+                    \right)=\,\frac{p}{p+q}B\left( p,q \right)\),
+                    \(\displaystyle p&gt;0,\ q&gt;0\).</span
+                  >
+                </p>
+              </td>
+              <td>
+                <p>
+                  <span
+                    >\(\displaystyle Г\left( p+1 \right)=p Г\left( p \right)\),
+                    \(\displaystyle p&gt;0\).</span
+                  >
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p><span>Формула дополнения</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span
+                    >\(\displaystyle B\left( p,1-\,p \right)\,=\,\frac{\pi
+                    }{\sin \pi p}\), \(\displaystyle 0&lt;p&lt;1\).</span
+                  >
+                </p>
+              </td>
+              <td>
+                <p>
+                  <span
+                    >\(\displaystyle \,Г\left( p \right)Г\left( 1-\,p
+                    \right)=\frac{\pi }{\sin \pi p}\), \(\displaystyle
+                    0&lt;p&lt;1\).</span
+                  >
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span
+                    >\(\displaystyle B\left( m,n \right)=\,\frac{\left( n-1
+                    \right)!\left( m-1 \right)!}{\left( m+n-1 \right)!},\ \
+                    m,n\in \mathbb{N}\).</span
+                  >
+                </p>
+              </td>
+              <td>
+                <p>
+                  <span
+                    >\(\displaystyle Г\left( n+1 \right)=n!,\ \ n\in
+                    \mathbb{N}\).</span
+                  >
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span>\(\displaystyle B\left( 1/2,1/2 \right)=\pi \).</span>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <span
+                    >\(\displaystyle Г\left( 1/2 \right)=\sqrt{\pi }\).</span
+                  >
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span
+                    >\(\displaystyle B\left( p,1 \right)=\frac{1}{p}\),
+                    \(\displaystyle B\left( 1,q \right)=\frac{1}{q}\).</span
+                  >
+                </p>
+              </td>
+              <td>
+                <p>
+                  <span
+                    >\(\displaystyle Г\left( n+\frac{1}{2} \right)=\frac{\left(
+                    2n-1 \right)!!}{{{2}^{n}}}\sqrt{\pi },\ \ n\in
+                    \mathbb{N}\).</span
+                  >
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <p>
+                  <span>Формула</span><span> </span><span>удвоения</span
+                  ><span> </span><span>Лежандра</span>
+                </p>
+                <p>
+                  <span
+                    >\(\displaystyle Г\left( p \right)Г\left( p+\frac{1}{2}
+                    \right)=\frac{\sqrt{\pi }}{{{2}^{2p-1}}}Г\left( 2p
+                    \right)\).</span
+                  >
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <p>
+                    <a class="tooltip-1">Формула Стирлинга<span class="classic">Используется также для приближенного вычисления \(\displaystyle
+                        n!\) при больших \(\displaystyle n\).</span></a>
+                </p>
+                <p>
+                  <span
+                    >\(\displaystyle Г\left( p+1 \right)=\sqrt{2\pi
+                    p}{{p}^{p}}{{e}^{-p}}{{e}^{\frac{\theta \left( p
+                    \right)}{12p}}},0&lt;\theta \left( p \right)&lt;1\)..</span
+                  >
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p class="margin-top">
+          <strong
+            ><em
+              ><span
+                >Гамма-функция \(\displaystyle \Gamma\left( p
+                \right)=\int\limits_{0}^{+\infty
+                }{{{e}^{-x}}{{x}^{p-1}}dx}\)</span
+              ></em
+            ></strong
+          >
+          <strong class="float-r">(0.17)</strong>
+        </p>
+        <div class="spoiler">
+          <button class="spoiler-button">
+            1. Сходимость.
+          </button>
+          <div class="spoiler-content">
+            <p class="margin-top">
+              Из теоремы сравнения следует, что при \(\displaystyle p\le 0\)
+              интеграл расходится. Представим функцию \(\displaystyle
+              \Gamma\left( p \right)\) в виде
+            </p>
+            <p>
+                <h3 class="formula">\(\displaystyle \Gamma\left( p
+              \right)=\int\limits_{0}^{1}{{{e}^{-x}}{{x}^{p-1}}dx}+\int\limits_{1}^{+\infty
+              }{{{e}^{-x}}{{x}^{p-1}}dx}={{I}_{1}}\left( p
+              \right)+{{I}_{2}}\left( p \right)\).</h3>
+            </p>
+            <p class="margin-top">
+              1. Так как \(\displaystyle {{e}^{-x}}{{x}^{p-1}}\le {{x}^{p-1}}\)
+              при \(\displaystyle x&gt;0\), а \(\displaystyle
+              \int\limits_{0}^{1}{{{x}^{p-1}}dx}\) сходится при \(\displaystyle
+              p&gt;0\), то и интеграл \(\displaystyle {{I}_{1}}\left( p
+              \right)\) сходится при \(\displaystyle p&gt;0\) (по признаку
+              Вейерштрасса).
+            </p>
+            <p class="margin-top">
+              2. Так как \(\displaystyle \underset{x\to +\infty }{\mathop{\lim
+              }}\,{{e}^{-x}}{{x}^{r}}=0\) при любом \(\displaystyle r\), то из
+              сходимости интеграла \(\displaystyle \int\limits_{1}^{+\infty
+              }{{{x}^{-2}}dx}\) следует сходимость интеграла \(\displaystyle
+              {{I}_{2}}\left( p \right)\) при любом \(\displaystyle p\). (Из
+              определения предела
+            </p>
+            <p>
+                <h3 class="formula">\(\displaystyle \forall r&gt;0\,\,\exists {{x}_{0}}\,\forall
+              x&gt;{{x}_{0}}\ \ {{e}^{-x}}&lt;\frac{1}{{{x}^{r}}}\),</h3>
+            </p>
+            <p>следовательно,</p>
+            <p>
+                <h3 class="formula">\(\displaystyle \forall p&gt;0\,\,\exists {{x}_{0}}\ \forall
+              x&gt;{{x}_{0}}\ \ {{e}^{-x}}&lt;\frac{1}{{{x}^{p+1}}}\ \
+              \Leftrightarrow \ \
+              {{e}^{-x}}{{x}^{p-1}}&lt;\frac{1}{{{x}^{1-p}}}\frac{1}{{{x}^{p+1}}}=\frac{1}{{{x}^{2}}}\)).</h3>
+            </p>
+          </div>
+        </div>
+
+        <div class="spoiler">
+          <button class="spoiler-button">2.  Непрерывность.</button>
+          <div class="spoiler-content">
+            <p class="margin-top">
+              Для доказательства непрерывности \(\displaystyle \Gamma\left( p
+              \right)\) на полупрямой \(\displaystyle p&gt;0\), достаточно
+              установить равномерную сходимость интеграла относительно параметра
+              \(\displaystyle p\) при \(\displaystyle 0\,&lt;\,{{p}_{0}}\,\le
+              \,p\,\le \,{{p}_{1}}\) для любых фиксированных значений
+              \(\displaystyle {{p}_{0}}\) и \(\displaystyle {{p}_{1}}\),
+              удовлетворяющих условию \(\displaystyle 0&lt;{{p}_{0}}\le
+              {{p}_{1}}\).
+            </p>
+            <p class="margin-top">Учитывая, что</p>
+            <p class="margin-top">
+              1) при \(\displaystyle 0&lt;x&lt;1\) \(\displaystyle {{x}^{p}}\le
+              {{x}^{{{p}_{0}}}}&lt;{{x}^{{{p}_{0}}}}+{{x}^{{{p}_{1}}}}\)
+              (степенная функция убывает),
+            </p>
+            <p class="margin-top">
+              2) (т.к. x \(\displaystyle {{x}^{{{p}_{1}}}}&gt;0\))при
+              \(\displaystyle x&gt;1\) \(\displaystyle {{x}^{p}}\le
+              {{x}^{{{p}_{1}}}}&lt;{{x}^{{{p}_{0}}}}+{{x}^{{{p}_{1}}}}\)
+              (степенная функция возрастает),
+            </p>
+            <p>получим:</p>
+            <p>
+                <h3 class="formula">\(\displaystyle \forall x&gt;0\) \(\displaystyle
+              \frac{{{e}^{-x}}}{x}{{x}^{p}}\le \frac{{{e}^{-x}}}{x}\left[
+              {{x}^{{{p}_{0}}}}+{{x}^{{{p}_{1}}}} \right]={{e}^{-x}}\left[
+              {{x}^{{{p}_{0}}-1}}+{{x}^{{{p}_{1}}-1}} \right]\).</h3>
+            </p>
+            <p class="margin-top">
+              Равномерная сходимость интеграла \(\displaystyle \Gamma\left( p
+              \right)\) следует в силу признака Вейерштрасса из сходимости
+              интеграла
+            </p>
+            <p> <h3 class="formula">
+              \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-x}}\left[
+              {{x}^{{{p}_{0}}-1}}+{{x}^{{{p}_{1}}-1}} \right]dx}=\Gamma\left(
+              {{p}_{0}} \right)+\Gamma\left( {{p}_{1}} \right)\).</h3>
+            </p>
+          </div>
+        </div>
+
+        <div class="spoiler">
+          <button class="spoiler-button">3.  Формула приведения.</button>
+          <div class="spoiler-content">
+            <p class="margin-top">
+              Применяя формулу интегрирования по частям для функции
+              \(\displaystyle \Gamma\left( p+1 \right)\)при \(\displaystyle
+              p&gt;0\) получим
+            </p>
+            <p><h3 class="formula">
+              \(\displaystyle \Gamma\left( p+1 \right)=\int\limits_{0}^{+\infty
+              }{{{e}^{-x}}{{x}^{p}}dx}=\left. \left[ -{{e}^{-x}}{{x}^{p}}
+              \right] \right|_{0}^{+\infty }+p\int\limits_{0}^{+\infty
+              }{{{e}^{-x}}{{x}^{p-1}}dx}=p\Gamma\left( p \right)\).</h3>
+            </p>
+          </div>
+        </div>
+        <p class="margin-top">
+          <strong
+            ><em
+              >Бета-функция \(\displaystyle B\left( p,q
+              \right)=\int\limits_{0}^{1}{{{x}^{p-1}}{{\left( 1-x
+              \right)}^{q-1}}dx}\)</em
+            ></strong
+          ><strong class="float-r">(0.16)</strong>
+        </p>
+        <div class="spoiler">
+          <button class="spoiler-button">1. Сходимость.</button>
+          <div class="spoiler-content">
+            <p class="margin-top">
+              Из теоремы сравнения следует, что при \(\displaystyle p\le 0\),
+              \(\displaystyle q\le 0\) интеграл расходится.
+            </p>
+            <p class="margin-top">
+              1. При \(\displaystyle p\ge 1\) и \(\displaystyle q\ge 1\)
+              подынтегральная функция в соотношении непрерывна, поэтому интеграл
+              в правой части является собственным. Следовательно, функция
+              \(\displaystyle B\left( p,q \right)\) определена для всех
+              \(\displaystyle p\ge 1\), \(\displaystyle q\ge 1\).
+            </p>
+            <p class="margin-top">2. Пусть выполняются одно или оба из следующих неравенств</p>
+            <p>\(\displaystyle 0&lt;p&lt;1\), \(\displaystyle 0&lt;q&lt;1\).</p>
+            <p class="margin-top">
+              Тогда одна или обе точки \(\displaystyle x=0\) и \(\displaystyle
+              x=1\) являются особыми точками подынтегральной функции. Представим
+              функцию \(\displaystyle B\left( p,q \right)\) в виде
+            </p>
+            <p><h3 class="formula">
+              \(\displaystyle B\left( p,q
+              \right)=\int\limits_{0}^{1/2}{{{x}^{p-1}}{{\left( 1-x
+              \right)}^{q-1}}dx}+\int\limits_{1/2}^{1}{{{x}^{p-1}}{{\left( 1-x
+              \right)}^{q-1}}dx}={{I}_{1}}\left( p,q \right)+{{I}_{2}}\left( p,q
+              \right)\).</h3>
+            </p>
+            <p class="margin-top">
+              Для интеграла \(\displaystyle {{I}_{1}}\left( p,q \right)\) особой
+              точкой будет точка \(\displaystyle x=0\). На сегменте
+              \(\displaystyle \left[ 0,1/2 \right]\) функция \(\displaystyle
+              {{\left( 1-x \right)}^{q-1}}\) непрерывна и поэтому ограничена
+              некоторой константой \(\displaystyle C\), тогда функция
+              \(\displaystyle C{{x}^{p-1}}\) будет мажорантой для
+              подынтегральной функции интеграла \(\displaystyle {{I}_{1}}\left(
+              p,q \right)\). Отсюда следует, что интеграл \(\displaystyle
+              {{I}_{1}}\left( p,q \right)\) сходится при \(\displaystyle
+              0&lt;p&lt;1\) и любом \(\displaystyle q\). Аналогично
+              доказывается, что интеграл \(\displaystyle {{I}_{2}}\left( p,q
+              \right)\) сходится при \(\displaystyle 0&lt;q&lt;1\) и любом
+              \(\displaystyle p\).
+            </p>
+            <p class="margin-top">
+              Объединяя случаи 1 и 2, получаем, что функция \(\displaystyle
+              B\left( p,q \right)\) определена для \(\displaystyle p&gt;0,\ \
+              q&gt;0\).
+            </p>
+          </div>
+        </div>
+
+        <div class="spoiler">
+          <button class="spoiler-button">2. Непрерывность.</button>
+          <div class="spoiler-content">
+            <p class="margin-top">
+              Для доказательства непрерывности \(\displaystyle B\left( p,q
+              \right)\) в квадранте \(\displaystyle p&gt;0,\ \ q&gt;0\)
+              достаточно доказать равномерную сходимость интеграла относительно
+              параметров \(\displaystyle p\) и \(\displaystyle q\) при
+              \(\displaystyle p\ge {{p}_{0}}&gt;0\) и \(\displaystyle q\ge
+              {{q}_{0}}&gt;0\) для любых фиксированных значений \(\displaystyle
+              {{p}_{0}}\) и \(\displaystyle {{q}_{0}}\). При \(\displaystyle
+              0&lt;x&lt;1\) справедливо неравенство
+            </p>
+            <p><h3 class="formula">
+              \(\displaystyle {{x}^{p-1}}{{\left( 1-x \right)}^{q-1}}\le
+              {{x}^{{{p}_{0}}-1}}{{\left( 1-x \right)}^{{{q}_{0}}-1}}\).</h3>
+            </p>
+            <p class="margin-top">Отсюда из сходимости интеграла</p>
+            <p><h3 class="formula">
+              \(\displaystyle \int\limits_{0}^{1}{{{x}^{{{p}_{0}}-1}}{{\left(
+              1-x \right)}^{{{q}_{0}}-1}}dx}=B\left( {{p}_{0}},{{q}_{0}}
+              \right)\)</h3>
+            </p>
+              вытекает в силу признака Вейерштрасса равномерная сходимость
+              интеграла . Таким образом, непрерывность функции \(\displaystyle
+              B\left( p,q \right)\) в квадранте \(\displaystyle p&gt;0,\ \
+              q&gt;0\) доказана.
+          </div>
+        </div>
+    
+        <div class="spoiler">
+          <button class="spoiler-button">3. Формулы приведения.</button>
+          <div class="spoiler-content">
+            <p class="margin-top">
+              Считая, что \(\displaystyle p&gt;0\), \(\displaystyle q&gt;0\),
+              интегрируем по частям функцию \(\displaystyle B\left( p,q+1
+              \right)\)
+            </p>
+            <p><h3 class="formula">
+              \(\displaystyle \begin{matrix} B\left( p,q+1
+              \right)=\int\limits_{0}^{1}{{{x}^{p-1}}{{\left( 1-x
+              \right)}^{q}}dx}= \\
+               =\left. \left[ \frac{{{x}^{p}}}{p}{{\left(
+              1-x \right)}^{q}} \right]
+              \right|_{0}^{1}+\frac{q}{p}\int\limits_{0}^{1}{{{x}^{p}}{{\left(
+              1-x \right)}^{q-1}}dx}= 
+              \\ =\frac{q}{p}\int\limits_{0}^{1}{\left\{
+              {{x}^{p-1}}{{\left( 1-x \right)}^{q-1}}-{{x}^{p-1}}{{\left( 1-x
+              \right)}^{q}} \right\}dx}= 
+              \\ =\frac{q}{p}B\left( p,q
+              \right)-\frac{q}{p}B\left( p,q+1 \right). \\ \end{matrix}\)</h3>
+            </p>
+            <p class="margin-top">Следовательно,</p>
+            <p><h3 class="formula">
+              \(\displaystyle B\left( p,q+1 \right)=\,\frac{q}{p+q}B\left( p,q
+              \right)\).</h3>
+            </p>
+            <p class="margin-top">
+              Учитывая симметрию функции \(\displaystyle B\left( p,q \right)\),
+              получаем вторую формулу приведения
+            </p>
+            <p><h3 class="formula">
+              \(\displaystyle B\left( p+1,q \right)=\,\frac{p}{p+q}B\left( p,q
+              \right)\).</h3>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="spoiler">
+        <section class="example">   
+        <button class="spoiler-button">Пример 23</button>
+        <div class="spoiler-content">
+           <p class="padding-top">Вычислим интегралы</p>
+           <details>
+             <summary class="margin-top">
+               \(\displaystyle \int\limits_{0}^{1}{{{\left( 1-x
+                 \right)}^{n}}{{x}^{p-1}}\,dx}\), \(\displaystyle p&gt;0\)
+                </summary>
+               <div class="proof">
+               <p>
+                \[ \int\limits_{0}^{1}{{{\left( 1-x
+                  \right)}^{n}}{{x}^{p-1}}\,dx} = B\left( n+1,p
+                  \right) = \frac{\Gamma\left( n+1 \right)\Gamma\left( p
+                  \right)}{\Gamma\left( p+n+1 \right)}=\] \[\displaystyle
+                  \qquad \qquad= \frac{n!\Gamma\left( p \right)}{\left( p+n \right)\left( p+n-1
+                  \right)...\left( p+1 \right)p\Gamma\left( p
+                  \right)}=\frac{n!}{\left( p+n \right)\left( p+n-1 \right)...\left(
+                  p+1 \right)p}\].
+               </p></div></details>
+               <details>
+                 <summary class="margin-top">
+                   \(\displaystyle \int\limits_{-1}^{2}{\frac{dx}{\sqrt[4]{\left( 2-x
+                     \right){{\left( 1+x \right)}^{3}}}}}\)
+                   </summary>
+                    <div class="proof">
+                    <p>
+                       \[\displaystyle \int\limits_{-1}^{2}{\frac{dx}{\sqrt[4]{\left(
+                        2-x \right){{\left( 1+x \right)}^{3}}}}}=\left[ t=\frac{x+1}{3}
+                        \right]=3\int\limits_{0}^{1}{\frac{dt}{\sqrt[4]{3\left( 1-t
+                        \right){{\left( 3t \right)}^{3}}}}}=\]
+                        \[\qquad \displaystyle =\int\limits_{0}^{1}{{{\left( 1-t
+                        \right)}^{-1/4}}{{t}^{-3/4}}dt}=B\left( \frac{3}{4},\frac{1}{4}
+                        \right)=\frac{\pi }{\sin \frac{\pi }{4}}=\pi \sqrt{2}.\]
+                    </p></div></details>
+                    <details>
+                      <summary class="margin-top">
+                    \(\displaystyle
+                    \int\limits_{0}^{1}{\frac{1+{{x}^{2}}}{1+{{x}^{4}}}\,dx}\).
+                    </summary>
+                     <div class="proof">
+                     <p>
+                      Учитывая, что
+                  \[\displaystyle
+                  \int\limits_{0}^{1}{\frac{1+{{x}^{2}}}{1+{{x}^{4}}}\,dx}=\left[
+                  t=\frac{1}{x} \right]=\int\limits_{+\infty
+                  }^{1}{\frac{1+1/{{t}^{2}}}{1+1/{{t}^{4}}}\cdot
+                  \,\frac{-dt}{{{t}^{2}}}}=-\int\limits_{+\infty
+                  }^{1}{\frac{{{t}^{2}}+1}{{{t}^{4}}+1}dt}=\int\limits_{1}^{+\infty
+                  }{\frac{{{t}^{2}}+1}{{{t}^{4}}+1}dt},\]
+                получим,
+                  \[\displaystyle
+                  \int\limits_{0}^{1}{\frac{1+{{x}^{2}}}{1+{{x}^{4}}}\,dx}=\frac{1}{2}\int\limits_{0}^{+\infty
+                  }{\frac{{{t}^{2}}+1}{{{t}^{4}}+1}dt}=\left[ y={{t}^{4}} \right]=\]
+                  \[\displaystyle =\frac{1}{8}\int\limits_{0}^{+\infty
+                  }{\frac{{{y}^{1/2}}+1}{y+1}\cdot
+                  \frac{{{y}^{-3/4}}}{4}dy}\displaystyle=\frac{1}{8}\int\limits_{0}^{+\infty }{\left(
+                  \frac{{{y}^{-1/4}}}{y+1}+\frac{{{y}^{-3/4}}}{y+1} \right)dy}=\]
+                  \[\displaystyle =\frac{1}{8}\left( B\left( \frac{3}{4},\frac{1}{4}
+                  \right)+B\left( \frac{1}{4},\frac{3}{4} \right)
+                  \right)=\frac{1}{4}\frac{\pi }{\sin \frac{\pi }{4}}=\frac{\pi
+                  \sqrt{2}}{4}.\]
+                     </p></div></details>
+        </div>			
+        </section>
+     </div>
+
+    </main>
+<br>
+    <footer class="footer">
+      <p>Учебные материалы</p>
+      <p>Автор материалов - Рояк Светлана Хаимовна.</p>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+</html>
