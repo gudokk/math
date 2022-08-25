@@ -145,6 +145,7 @@
 			\[\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx},\] называемая <strong><em>интегралом, зависящим
 				от параметра</em></strong> \(\displaystyle \gamma \).
 		</p>
+		
 		<h2 class="centered" >Общий случай</h2><br>
 		<div class="textcols">
 			<div class="textcols-item">
@@ -241,14 +242,14 @@
 												\forall \gamma \,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \quad
 												\displaystyle \left| \gamma \,-\,{{\gamma }_{0}} \right|\,&lt;\,\delta \ \Rightarrow
 												\ \left| f(x,\gamma )\,-\,f(x,{{\gamma }_{0}}) \right|\,&lt;\,\frac{\varepsilon
-												}{b\,-\,a}.\]
+												}{b(\gamma_0)\,-\,a(\gamma_0)}.\]
 											</span>
 											<p>Следовательно,</p>
 											<span class="col-black">
 												\[\displaystyle \left| \Delta I_1 \right|\,=\,\left| I_1\left( \gamma \right)\,-\,I_1
-												\left( {{\gamma }_{0}} \right) \right|\,\le \,\int\limits_{a}^{b}{\left| f\left( x,\gamma
+												\left( {{\gamma }_{0}} \right) \right|\,\le \,\int\limits_{a(\gamma_0)}^{b(\gamma_0)}{\left| f\left( x,\gamma
 												\right)\,-\,f\left( x,{{\gamma }_{0}} \right) \right|dx\,<}
-												\frac{\varepsilon }{b\,-\,a} \left( b\,-\,a \right)\,=\,\varepsilon,\]
+												\frac{\varepsilon }{b(\gamma_0)\,-\,a(\gamma_0)} \left({b(\gamma_0)\,-\,a(\gamma_0)} \right)\,=\,\varepsilon,\]
 											</span>
 											а значит, 
 											\[ \displaystyle\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,I_1(\gamma )=I(\gamma_0 ) \]
@@ -410,6 +411,68 @@
 							луч, числовая ось).</span></a> изменением ее значений не более чем
 						на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
 				</section>
+					<p class="margin-top">
+					  Вычислим \(\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
+					  }}\, \int\limits_{1-\gamma }^{\pi \gamma }{\sqrt{1-{{\gamma
+					  }^{2}}{{\sin }^{2}}x}\,dx}\).
+	
+					</p>
+
+				<div class="textcols">
+					<div class="textcols-item">
+						<section class="example">
+							<div class="normal">
+							<div class="spoiler">
+							  <button class="spoiler-button">
+								Решение
+							  </button>
+							  <div class="spoiler-content">
+								  <p>
+									  <span class="col-blue">Для вычисления предела достаточно, чтобы требования
+										  предельного перехода выполнялись в некоторой окрестности
+									  предельного значения. Пусть</span
+									  > \(\displaystyle
+									  \gamma \in \left[ 0,1 \right] \),
+									  <span class="col-blue">тогда</span> \(\displaystyle 1-\gamma \in  \mathbb{C} \)
+									  \(\left( \left[ 0,1 \right] \right)\), \(\displaystyle \pi \gamma
+									  \in \mathbb{C}\left( \left[ 0,1 \right] \right)\), \(\displaystyle
+									  \sqrt{1-{{\gamma }^{2}}{{\sin }^{2}}x}\in \mathbb{C}\left(
+										  \left[ 0,\pi \right]\times \left[ 0,1 \right] \right)\), \(\displaystyle
+										  0\le 1-\gamma \le 1\le \pi \), \(\displaystyle 0\le \pi \gamma
+										  \le \pi \), <span class="col-blue">а значит,</span>
+										  \[ \displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
+										  }}\,\int\limits_{1-\gamma }^{\pi \gamma } {\sqrt{1-{{\gamma
+										  }^{2}}{{\sin }^{2}}x}\,dx}=\]
+										  \[=\int\limits_{0}^{\pi
+										  }{\sqrt{1-{{\sin }^{2}}x}\,dx}=\int\limits_ {0}^{\pi }{\left|
+											\cos x \right|\,dx}=2.\]
+											
+										</p></div>
+									</div>
+							  </div>
+							</div>
+						  </section>
+					<div class="textcols-item">
+						<section class="example">
+							<div class="normal">
+							<div class="spoiler">
+							  <button class="spoiler-button">
+								Ответ
+							  </button>
+							  <div class="spoiler-content">
+								<span>
+									\(\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
+									  }}\,\int\limits_{1-\gamma }^{\pi \gamma } {\sqrt{1-{{\gamma
+									  }^{2}}{{\sin }^{2}}x}\,dx}=2\).
+
+								</span>
+							  </div>
+							</div>
+							</div>
+						  </section>
+					</div>
+				</div>
+
 				<section class="example">
 					<div class="spoiler">
 					  <button class="spoiler-button">
@@ -658,7 +721,7 @@
 					<p>
 						Рассмотрим функцию
 						\(\displaystyle g\left( \gamma   
-						\right)\,=\,\int\limits_{a}^{b}{\frac{\partial f(x,\gamma )}
+						\right)\,=\,\int\limits_{a(\gamma_0)}^{b(\gamma_0)}{\frac{\partial f(x,\gamma )}
 						{\partial \gamma }dx}\), \(\displaystyle \gamma \,\in \,\left[ {{\gamma }_{1}},
 						{{\gamma }_{2}} \right]\).
 					</p>
@@ -670,14 +733,15 @@
 		\right)\in \mathbb{C}\left( \left[ {{\gamma }_{1}},{{\gamma }_{2}}
 		\right] \right)\)<span class="col-blue"> и</span></p>
 		\[ \displaystyle \int\limits_{{{\gamma }_{1}}}^{\gamma }{g(t)\,dt}=\int\limits_
-						{{{\gamma }_{1}}}^{\gamma }{\left( \int\limits_{a}^{b}{\frac{\partial f(x,t)}{\partial t}dx}
-						\right)dt}=\int\limits_{a}^{b}{\left( \int\limits_{{{\gamma }_{1}}}^{\gamma }{\frac{\partial
+						{{{\gamma }_{1}}}^{\gamma }{\left( \int\limits_{a(\gamma_0)}^{b(\gamma_0)}{\frac{\partial f(x,t)}{\partial t}dx}
+						\right)dt}=\int\limits_{a(\gamma_0)}^{b(\gamma_0)}{\left( \int\limits_{{{\gamma }_{1}}}^{\gamma }{\frac{\partial
 						f(x,t)}{\partial t}dt} \right)dx}=\]
-						\[ \displaystyle =\int\limits_{a}^{b}{f(x,\gamma )dx}-\int\limits_{a}^{b}{f(x,{{\gamma }_{1}})
+						\[ \displaystyle =\int\limits_{a(\gamma_0)}^{b(\gamma_0)}{f(x,\gamma )dx}-\int\limits_{a(\gamma_0)}^{b(\gamma_0)}
+						{f(x,{{\gamma }_{1}})
 						dx}=I\left( \gamma \right)-I\left( {{\gamma }_{1}} \right)\]
 						<p><span class="col-blue">Следовательно,</span>
-							 \[\displaystyle \frac{d}{d\gamma}{{I}_{1}}\left( {{\gamma }_{0}}
-							 \right)\,=\,\frac{d}{d\gamma }\left(
+							 \[\displaystyle \frac{d{{I}_{1}}}{d\gamma}\left( {{\gamma }_{0}}
+							 \right)\Bigg|_{\gamma=\gamma_0}\,=\,\frac{d}{d\gamma }\left(
 							\int\limits_{{{\gamma }_{1}}}^{\gamma }{g(t)dt}\,+\,I\left( {{\gamma }_{1}} \right)
 							\right)=\,\frac{d}{d\gamma }\int\limits_{{{\gamma }_{1}}}^{\gamma }{g(t)dt}\,+\,0\,=\,g\left(
 							\gamma \right)=\int\limits_ {a\left( {{\gamma }_{0}}
@@ -693,13 +757,16 @@
 					</p>
 						<span class="col-black"
 						  >
-						  \begin{eqnarray*}
-						  \displaystyle \frac{d{{I}_{2}}\left( {{\gamma }_{0}}
-						  \right)}{d\gamma }=\underset{\gamma \to {{\gamma
-						  }_{0}}}{\mathop{\lim }}\,\frac{\int\limits_{b\left( {{\gamma
-						  }_{0}} \right)}^{b\left( \gamma \right)}{f(x,\gamma
-						  )dx}}{\gamma -{{\gamma }_{0}}}.
-						  \end{eqnarray*}
+						  \[{{\left. \frac{d{{I}_{2}}\left( \gamma  \right)}{d\gamma } \right|}_{\gamma 
+	={{\gamma }_{0}}}}=\underset{\gamma \to {{\gamma }_{0}}}
+	{\mathop{\lim }}\,\frac{{{I}_{2}}\left( \gamma  \right)-{{I}_{2}}\left(
+		 {{\gamma }_{0}} \right)}{\gamma -{{\gamma }_{0}}}= \]
+ \[=\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,
+ \frac{\int\limits_{b\left( {{\gamma }_{0}} \right)}^{b\left( \gamma  \right)}{f(x,\gamma )dx}
+ -\int\limits_{b\left( {{\gamma }_{0}} \right)}^{b\left( {{\gamma }_{0}} \right)}{f(x,\gamma )dx}}
+ {\gamma -{{\gamma }_{0}}}=\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,
+ \frac{\int\limits_{b\left( {{\gamma }_{0}} \right)}^{b\left( \gamma  \right)}{f(x,\gamma )dx}}{\gamma -{{\gamma }_{0}}}\]
+
 						  </span
 						>
 					<p>По формуле среднего значения</p>
@@ -804,7 +871,7 @@
 					луч, числовая ось).</span></a>, то функция
 					\(\displaystyle I(\gamma )=\int\limits_{a(\gamma)}^{b(\gamma)}{f(x,\gamma )dx}\) непрерывно
 					дифференцируема на \( \Gamma \) и
-						ее производная может быть вычислена по правилу Лейбница. <a class="shortcut" href="#0.3">(0.3)</a> </p>
+						ее производная может быть вычислена по правилу Лейбница. <a class="shortcut" href="#0.8">(0.8)</a> </p>
 						<div class="remark">
 							<p class="margin-top"><span class="em-wide">Замечание</span>. Утверждение теоремы и ее следствия остаются
 								справедливым, если функции
