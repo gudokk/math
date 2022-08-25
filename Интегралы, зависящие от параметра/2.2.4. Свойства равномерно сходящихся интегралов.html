@@ -710,20 +710,21 @@
                \right|\le 1\);</p>
                <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   2) \(\displaystyle \forall a\in \left[ 0,+\infty \right)\) функция \(\displaystyle
-               \frac{1-{{e}^{-ax}}}{x}\) монотонна по \(\displaystyle x\):
+               \frac{1-{{e}^{-ax}}}{x}\) монотонна по \(\displaystyle x\), так как:
             </p>
-            <h3 class="formula">
+            <div class="formula">
                <p>
-
-                  \( \displaystyle \frac{\partial }{\partial x}\left( \frac{1\,-\,{{e}^{-ax}}}{x}
-                     \right)=\frac{a\,{{e}^{-ax}}-1+{{e}^{-ax}}}{{{x}^{2}}}=\frac{\left( a+1
-                     \right)\,{{e}^{-ax}}-1}{{{x}^{2}}}\)
+\(\frac{\partial }{\partial x}\left( \frac{1\,-\,{{e}^{-ax}}}{x} \right)
+=\frac{a\,{{e}^{-ax}}x-1+{{e}^{-ax}}}{{{x}^{2}}}\)
                      <a class="tooltip-1">\(\ge\)<span class="classic">
-                     \[ \left[ {{e}^{-ax}}\ge 1 \right] \]
+                        \(\displaystyle a\,{{e}^{-ax}}x-1+{{e}^{-ax}}\ge 0\), так как
+                        \[{{\left. \left( a\,{{e}^{-ax}}x-1+{{e}^{-ax}} \right) \right|}_{x=0}}=0,\]
+                        \[\frac{\partial }{\partial x}\left( a\,{{e}^{-ax}}x-1+{{e}^{-ax}} \right)=-{{a}^{2}}\,{{e}^{-ax}}\le 0\,\,\,\]
+                        
                   </span></a>
-                    \(\frac{a}{{{x}^{2}}}\ge 0.\)
+                  \(0\).
                </p>
-               </h3>
+            </div>
             <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                3) \(\displaystyle \underset{x\to \infty }{\mathop{\lim }}\,\underset{a\in \left[
                0,+\infty \right)}{\mathop{\sup }}\,\left| \frac{1-{{e}^{-ax}}}{x} \right|\)
