@@ -7,20 +7,21 @@
   --selection-background: #112d4e;
 }
 .textcols {
-	white-space: nowrap;
-	padding-top: 0;
-	margin-top: 0;
+  white-space: nowrap;
+  padding-top: 0;
+  margin-top: 0;
 }
 .textcols-item {
-	padding-top: 0;
-	margin-top: 0;
-	white-space: normal;	
-	display: inline-block;
-	width: 48%;
-	vertical-align: top;
+  padding-top: 0;
+  margin-top: 0;
+  white-space: normal;
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
 }
+
 .textcols .textcols-item:first-child {
-	margin-right: 10%;
+  margin-right: 10%;
 }
 details > summary {
   list-style: none;
@@ -380,13 +381,14 @@ section {
 }
 
 .spoiler-button {
+  font-size: 90%;
   padding: 5px 10px;
   background-color: whitesmoke;
   margin: 10px 0 0 0;
   outline: none;
   border: none;
   text-align: left;
-  width: 100%;
+  width: 100px;
   transition: background-color 0.2s linear;
   letter-spacing: 3px;
   font-family: "Arial Narrow", sans-serif;
@@ -451,7 +453,6 @@ section {
   text-indent: 30px;
   border-left: 3px solid whitesmoke;
   border-right: 3px solid whitesmoke;
-  border-bottom: 3px solid whitesmoke;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
@@ -701,7 +702,7 @@ button {
 
 .level-easy.active {
   color: #070707;
-  background-color: #c0bcbc;
+  background-color: #cccaca;
 }
 
 .level-normal {
@@ -720,7 +721,7 @@ button {
 
 .level-normal.active {
   color: #0500a0;
-  background-color: #6495ed;
+  background-color: #93b8fc;
 }
 
 .level-hard {
@@ -739,7 +740,7 @@ button {
 
 .level-hard.active {
   color: #b22222;
-  background-color: #fa8072;
+  background-color: #fca9a0;
 }
 
 .hide {
