@@ -23,7 +23,7 @@
 .textcols .textcols-item:first-child {
   margin-right: 10%;
 }
-details > summary {
+/*details > summary {
   list-style: none;
 }
 summary::-webkit-details-marker {
@@ -35,7 +35,7 @@ summary::after {
 }
 details[open] summary:after {
   content: " ▼";
-}
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -381,23 +381,38 @@ section {
 }
 
 .spoiler-button {
+  display: inline-block;
   font-size: 90%;
   padding: 5px 10px;
-  background-color: whitesmoke;
+  background-color: white;
   margin: 10px 0 0 0;
   outline: none;
-  border: none;
   text-align: left;
   width: 190px;
   transition: background-color 0.2s linear;
   letter-spacing: 3px;
   font-family: "Arial Narrow", sans-serif;
   z-index: 1;
+  color: white;
+}
+.spoiler-button:hover {
+  cursor: pointer;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.spoiler-button.active {
+  background-color: var(--dark-blue);
+  color: white;
 }
 
 .em-wide {
   letter-spacing: 3px;
   font-family: "Arial Narrow", sans-serif;
+}
+.em-wide-2 {
+  letter-spacing: 3px;
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
 .spoiler-button-example {
   padding: 5px 10px;
@@ -412,11 +427,7 @@ section {
   font-family: "Arial Narrow", sans-serif;
 }
 
-.spoiler-button:hover {
-  cursor: pointer;
-  background-color: var(--dark-blue);
-  color: white;
-}
+
 
 .spoiler-button.active {
   background-color: var(--dark-blue);
@@ -444,7 +455,6 @@ section {
   transition: max-height 0.2s ease-in-out;
   background-color: var(--light-blue);
   position: relative;
-  border: 1px solid #878687;
   z-index: 1;
 }
 
@@ -594,7 +604,7 @@ table tr:nth-child(2n-1) {
   color: #333;
 }
 .remark {
-  color: #333;
+  color: rgb(67, 38, 38);
 }
 
 .addition {
