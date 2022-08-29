@@ -182,10 +182,10 @@
             <button class='level-normal' type="button">Средний</button>
             <button class='level-hard' type="button">Углубленный</button>
           </div>
-        </ul>
+        </u000l>
       </div>
     </nav>
-	<!-- Фиксированная навигация-->
+<!-- Фиксированная навигация-->
 	<style>
 		#navbar {
 		  background-color: #959595;
@@ -234,10 +234,7 @@
 	
 	<div id="navbar">
 	  <a href="href=../index.html">Главная</a>
-      <a href="2.1. Собственные интегралы.html#opr">Определение</a>
-	  <a href="2.1. Собственные интегралы.html#nepreriv">Непрерывность</a>
-	  <a href="2.1. Собственные интегралы.html#integr">Интегрируемость</a>
-	  <a href="2.1. Собственные интегралы.html#diff">Дифференцируемость</a>
+      <a href="1.1. Критерии равномерной сходимости.html#up1">Критерии равномерной сходимости</a>
 	  <span >
 		<label>Выберите уровень: </label>
 			<select id="level">
@@ -264,50 +261,61 @@
 	</script>
 	
 	<main class="main small">
-		
-		<h3 class="centered"><strong id = "opr" style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Определение </strong></h3>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;Пусть в прямоугольнике \(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
-			{{\gamma }_{1}},{{\gamma }_{2}} \right]\) определена функция \(\displaystyle f(x,\gamma )\), интегрируемая
-			по \(\displaystyle x\) на \(\displaystyle \left[\displaystyle a,b \right]\) при любом фиксированном
-			\(\displaystyle \gamma \in \left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
-			Тогда на \(\displaystyle \left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\) определена функция
-			\[\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx},\] называемая <strong><em>интегралом, зависящим
-				от параметра</em></strong> \(\displaystyle \gamma \).
-		</p>
-		
-		<h2 class="centered" >Общий случай</h2><br>
-		<div class="textcols">
-			<div class="textcols-item">
-				<p class="margin-top">
-			 Если при любом
-			  		<em>фиксированном \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},
-				{{\gamma }_{2}} \right]\)</em>
-			  функция \(\displaystyle f(x,\gamma )\) интегрируема по \(\displaystyle
-			  x\) на \(\displaystyle \left[ a(\gamma ),b(\gamma ) \right]\), то на
-			  \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-			  определена функция
+		<h3 class="centered"><strong id = "up1" style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Равномерная по параметру сходимость функций </strong></h3>
+		<div>
+			<p class="margin-top">Пусть функция \(\displaystyle f(x,\gamma )\) определена на множестве
+				 \(\displaystyle X\times\) <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+				луч, числовая ось).</span></a> и
+				\(\displaystyle {{x}_{0}}\) – некоторая предельная точка множества \(\displaystyle X\).
 			</p>
-			</div>
-			<div class="textcols-item">
-				<img src = "img/draw1.png" width="250">
-			</div>
+			<p class="margin-top">Функция \(\displaystyle f(x,\gamma )\) при \(\displaystyle x\to {{x}_{0}}\) <strong><i>стремится к
+						предельной функции</i></strong> \(\displaystyle \varphi \left( \gamma \right)\)
+				<strong><i>равномерно относительно</strong></i> \(\displaystyle \gamma \) в области \( \Gamma \), если:</p>
+					<p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) \(\displaystyle\,\forall \gamma \in  \Gamma \scriptscriptstyle\underset{x\to {{x}_{0}}}{\lim
+				}\!f(x,\gamma )=\varphi \left( \gamma \right)<\infty \),</p>
+				<p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) \(\displaystyle \forall \varepsilon >0\) \(\displaystyle\exists \delta >0\)
+						\(\displaystyle\forall x\in X\) \(\displaystyle\forall \gamma \in \Gamma \displaystyle\left| x-{{x}_{0}} \right|<\delta \) \(\displaystyle\Rightarrow \)
+							\(\displaystyle\left| f\left( x,\gamma \right)-\varphi \left( \gamma \right)
+							\right|<\varepsilon \).</p>
+							<p class="margin-top" ><span class="em-wide">Замечание.</span> Второе условие эквивалентно тому, что
+								</h2>
+								\begin{eqnarray*}
+								\lim\limits_{x\to {{x}_{0}}}\!\underset{\gamma \in \Gamma
+								}{\sup }\,\left| f(x,\gamma )-\varphi \left( \gamma \right) \right|=0.
+								\end{eqnarray*}
+							</p>
+						
 		</div>
 
-			\begin{eqnarray*}
-				\displaystyle I(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma
-				)}{f(x,\gamma )dx},
+		<section class="theorem">
+			<p class="margin-top"><strong>Теорема (Критерий равномерной сходимости Коши).</strong>
+				 Для того чтобы функция \(\displaystyle
+				f(x,\gamma )\) при \(\displaystyle x\,\to \,{{x}_{0}}\) имела предельную функцию и стремилась к ней
+				равномерно относительно \(\displaystyle \gamma \) в области <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+					луч, числовая ось).</span></a>, необходимо и
+				достаточно, чтобы
+				\begin{eqnarray*}
+				\displaystyle \forall \varepsilon >0 \quad \displaystyle\exists \delta >0\quad  \displaystyle \forall x\in X
+				\quad \displaystyle \forall {x}'\in X \displaystyle
+         \quad \forall \gamma \in \Gamma \quad \displaystyle \left| x-{x}' \right|<\delta \quad \displaystyle \Rightarrow & 
+				\displaystyle \left| f\left( x,\gamma \right)-f\left( {x}',\gamma\right) \right|<\varepsilon.&
 				\end{eqnarray*}
-			</h3>
-			<p>
-			  представляющая собой
-			  <strong><em>интеграл, зависящий от параметра</em></strong
-			  >, у которого пределы интегрирования также зависят от параметра.
+				</p>
+		</section>
+		<section class="theorem">
+			<p class="margin-top">
+				<strong>Теорема (Критерий равномерной сходимости Гейне).</strong> Для того чтобы функция \(\displaystyle f(x,\gamma )\) при
+				\(\displaystyle x\to {{x}_{0}}\) стремилась
+				к \(\displaystyle\varphi \left( \gamma \right)\) равномерно относительно \(\displaystyle\gamma
+				\) в области <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+					луч, числовая ось).</span></a>, необходимо и достаточно, чтобы к \(\displaystyle\varphi
+				\left( \gamma \right)\) равномерно сходилась каждая ФП
+				\( \left\{ f({{x}_{n}},\gamma )\right\} \), где \(\displaystyle\left\{ {{x}_{n}} \right\}\) – произвольная
+				сходящаяся к \(\displaystyle{{x}_{0}}\) последовательность.
 			</p>
-		  </div>
-
-
+		</section>
+	<br>
 	</main>
-<br>
 	<footer class="footer">
 	  <p>Учебные материалы </p>
 		<p>Автор материалов - Рояк Светлана Хаимовна.</p>

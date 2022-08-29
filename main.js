@@ -97,17 +97,14 @@ if (sizeButton) {
   });
 }
 
+//Скрипт для уровней
 const easyLevelButton = document.querySelector('.level-easy');
 const normalLevelButton = document.querySelector('.level-normal');
 const hardLevelButton = document.querySelector('.level-hard');
 const normalElements = Array.from(document.querySelectorAll('.normal'));
 const hardElements = Array.from(document.querySelectorAll('.hard'));
 
-const easyText = Array.from(document.querySelectorAll('.easy-text'));
-const normalText = Array.from(document.querySelectorAll('.normal-text'));
-const hardText = Array.from(document.querySelectorAll('.hard-text'));
-
-easyLevelButton.addEventListener('click', () => {
+easyLevelButton.onclick = function() {
   if (localStorage.getItem('value') == 'easy'){
     localStorage.setItem('value', 'none');
     toNoneLevel();
@@ -117,9 +114,9 @@ easyLevelButton.addEventListener('click', () => {
     localStorage.setItem('value', 'easy'); 
     toEasyLevel();
   }
-})
+}
 
-normalLevelButton.addEventListener('click',() => {
+normalLevelButton.onclick = function() {
   if (localStorage.getItem('value') == 'normal'){
     localStorage.setItem('value', 'none');
     toNoneLevel();
@@ -129,34 +126,25 @@ normalLevelButton.addEventListener('click',() => {
     localStorage.setItem('value', 'normal');
     toNormalLevel();
   }
-})
+}
 
-hardLevelButton.addEventListener('click', () => {
+hardLevelButton.onclick = function() {
   localStorage.setItem('value', 'none');
   toNoneLevel();
   hardLevelButton.classList.add('active');
-
-  easyText.forEach((el) => el.classList.add('hide'));
-  normalText.forEach((el) => el.classList.add('hide'));
-})
+}
 
 function toEasyLevel() {
   toNoneLevel();
   easyLevelButton.classList.add('active');
   normalElements.forEach((el) => el.classList.add('hide'));
   hardElements.forEach((el) => el.classList.add('hide'));
-
-  normalText.forEach((el) => el.classList.add('hide'));
-  hardText.forEach((el) => el.classList.add('hide'));
 }
 
 function toNormalLevel() {
   toNoneLevel();
   normalLevelButton.classList.add('active');
   hardElements.forEach((el) => el.classList.add('hide'));
-
-  easyText.forEach((el) => el.classList.add('hide'));
-  hardText.forEach((el) => el.classList.add('hide'));
 }
 
 function toNoneLevel() {
@@ -165,10 +153,6 @@ function toNoneLevel() {
   easyLevelButton.classList.remove('active');
   normalLevelButton.classList.remove('active');
   hardLevelButton.classList.remove('active');
-
-  easyText.forEach((el) => el.classList.remove('hide'));
-  normalText.forEach((el) => el.classList.remove('hide'));
-  hardText.forEach((el) => el.classList.remove('hide'));
 }
 
 window.onload = function() {

@@ -6,6 +6,31 @@
   --selection-color: #f9f7f7;
   --selection-background: #112d4e;
 }
+
+.navbar {
+  background-color: #333;
+  position: fixed;
+  top: -60px;
+  width: 100%;
+  display:block;
+  transition: top 0.3s;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 .textcols {
   white-space: nowrap;
   padding-top: 0;
@@ -124,6 +149,7 @@ section {
 
 .hamburger {
   margin: 0;
+  padding-top: 15px;
   position: fixed;
   left: 5px;
   top: 2rem;
@@ -405,6 +431,30 @@ section {
   background-color: var(--dark-blue);
   color: white;
 }
+.spoiler-button-big {
+  display: inline-block;
+  font-size: 90%;
+  padding: 0px 10px;
+  background-color: white;
+  margin: 0 0 0 0;
+  outline: none;
+  text-align: left;
+  transition: background-color 0.2s linear;
+  letter-spacing: 3px;
+  font-family: "Arial Narrow", sans-serif;
+  z-index: 1;
+  color: white;
+}
+.spoiler-button-big:hover {
+  cursor: pointer;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.spoiler-button-big.active {
+  background-color: var(--dark-blue);
+  color: white;
+}
 
 .em-wide {
   letter-spacing: 3px;
@@ -643,7 +693,7 @@ hr {
   top: 2em;
   z-index: 100;
   margin-left: 0;
-  width: 500px;
+  width: 600px;
   border-radius: 5px 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
