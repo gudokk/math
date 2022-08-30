@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Математический анализ</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="../style.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <nav>
+      <div class="hamburger" id="toggle-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="side-menu" id="main-menu">
+        <ul>
+          <li class="sub-menu">
+            <a href="#"
+              >Равномерная по параметру сходимость функции.<img
+                src="../icons/down.png"
+                class="submenu-icon submenu-trigger"
+            /></a>
+            <ul>
+              <li>
+                <a
+                  href="1.1. Основные понятия.html"
+                  >Основные понятия.</a
+                >
+              </li>
+              <li>
+                <a
+                  href="1.2. Свойства равномерно сходящихся функций.html"
+                  >Свойства.</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="#"
+              >Интегралы, зависящие от параметра.<img
+                src="../icons/down.png"
+                class="submenu-icon submenu-trigger"
+            /></a>
+            <ul>
+              <li class="sub-menu">
+                <a href="#"
+                  >Собственные интегралы, зависящие от параметра.<img
+                    src="../icons/down.png"
+                    class="submenu-icon submenu-trigger"
+                /></a>
+                <ul>
+					<li>
+                    <a
+                      href="2.1. Собственные интегралы.html"
+                      >Определение.</a
+                    >
+                  </li>
+
+                  <li class="sub-menu">
+                    <a href="#"
+                    >Свойства.<img
+                    src="../icons/down.png"
+                    class="submenu-icon submenu-trigger"
+                    /></a>
+                    <ul>
+                      <li>
+                        <a
+                          href="2.1. Свойства собственных интегралов.html#nepreriv"
+                          >Непрерывность и предельный переход.</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="2.1. Свойства собственных интегралов.html#integr"
+                          >Интегрируемость.</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="2.1. Свойства собственных интегралов.html#diff"
+                          >Дифференцируемость.</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+                    
+ 
+              <li class="sub-menu">
+                <a href="#"
+                >Несобственные интегралы, зависящие от параметра.<img
+                src="../icons/down.png"
+                class="submenu-icon submenu-trigger"
+                /></a>
+                <ul>
+                  <li>
+                    <a
+                    href="2.2.1. Основные определения.html"
+                    >Определение.</a
+                    >
+                  </li>
+
+                  <li class="sub-menu">
+                    <a href="#"
+                    >Равномерная сходимость.<img
+                    src="../icons/down.png"
+                    class="submenu-icon submenu-trigger"
+                    /></a>
+                    <ul>
+                  <li>
+                    <a
+                    href="2.2.2. Равномерная сходимость несобственных интегралов.html"
+                    >Опредление.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                    href="2.2.3. Признаки равномерной сходимости.html"
+                    >Признаки.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                    href="2.2.4. Свойства равномерно сходящихся интегралов.html"
+                    >Свойства.</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="sub-menu">
+                <a href="#"
+                >Свойства.<img
+                src="../icons/down.png"
+                class="submenu-icon submenu-trigger"
+                /></a>
+                <ul>
+                  <li>
+                    <a
+                    href="2.2.4. Свойства равномерно сходящихся интегралов.html#lim"
+                    >Предельный переход.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                    href="2.2.4. Свойства равномерно сходящихся интегралов.html#nepreriv"
+                    >Непрерывность.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                    href="2.2.4. Свойства равномерно сходящихся интегралов.html#diff"
+                    >Дифференцируемость.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                    href="2.2.4. Свойства равномерно сходящихся интегралов.html#integr"
+                    >Интегрируемость.</a
+                    >
+                  </li>
+                </ul></li>
+                </ul>
+                <li>
+                  <a
+                    href="2.3. Интегралы Эйлера.html"
+                    >Интегралы Эйлера.</a
+                  >
+                </li>
+              </li>
+            </ul>
+          </li>
+        </u000l>
+      </div>
+    </nav>
+<!-- Фиксированная навигация-->
+	<style>
+		#navbar {
+		  background-color: #959595;
+		  position: fixed;
+		  display: 
+		  top: -50px;
+		  width: 100%;
+		  display:block;
+		  transition: top 0.3s;
+		  padding: 0;
+		  margin: 0;
+		  padding-left: 5%;
+		  z-index: 100;
+		}
+
+		#navbar a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 10px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  padding-bottom: 10px;
+		  padding-top: 10px;
+		}
+
+		#navbar a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		#navbar span {
+		  float: right;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding-bottom: 10px;
+		  padding-top: 5px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  margin-right: 5%;
+		}
+
+
+	</style>
+	
+	<div id="navbar">
+	  <a href="#">Равномерная по параметру сходимость функций</a>
+      <a href="1.2. Свойства равномерно сходящихся функций.html#up2">Свойства</a>
+	  <span >
+		<label>Выберите уровень: </label>
+			<select id="level">
+				<option class='level-easy' type="button" value="easy">Минимальный</option>
+				<option class='level-normal' type="button" value="normal">Средний</option>
+				<option class='level-hard' type="button" value="hard">Углубленный</option>
+			</select> 
+		</span>
+	  </div>
+	  
+	</div>
+	
+	<script>
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+			document.getElementById("navbar").style.top = "0";
+		} else {
+			document.getElementById("navbar").style.top = "-50px";
+		}
+	}
+	
+	</script>
+	
+	<main class="main small">
+		<h3 class="centered"><strong id = "up2" style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Свойства</strong></h3>
+		
+
+			<p class="margin-top">
+						Пусть функция \( f(x,\gamma )\) определена на множестве \( X\times\)
+						<a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+							луч, числовая ось).</span></a> и \(x\to\)
+						<a class="tooltip-1">\( S\)
+							<span class="classic">
+								\( S\in \left\{ {{x}_{0}},\ {{x}_{0}}+0,\ {{x}_{0}}-0,\ \infty ,\ +\infty ,\ -\infty  \right\}\),
+								 \( {{x}_{0}}\in  \mathbb{R}\)</span></a>, \(S\in {X}'\).
+<p class="margin-top">1. Если \( f\left( x,\gamma  \right)\underset{\Gamma }\rightrightarrows 
+	\varphi \left( \gamma  \right)\) и \(g\left( x,\gamma  \right)\underset{\Gamma }\rightrightarrows 
+	\psi \left( \gamma  \right)\), то \( \forall \alpha ,\ \beta \in \mathbb{R} \)  
+
+\[ \alpha f\left( x,\gamma  \right)+\beta g\left( x,\gamma  \right)\,\,\underset{\Gamma }\rightrightarrows 
+\,\,\,\alpha \,\varphi \left( \gamma  \right)+\beta \,\psi \left( \gamma  \right). \]</p>
+<p class="margin-top">2. Если \( f\left( x,\gamma  \right)\underset{\Gamma }\rightrightarrows 
+\,\varphi \left( \gamma  \right)\), то \( \left| f\left( x,\gamma  \right) \right|\underset{\Gamma }\rightrightarrows 
+\,\left| \varphi \left( \gamma  \right) \right|\).</p>
+<p class="margin-top">3. Если \( f\left( x,\gamma  \right)\underset{\Gamma }\rightrightarrows 
+\,\varphi \left( \gamma  \right)\), то \( \forall A\subset \Gamma \) \(f\left( x,\gamma  \right)\underset{A}\rightrightarrows 
+\,\varphi \left( \gamma  \right).\)</p>
+<p class="margin-top"><i>Следствие.</i> Если \( f\left( x,\gamma  \right)\), определена на множестве \( X\times \Gamma \) и
+ для некоторого \( A\subset \Gamma\) \(f\left( x,\gamma  \right)\underset{A}{ \cancel{\rightrightarrows}}
+\varphi \left( \gamma  \right) \), то \( \forall B\ \ A\subset B\subset \Gamma\) \(f\left( x,\gamma  \right)\underset{B}{\cancel{\rightrightarrows}}
+\varphi \left( \gamma  \right)\).</p>
+ <p class="margin-top">4. Если \( f\left( x,\gamma  \right)\underset{A}\rightrightarrows 
+\,\varphi \left( \gamma  \right) \) и \( f\left( x,\gamma  \right)\underset{B}\rightrightarrows 
+\,\varphi \left( \gamma  \right) \), то \( f\left( x,\gamma  \right)\underset{A\bigcup B}\rightrightarrows 
+\,\varphi \left( \gamma  \right)\). Для бесконечного объединения это утверждение неверно.</p>
+<p class="margin-top">5. Числовую функцию \( f\left( x \right) \) можно рассматривать
+ как функцию с параметром \( \gamma \in \Gamma \), которая при каждом значении \(x\) есть константа на множестве \( \Gamma .\)
+  Сходимость такой функции на любом множестве изменения параметра будет равномерной.</p>
+		</p>
+
+		<section class="theorem t3">
+			<p class="margin-top">
+				<strong>Теорема (Перестановка двух предельных переходов).</strong> Пусть функция
+				\(\displaystyle f\left( x,\gamma \right)\) определена на  \(\displaystyle X\times\)
+				<a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+					луч, числовая ось).</span></a>, \(\displaystyle {{x}_{0}} \in \Gamma'\) и \(\displaystyle{{\gamma }_{0}} \in \Gamma'\)
+					\begin{eqnarray*}
+					& \displaystyle \forall \gamma \in \Gamma \displaystyle \underset{x\to
+				{{x}_{0}}}{\lim }\!f(x,\gamma )=\varphi \left( \gamma \right), &\\
+				&\displaystyle \forall x\in X \displaystyle \underset{\gamma \to
+				{{\gamma }_{0}}}{\lim }\!f(x,\gamma )=\psi \left( x \right).&
+				\end{eqnarray*}
+			    Если при \(\displaystyle x\to {{x}_{0}}\) функция \(\displaystyle f\left( x,\gamma \right)\)
+				сходится к \(\displaystyle \varphi \left( \gamma \right)\) равномерно относительно
+				\(\displaystyle \gamma \) в области <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+					луч, числовая ось).</span></a>, то существуют двойной и оба
+				повторных предела</p>
+				\begin{eqnarray*}
+				\displaystyle\underset{\begin{smallmatrix}
+				x\to {{x}_{0}} \\
+				\gamma \to {{\gamma }_{0}}
+				\end{smallmatrix}}{\lim}\!f(x,\gamma )=\underset{x\to {{x}_{0}}}{\lim
+				}\!\underset{\gamma \to {{\gamma }_{0}}}{\lim}\!f(x,\gamma )=\underset{\gamma \to
+				{{\gamma }_{0}}}{\lim}\!\underset{x\to {{x}_{0}}}{\lim}\!f(x,\gamma ).
+				\end{eqnarray*}
+			</p>
+		</section>
+		<section class="theorem">
+			<p class="margin-top">
+				<strong>Теорема (Непрерывность).</strong> Если функция \(\displaystyle f\left( x,\gamma
+				\right)\) \(\displaystyle \forall x\in X\) непрерывна по \(\displaystyle \gamma \) на
+				\(\displaystyle \left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и при
+				\(\displaystyle x\to {{x}_{0}}\) \(\displaystyle f\left( x,\gamma\right)\!\underset{\left[\displaystyle
+				{{\gamma }_{1}},{{\gamma }_{2}} \right]}{\rightrightarrows}\!\displaystyle\varphi \left( \gamma \right)\), то \(\displaystyle\varphi \left( \gamma
+				\right) \in\) 
+				<a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
+					\(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
+				</span></a>
+				\( (\displaystyle \left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]) \).
+			 </p>
+		</section>
+		<section class="theorem ">
+			<div class="col-blue normal">
+				<p class="margin-top">
+					<strong>Теорема (Обобщение </strong>
+						<a class="tooltip-1"><strong>теоремы Дини</strong><span class="classic">
+							Пусть ФП \( \left\{ f_n \left( x \right) \right\}\) не возрастает (или не убывает) в каждой точке
+							 сегмента \(\left[a,b \right]\) и сходится на нем к \(f(x)\). 
+							Тогда, если все элементы ФП \( \left\{ f_n \left( x \right) \right\}\)
+							и предельная функция \(f(x)\) непрерывны на \(\left[a,b \right]\),
+							 то сходимость ФП \( \left\{ f_n \left( x \right) \right\}\)
+							является равномерной на \(\left[a,b \right]\).
+						</span></a><strong>).</strong>
+						Пусть 
+					 <span class="col-black">\(\displaystyle f\left( x,\gamma \right)\)</span>
+					  <span class="col-black">\(\displaystyle\forall x\in X\)</span> непрерывна по <span class="col-black">
+						\(\displaystyle\gamma \)</span> на
+					<span class="col-black">\(\displaystyle\left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\)</span> и при
+					возрастании <span class="col-black">\(\displaystyle x,\)</span> возрастая, сходится
+					к непрерывной функции <span class="col-black"> \(\displaystyle\varphi \left( \gamma \right)\)</span>. Тогда
+					<span class="col-black">\(\displaystyle f\left( x,\gamma \right)\)</span> сходится к <span class="col-black">\(\displaystyle\varphi \left( \gamma
+					\right)\)</span> равномерно относительно <span class="col-black">\(\displaystyle\gamma \)</span>.
+				</p>
+			</div>
+			<p class="margin-top">
+				<strong>Теорема (Интегрируемость).</strong> Если функция \(\displaystyle f\left( x,\gamma
+				\right)\) \(\displaystyle\forall x\in X\) интегрируема по \(\displaystyle\gamma \) на
+				\(\displaystyle\left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и при
+				\(\displaystyle x\to {{x}_{0}}\) \(\displaystyle f\left( x,\gamma\right)\!\underset{\left[\displaystyle
+					{{\gamma }_{1}},{{\gamma }_{2}} \right]}{\rightrightarrows}\!\displaystyle\varphi \left( \gamma \right)\),
+					 то \(\displaystyle\varphi \left( \gamma
+					\right) \in\) 
+					<a class="tooltip-1">\( \mathbb{R} \)<span class="classic">
+						\(\mathbb{R}(\Omega)\)– класс функций, интегрируемых на множестве \( \Omega.\)
+					</span></a>
+					\( (\displaystyle \left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]) \).
+			 </p>
+		</section>
+		<section class="theorem">
+			<p class="margin-top">
+				<strong>Теорема (Дифференцируемость).</strong> Если функция \(\displaystyle f\left( x,\gamma
+				\right)\) \(\displaystyle\forall x\in X\) дифференцируема по \(\displaystyle\gamma \) на
+				\(\displaystyle\left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\), при
+				\(\displaystyle x\to {{x}_{0}}\) сходится хотя бы в одной точке, а функция
+				\(\displaystyle\frac{\partial }{\partial \gamma }f\left( x,\gamma \right)\) при \(\displaystyle
+				x\to {{x}_{0}}\) равномерно по \(\displaystyle\gamma \)
+				сходится на \(\displaystyle\left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\), то
+				\(\displaystyle f\left( x,\gamma \right)\) сходится равномерно на
+				\(\displaystyle\left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\) к некоторой
+				дифференцируемой функции \(\displaystyle\varphi \left( \gamma \right)\) и \(\displaystyle\forall
+				\gamma \in \left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\)
+				\begin{eqnarray*}
+				\displaystyle{\varphi }'\left( \gamma \right)=\underset{x\to
+				{{x}_{0}}}{\mathop{\lim }}\,\frac{\partial f\left( x,\gamma \right)}{\partial \gamma }.
+				\end{eqnarray*}
+			</p>
+		</section>
+	<br>
+	</main>
+	<footer class="footer">
+	  <p>Учебные материалы </p>
+		<p>Автор материалов - Рояк Светлана Хаимовна.</p>
+	</footer>
+	<script src="../main.js"></script>
+</body>
+
+</html>
