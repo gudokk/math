@@ -97,72 +97,74 @@ if (sizeButton) {
   });
 }
 
-//Скрипт для уровней
-const easyLevelButton = document.querySelector('.level-easy');
-const normalLevelButton = document.querySelector('.level-normal');
-const hardLevelButton = document.querySelector('.level-hard');
 const normalElements = Array.from(document.querySelectorAll('.normal'));
 const hardElements = Array.from(document.querySelectorAll('.hard'));
 
-easyLevelButton.onclick = function() {
-  if (localStorage.getItem('value') == 'easy'){
-    localStorage.setItem('value', 'none');
-    toNoneLevel();
-    hardLevelButton.classList.add('active');
-  }
-  else {
-    localStorage.setItem('value', 'easy'); 
+const easyText = Array.from(document.querySelectorAll('.easy-text'));
+const normalText = Array.from(document.querySelectorAll('.normal-text'));
+const hardText = Array.from(document.querySelectorAll('.hard-text'));
+
+let level = document.querySelector('#level')
+
+level.addEventListener("change", function() {
+  if (this.value == "easy")  
     toEasyLevel();
-  }
-}
-
-normalLevelButton.onclick = function() {
-  if (localStorage.getItem('value') == 'normal'){
-    localStorage.setItem('value', 'none');
-    toNoneLevel();
-    hardLevelButton.classList.add('active');
-  }
-  else {
-    localStorage.setItem('value', 'normal');
+  else if( this.value ==  'normal')
     toNormalLevel();
-  }
-}
-
-hardLevelButton.onclick = function() {
-  localStorage.setItem('value', 'none');
-  toNoneLevel();
-  hardLevelButton.classList.add('active');
-}
+  else
+    toHardLevel();
+});
 
 function toEasyLevel() {
+  localStorage.setItem('value', 'easy'); 
   toNoneLevel();
-  easyLevelButton.classList.add('active');
   normalElements.forEach((el) => el.classList.add('hide'));
   hardElements.forEach((el) => el.classList.add('hide'));
+
+  normalText.forEach((el) => el.classList.add('hide'));
+  hardText.forEach((el) => el.classList.add('hide'));
 }
 
 function toNormalLevel() {
+  localStorage.setItem('value', 'normal');
   toNoneLevel();
-  normalLevelButton.classList.add('active');
   hardElements.forEach((el) => el.classList.add('hide'));
+
+  easyText.forEach((el) => el.classList.add('hide'));
+  hardText.forEach((el) => el.classList.add('hide'));
+}
+
+function toHardLevel() {
+  localStorage.setItem('value', 'none');
+  toNoneLevel();
+
+  easyText.forEach((el) => el.classList.add('hide'));
+  normalText.forEach((el) => el.classList.add('hide'));
 }
 
 function toNoneLevel() {
   normalElements.forEach((el) => el.classList.remove('hide'));
   hardElements.forEach((el) => el.classList.remove('hide'));
-  easyLevelButton.classList.remove('active');
-  normalLevelButton.classList.remove('active');
-  hardLevelButton.classList.remove('active');
+
+  easyText.forEach((el) => el.classList.remove('hide'));
+  normalText.forEach((el) => el.classList.remove('hide'));
+  hardText.forEach((el) => el.classList.remove('hide'));
 }
 
 window.onload = function() {
   if (localStorage.getItem('value') == 'easy')
+  {
+    document.querySelector('.level-easy').setAttribute('selected', 'selected');
     toEasyLevel();
+  }
   else if (localStorage.getItem('value') == 'normal')
+  {
+    document.querySelector('.level-normal').setAttribute('selected', 'selected');
     toNormalLevel();
+  }
   else if(localStorage.getItem('value') == 'none')
   {
-    toNoneLevel();
-    hardLevelButton.classList.add('active');
+    document.querySelector('.level-hard').setAttribute('selected', 'selected');
+    toHardLevel()
   }
 }
