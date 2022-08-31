@@ -87,14 +87,14 @@
                           >Дифференцируемость.</a
                         >
                       </li>
-					  <li>
-                        <a
-                        href="2.1. Свойства собственных интегралов.html#calc"
-                        >Вычисление интегралов, с помощью дифференцирования по параметру.</a
-                        >
-                      </li>
                     </ul>
-                  </li>
+				</li>
+				<li>
+				  <a
+				  href="2.1. Свойства собственных интегралов.html#calc"
+				  >Вычисление интегралов, с помощью дифференцирования по параметру.</a
+				  >
+				</li>
                 </ul>
               </li>
                     
@@ -171,13 +171,13 @@
                     >Интегрируемость.</a
                     >
                   </li>
-				  <li>
-                    <a
-                    href="2.2.4. Свойства равномерно сходящихся интегралов.html#calc"
-                    >Вычисление интегралов, с помощью дифференцирования по параметру.</a
-                    >
-                  </li>
                 </ul></li>
+				<li>
+				  <a
+				  href="2.2.4. Свойства равномерно сходящихся интегралов.html#calc"
+				  >Вычисление интегралов, с помощью дифференцирования по параметру.</a
+				  >
+				</li>
                 </ul>
                 <li>
                   <a
@@ -300,6 +300,7 @@
 					)}{f(x,\gamma )dx}\) дифференцируема на \(\displaystyle \left[
 					{{\gamma }_{1}},{{\gamma }_{2}} \right]\) и ее производная 
 				может быть вычислена <strong><em>по правилу Лейбница:</em></strong>
+				<strong class="float-r" id="0.4">(0.4)</strong>
 				<h3 class="formula">
 					\( \displaystyle {I}'(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma
 						)}{\frac{\partial f\left( x,\gamma \right)}{\partial \gamma
@@ -484,10 +485,8 @@
 					луч, числовая ось).</span></a>, то функция
 					\(\displaystyle I(\gamma )=\int\limits_{a(\gamma)}^{b(\gamma)}{f(x,\gamma )dx}\) непрерывно
 					дифференцируема на \( \Gamma \) и
-						ее производная может быть вычислена по правилу <a class = "tooltip-1">Лейбница<span class = "classic">\( \displaystyle {I}'(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma
-						)}{\frac{\partial f\left( x,\gamma \right)}{\partial \gamma
-						}dx}+{b}'(\gamma )\cdot f(b(\gamma ),\gamma )-{a}'(\gamma )\cdot
-						f(a(\gamma ), \gamma ). \)</span></a> </p>
+						ее производная может быть вычислена по правилу Лейбница
+						<a class="shortcut" href="#0.4">(0.4)</a> </p>
 						<div class="remark">
 							<p class="margin-top"><span class="em-wide">Замечание</span>. Утверждение теоремы и ее следствия остаются
 								справедливым, если функции
@@ -635,445 +634,8 @@
 </section>
 </div>
 -->
-<!--
-			  <div class="spoiler">
-				<section class="example">
-					<button class="spoiler-button">Пример 5</button>
-<div class="spoiler-content">
-	<details>
-		<summary class="margin-top">
-			Вычислим интеграл, применяя дифференцирование по параметру
-			<h3 class="formula">
-				<strong class="float-r" id="0.5">(0.5)</strong> 
-				\(I\left( a \right)=\displaystyle \int\limits_{0}^{\frac{\pi }{2}}
-				{\ln \left( \frac{1+a\cos x}{1-a\cos x} \right)\frac{dx}{\cos x}}, \left| a \right|< 1.\)
-			</h3>
-		</summary>
-		<div class="proof">
-			<p>
-				<div class="col-blue normal">
-						Пусть \( f\left( x,a \right)=\ln \left( \frac{1+a\cos x}{1-a\cos x} \right)\frac{1}{\cos x}\). Так как 
-						\begin{eqnarray*}
-&\underset{x\to \frac{\pi }{2}-0}{\mathop{\lim }}\,f\left( x,a \right)=\underset{x\to
-	 \frac{\pi }{2}-0}{\mathop{\lim }}\,\ln \left( \frac{1+a\cos x}{1-a\cos x} \right)\cdot \frac{1}{\cos x}=\left[ y=\cos x \right]= &\\
-	 &=\underset{y\to +0}{\mathop{\lim }}\,\ln \left( \frac{1+ay}{1-ay} \right)\cdot \frac{1}{y}=\underset{y\to +0}{\mathop{\lim }}\,
-	 \frac{2ay}{1-ay}\cdot \frac{1}{y}=2a,&
-	 \end{eqnarray*}
-подынтегральная функция может быть доопределена до непрерывной на произвольном прямоугольнике 
-\(  \varPi \subset \left[ 0,\pi /2 \right]\times \left( -1,1 \right)\).
-<p>Функция \( \frac{\partial f}{\partial a}=\frac{2}{1-{{a}^{2}}{{\cos }^{2}}x}\) непрерывна на произвольном прямоугольнике 
-\[\varPi \subset \left[ 0,\pi /2 \right]\times \left( -1,1 \right)\].</p></div>
-<p>Все условия теоремы о дифференцировании выполнены, поэтому
-\[{I}'\left( a \right)=2\int\limits_{0}^{\pi /2}{\frac{dx}{1-{{a}^{2}}{{\cos }^{2}}x}}=
-\left[ t=\operatorname{tg}x \right]=2\int\limits_{0}^{+\infty }{\frac{dt}{1+{{t}^{2}}-{{a}^{2}}}}=\frac{\pi }{\sqrt{1-{{a}^{2}}}}.\]</p>
-<p>Следовательно, \[I\left( a \right)=\int{\frac{\pi \,da}{\sqrt{1-{{a}^{2}}}}}=\pi \arcsin a+C.\]</p>
-<p>Согласно <a class="shortcut" href="#0.5">(0.5)</a>, \( I\left( 0 \right)=\int\limits_{0}^{\pi /2}{0dx}=0\), а значит, \( I\left( a \right)=\pi \arcsin a\).</p>
-			   </p>
-						</div>
-				</details>
-			</div>
-		</section>
-		</div>
--->
-<div>
-			<p class="margin-top" style = "white-space: nowrap" >
-					<span class = "em-wide" style="font-size: 20px">Пример 5.</span>
-					Вычислить 
-					\(I\left( a \right)=\displaystyle \int\limits_{0}^{\frac{\pi }{2}}
-				{\ln \left( \frac{1+a\cos x}{1-a\cos x} \right)\frac{dx}{\cos x}}, \left| a \right|< 1.\)
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<span class = "em-wide" style="font-size: 20px">Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid;"> \( \pi \arcsin a\).</button>
-				</p>
-				<br>
-				<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
-					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
-					<div class="proof">
-									<div class="col-blue normal">
-						Пусть \( f\left( x,a \right)=\ln \left( \frac{1+a\cos x}{1-a\cos x} \right)\frac{1}{\cos x}\). Так как 
-						\begin{eqnarray*}
-&\underset{x\to \frac{\pi }{2}-0}{\mathop{\lim }}\,f\left( x,a \right)=\underset{x\to
-	 \frac{\pi }{2}-0}{\mathop{\lim }}\,\ln \left( \frac{1+a\cos x}{1-a\cos x} \right)\cdot \frac{1}{\cos x}=\left[ y=\cos x \right]= &\\
-	 &=\underset{y\to +0}{\mathop{\lim }}\,\ln \left( \frac{1+ay}{1-ay} \right)\cdot \frac{1}{y}=\underset{y\to +0}{\mathop{\lim }}\,
-	 \frac{2ay}{1-ay}\cdot \frac{1}{y}=2a,&
-	 \end{eqnarray*}
-подынтегральная функция может быть доопределена до непрерывной на произвольном прямоугольнике 
-\(  \varPi \subset \left[ 0,\pi /2 \right]\times \left( -1,1 \right)\).
-<p>Функция \( \frac{\partial f}{\partial a}=\frac{2}{1-{{a}^{2}}{{\cos }^{2}}x}\) непрерывна на произвольном прямоугольнике 
-\[\varPi \subset \left[ 0,\pi /2 \right]\times \left( -1,1 \right)\].</p></div>
-<p>Все условия теоремы о дифференцировании выполнены, поэтому
-\[{I}'\left( a \right)=2\int\limits_{0}^{\pi /2}{\frac{dx}{1-{{a}^{2}}{{\cos }^{2}}x}}=
-\left[ t=\operatorname{tg}x \right]=2\int\limits_{0}^{+\infty }{\frac{dt}{1+{{t}^{2}}-{{a}^{2}}}}=\frac{\pi }{\sqrt{1-{{a}^{2}}}}.\]</p>
-<p>Следовательно, \[I\left( a \right)=\int{\frac{\pi \,da}{\sqrt{1-{{a}^{2}}}}}=\pi \arcsin a+C.\]</p>
-<p>Согласно условию, \( I\left( 0 \right)=\int\limits_{0}^{\pi /2}{0dx}=0\), а значит, \( I\left( a \right)=\pi \arcsin a\).
-						</p>
-					</div>
-				</details>
-			</div>
-<div>
-			<p class="margin-top" style = "white-space: nowrap" >
-					<span class = "em-wide" style="font-size: 20px">Пример 6.</span>
-					Вычислить 
-						 \(\displaystyle I\left( a \right)=\int\limits_{0}^{\pi /2}{\frac{\operatorname{arctg}
-						 \left( a\operatorname{tg}x \right)}{\operatorname{tg}x}dx}\).
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<span class = "em-wide" style="font-size: 20px">Ответ:</span><button class="spoiler-button-big" style="border:2px #A9B8C2  solid;"> 
-						\(\displaystyle \frac{\pi \operatorname{sign}a}{2}\ln \left( 1+\left| a \right| \right).\)</button>
-				</p>
-				<br>
-				<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
-					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
-					<div class="proof">
-						<span class="col-blue">
-						Пусть \(\displaystyle f\left( x,a \right)=\frac{\operatorname{arctg}\left(
-							a\operatorname{tg}x \right)}{\operatorname{tg}x}\).
-							<div class="normal">Рассмотрим произвольный прямоугольник
-							\(\displaystyle \varPi \subset \left[ 0,\pi /2 \right]\times \mathbb{R}\).
 
-							Так как
-										\begin{eqnarray*}
-									 \underset{x\to 0+}{\mathop{\lim }}\,f\left( 
-									x,a \right)=\underset{x\to 0+}{\mathop{\lim }}\,\frac{\operatorname{arctg}\left( 
-									a\operatorname{tg}x \right)}{\operatorname{tg}x}=a, 
-									\underset{x\to \frac{\pi }{2}-0}{\mathop{\lim }}\,f\left( x,a \right)=\underset{x\to
-									\frac{\pi }{2}-0}{\mathop{\lim }}\,\frac{\operatorname{arctg}\left( a\operatorname{tg}x 
-									\right)}{\operatorname{tg}x}=0,
-									\end{eqnarray*}
-									подынтегральную функцию можно доопределить до непрерывной на 
-									\(\displaystyle \varPi\)функции:
-									\begin{eqnarray*}
-									\tilde{f}\left( x,a \right)= \begin{cases}
-									a,x=0,\\
-									{f}\left( x,a \right),0&lt;x&lt;\pi /2, \\
-									0,\,\,x=\pi /2.
-									\end{cases} 
-									\end{eqnarray*} </div>
-								 Функции \(\displaystyle \tilde{f}\left( x,a \right)\),
-										 \(\displaystyle \frac{\partial 
-									\tilde{f}\left( x,a \right)}{\partial a}\,=\,\frac{1}{1\,+\,{{a}^{2}}{{\operatorname{tg}}^
-									{2}}x}\) непрерывны на \(\displaystyle \varPi\), 
-									</span>
-									<p> То в силу теоремы 11 с учетом замечания, получим
-									<div class="col-black">
-										\(\qquad \qquad \qquad 
-										\displaystyle {I}'\left( a \right)=\int\limits_{0}^{\pi /2}{\frac{dx}{1+{{a}^{2}}
-										{{\operatorname{tg}}^{2}}x}}=\left[ t=\operatorname{tg}x \right]
-										 =\int\limits_{0}^{+\infty }{\frac{dt}{\left( 1+{{a}^{2}}{{t}^{2}} 
-										\right)\left( 1+{{t}^{2}} \right)}}\)
-										<a class="tooltip-1">\(=\)<span class="classic">
-											\[ =\frac{1}{{{a}^{2}}-1}\int\limits_{0}^{+\infty }
-										{\left( \frac{{{a}^{2}}}{1+{{a}^{2}}{{t}^{2}}}-\frac{1}{1+{{t}^{2}}} \right)dt}=\]
-										\[ \displaystyle =\frac{1}{{{a}^{2}}-1}\left. \left( a\,\,\operatorname{arctg}\left( 
-										ta \right)-\operatorname{arctg}t \right) \right|_{0}^{+\infty }=\]
-										 </span></a>
-										
-										\(\displaystyle \frac{\pi }{2\left( 
-										{{a}^{2}}-1 \right)}\left( a\operatorname{sign}a-1 \right)\)
-										<p>Следовательно, </p>
-										\begin{eqnarray*}
-										& I\left( a \right)-I\left( 0 \right)=\int\limits_{0}^{a}{\frac{\pi \left( 
-										t\operatorname{sign}t-1 \right)dt}{2\left( {{t}^{2}}-1 \right)}}= &\\
-										& =\frac{\pi }{2}\cdot \left\{ \begin{matrix}
-										\int\limits_{0}^{a}{\frac{\left( t-1 \right)dt}{\left( {{t}^{2}}-1 \right)}},\,\,a&gt;0 
-										\\
-										\int\limits_{0}^{a}{\frac{\left( -t-1 \right)dt}{\left( {{t}^{2}}-1 \right)}},\,\,a&lt;0 
-										\\
-										\end{matrix} \right.=\frac{\pi }{2}\cdot \left\{ \begin{matrix}
-										\ln \left| a+1 \right|,a\ge 0  \\
-										-\ln \left| a-1 \right|,a&lt;0  \\
-										\end{matrix} \right.=\frac{\pi \operatorname{sign}a}{2}\ln \left( 1+\left| a \right| \right).&
-										\end{eqnarray*}
-									</p>
-								</span>
-						</p>
-					</div>
-				</details>
-			</div>
-<!--
-			  <div class="spoiler">
-				<section class="example">
-					<button class="spoiler-button">Пример 6</button>
-<div class="spoiler-content">
-			<div class="col-black">
-				<details>
-					<summary class="margin-top">
-						
-						 Вычислим интеграл
-						 \(\displaystyle I\left( a \right)=\int\limits_{0}^{\pi /2}{\frac{\operatorname{arctg}
-						 \left( a\operatorname{tg}x \right)}{\operatorname{tg}x}dx}\).
-						</summary>
-						<div class="proof">
-					<p>
-						Пусть \(\displaystyle f\left( x,a \right)=\frac{\operatorname{arctg}\left(
-							a\operatorname{tg}x \right)}{\operatorname{tg}x}\).
-							<div class="normal"><span class="col-blue"> Рассмотрим произвольный прямоугольник</span>
-							\(\displaystyle \varPi \subset \left[ 0,\pi /2 \right]\times \mathbb{R}\).
 
-							Так как
-										\begin{eqnarray*}
-									 \underset{x\to 0+}{\mathop{\lim }}\,f\left( 
-									x,a \right)=\underset{x\to 0+}{\mathop{\lim }}\,\frac{\operatorname{arctg}\left( 
-									a\operatorname{tg}x \right)}{\operatorname{tg}x}=a, 
-									\underset{x\to \frac{\pi }{2}-0}{\mathop{\lim }}\,f\left( x,a \right)=\underset{x\to
-									\frac{\pi }{2}-0}{\mathop{\lim }}\,\frac{\operatorname{arctg}\left( a\operatorname{tg}x 
-									\right)}{\operatorname{tg}x}=0,
-									\end{eqnarray*}
-									подынтегральную функцию можно доопределить до непрерывной на 
-									\(\displaystyle \varPi\)функции:
-									\begin{eqnarray*}
-									\tilde{f}\left( x,a \right)= \begin{cases}
-									a,x=0,\\
-									{f}\left( x,a \right),0&lt;x&lt;\pi /2, \\
-									0,\,\,x=\pi /2.
-									\end{cases} 
-									\end{eqnarray*} </div>
-								<span class="col-blue normal"> Функции \(\displaystyle \tilde{f}\left( x,a \right)\),
-										 \(\displaystyle \frac{\partial 
-									\tilde{f}\left( x,a \right)}{\partial a}\,=\,\frac{1}{1\,+\,{{a}^{2}}{{\operatorname{tg}}^
-									{2}}x}\) непрерывны на \(\displaystyle \varPi\), 
-									поэтому</span>
-									<p> В силу теоремы 11 с учетом замечания, получим
-									<div class="col-black">
-										\(\qquad \qquad \qquad 
-										\displaystyle {I}'\left( a \right)=\int\limits_{0}^{\pi /2}{\frac{dx}{1+{{a}^{2}}
-										{{\operatorname{tg}}^{2}}x}}=\left[ t=\operatorname{tg}x \right]
-										 =\int\limits_{0}^{+\infty }{\frac{dt}{\left( 1+{{a}^{2}}{{t}^{2}} 
-										\right)\left( 1+{{t}^{2}} \right)}}\)
-										<a class="tooltip-1">\(=\)<span class="classic">
-											\[ =\frac{1}{{{a}^{2}}-1}\int\limits_{0}^{+\infty }
-										{\left( \frac{{{a}^{2}}}{1+{{a}^{2}}{{t}^{2}}}-\frac{1}{1+{{t}^{2}}} \right)dt}=\]
-										\[ \displaystyle =\frac{1}{{{a}^{2}}-1}\left. \left( a\,\,\operatorname{arctg}\left( 
-										ta \right)-\operatorname{arctg}t \right) \right|_{0}^{+\infty }=\]
-										 </span></a>
-										
-										\(\displaystyle \frac{\pi }{2\left( 
-										{{a}^{2}}-1 \right)}\left( a\operatorname{sign}a-1 \right)\)
-										<p>Следовательно, </p>
-										\begin{eqnarray*}
-										& I\left( a \right)-I\left( 0 \right)=\int\limits_{0}^{a}{\frac{\pi \left( 
-										t\operatorname{sign}t-1 \right)dt}{2\left( {{t}^{2}}-1 \right)}}= &\\
-										& =\frac{\pi }{2}\cdot \left\{ \begin{matrix}
-										\int\limits_{0}^{a}{\frac{\left( t-1 \right)dt}{\left( {{t}^{2}}-1 \right)}},\,\,a&gt;0 
-										\\
-										\int\limits_{0}^{a}{\frac{\left( -t-1 \right)dt}{\left( {{t}^{2}}-1 \right)}},\,\,a&lt;0 
-										\\
-										\end{matrix} \right.=\frac{\pi }{2}\cdot \left\{ \begin{matrix}
-										\ln \left| a+1 \right|,a\ge 0  \\
-										-\ln \left| a-1 \right|,a&lt;0  \\
-										\end{matrix} \right.=\frac{\pi \operatorname{sign}a}{2}\ln \left( 1+\left| a \right| \right).&
-										\end{eqnarray*}
-									</p>
-								</span>
-							</p>
-						</div>
-				</details>
-			</div>
-</div>
-</section>
-</div>
--->
-<div>
-			<p class="margin-top" style = "white-space: nowrap" >
-					<span class = "em-wide" style="font-size: 20px">Пример 7.</span>
-					Вычислить  \(\displaystyle I\left( a,b \right)=\int\limits_
-					   {0}^{1}{\frac{{{x}^{b}}-{{x}^{a}}}{\ln x}dx}\), \(\displaystyle b&gt;a&gt;0\).
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<span class = "em-wide" style="font-size: 20px">Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid;"> \(\displaystyle \ln \frac{b+1}{a+1}\).</button>
-				</p>
-				<br>
-				<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
-					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
-					<div class="proof">
-						<em>Способ 1</em>. Воспользуемся теоремой
-						<a class="tooltip-1">об интегрируемости<span class="classic">
-							Если \(\displaystyle f(x,\gamma )
-		\in  \mathbb{C} \)
-		\(\left( \left[ a,b \right]\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \right)\), то функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\) интегрируема
-		на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и справедливо равенство
-		\begin{eqnarray*}
-		& \int\limits_{\gamma_1}^{\gamma_2}I(\gamma )d\gamma
-			=\int\limits_{\gamma_1}^{\gamma_2} ( \int\limits_{a}^{b}f(x,\gamma )dx
-			)d\gamma = &\\
-			& \int\limits_{a}^{b} ( \int\limits_{\gamma_1}^{\gamma_2}f(x,\gamma
-			)d\gamma)dx. &
-		\end{eqnarray*}
-						</span></a>, для этого заметим, что</p>
-					\begin{eqnarray*}
-					\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\frac{{{x}^{b}}-{{x}^{a}}}
-					{\ln x}dx}=\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^{\gamma }}d\gamma }
-						\right)dx}.
-						\end{eqnarray*}
-						<div class="col-black normal"><p><span class="col-blue">Так как</span> \(\displaystyle \forall \gamma \in \left[ a,b 
-						\right]\) \(\displaystyle \underset{x\to 0+}{\mathop{\lim }}\,{{x}^{\gamma }}=\,\underset
-						{x\to 0+}{\mathop{\lim }}\,{{e}^{\gamma \ln x}}=\,0\),<span class="col-blue"> то подынтегральная 
-						функция может быть доопределена до непрерывной на</span> \(\displaystyle \varPi=\left[ 0,1 \right]
-						\times \left[ a,b \right]\):</p>
-						\begin{eqnarray*}
-						\displaystyle \tilde{f}\left( x,\gamma  \right)=\left\{ \begin{matrix}
-						{{x}^{\gamma }},\,\,x&gt;0,  \\
-						 0,\,\,x=0.  \\
-						\end{matrix} \right.
-						\end{eqnarray*}</div>
-						<p>Все условия теоремы
-							<a class="tooltip-1">об интегрируемости<span class="classic">
-								Если \(\displaystyle f(x,\gamma )
-			\in  \mathbb{C} \)
-			\( \left( \left[ a,b \right]\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \right)\), то функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\) интегрируема
-			на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и справедливо равенство
-			\begin{eqnarray*}
-			& \int\limits_{\gamma_1}^{\gamma_2}I(\gamma )d\gamma
-				=\int\limits_{\gamma_1}^{\gamma_2} ( \int\limits_{a}^{b}f(x,\gamma )dx
-				)d\gamma = &\\
-				& \int\limits_{a}^{b} ( \int\limits_{\gamma_1}^{\gamma_2}f(x,\gamma
-				)d\gamma)dx. &
-			\end{eqnarray*}
-							</span></a> выполнены, поэтому</p>
-						\begin{eqnarray*}
-						\displaystyle I\left( a,b \right)\,=\,\int\limits_{a}^{b}{\left( 
-						\int\limits_{0}^{1}{{{x}^{\gamma }}dx} \right)d\gamma }\,=\,\left[ x\,=\,
-						{{e}^{-t}} \right]=\int\limits_{a}^{b}{\left( \int\limits_{0}^{+\infty }{{{e}^
-						{-t\left( \gamma +1 \right)}}dt} \right)d\gamma }\,=\,\int\limits_{a}^{b}{\frac{1}
-						{\gamma \,+\,1}d\gamma }=\ln \frac{1\,+\,b}{1\,+\,a}.
-						\end{eqnarray*}
-						<p><em>Способ 2.</em>
-						Пусть \(\displaystyle f\left( x,a,b \right)=\frac{{{x}^{b}}-{{x}^{a}}}{\ln x}\).
-					Рассмотрим произвольный прямоугольник \(\displaystyle \subset \left[ 0,1 \right]\times
-					{{\left\{ \left. t \right|t&gt;0 \right\}}^{2}}\). <div class="col-black"><span class="col-blue">Учитывая,
-						 что</span> \(\displaystyle \underset{x\to 0+}{\mathop{\lim }
-						}\,f\left( x,a,b \right)=\underset{x\to 0+}{\mathop{\lim }}\,\frac{{{x}^{b}}-{{x}^{a}}}
-						{\ln x}=0\) <span class="col-blue">и</span></p>
-						\begin{eqnarray*}
-						\displaystyle \underset{x\to 1-}{\mathop{\lim }}\,f\left( x,a,b \right)=
-							\underset{x\to 1-}{\mathop{\lim }}\,\frac{{{e}^{b\ln x}}-{{e}^{a\ln x}}}{\ln x}=\underset
-							{x\to 1-}{\mathop{\lim }}\,\frac{\left( 1+b\ln x \right)-\left( 1+a\ln x \right)}{\ln
-							x}=b-a,
-							\end{eqnarray*}
-						<span class="col-blue">подынтегральную функцию можно доопределить до непрерывной на </span> \(\displaystyle П\):
-						\begin{eqnarray*}
-						\displaystyle \tilde{f}\left( x,a,b \right)=\left\{ \begin{matrix}
-							0,\,\,x=0 \\
-							f\left( x,a,b \right),\,0&lt;x&lt;1, \\
-							b-a,\,\,x=1. \\
-							\end{matrix} \right.
-							\end{eqnarray*}
-						<p><span class="col-blue">Функции</span> \(\displaystyle \tilde{f}\left( x,a,b \right)\), \(\displaystyle
-							\frac{\partial \tilde{f}\left( x,a,b \right)}{\partial b}={{x}^{b}}\)
-							<span class="col-blue">непрерывны на </span> \(\displaystyle П\)<span class="col-black">, поэтому</span> в силу теоремы 11 с учетом замечания, получим</p>
-							\begin{eqnarray*}
-							\displaystyle \frac{\partial I\left( a,b \right)}{\partial b}=\int\limits_{0}^{1}{{{x}^{b}}dx}=\left.
-						\frac{{{x}^{b+1}}}{b+1} \right|_{0}^{1}=\frac{1}{b+1},
-						\end{eqnarray*}
-							<p>Следовательно, \(\displaystyle I\left( a,b \right)=\int{\frac{1}{b+1}db}=\ln
-							\left( b+1 \right)+C\left( a \right)\). Учитывая, что \(\displaystyle {{\left. I\left( a,b \right) \right|}_
-						{b=a}}=\,0\), получим, \(\displaystyle C\left( a \right)=-\ln \left( a+1 \right)\), а значит, \(\displaystyle
-							I\left( a,b \right)=\ln \frac{b+1}{a+1}\).
-						</p>
-				</p>
-					</div>
-				</details>
-			</div>
-<div>
-<!--
-			<div class="spoiler">
-				<section class="example">
-					<button class="spoiler-button">Пример 7</button>
-<div class="spoiler-content">
-			<div class="col-black">
-				<details>
-					<summary class="margin-top">
-					Вычислим интеграл \(\displaystyle I\left( a,b \right)=\int\limits_
-					   {0}^{1}{\frac{{{x}^{b}}-{{x}^{a}}}{\ln x}dx}\), \(\displaystyle b&gt;a&gt;0\).
-				</summary>
-				<div class="proof">
-				<p>
-					<p class="padding-top"><em>Способ 1</em>. Воспользуемся теоремой 10
-						<a class="tooltip-1">об интегрируемости<span class="classic">
-							Если \(\displaystyle f(x,\gamma )
-		\in  \mathbb{C} \)
-		\(\left( \left[ a,b \right]\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \right)\), то функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\) интегрируема
-		на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и справедливо равенство
-		\begin{eqnarray*}
-		& \int\limits_{\gamma_1}^{\gamma_2}I(\gamma )d\gamma
-			=\int\limits_{\gamma_1}^{\gamma_2} ( \int\limits_{a}^{b}f(x,\gamma )dx
-			)d\gamma = &\\
-			& \int\limits_{a}^{b} ( \int\limits_{\gamma_1}^{\gamma_2}f(x,\gamma
-			)d\gamma)dx. &
-		\end{eqnarray*}
-						</span></a>, для этого заметим, что</p>
-					\begin{eqnarray*}
-					\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\frac{{{x}^{b}}-{{x}^{a}}}
-					{\ln x}dx}=\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^{\gamma }}d\gamma }
-						\right)dx}.
-						\end{eqnarray*}
-						<div class="col-black normal"><p><span class="col-blue">Так как</span> \(\displaystyle \forall \gamma \in \left[ a,b 
-						\right]\) \(\displaystyle \underset{x\to 0+}{\mathop{\lim }}\,{{x}^{\gamma }}=\,\underset
-						{x\to 0+}{\mathop{\lim }}\,{{e}^{\gamma \ln x}}=\,0\),<span class="col-blue"> то подынтегральная 
-						функция может быть доопределена до непрерывной на</span> \(\displaystyle \varPi=\left[ 0,1 \right]
-						\times \left[ a,b \right]\):</p>
-						\begin{eqnarray*}
-						\displaystyle \tilde{f}\left( x,\gamma  \right)=\left\{ \begin{matrix}
-						{{x}^{\gamma }},\,\,x&gt;0,  \\
-						 0,\,\,x=0.  \\
-						\end{matrix} \right.
-						\end{eqnarray*}</div>
-						<p>Все условия теоремы 10
-							<a class="tooltip-1">об интегрируемости<span class="classic">
-								Если \(\displaystyle f(x,\gamma )
-			\in  \mathbb{C} \)
-			\( \left( \left[ a,b \right]\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \right)\), то функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\) интегрируема
-			на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и справедливо равенство
-			\begin{eqnarray*}
-			& \int\limits_{\gamma_1}^{\gamma_2}I(\gamma )d\gamma
-				=\int\limits_{\gamma_1}^{\gamma_2} ( \int\limits_{a}^{b}f(x,\gamma )dx
-				)d\gamma = &\\
-				& \int\limits_{a}^{b} ( \int\limits_{\gamma_1}^{\gamma_2}f(x,\gamma
-				)d\gamma)dx. &
-			\end{eqnarray*}
-							</span></a> выполнены, поэтому</p>
-						\begin{eqnarray*}
-						\displaystyle I\left( a,b \right)\,=\,\int\limits_{a}^{b}{\left( 
-						\int\limits_{0}^{1}{{{x}^{\gamma }}dx} \right)d\gamma }\,=\,\left[ x\,=\,
-						{{e}^{-t}} \right]=\int\limits_{a}^{b}{\left( \int\limits_{0}^{+\infty }{{{e}^
-						{-t\left( \gamma +1 \right)}}dt} \right)d\gamma }\,=\,\int\limits_{a}^{b}{\frac{1}
-						{\gamma \,+\,1}d\gamma }=\ln \frac{1\,+\,b}{1\,+\,a}.
-						\end{eqnarray*}
-						<p><em>Способ 2.</em>
-						Пусть \(\displaystyle f\left( x,a,b \right)=\frac{{{x}^{b}}-{{x}^{a}}}{\ln x}\).
-					Рассмотрим произвольный прямоугольник \(\displaystyle \subset \left[ 0,1 \right]\times
-					{{\left\{ \left. t \right|t&gt;0 \right\}}^{2}}\). <div class="col-black"><span class="col-blue">Учитывая,
-						 что</span> \(\displaystyle \underset{x\to 0+}{\mathop{\lim }
-						}\,f\left( x,a,b \right)=\underset{x\to 0+}{\mathop{\lim }}\,\frac{{{x}^{b}}-{{x}^{a}}}
-						{\ln x}=0\) <span class="col-blue">и</span></p>
-						\begin{eqnarray*}
-						\displaystyle \underset{x\to 1-}{\mathop{\lim }}\,f\left( x,a,b \right)=
-							\underset{x\to 1-}{\mathop{\lim }}\,\frac{{{e}^{b\ln x}}-{{e}^{a\ln x}}}{\ln x}=\underset
-							{x\to 1-}{\mathop{\lim }}\,\frac{\left( 1+b\ln x \right)-\left( 1+a\ln x \right)}{\ln
-							x}=b-a,
-							\end{eqnarray*}
-						<span class="col-blue">подынтегральную функцию можно доопределить до непрерывной на </span> \(\displaystyle П\):
-						\begin{eqnarray*}
-						\displaystyle \tilde{f}\left( x,a,b \right)=\left\{ \begin{matrix}
-							0,\,\,x=0 \\
-							f\left( x,a,b \right),\,0&lt;x&lt;1, \\
-							b-a,\,\,x=1. \\
-							\end{matrix} \right.
-							\end{eqnarray*}
-						<p><span class="col-blue">Функции</span> \(\displaystyle \tilde{f}\left( x,a,b \right)\), \(\displaystyle
-							\frac{\partial \tilde{f}\left( x,a,b \right)}{\partial b}={{x}^{b}}\)
-							<span class="col-blue">непрерывны на </span> \(\displaystyle П\)<span class="col-black">, поэтому</span> в силу теоремы 11 с учетом замечания, получим</p>
-							\begin{eqnarray*}
-							\displaystyle \frac{\partial I\left( a,b \right)}{\partial b}=\int\limits_{0}^{1}{{{x}^{b}}dx}=\left.
-						\frac{{{x}^{b+1}}}{b+1} \right|_{0}^{1}=\frac{1}{b+1},
-						\end{eqnarray*}
-							<p>Следовательно, \(\displaystyle I\left( a,b \right)=\int{\frac{1}{b+1}db}=\ln
-							\left( b+1 \right)+C\left( a \right)\). Учитывая, что \(\displaystyle {{\left. I\left( a,b \right) \right|}_
-						{b=a}}=\,0\), получим, \(\displaystyle C\left( a \right)=-\ln \left( a+1 \right)\), а значит, \(\displaystyle
-							I\left( a,b \right)=\ln \frac{b+1}{a+1}\).
-						</p>
-				</p>
-				</div>
-			  </details>
-			</div></div></section></div>
--->
 
 	</main>
 <br>

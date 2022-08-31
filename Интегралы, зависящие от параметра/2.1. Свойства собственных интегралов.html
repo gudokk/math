@@ -87,14 +87,14 @@
                           >Дифференцируемость.</a
                         >
                       </li>
-					  <li>
-                        <a
-                        href="2.1. Свойства собственных интегралов.html#calc"
-                        >Вычисление интегралов, с помощью дифференцирования по параметру.</a
-                        >
-                      </li>
                     </ul>
-                  </li>
+				</li>
+				<li>
+				  <a
+				  href="2.1. Свойства собственных интегралов.html#calc"
+				  >Вычисление интегралов, с помощью дифференцирования по параметру.</a
+				  >
+				</li>
                 </ul>
               </li>
                     
@@ -171,13 +171,13 @@
                     >Интегрируемость.</a
                     >
                   </li>
-				  <li>
-                    <a
-                    href="2.2.4. Свойства равномерно сходящихся интегралов.html#calc"
-                    >Вычисление интегралов, с помощью дифференцирования по параметру.</a
-                    >
-                  </li>
                 </ul></li>
+				<li>
+				  <a
+				  href="2.2.4. Свойства равномерно сходящихся интегралов.html#calc"
+				  >Вычисление интегралов, с помощью дифференцирования по параметру.</a
+				  >
+				</li>
                 </ul>
                 <li>
                   <a
@@ -285,13 +285,43 @@
 		<div class="proof">
 					<p>
 					Преобразуем интеграл следующим образом
-					\begin{eqnarray*}
+						
+					<div class="easy-text">
+					\( \displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\sin \left( \ln \frac{1}{x}
+							\right)\left( \int\limits_{a}^{b}{{{x}^{\gamma }}d\gamma } \right)dx}=\)
+							\(\displaystyle \int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^
+							{\gamma }}\sin \left( \ln \frac{1}{x} \right)d\gamma } \right)\,dx}\)
+							<a class="tooltip-1">\(=\)<span class="classic">
+								Для просмотра обоснования смените уровень
+						</span></a>
+							\(\displaystyle \int\limits_{a}^{b}{\left
+								( \int\limits_{0}^{1}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} \right)dx} \right)d\gamma }.\)
+								<p>Вычислим внутренний интеграл:</p>
+								\(\qquad \qquad \qquad \qquad \qquad \qquad
+								\displaystyle \int\limits_{0}^{1}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} \right)dx=\left[ 
+								x={{e}^{-t}} \right]}\)
+							\(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-t\left( \gamma +1 \right)}}\sin t\,dt}\)
+						<a class="tooltip-1">\(=\)<span class="classic">
+							\[ \displaystyle =\left. \left( \frac{-{{e}^{-t\left( \gamma +1 \right)}}\cos t-\left( \gamma +1 
+						\right){{e}^{-t\left( \gamma +1 \right)}}\sin t}{{{\left( \gamma +1 \right)}^{2}}+1} \right) 
+						\right|_{0}^{+\infty }=\]
+					</span></a>
+						\( \frac{1}{{{\left( \gamma +1 \right)}^{2}}+1}.\)
+						<p>Следовательно, \[\displaystyle I\left( a,b \right)\,=\,\int\limits_{a}^{b}{\frac{d\gamma 
+						}{{{\left( \gamma \,+\,1 \right)}^{2}}\,+\,1}}\,=\,\operatorname{arctg}\left( b\,+\,1 
+						\right)\,-\,\operatorname{arctg}\left( a\,+\,1 \right)\].
+						</p>
+
+					</p>		
+					</div>
+			
+			
+					<div class="normal">\begin{eqnarray*}
 					\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\sin \left( \ln \frac{1}{x}
 							\right)\left( \int\limits_{a}^{b}{{{x}^{\gamma }}d\gamma } \right)dx}=\displaystyle 
 						\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} 
 						\right)d\gamma } \right)dx.}
 						\end{eqnarray*}
-						<div class="normal">
 						<p><span class="col-blue">Пусть</span> \(\displaystyle f\left( x,\gamma  \right)={{x}^{\gamma }}\sin 
 						\left( \ln \frac{1}{x} \right)\).<span class="col-blue"> Учитывая, что</span> \(\displaystyle \forall \gamma \in \left[ a,b \right]\)</p>
 						\begin{eqnarray*}
@@ -310,7 +340,6 @@
 						0,\,\,x=0.  \\
 						\end{matrix} \right.
 						\end{eqnarray*}
-						</div>
 						<p>В силу теоремы
 							<a class="tooltip-1">об интегрируемости<span class="classic">
 								Если \(\displaystyle f(x,\gamma )
@@ -325,7 +354,17 @@
 				)d\gamma)dx. &
 			\end{eqnarray*}
 							</span></a>
-							с учетом замечания, получим</p>
+							с учетом
+							<a class="tooltip-1">замечания<span class="classic">
+								Утверждение теоремы и ее следствия остаются
+									справедливым, если функции
+									\(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) могут
+									быть доопределены по непрерывности в прямоугольнике \(\displaystyle \left[ a,b \right]\times \left[ {{\gamma 
+									}_{1}},{{\gamma }_{2}} \right]\), \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\subset\) 
+									\( \Gamma \)
+										изменением их значений не более чем на конечном множестве прямых
+										\(\displaystyle x=\text{const}\).
+							</span></a>, получим</p>
 						\begin{eqnarray*}
 						\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^
 						{\gamma }}\sin \left( \ln \frac{1}{x} \right)d\gamma } \right)\,dx}=\int\limits_{a}^{b}{\left
@@ -347,6 +386,7 @@
 						</p>
 
 				</p>
+			</div>
 	</details>
 	<div>
 		<p class="margin-top" style = "white-space: nowrap" >
@@ -361,7 +401,18 @@
 			<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
 				<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
 				<div class="proof">
-								<div class="col-blue normal">
+					<div class = "easy-text"> 
+						<p>Все условия теоремы о дифференцировании <a class="tooltip-1">выполнены<span class="classic">
+							Для просмотра смените уровень
+					</span></a>, поэтому
+\[{I}'\left( a \right)=2\int\limits_{0}^{\pi /2}{\frac{dx}{1-{{a}^{2}}{{\cos }^{2}}x}}=
+\left[ t=\operatorname{tg}x \right]=2\int\limits_{0}^{+\infty }{\frac{dt}{1+{{t}^{2}}-{{a}^{2}}}}=\frac{\pi }{\sqrt{1-{{a}^{2}}}}.\]</p>
+<p>Следовательно, \[I\left( a \right)=\int{\frac{\pi \,da}{\sqrt{1-{{a}^{2}}}}}=\pi \arcsin a+C.\]</p>
+<p>Согласно условию, \( I\left( 0 \right)=\int\limits_{0}^{\pi /2}{0dx}=0\), а значит, \( I\left( a \right)=\pi \arcsin a\).
+					</p>
+					</div>
+								<div class="normal">
+									<div class = "col-blue">
 					Пусть \( f\left( x,a \right)=\ln \left( \frac{1+a\cos x}{1-a\cos x} \right)\frac{1}{\cos x}\). Так как 
 					\begin{eqnarray*}
 &\underset{x\to \frac{\pi }{2}-0}{\mathop{\lim }}\,f\left( x,a \right)=\underset{x\to
@@ -372,8 +423,30 @@
 подынтегральная функция может быть доопределена до непрерывной на произвольном прямоугольнике 
 \(  \varPi \subset \left[ 0,\pi /2 \right]\times \left( -1,1 \right)\).
 <p>Функция \( \frac{\partial f}{\partial a}=\frac{2}{1-{{a}^{2}}{{\cos }^{2}}x}\) непрерывна на произвольном прямоугольнике 
-\[\varPi \subset \left[ 0,\pi /2 \right]\times \left( -1,1 \right)\].</p></div>
-<p>Все условия теоремы о дифференцировании выполнены, поэтому
+\[\varPi \subset \left[ 0,\pi /2 \right]\times \left( -1,1 \right)\].</p>
+										</div>
+<p>Все условия теоремы
+	<a class="tooltip-1">о дифференцировании<span class="classic">
+		Пусть \(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
+				{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+				Тогда если<br>
+					1) \(\displaystyle
+					f(x,\gamma ) \in \mathbb{C}(\varPi),\)<br>
+					2) \(\displaystyle \frac{\partial f(x,\gamma )}{\partial
+				\gamma }\in \mathbb{C} (\displaystyle \varPi),\)<br>
+					3) \(\displaystyle
+				a(\gamma )\) и \(\displaystyle b(\gamma )\) дифференцируемы на
+				\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right],\)
+				 то функция
+				 \(\displaystyle I(\gamma )\,=\,\int\limits_{a(\gamma )}^{b(\gamma
+					)}{f(x,\gamma )dx}\) дифференцируема на \(\displaystyle \left[
+					{{\gamma }_{1}},{{\gamma }_{2}} \right]\) и ее производная 
+				может быть вычислена по правилу Лейбница:
+				\[\displaystyle {I}'(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma
+						)}{\frac{\partial f\left( x,\gamma \right)}{\partial \gamma
+						}dx}+{b}'(\gamma )\cdot f(b(\gamma ),\gamma )-{a}'(\gamma )\cdot
+						f(a(\gamma ), \gamma ). \]
+	</span></a> выполнены, поэтому
 \[{I}'\left( a \right)=2\int\limits_{0}^{\pi /2}{\frac{dx}{1-{{a}^{2}}{{\cos }^{2}}x}}=
 \left[ t=\operatorname{tg}x \right]=2\int\limits_{0}^{+\infty }{\frac{dt}{1+{{t}^{2}}-{{a}^{2}}}}=\frac{\pi }{\sqrt{1-{{a}^{2}}}}.\]</p>
 <p>Следовательно, \[I\left( a \right)=\int{\frac{\pi \,da}{\sqrt{1-{{a}^{2}}}}}=\pi \arcsin a+C.\]</p>
@@ -396,10 +469,48 @@
 			<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
 				<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
 				<div class="proof">
+					
+					<div class = "easy-text">
+						<a class="tooltip-1">Продифференцируем по параметру<span class="classic">
+										Для просмотра обоснования смените уровень
+									 </span></a>
+						
+						<br>
+						\(\qquad \qquad \qquad 
+									\displaystyle {I}'\left( a \right)=\int\limits_{0}^{\pi /2}{\frac{dx}{1+{{a}^{2}}
+									{{\operatorname{tg}}^{2}}x}}=\left[ t=\operatorname{tg}x \right]
+									 =\int\limits_{0}^{+\infty }{\frac{dt}{\left( 1+{{a}^{2}}{{t}^{2}} 
+									\right)\left( 1+{{t}^{2}} \right)}}\)
+									<a class="tooltip-1">\(=\)<span class="classic">
+										\[ =\frac{1}{{{a}^{2}}-1}\int\limits_{0}^{+\infty }
+									{\left( \frac{{{a}^{2}}}{1+{{a}^{2}}{{t}^{2}}}-\frac{1}{1+{{t}^{2}}} \right)dt}=\]
+									\[ \displaystyle =\frac{1}{{{a}^{2}}-1}\left. \left( a\,\,\operatorname{arctg}\left( 
+									ta \right)-\operatorname{arctg}t \right) \right|_{0}^{+\infty }=\]
+									 </span></a>
+									
+									\(\displaystyle \frac{\pi }{2\left( 
+									{{a}^{2}}-1 \right)}\left( a\operatorname{sign}a-1 \right)\)
+									<p>Следовательно, </p>
+									\begin{eqnarray*}
+									& I\left( a \right)-I\left( 0 \right)=\int\limits_{0}^{a}{\frac{\pi \left( 
+									t\operatorname{sign}t-1 \right)dt}{2\left( {{t}^{2}}-1 \right)}}= &\\
+									& =\frac{\pi }{2}\cdot \left\{ \begin{matrix}
+									\int\limits_{0}^{a}{\frac{\left( t-1 \right)dt}{\left( {{t}^{2}}-1 \right)}},\,\,a&gt;0 
+									\\
+									\int\limits_{0}^{a}{\frac{\left( -t-1 \right)dt}{\left( {{t}^{2}}-1 \right)}},\,\,a&lt;0 
+									\\
+									\end{matrix} \right.=\frac{\pi }{2}\cdot \left\{ \begin{matrix}
+									\ln \left| a+1 \right|,a\ge 0  \\
+									-\ln \left| a-1 \right|,a&lt;0  \\
+									\end{matrix} \right.=\frac{\pi \operatorname{sign}a}{2}\ln \left( 1+\left| a \right| \right).&
+									\end{eqnarray*}
+						
+					</div>
+					<div class="normal">
 					<span class="col-blue">
 					Пусть \(\displaystyle f\left( x,a \right)=\frac{\operatorname{arctg}\left(
 						a\operatorname{tg}x \right)}{\operatorname{tg}x}\).
-						<div class="normal">Рассмотрим произвольный прямоугольник
+						Рассмотрим произвольный прямоугольник
 						\(\displaystyle \varPi \subset \left[ 0,\pi /2 \right]\times \mathbb{R}\).
 
 						Так как
@@ -419,14 +530,44 @@
 								{f}\left( x,a \right),0&lt;x&lt;\pi /2, \\
 								0,\,\,x=\pi /2.
 								\end{cases} 
-								\end{eqnarray*} </div>
+								\end{eqnarray*} 
 							 Функции \(\displaystyle \tilde{f}\left( x,a \right)\),
 									 \(\displaystyle \frac{\partial 
 								\tilde{f}\left( x,a \right)}{\partial a}\,=\,\frac{1}{1\,+\,{{a}^{2}}{{\operatorname{tg}}^
 								{2}}x}\) непрерывны на \(\displaystyle \varPi\), 
 								</span>
-								<p> То в силу теоремы 11 с учетом замечания, получим
-								<div class="col-black">
+								<p> То в силу теоремы
+									<a class="tooltip-1">о дифференцируемости<span class="classic">
+										Пусть \(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
+												{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+												Тогда если<br>
+													1) \(\displaystyle
+													f(x,\gamma ) \in \mathbb{C}(\varPi),\)<br>
+													2) \(\displaystyle \frac{\partial f(x,\gamma )}{\partial
+												\gamma }\in \mathbb{C} (\displaystyle \varPi),\)<br>
+													3) \(\displaystyle
+												a(\gamma )\) и \(\displaystyle b(\gamma )\) дифференцируемы на
+												\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right],\)
+												 то функция
+												 \(\displaystyle I(\gamma )\,=\,\int\limits_{a(\gamma )}^{b(\gamma
+													)}{f(x,\gamma )dx}\) дифференцируема на \(\displaystyle \left[
+													{{\gamma }_{1}},{{\gamma }_{2}} \right]\) и ее производная 
+												может быть вычислена по правилу Лейбница:
+												\[\displaystyle {I}'(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma
+														)}{\frac{\partial f\left( x,\gamma \right)}{\partial \gamma
+														}dx}+{b}'(\gamma )\cdot f(b(\gamma ),\gamma )-{a}'(\gamma )\cdot
+														f(a(\gamma ), \gamma ). \]
+									</span></a>, с учетом 
+									<a class="tooltip-1">замечания<span class="classic">
+										Утверждение теоремы и ее следствия остаются
+											справедливым, если функции
+											\(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) могут
+											быть доопределены по непрерывности в прямоугольнике \(\displaystyle \left[ a,b \right]\times \left[ {{\gamma 
+											}_{1}},{{\gamma }_{2}} \right]\), \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\subset\) 
+											\( \Gamma \)
+												изменением их значений не более чем на конечном множестве прямых
+												\(\displaystyle x=\text{const}\).
+									</span></a>, получим</p>
 									\(\qquad \qquad \qquad 
 									\displaystyle {I}'\left( a \right)=\int\limits_{0}^{\pi /2}{\frac{dx}{1+{{a}^{2}}
 									{{\operatorname{tg}}^{2}}x}}=\left[ t=\operatorname{tg}x \right]
@@ -455,7 +596,6 @@
 									-\ln \left| a-1 \right|,a&lt;0  \\
 									\end{matrix} \right.=\frac{\pi \operatorname{sign}a}{2}\ln \left( 1+\left| a \right| \right).&
 									\end{eqnarray*}
-								</p>
 							</span>
 					</p>
 				</div>
@@ -555,27 +695,49 @@
 			<br>
 			<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
 				<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
+				<div class = "easy-text">
+					<div class="proof">
+					<p><em style = "font-size: 22px">Способ 1. Используя теорему об интегрируемости</em>.</p>
+					<br>
+					<br>
+					<p>Преобразуем интеграл следующим образом</p>
+				\[ \displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\frac{{{x}^{b}}-{{x}^{a}}}
+				{\ln x}dx}=\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^{\gamma }}d\gamma }
+					\right)dx}.=\,\left[ x\,=\,
+					{{e}^{-t}} \right]=\]
+					\[=\int\limits_{a}^{b}{\left( \int\limits_{0}^{+\infty }{{{e}^
+					{-t\left( \gamma +1 \right)}}dt} \right)d\gamma }\,=\,\int\limits_{a}^{b}{\frac{1}
+					{\gamma \,+\,1}d\gamma }=\ln \frac{1\,+\,b}{1\,+\,a}.\]
+						<em style = "font-size: 22px">Способ 2. Используя теорему о дифференцируемости </em>
+					 <p><p>Все условия теоремы о дифференцировании <a class="tooltip-1">выполнены<span class="classic">
+						Для просмотра смените уровень
+				</span></a>, поэтому</p>
+						\begin{eqnarray*}
+						\displaystyle \frac{\partial I\left( a,b \right)}{\partial b}=\int\limits_{0}^{1}{{{x}^{b}}dx}=\left.
+					\frac{{{x}^{b+1}}}{b+1} \right|_{0}^{1}=\frac{1}{b+1},
+					\end{eqnarray*}
+						<p>Следовательно, \(\displaystyle I\left( a,b \right)=\int{\frac{1}{b+1}db}=\ln
+						\left( b+1 \right)+C\left( a \right)\). Учитывая, что \(\displaystyle {{\left. I\left( a,b \right) \right|}_
+					{b=a}}=\,0\), получим, \(\displaystyle C\left( a \right)=-\ln \left( a+1 \right)\), а значит, \(\displaystyle
+						I\left( a,b \right)=\ln \frac{b+1}{a+1}\).
+					</p>
+			</p>
+				</div>
+				</div>
+				
+				
+				<div class = "normal">
 				<div class="proof">
-					<em>Способ 1</em>. Воспользуемся теоремой
-					<a class="tooltip-1">об интегрируемости<span class="classic">
-						Если \(\displaystyle f(x,\gamma )
-	\in  \mathbb{C} \)
-	\(\left( \left[ a,b \right]\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \right)\), то функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\) интегрируема
-	на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и справедливо равенство
-	\begin{eqnarray*}
-	& \int\limits_{\gamma_1}^{\gamma_2}I(\gamma )d\gamma
-		=\int\limits_{\gamma_1}^{\gamma_2} ( \int\limits_{a}^{b}f(x,\gamma )dx
-		)d\gamma = &\\
-		& \int\limits_{a}^{b} ( \int\limits_{\gamma_1}^{\gamma_2}f(x,\gamma
-		)d\gamma)dx. &
-	\end{eqnarray*}
-					</span></a>, для этого заметим, что</p>
+					<em style = "font-size: 22px">Способ 1. Используя теорему об интегрируемости</em>.
+					<br>
+					<br>
+					<p>Преобразуем интеграл следующим образом</p>
 				\begin{eqnarray*}
 				\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\frac{{{x}^{b}}-{{x}^{a}}}
 				{\ln x}dx}=\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^{\gamma }}d\gamma }
 					\right)dx}.
 					\end{eqnarray*}
-					<div class="col-black normal"><p><span class="col-blue">Так как</span> \(\displaystyle \forall \gamma \in \left[ a,b 
+					<p><span class="col-blue">Так как</span> \(\displaystyle \forall \gamma \in \left[ a,b 
 					\right]\) \(\displaystyle \underset{x\to 0+}{\mathop{\lim }}\,{{x}^{\gamma }}=\,\underset
 					{x\to 0+}{\mathop{\lim }}\,{{e}^{\gamma \ln x}}=\,0\),<span class="col-blue"> то подынтегральная 
 					функция может быть доопределена до непрерывной на</span> \(\displaystyle \varPi=\left[ 0,1 \right]
@@ -585,8 +747,8 @@
 					{{x}^{\gamma }},\,\,x&gt;0,  \\
 					 0,\,\,x=0.  \\
 					\end{matrix} \right.
-					\end{eqnarray*}</div>
-					<p>Все условия теоремы
+					\end{eqnarray*}
+					<p>В силу теоремы
 						<a class="tooltip-1">об интегрируемости<span class="classic">
 							Если \(\displaystyle f(x,\gamma )
 		\in  \mathbb{C} \)
@@ -599,7 +761,17 @@
 			& \int\limits_{a}^{b} ( \int\limits_{\gamma_1}^{\gamma_2}f(x,\gamma
 			)d\gamma)dx. &
 		\end{eqnarray*}
-						</span></a> выполнены, поэтому</p>
+						</span></a>, с учётом
+						<a class="tooltip-1">замечания<span class="classic">
+							Утверждение теоремы и ее следствия остаются
+								справедливым, если функции
+								\(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) могут
+								быть доопределены по непрерывности в прямоугольнике \(\displaystyle \left[ a,b \right]\times \left[ {{\gamma 
+								}_{1}},{{\gamma }_{2}} \right]\), \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\subset\) 
+								\( \Gamma \)
+									изменением их значений не более чем на конечном множестве прямых
+									\(\displaystyle x=\text{const}\).
+						</span></a>, получим</p>
 					\begin{eqnarray*}
 					\displaystyle I\left( a,b \right)\,=\,\int\limits_{a}^{b}{\left( 
 					\int\limits_{0}^{1}{{{x}^{\gamma }}dx} \right)d\gamma }\,=\,\left[ x\,=\,
@@ -607,10 +779,10 @@
 					{-t\left( \gamma +1 \right)}}dt} \right)d\gamma }\,=\,\int\limits_{a}^{b}{\frac{1}
 					{\gamma \,+\,1}d\gamma }=\ln \frac{1\,+\,b}{1\,+\,a}.
 					\end{eqnarray*}
-					<p><em>Способ 2.</em>
-					Пусть \(\displaystyle f\left( x,a,b \right)=\frac{{{x}^{b}}-{{x}^{a}}}{\ln x}\).
+					<p><em style = "font-size: 22px">Способ 2. Используя теорему о дифференцируемости </em>
+					<p class = "col-blue">Пусть \(\displaystyle f\left( x,a,b \right)=\frac{{{x}^{b}}-{{x}^{a}}}{\ln x}\).
 				Рассмотрим произвольный прямоугольник \(\displaystyle \subset \left[ 0,1 \right]\times
-				{{\left\{ \left. t \right|t&gt;0 \right\}}^{2}}\). <div class="col-black"><span class="col-blue">Учитывая,
+				{{\left\{ \left. t \right|t&gt;0 \right\}}^{2}}\). <span class="col-blue">Учитывая,
 					 что</span> \(\displaystyle \underset{x\to 0+}{\mathop{\lim }
 					}\,f\left( x,a,b \right)=\underset{x\to 0+}{\mathop{\lim }}\,\frac{{{x}^{b}}-{{x}^{a}}}
 					{\ln x}=0\) <span class="col-blue">и</span></p>
@@ -630,7 +802,38 @@
 						\end{eqnarray*}
 					<p><span class="col-blue">Функции</span> \(\displaystyle \tilde{f}\left( x,a,b \right)\), \(\displaystyle
 						\frac{\partial \tilde{f}\left( x,a,b \right)}{\partial b}={{x}^{b}}\)
-						<span class="col-blue">непрерывны на </span> \(\displaystyle П\)<span class="col-black">, поэтому</span> в силу теоремы 11 с учетом замечания, получим</p>
+						<span class="col-blue">непрерывны на </span> \(\displaystyle П\), поэтому</span> в силу теоремы
+						<a class="tooltip-1">о дифференцируемости<span class="classic">
+							Пусть \(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
+									{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+									Тогда если<br>
+										1) \(\displaystyle
+										f(x,\gamma ) \in \mathbb{C}(\varPi),\)<br>
+										2) \(\displaystyle \frac{\partial f(x,\gamma )}{\partial
+									\gamma }\in \mathbb{C} (\displaystyle \varPi),\)<br>
+										3) \(\displaystyle
+									a(\gamma )\) и \(\displaystyle b(\gamma )\) дифференцируемы на
+									\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right],\)
+									 то функция
+									 \(\displaystyle I(\gamma )\,=\,\int\limits_{a(\gamma )}^{b(\gamma
+										)}{f(x,\gamma )dx}\) дифференцируема на \(\displaystyle \left[
+										{{\gamma }_{1}},{{\gamma }_{2}} \right]\) и ее производная 
+									может быть вычислена по правилу Лейбница:
+									\[\displaystyle {I}'(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma
+											)}{\frac{\partial f\left( x,\gamma \right)}{\partial \gamma
+											}dx}+{b}'(\gamma )\cdot f(b(\gamma ),\gamma )-{a}'(\gamma )\cdot
+											f(a(\gamma ), \gamma ). \]
+						</span></a>, с учетом
+						<a class="tooltip-1">замечания<span class="classic">
+							Утверждение теоремы и ее следствия остаются
+								справедливым, если функции
+								\(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) могут
+								быть доопределены по непрерывности в прямоугольнике \(\displaystyle \left[ a,b \right]\times \left[ {{\gamma 
+								}_{1}},{{\gamma }_{2}} \right]\), \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\subset\) 
+								\( \Gamma \)
+									изменением их значений не более чем на конечном множестве прямых
+									\(\displaystyle x=\text{const}\).
+						</span></a>, получим</p>
 						\begin{eqnarray*}
 						\displaystyle \frac{\partial I\left( a,b \right)}{\partial b}=\int\limits_{0}^{1}{{{x}^{b}}dx}=\left.
 					\frac{{{x}^{b+1}}}{b+1} \right|_{0}^{1}=\frac{1}{b+1},
