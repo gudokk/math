@@ -87,7 +87,7 @@
                           >Дифференцируемость.</a
                         >
                       </li>
-                      <li>
+					  <li>
                         <a
                         href="2.1. Свойства собственных интегралов.html#calc"
                         >Вычисление интегралов, с помощью дифференцирования по параметру.</a
@@ -171,7 +171,7 @@
                     >Интегрируемость.</a
                     >
                   </li>
-                  <li>
+				  <li>
                     <a
                     href="2.2.4. Свойства равномерно сходящихся интегралов.html#calc"
                     >Вычисление интегралов, с помощью дифференцирования по параметру.</a
@@ -237,7 +237,8 @@
 	<div id="navbar">
 	  <a href="#">Интегралы, зависящие от параметра</a>
 	  <a href="#">Собственные интегралы</a>
-	  <a href="#">Определение</a>
+	  <a href="#">Свойства</a>
+	  <a href="2.1 Непрерывность и предельный переход.html#nepreriv">Интегрируемость</a>
 	  <span >
 		<label>Выберите уровень: </label>
 			<select id="level">
@@ -265,49 +266,138 @@
 	
 	<main class="main small">
 		
-		<h3 class="centered"><strong id = "opr" style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Определение </strong></h3>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;Пусть в прямоугольнике \(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
-			{{\gamma }_{1}},{{\gamma }_{2}} \right]\) определена функция \(\displaystyle f(x,\gamma )\), интегрируемая
-			по \(\displaystyle x\) на \(\displaystyle \left[\displaystyle a,b \right]\) при любом фиксированном
-			\(\displaystyle \gamma \in \left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
-			Тогда на \(\displaystyle \left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\) определена функция
-			\[\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx},\] называемая <strong><em>интегралом, зависящим
-				от параметра</em></strong> \(\displaystyle \gamma \).
-		</p>
-		
-		<h2 class="centered" >Общий случай</h2><br>
-		<div class="textcols">
-			<div class="textcols-item">
-				<p class="margin-top">
-			 Если при любом
-			  		<em>фиксированном \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},
-				{{\gamma }_{2}} \right]\)</em>
-			  функция \(\displaystyle f(x,\gamma )\) интегрируема по \(\displaystyle
-			  x\) на \(\displaystyle \left[ a(\gamma ),b(\gamma ) \right]\), то на
-			  \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-			  определена функция
+		  <h3 class="centered"><strong id = "integr" style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Интегрируемость</strong></h3>
+
+		  <section class="theorem">
+			<p class="margin-top">
+
+				<strong>Теорема (Интегрируемость). </strong>
+				Пусть \(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
+					  {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
+					  Тогда если \(\displaystyle f(x,\gamma )\in\) <a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
+							  \(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
+						  </span></a>\((\)<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
+						  \(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
+		  {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+					  </span></a>\()\), то
+					  функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\)
+					  интегрируема
+					  на сегменте \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и справедливо равенство
+					  <h3 class="formula">
+						  \( \displaystyle \int\limits_{{{\gamma }_{1}}}^{{{\gamma }_{2}}}{I(\gamma )d\gamma
+							  }=\int\limits_{{{\gamma }_{1}}}^{{{\gamma }_{2}}}{\left( \int\limits_{a}^{b}{f(x,\gamma )dx}
+							  \right)d\gamma =\int\limits_{a}^{b}{\left( \int\limits_{{{\gamma }_{1}}}^{{{\gamma }_{2}}}{f(x,\gamma
+							  )d\gamma } \right)dx}}.\)
 			</p>
-			</div>
-			<div class="textcols-item">
-				<img src = "img/draw1.png" width="250">
-			</div>
-		</div>
-
-			\begin{eqnarray*}
-				\displaystyle I(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma
-				)}{f(x,\gamma )dx},
-				\end{eqnarray*}
-			</h3>
-			<p>
-			  представляющая собой
-			  <strong><em>интеграл, зависящий от параметра</em></strong
-			  >, у которого пределы интегрирования также зависят от параметра.
-			</p>
-		  </div>
-
-
-	</main>
+						</h3>
 <br>
+						<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
+					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Доказательство</summary>
+				<div class="proof normal">
+					<p>
+						<div class="col-blue"><p class="padding-top">Функция <span class="col-black">\(\displaystyle f(x,\gamma )\)</span>
+							интегрируема на прямоугольнике <span class="col-black">\( \left[\displaystyle a,b \right]\times \left[\displaystyle
+								{{\gamma }_{1}},{{\gamma }_{2}} \right],\)</span> так как непрерывна
+							на нем.  Следовательно, повторные интегралы, фигурирующие в соотношении выше, существуют и равны, что доказывает справедливость формулы </p> 
+						</div>
+
+					</p>
+				</div>
+			  </details>
+		</section>
+		<br>
+		<section class="remark">
+			<p class="margin-top"><span class="em-wide">Замечание</span>. Теорема остается справедливой, если функции
+				\(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) могут
+				быть доопределены по непрерывности в прямоугольнике \(\displaystyle =\left[ a,b \right]\times \left[ {{\gamma 
+				}_{1}},{{\gamma }_{2}} \right]\), \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\subset\) 
+				\( \Gamma \)
+					изменением их значений не более чем на конечном множестве прямых
+					\(\displaystyle x=\text{const}\).
+				</p>
+			</section>
+
+			<p class="margin-top" >
+					<span class = "em-wide" style="font-size: 20px">Пример 2.</span>
+								<span style="display: inline">Вычислить 
+								\( \displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\sin \left( \ln
+									\frac{1}{x} \right)\,\,\frac{{{x}^{b}}-{{x}^{a}}}{\ln x}dx}, \displaystyle b&gt;a&gt;0.\)
+								</span><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+					<span class = "em-wide" style="font-size: 20px">Ответ:</span><button class="spoiler-button-big" style="border:2px #A9B8C2  solid;">\[\displaystyle \,\operatorname{arctg}\left( b\,+\,1 
+									\right)\,-\,\operatorname{arctg}\left( a\,+\,1 \right)\]</button>
+				</p>
+<br>
+				<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
+					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
+					<div class="proof">
+								<p>
+								Преобразуем интеграл следующим образом
+								\begin{eqnarray*}
+								\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\sin \left( \ln \frac{1}{x}
+										\right)\left( \int\limits_{a}^{b}{{{x}^{\gamma }}d\gamma } \right)dx}=\displaystyle 
+									\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} 
+									\right)d\gamma } \right)dx.}
+									\end{eqnarray*}
+									<div class="normal">
+									<p><span class="col-blue">Пусть</span> \(\displaystyle f\left( x,\gamma  \right)={{x}^{\gamma }}\sin 
+									\left( \ln \frac{1}{x} \right)\).<span class="col-blue"> Учитывая, что</span> \(\displaystyle \forall \gamma \in \left[ a,b \right]\)</p>
+									\begin{eqnarray*}
+									\displaystyle \underset{x\to +0}{\mathop{\lim }}\,f\left( x,\gamma  
+									\right)=\underset{x\to +0}{\mathop{\lim }}\,{{x}^{\gamma }}\sin \left( 
+									\ln \frac{1}{x} \right)=\underset{x\to +0}{\mathop{\lim }}\,{{e}^{\gamma 
+									\ln x}}\sin \left( \ln \frac{1}{x} \right)=0,
+									\end{eqnarray*}
+									<span class="col-blue">подынтегральную функцию </span> \(\displaystyle f\left( x,\gamma  \right)\)<span class="col-blue">
+										 можно доопределить
+									до непрерывной на прямоугольнике </span> \(\displaystyle 
+									\left[ 0,1 \right]\times \left[ a,b \right]\)<span class="col-blue"> функции:</span>
+									\begin{eqnarray*}
+									\displaystyle \tilde{f}\left( x,\gamma  \right)=\left\{ \begin{matrix}
+									f\left( x,\gamma  \right),\,\,x&gt;0,  \\
+									0,\,\,x=0.  \\
+									\end{matrix} \right.
+									\end{eqnarray*}
+									</div>
+									<p>В силу теоремы
+										<a class="tooltip-1">об интегрируемости<span class="classic">
+											Если \(\displaystyle f(x,\gamma )
+						\in \mathbb{C} \)
+						 \( \left( \left[ a,b \right]\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \right)\), то функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\) интегрируема
+						на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и справедливо равенство
+						\begin{eqnarray*}
+						& \int\limits_{\gamma_1}^{\gamma_2}I(\gamma )d\gamma
+							=\int\limits_{\gamma_1}^{\gamma_2} ( \int\limits_{a}^{b}f(x,\gamma )dx
+							)d\gamma = &\\
+							& \int\limits_{a}^{b} ( \int\limits_{\gamma_1}^{\gamma_2}f(x,\gamma
+							)d\gamma)dx. &
+						\end{eqnarray*}
+										</span></a>
+										с учетом замечания, получим</p>
+									\begin{eqnarray*}
+									\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^
+									{\gamma }}\sin \left( \ln \frac{1}{x} \right)d\gamma } \right)\,dx}=\int\limits_{a}^{b}{\left
+									( \int\limits_{0}^{1}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} \right)dx} \right)d\gamma }.
+									\end{eqnarray*}
+									<p>Вычислим внутренний интеграл:</p>
+									\(\qquad \qquad \qquad \qquad \qquad \qquad
+										\displaystyle \int\limits_{0}^{1}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} \right)dx=\left[ 
+									x={{e}^{-t}} \right]}=\int\limits_{0}^{+\infty }{{{e}^{-t\left( \gamma +1 \right)}}\sin t\,dt}\)
+									<a class="tooltip-1">\(=\)<span class="classic">
+										\[ \displaystyle =\left. \left( \frac{-{{e}^{-t\left( \gamma +1 \right)}}\cos t-\left( \gamma +1 
+									\right){{e}^{-t\left( \gamma +1 \right)}}\sin t}{{{\left( \gamma +1 \right)}^{2}}+1} \right) 
+									\right|_{0}^{+\infty }=\]
+								</span></a>
+									\( \frac{1}{{{\left( \gamma +1 \right)}^{2}}+1}.\)
+									<p>Следовательно, \[\displaystyle I\left( a,b \right)\,=\,\int\limits_{a}^{b}{\frac{d\gamma 
+									}{{{\left( \gamma \,+\,1 \right)}^{2}}\,+\,1}}\,=\,\operatorname{arctg}\left( b\,+\,1 
+									\right)\,-\,\operatorname{arctg}\left( a\,+\,1 \right)\].
+									</p>
+	
+							</p>
+				</details>
+</main>
 	<footer class="footer">
 	  <p>Учебные материалы </p>
 		<p>Автор материалов - Рояк Светлана Хаимовна.</p>
@@ -315,4 +405,6 @@
 	<script src="../main.js"></script>
 </body>
 
+				  
+</body>
 </html>

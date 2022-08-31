@@ -56,7 +56,7 @@
             <ul>
               <li class="sub-menu">
                 <a href="#"
-                  >Собственные интегралы, зависящие от параметра.<img
+                  >Собственные интегралы.<img
                     src="../icons/down.png"
                     class="submenu-icon submenu-trigger"
                 /></a>
@@ -77,20 +77,26 @@
                     <ul>
                       <li>
                         <a
-                          href="2.1. Свойства собственных интегралов.html#nepreriv"
+                          href="2.1 Непрерывность и предельный переход.html"
                           >Непрерывность и предельный переход.</a
                         >
                       </li>
                       <li>
                         <a
-                          href="2.1. Свойства собственных интегралов.html#integr"
+                          href="2.1 Интегрируемость.html"
                           >Интегрируемость.</a
                         >
                       </li>
                       <li>
                         <a
-                          href="2.1. Свойства собственных интегралов.html#diff"
+                          href="2.1 Дифференцируемость.html"
                           >Дифференцируемость.</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                        href="2.1. Свойства собственных интегралов.html#calc"
+                        >Вычисление интегралов, с помощью дифференцирования по параметру.</a
                         >
                       </li>
                     </ul>
@@ -101,7 +107,7 @@
  
               <li class="sub-menu">
                 <a href="#"
-                >Несобственные интегралы, зависящие от параметра.<img
+                >Несобственные интегралы.<img
                 src="../icons/down.png"
                 class="submenu-icon submenu-trigger"
                 /></a>
@@ -134,7 +140,7 @@
                   </li>
                   <li>
                     <a
-                    href="2.2.4. Свойства равномерно сходящихся интегралов.html"
+                    href="2.2.4. Свойства равномерной сходимости.html"
                     >Свойства.</a
                     >
                   </li>
@@ -171,6 +177,12 @@
                     >Интегрируемость.</a
                     >
                   </li>
+                  <li>
+                    <a
+                    href="2.2.4. Свойства равномерно сходящихся интегралов.html#calc"
+                    >Вычисление интегралов, с помощью дифференцирования по параметру.</a
+                    >
+                  </li>
                 </ul></li>
                 </ul>
                 <li>
@@ -185,7 +197,7 @@
         </ul>
       </div>
     </nav>
-<!-- Фиксированная навигация-->
+	<!-- Фиксированная навигация-->
 	<style>
 		#navbar {
 		  background-color: #959595;
@@ -197,7 +209,7 @@
 		  transition: top 0.3s;
 		  padding: 0;
 		  margin: 0;
-		  padding-left: 5%;
+		  padding-left: 1%;
 		  z-index: 100;
 		}
 
@@ -213,30 +225,24 @@
 		  padding-top: 10px;
 		}
 
-		#navbar a:hover {
-		  background-color: #ddd;
-		  color: black;
-		}
 		#navbar span {
 		  float: right;
 		  display: block;
 		  color: #f2f2f2;
 		  text-align: center;
 		  padding-bottom: 10px;
-		  padding-top: 5px;
+		  padding-top: 7px;
 		  text-decoration: none;
 		  font-size: 17px;
-		  margin-right: 5%;
+		  margin-right: 0;
 		}
 
 
 	</style>
 	
 	<div id="navbar">
-	  <a href="href=../index.html">Главная</a>
-      <a href="2.3. Интегралы Эйлера.html#up8">Интегралы Эйлера</a>
-	  <a href="2.3. Интегралы Эйлера.html#gam">Гамма-функция</a>
-	  <a href="2.3. Интегралы Эйлера.html#bet">Бета-функция</a>
+	  <a href="#">Интегралы, зависящие от параметра</a>
+	  <a href="#">Интегралы Эйлера</a>
 	  <span >
 		<label>Выберите уровень: </label>
 			<select id="level">
@@ -269,23 +275,17 @@
             <tr>
               <td>
                 <p><strong>Бета-функция</strong></p>
-              </td>
-              <td>
-                <p><strong>Гамма-функция</strong></p>
-              </td>
-            </tr>
-            <tr>
-              <td>
                 <p>
                   <span
-                    >\(\displaystyle B\left( p,q
-                    \right)=\int\limits_{0}^{1}{{{x}^{p-1}}{{\left( 1-x
+                  >\(\displaystyle B\left( p,q
+                  \right)=\int\limits_{0}^{1}{{{x}^{p-1}}{{\left( 1-x
                     \right)}^{q-1}}dx}\), \(\displaystyle p&gt;0,\ \
                     q&gt;0\).</span
-                  >
-                </p>
-              </td>
-              <td>
+                    >
+                  </p>
+                </td>
+                <td>
+                <p><strong>Гамма-функция</strong></p>
                 <p>
                   <strong
                     >\(\displaystyle Г\left( p \right)=\int\limits_{0}^{+\infty
@@ -559,7 +559,12 @@
         </table>
       </div>
       <div>
-        <p class="margin-top">
+
+        <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
+					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
+          <div class="proof">
+            
+            <p class="margin-top">
           <strong
             ><em
               ><span id = "gam"
@@ -571,14 +576,7 @@
           >
           <strong class="float-r">(0.17)</strong>
         </p>
-      </div>
       <br>
-
-        <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
-					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;
-            color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
-					<div class="proof">
-            <br>
             <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
               <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;
                 color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Сходимость</summary>
@@ -688,120 +686,7 @@
                 </p>
                       </div>
             </details>
-									
-									</div>
-				</details>
 
-
-
-<!--
-        <div class="spoiler">
-          <button class="spoiler-button">
-            1. Сходимость.
-          <div class="spoiler-content">
-            <p class="margin-top">
-              Из теоремы сравнения следует, что при \(\displaystyle p\le 0\)
-              интеграл расходится. Представим функцию \(\displaystyle
-              \Gamma\left( p \right)\) в виде
-            </p>
-            <p>
-                <h3 class="formula">\(\displaystyle \Gamma\left( p
-              \right)=\int\limits_{0}^{1}{{{e}^{-x}}{{x}^{p-1}}dx}+\int\limits_{1}^{+\infty
-              }{{{e}^{-x}}{{x}^{p-1}}dx}={{I}_{1}}\left( p
-              \right)+{{I}_{2}}\left( p \right)\).</h3>
-            </p>
-            <p class="margin-top">
-              1. Так как \(\displaystyle {{e}^{-x}}{{x}^{p-1}}\le {{x}^{p-1}}\)
-              при \(\displaystyle x&gt;0\), а \(\displaystyle
-              \int\limits_{0}^{1}{{{x}^{p-1}}dx}\) сходится при \(\displaystyle
-              p&gt;0\), то и интеграл \(\displaystyle {{I}_{1}}\left( p
-              \right)\) сходится при \(\displaystyle p&gt;0\) (по признаку
-              Вейерштрасса).
-            </p>
-            <p class="margin-top">
-              2. Так как \(\displaystyle \underset{x\to +\infty }{\mathop{\lim
-              }}\,{{e}^{-x}}{{x}^{r}}=0\) при любом \(\displaystyle r\), то из
-              сходимости интеграла \(\displaystyle \int\limits_{1}^{+\infty
-              }{{{x}^{-2}}dx}\) следует сходимость интеграла \(\displaystyle
-              {{I}_{2}}\left( p \right)\) при любом \(\displaystyle p\). (Из
-              определения предела
-            </p>
-            <p>
-                <h3 class="formula">\(\displaystyle \forall r&gt;0\,\,\exists {{x}_{0}}\,\forall
-              x&gt;{{x}_{0}}\ \ {{e}^{-x}}&lt;\frac{1}{{{x}^{r}}}\),</h3>
-            </p>
-            <p>следовательно,</p>
-            <p>
-                <h3 class="formula">\(\displaystyle \forall p&gt;0\,\,\exists {{x}_{0}}\ \forall
-              x&gt;{{x}_{0}}\ \ {{e}^{-x}}&lt;\frac{1}{{{x}^{p+1}}}\ \
-              \Leftrightarrow \ \
-              {{e}^{-x}}{{x}^{p-1}}&lt;\frac{1}{{{x}^{1-p}}}\frac{1}{{{x}^{p+1}}}=\frac{1}{{{x}^{2}}}\)).</h3>
-            </p>
-          </div>
-        </div>
-
-        <div class="spoiler">
-          <button class="spoiler-button">2.  Непрерывность.</button>
-          <div class="spoiler-content">
-            <p class="margin-top">
-              Для доказательства непрерывности \(\displaystyle \Gamma\left( p
-              \right)\) на полупрямой \(\displaystyle p&gt;0\), достаточно
-              установить равномерную сходимость интеграла относительно параметра
-              \(\displaystyle p\) при \(\displaystyle 0\,&lt;\,{{p}_{0}}\,\le
-              \,p\,\le \,{{p}_{1}}\) для любых фиксированных значений
-              \(\displaystyle {{p}_{0}}\) и \(\displaystyle {{p}_{1}}\),
-              удовлетворяющих условию \(\displaystyle 0&lt;{{p}_{0}}\le
-              {{p}_{1}}\).
-            </p>
-            <p class="margin-top">Учитывая, что</p>
-            <p class="margin-top">
-              1) при \(\displaystyle 0&lt;x&lt;1\) \(\displaystyle {{x}^{p}}\le
-              {{x}^{{{p}_{0}}}}&lt;{{x}^{{{p}_{0}}}}+{{x}^{{{p}_{1}}}}\)
-              (степенная функция убывает),
-            </p>
-            <p class="margin-top">
-              2) (т.к. x \(\displaystyle {{x}^{{{p}_{1}}}}&gt;0\))при
-              \(\displaystyle x&gt;1\) \(\displaystyle {{x}^{p}}\le
-              {{x}^{{{p}_{1}}}}&lt;{{x}^{{{p}_{0}}}}+{{x}^{{{p}_{1}}}}\)
-              (степенная функция возрастает),
-            </p>
-            <p>получим:</p>
-            <p>
-                <h3 class="formula">\(\displaystyle \forall x&gt;0\) \(\displaystyle
-              \frac{{{e}^{-x}}}{x}{{x}^{p}}\le \frac{{{e}^{-x}}}{x}\left[
-              {{x}^{{{p}_{0}}}}+{{x}^{{{p}_{1}}}} \right]={{e}^{-x}}\left[
-              {{x}^{{{p}_{0}}-1}}+{{x}^{{{p}_{1}}-1}} \right]\).</h3>
-            </p>
-            <p class="margin-top">
-              Равномерная сходимость интеграла \(\displaystyle \Gamma\left( p
-              \right)\) следует в силу признака Вейерштрасса из сходимости
-              интеграла
-            </p>
-            <p> <h3 class="formula">
-              \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-x}}\left[
-              {{x}^{{{p}_{0}}-1}}+{{x}^{{{p}_{1}}-1}} \right]dx}=\Gamma\left(
-              {{p}_{0}} \right)+\Gamma\left( {{p}_{1}} \right)\).</h3>
-            </p>
-          </div>
-        </div>
-
-        <div class="spoiler">
-          <button class="spoiler-button">3.  Формула приведения.</button>
-          <div class="spoiler-content">
-            <p class="margin-top">
-              Применяя формулу интегрирования по частям для функции
-              \(\displaystyle \Gamma\left( p+1 \right)\)при \(\displaystyle
-              p&gt;0\) получим
-            </p>
-            <p><h3 class="formula">
-              \(\displaystyle \Gamma\left( p+1 \right)=\int\limits_{0}^{+\infty
-              }{{{e}^{-x}}{{x}^{p}}dx}=\left. \left[ -{{e}^{-x}}{{x}^{p}}
-              \right] \right|_{0}^{+\infty }+p\int\limits_{0}^{+\infty
-              }{{{e}^{-x}}{{x}^{p-1}}dx}=p\Gamma\left( p \right)\).</h3>
-            </p>
-          </div>
-        </div>
-      -->
         <p class="margin-top">
           <strong id = "bet"
             ><em
@@ -813,11 +698,6 @@
         </p>
 
         <br>
-        <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
-					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;
-            color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
-					<div class="proof">
-            <br>
             <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
               <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;
                 color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Сходимость</summary>
@@ -940,11 +820,8 @@
                 </p>
                       </div>
             </details>
-									
-									</div>
-				</details>
-
-
+      </div>
+      </details>
 
     <!--
         <div class="spoiler">
@@ -1164,7 +1041,10 @@
     <p class="margin-top">
       \(\displaystyle \int\limits_{0}^{1}{{{\left( 1-x
         \right)}^{n}}{{x}^{p-1}}\,dx}\), \(\displaystyle p&gt;0\)
-    </p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "em-wide" style="font-size: 20px">Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; width:270px;">
+          \( \displaystyle \frac{n!}{\left( p+n \right)\left( p+n-1 \right)...\left(
+            p+1 \right)p}\)</button>
+          </p>
     <br>
         <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
           <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;
@@ -1185,7 +1065,8 @@
 
         <p class="margin-top">
           \(\displaystyle \int\limits_{0}^{2\pi }{{{\sin }^{6}}x\,\,{{\cos }^{8}}x\,dx}.\)
-                   
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "em-wide" style="font-size: 20px">Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; ">
+            \(\displaystyle \frac{5\pi }{{{2}^{11}}}.\)</button>
         </p>
         <br>
         <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
@@ -1215,6 +1096,9 @@
         <p class="margin-top">
           \(\displaystyle \int\limits_{-1}^{2}{\frac{dx}{\sqrt[4]{\left( 2-x
             \right){{\left( 1+x \right)}^{3}}}}}\)
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "em-wide" style="font-size: 20px">Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; ">
+                \(\pi \sqrt{2}.\)</button>
+            </p>
         </p>
         <br>
         <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
@@ -1222,14 +1106,13 @@
             color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
           <div class="proof">
             <p>
-              \[ \int\limits_{0}^{1}{{{\left( 1-x
-                \right)}^{n}}{{x}^{p-1}}\,dx} = B\left( n+1,p
-                \right) = \frac{\Gamma\left( n+1 \right)\Gamma\left( p
-                \right)}{\Gamma\left( p+n+1 \right)}=\] \[\displaystyle
-                \qquad \qquad= \frac{n!\Gamma\left( p \right)}{\left( p+n \right)\left( p+n-1
-                \right)...\left( p+1 \right)p\Gamma\left( p
-                \right)}=\frac{n!}{\left( p+n \right)\left( p+n-1 \right)...\left(
-                p+1 \right)p}\].
+              \[\displaystyle \int\limits_{-1}^{2}{\frac{dx}{\sqrt[4]{\left(
+                2-x \right){{\left( 1+x \right)}^{3}}}}}=\left[ t=\frac{x+1}{3}
+                \right]=3\int\limits_{0}^{1}{\frac{dt}{\sqrt[4]{3\left( 1-t
+                \right){{\left( 3t \right)}^{3}}}}}=\]
+                \[\qquad \displaystyle =\int\limits_{0}^{1}{{{\left( 1-t
+                \right)}^{-1/4}}{{t}^{-3/4}}dt}=B\left( \frac{3}{4},\frac{1}{4}
+                \right)=\frac{\pi }{\sin \frac{\pi }{4}}=\pi \sqrt{2}.\]
              </p>
                   </div>
         </details>
@@ -1237,6 +1120,9 @@
         <p class="margin-top">
           \(\displaystyle
                     \int\limits_{0}^{1}{\frac{1+{{x}^{2}}}{1+{{x}^{4}}}\,dx}\).
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "em-wide" style="font-size: 20px">Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; ">
+                      \(\frac{\pi
+                        \sqrt{2}}{4}.\)</button>
         </p>
         <br>
         <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">

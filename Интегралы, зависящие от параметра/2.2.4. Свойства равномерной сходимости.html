@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-	<title>Математический анализ</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Математический анализ</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="../style.css" type="text/css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+   <link href="../style.css" type="text/css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
-    <nav>
+   <nav>
       <div class="hamburger" id="toggle-menu">
         <div class="line"></div>
         <div class="line"></div>
@@ -236,8 +236,9 @@
 	
 	<div id="navbar">
 	  <a href="#">Интегралы, зависящие от параметра</a>
-	  <a href="#">Собственные интегралы</a>
-	  <a href="#">Определение</a>
+	  <a href="#">Несобственные интегралы</a>
+	  <a href="#">Равномерная сходимость</a>
+		<a href="#">Свойства</a>
 	  <span >
 		<label>Выберите уровень: </label>
 			<select id="level">
@@ -262,57 +263,35 @@
 	}
 	
 	</script>
-	
-	<main class="main small">
-		
-		<h3 class="centered"><strong id = "opr" style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Определение </strong></h3>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;Пусть в прямоугольнике \(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
-			{{\gamma }_{1}},{{\gamma }_{2}} \right]\) определена функция \(\displaystyle f(x,\gamma )\), интегрируемая
-			по \(\displaystyle x\) на \(\displaystyle \left[\displaystyle a,b \right]\) при любом фиксированном
-			\(\displaystyle \gamma \in \left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
-			Тогда на \(\displaystyle \left[\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right]\) определена функция
-			\[\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx},\] называемая <strong><em>интегралом, зависящим
-				от параметра</em></strong> \(\displaystyle \gamma \).
-		</p>
-		
-		<h2 class="centered" >Общий случай</h2><br>
-		<div class="textcols">
-			<div class="textcols-item">
-				<p class="margin-top">
-			 Если при любом
-			  		<em>фиксированном \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},
-				{{\gamma }_{2}} \right]\)</em>
-			  функция \(\displaystyle f(x,\gamma )\) интегрируема по \(\displaystyle
-			  x\) на \(\displaystyle \left[ a(\gamma ),b(\gamma ) \right]\), то на
-			  \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-			  определена функция
-			</p>
-			</div>
-			<div class="textcols-item">
-				<img src = "img/draw1.png" width="250">
-			</div>
-		</div>
-
-			\begin{eqnarray*}
-				\displaystyle I(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma
-				)}{f(x,\gamma )dx},
-				\end{eqnarray*}
-			</h3>
-			<p>
-			  представляющая собой
-			  <strong><em>интеграл, зависящий от параметра</em></strong
-			  >, у которого пределы интегрирования также зависят от параметра.
-			</p>
-		  </div>
+      <main class="main small">
 
 
-	</main>
+		 <h3 class="centered"><strong id = "up7" style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Свойства равномерно сходящихся интегралов </strong></h3>
+         <p class="margin-top">
+         Пусть \(\Gamma\)– произвольный промежуток (интервал, полуинтервал, отрезок, луч, числовая ось). Тогда
+         </p>
+         <div>
+            <p class="margin-top">1. Если интегралы \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) и \(\displaystyle
+               \int\limits_{a}^{\mathbf{B}}{g(x,\gamma )dx}\) равномерно сходятся на \( \Gamma \), то и
+               интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\left( \alpha f(x,\gamma )+\beta g(x,\gamma )
+               \right)dx}\), \(\displaystyle \alpha ,\beta \in \mathbb{R}\) равномерно сходится на \( \Gamma \);
+               </p>
+               <p class="margin-top">2. Если интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) равномерно сходится на
+                  \( \Gamma \), то он равномерно сходится на любом \(A \subset \Gamma \);</p>
+               <p class="margin-top">3. Если интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) <em>сходится</em> на
+                  \( \Gamma \) и сходится неравномерно на некотором \(A \subset \Gamma \), то он
+               сходится неравномерно и на \( \Gamma \);</p>
+               <p class="margin-top">4. Если интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) равномерно сходится на
+               каждом из множеств \(\displaystyle {{\Gamma }_{1}}\), \(\displaystyle {{\Gamma }_{2}}\), то он равномерно
+               сходится на \(\displaystyle {{\Gamma }_{1}}\bigcup {{\Gamma }_{2}}\).</p>
+         </div>
+   </main>
 <br>
-	<footer class="footer">
-	  <p>Учебные материалы </p>
-		<p>Автор материалов - Рояк Светлана Хаимовна.</p>
-	</footer>
-	<script src="../main.js"></script>
+<footer class="footer">
+  <p>Учебные материалы </p>
+   <p>Автор материалов - Рояк Светлана Хаимовна.</p>
+</footer>
+<script src="../main.js"></script>
 </body>
 
 </html>
