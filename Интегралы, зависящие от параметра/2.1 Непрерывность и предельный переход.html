@@ -412,7 +412,23 @@
 									</details>
 								  </section>
 			<section class="consequence">
-				<p class="margin-top"><strong>Следствие 1.</strong> </p>
+				<p class="margin-top"><strong>Следствие 1.</strong>
+					&nbsp;&nbsp;&nbsp;&nbsp;Для непрерывности \(\displaystyle I\left( \gamma  \right)=\underset{a\left( \gamma  \right)}{\overset{b\left( \gamma  \right)}{\mathop \int }}\,f\left( x,\gamma  \right)dx\) на промежутке <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+					луч, числовая ось).</span></a> достаточно, чтобы условия теоремы выполнялись для произвольного сегмента \(\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \).
+				</p>
+				<br>
+				<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
+					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Доказательство</summary>
+									  <p>
+										<div class="proof normal">
+											  Пусть \({{\gamma }_{0}}\in {\Gamma }'\bigcap \Gamma \). Тогда существует сегмент \(\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \)
+											   такой, что \({{\gamma }_{0}}\,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
+											    В силу теоремы из непрерывности подынтегральной функции \(f(x,\gamma )\) на \(\left[ a,b \right]\times \left[{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+												 следует непрерывность \(I(\gamma )\) на \(\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), а значит,
+												  и в точке \({{\gamma }_{0}}\,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\). 
+											  В силу произвольности выбора точки \({{\gamma }_{0}}\), можно утверждать, что функция \(I(\gamma )\) непрерывна на \(\Gamma \).
+										</div>
+									</details>
 			</section>
 			<section class="consequence">
 				<p class="margin-top">
@@ -477,17 +493,20 @@
 				<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
 					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
 					<div class="proof">
-									Для вычисления предела достаточно, чтобы требования
-								  предельного перехода выполнялись в некоторой окрестности
-								  предельного значения. Пусть \(\displaystyle
-								\gamma \in \left[ 0,1 \right] \),
-								<span class="col-blue">тогда</span> \(\displaystyle 1-\gamma \in  \mathbb{C} \)
-								\(\left( \left[ 0,1 \right] \right)\), \(\displaystyle \pi \gamma
-								\in \mathbb{C}\left( \left[ 0,1 \right] \right)\), \(\displaystyle
-								\sqrt{1-{{\gamma }^{2}}{{\sin }^{2}}x}\in \mathbb{C}\left(
-									\left[ 0,\pi \right]\times \left[ 0,1 \right] \right)\), \(\displaystyle
-									0\le 1-\gamma \le 1\le \pi \), \(\displaystyle 0\le \pi \gamma
-									\le \pi \), <span class="col-blue">а значит,</span>
+						<div class = "normal">
+							Для вычисления предела достаточно, чтобы требования
+						  предельного перехода выполнялись в некоторой окрестности
+						  предельного значения. Пусть \(\displaystyle
+						\gamma \in \left[ 0,1 \right] \),
+						тогда \(\displaystyle 1-\gamma \in  \mathbb{C} \)
+						\(\left( \left[ 0,1 \right] \right)\), \(\displaystyle \pi \gamma
+						\in \mathbb{C}\left( \left[ 0,1 \right] \right)\), \(\displaystyle
+						\sqrt{1-{{\gamma }^{2}}{{\sin }^{2}}x}\in \mathbb{C}\left(
+							\left[ 0,\pi \right]\times \left[ 0,1 \right] \right)\), \(\displaystyle
+							0\le 1-\gamma \le 1\le \pi \), \(\displaystyle 0\le \pi \gamma
+							\le \pi \), а значит,
+
+						</div>
 									\begin{eqnarray*}
 									\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
 									}}\,\int\limits_{1-\gamma }^{\pi \gamma } {\sqrt{1-{{\gamma

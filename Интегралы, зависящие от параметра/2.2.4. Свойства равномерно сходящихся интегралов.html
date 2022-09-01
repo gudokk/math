@@ -830,20 +830,16 @@
       </div>
 </section>
 
-
+<!-- <a class="tooltip-1">\( \Gamma \)
+                <span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+               луч, числовая ось).</span></a> -->
 
    <section class="consequence">
       <p class="margin-top">
          <strong>Следствие 1. </strong>
-         Если функция \(f(x,\gamma )\) непрерывна в области \(\left[ a,\mathbf{B} \right)\times\) 
-             <a class="tooltip-1">\( \Gamma \)
+         		Для непрерывности \(\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) на промежутке <a class="tooltip-1">\( \Gamma \)
                 <span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-               луч, числовая ось).</span></a>,
-              где \(\Gamma \) произвольный промежуток,
-               а интеграл \(\displaystyle I(\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\)
-               сходится равномерно по параметру \(\gamma \) на промежутке \(\Gamma \)
-               (либо на любом сегменте \(\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\subset \Gamma \)),
-                то функция \(I(\gamma )\) непрерывна на \(\Gamma \).
+               луч, числовая ось).</span></a> достаточно, чтобы условия теоремы выполнялись для произвольного сегмента \(\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \).
                </p>
 	   <br>
                <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
@@ -888,13 +884,12 @@
    \end{eqnarray*}
    <p>Интеграл \(\displaystyle I\left( a \right)\,\) сходится равномерно на \(\displaystyle
       \left[ 0,+\infty \right)\) в силу признака Дирихле:</p>
-      <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          1) \(\displaystyle \left| \int\limits_{0}^{B}{\cos x\,dx} \right|\le \left| \sin B
-      \right|\le 1\);</p>
-      <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      \right|\le 1\);<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          2) \(\displaystyle \forall a\in \left[ 0,+\infty \right)\) функция \(\displaystyle
       \frac{1-{{e}^{-ax}}}{x}\) монотонна по \(\displaystyle x\), так как:
-   </p>
    <div class="formula">
       <p>
 \(\frac{\partial }{\partial x}\left( \frac{1\,-\,{{e}^{-ax}}}{x} \right)
@@ -908,12 +903,10 @@
          \(0\).
       </p>
    </div>
-   <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       3) \(\displaystyle \underset{x\to \infty }{\mathop{\lim }}\,\underset{a\in \left[
-      0,+\infty \right)}{\mathop{\sup }}\,\left| \frac{1-{{e}^{-ax}}}{x} \right|\)
-      <a class="tooltip-1">\(=\)<span class="classic">
-      \[ \left[ -ax\le
-      0\Rightarrow {{e}^{-ax}}\le 1\Rightarrow \frac{1-{{e}^{-ax}}}{x}\ge 0 \right] \]
+      0,+\infty \right)}{\mathop{\sup }}\,\left| \frac{1-{{e}^{-ax}}}{x} \right|\)<a class="tooltip-1">\(=\)<span class="classic">
+      \[ \left[ -ax\le 0\Rightarrow {{e}^{-ax}}\le 1\Rightarrow \frac{1-{{e}^{-ax}}}{x}\ge 0 \right] \]
       </span></a>
    \(\displaystyle \underset{x\to \infty }{\mathop{\lim }}\,\underset{a\in \left[
       0,+\infty \right)}{\mathop{\sup }}\,\frac{1\,-\,{{e}^{-ax}}}{x}\,\)
@@ -925,9 +918,9 @@
       \( \displaystyle \underset{x\to \infty }{\mathop{\lim }}\,\underset{a\to +\infty
       }{\mathop{\lim }}\,\frac{1\,-\,{{e}^{-ax}}}{x}\,=\,\underset{x\to \infty }{\mathop{\lim
       }}\,\frac{1}{x}\,=\,0.\)
-         </p>
+      
       <p>Таким образом,
-         <a class="tooltip-1">в силу следствия 1 к теореме 16 о непрерывности несобственного интеграла<span class="classic">
+         <a class="tooltip-1">в силу следствия 1 к теореме о непрерывности несобственного интеграла<span class="classic">
             Если функция \(\displaystyle f(x,\gamma
 )\) определена на \(\displaystyle \left[ a,\mathbf{B} \right)\times  \Gamma \) и
 непрерывна на каждой полуполосе \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[
@@ -1029,8 +1022,8 @@
    <section class="consequence">
       <p class="margin-top"><strong>Следствие 2 (достаточный признак неравномерной сходимости). </strong>
       Пусть
-      <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-         луч, числовая ось).</span></a> – незамкнутое множество и \(f(x,\gamma )\,\in\)
+      <a class="tooltip-1">\( \Gamma \) – незамкнутое множество<span class="classic">Интервал, полуинтервал, луч.</span></a> и <br>
+      \(f(x,\gamma )\,\in\)
          <a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
             \(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
          </span></a>\(\Big( \left[ a,\mathbf{B} \right)\,\times \,\) <a class="tooltip-1">\(\overline{\displaystyle Г}\)
@@ -1173,11 +1166,9 @@
           можно доопределить до непрерывных на множестве \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) 
           изменением их значений не более чем на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
 
-          <p class="margin-top"><strong>Следствие 2. </strong>Если теорема справедлива на любом сегменте 
-            \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\) 
-            <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-               луч, числовая ось).</span></a>, 
-            то она будет справедливой и на самом множестве \( \Gamma \).
+          <p class="margin-top"><strong>Следствие 2. </strong>Для дифференцируемости \(\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) на промежутке <a class="tooltip-1">\( \Gamma \)
+                <span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+               луч, числовая ось).</span></a> достаточно, чтобы условия теоремы выполнялись для произвольного сегмента \(\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \).
       </p>
    </section>
 
@@ -1431,7 +1422,7 @@
    </details>
 </section>
 
-
+<!--
 <section>
    <p class="margin-top" style = "white-space: nowrap" >
       <span class = "em-wide" style="font-size: 20px">Пример 14.</span>
@@ -1615,6 +1606,7 @@
 			 		</script>
 -->
 		  <!--окончание работы кнопки -->
+        <!--
         <p><div class="easy-text">На множестве \(\displaystyle E\)
                   все условия теоремы о дифференцировании по параметру <a class="tooltip-1">выполнены
                   <span class="classic"> Для просмотра смените уровень</span></a>, поэтому \(\displaystyle \forall a\in E\) (а
@@ -1804,6 +1796,7 @@
      </div>
    </details>
 </section>
+-->
 <br>
 <section class = "hard col-red"
    <p class="margin-top" style = "white-space: nowrap" >
@@ -1884,12 +1877,10 @@
      <div class = "normal"><div class="proof"><p>
 		 <p> Преобразуем интеграл следующим образом:</p>
 		 <p>\begin{eqnarray*}
-                        & \displaystyle I\left( a \right)=\int\limits_{0}^{+\infty
+                        \displaystyle I\left( a \right)=\int\limits_{0}^{+\infty
                         }{\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}dx}=\int\limits_{0}^{+\infty
                         }{\frac{1}{{{e}^{x}}}\left( \int\limits_{0}^{a}{{{e}^{-\gamma x}}d\gamma } \right)dx}=
-                        \int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-x\left( \gamma +1 \right)}}d\gamma } \right)dx}=&\\
-                        & \displaystyle =\int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx} \right)d\gamma }=
-                        \int\limits_{0}^{a}{\frac{1}{\gamma +1}d\gamma =\ln \left( a+1 \right)}.&
+                        \int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-x\left( \gamma +1 \right)}}d\gamma } \right)dx}.
                         \end{eqnarray*}
 		 </p>
 		 <div class = "col-blue">
@@ -1918,28 +1909,25 @@
 		 </div>
              <p>Следовательно,</p>
 	\begin{eqnarray*}
-                        & \displaystyle I\left( a \right)=\int\limits_{0}^{+\infty
-                        }{\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}dx}=\int\limits_{0}^{+\infty
-                        }{\frac{1}{{{e}^{x}}}\left( \int\limits_{0}^{a}{{{e}^{-\gamma x}}d\gamma } \right)dx}=
-                        \int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-x\left( \gamma +1 \right)}}d\gamma } \right)dx}=&\\
-                        & \displaystyle =\int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx} \right)d\gamma }=
-                        \int\limits_{0}^{a}{\frac{1}{\gamma +1}d\gamma =\ln \left( a+1 \right)}.&
+                       
+                        \int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-x\left( \gamma +1 \right)}}d\gamma } \right)dx}
+                        =\int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx} \right)d\gamma }=
+                        \int\limits_{0}^{a}{\frac{1}{\gamma +1}d\gamma =\ln \left( a+1 \right)}.
                         \end{eqnarray*}
 	</div>
 </div>
                <div class="easy-text">
 				<div class = "proof">
-                        \begin{eqnarray*}
-                        & \displaystyle I\left( a \right)=\int\limits_{0}^{+\infty
-                        }{\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}dx}=\int\limits_{0}^{+\infty
-                        }{\frac{1}{{{e}^{x}}}\left( \int\limits_{0}^{a}{{{e}^{-\gamma x}}d\gamma } \right)dx}=
-                        \int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-x\left( \gamma +1 \right)}}d\gamma } \right)dx}=&\\
-                        & \displaystyle =\int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx} \right)d\gamma }=
-                        \int\limits_{0}^{a}{\frac{1}{\gamma +1}d\gamma =\ln \left( a+1 \right)}.&
-                        \end{eqnarray*}
-				   <a class="tooltip-1">   = <span class="classic">Для просмотра смените уровень
-                     
-                </span></a>
+               <p class="formula">
+
+                  \( \displaystyle I\left( a \right)=\int\limits_{0}^{+\infty
+                  }{\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}dx}=\int\limits_{0}^{+\infty
+                  }{\frac{1}{{{e}^{x}}}\left( \int\limits_{0}^{a}{{{e}^{-\gamma x}}d\gamma } \right)dx}\)
+                  <a class="tooltip-1">\(=\)<span class="classic">Для просмотра смените уровень
+                    </span></a>\(\displaystyle \int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-x\left( \gamma +1 \right)}}d\gamma } \right)dx}\)
+                   \(\displaystyle =\int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx} \right)d\gamma }=
+                  \int\limits_{0}^{a}{\frac{1}{\gamma +1}d\gamma =\ln \left( a+1 \right)}.\)
+               </p>
 </div>
 </div>
    </details>
@@ -1958,12 +1946,10 @@
          <div class="normal">
 			 <p> Преобразуем интеграл следующим образом:</p>
 			 <div> \begin{eqnarray*}
-                        & \displaystyle J\left( a \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=
-                                 \int\limits_{0}^{+\infty }{{{e}^{-bx}}\left( \int\limits_{0}^{a}{\cos \left( \gamma x \right)d\gamma } \right)dx}= &\\
-                        &  =\int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-bx}}\cos 
-                                    \left( \gamma x \right)\,d\gamma } \right)dx}=
-                                 \int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-bx}}\cos \left( \gamma x \right)\,dx} \right)d\gamma }=&\\
-                        & \displaystyle =\int\limits_{0}^{a}{\frac{b}{{{\gamma }^{2}}+{{b}^{2}}}d\gamma}=\operatorname{arctg}\frac{a}{b}. &
+                        \displaystyle J\left( a \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}
+                                 \int\limits_{0}^{+\infty }{{{e}^{-bx}}\left( \int\limits_{0}^{a}{\cos \left( \gamma x \right)d\gamma } \right)dx}
+                         =\int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-bx}}\cos 
+                                    \left( \gamma x \right)\,d\gamma } \right)dx}
                         \end{eqnarray*}
 			 </div>
 			 <div class = "col-blue">
@@ -2000,32 +1986,30 @@
 
            <p>Cледовательно,</p>
 		  \begin{eqnarray*}
-                        & \displaystyle J\left( a \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=
-                                 \int\limits_{0}^{+\infty }{{{e}^{-bx}}\left( \int\limits_{0}^{a}{\cos \left( \gamma x \right)d\gamma } \right)dx}= &\\
-                        &  =\int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-bx}}\cos 
+                        \int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-bx}}\cos 
                                     \left( \gamma x \right)\,d\gamma } \right)dx}=
-                                 \int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-bx}}\cos \left( \gamma x \right)\,dx} \right)d\gamma }=&\\
-                        & \displaystyle =\int\limits_{0}^{a}{\frac{b}{{{\gamma }^{2}}+{{b}^{2}}}d\gamma}=\operatorname{arctg}\frac{a}{b}. &
+                                 \int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-bx}}\cos \left( \gamma x \right)\,dx} \right)d\gamma }
+                         =\int\limits_{0}^{a}{\frac{b}{{{\gamma }^{2}}+{{b}^{2}}}d\gamma}=\operatorname{arctg}\frac{a}{b}.
                         \end{eqnarray*}
 		  
 	</div>
                    
                   <div class="easy-text">      
-                        \begin{eqnarray*}
-                        & \displaystyle J\left( a \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=
-                                 \int\limits_{0}^{+\infty }{{{e}^{-bx}}\left( \int\limits_{0}^{a}{\cos \left( \gamma x \right)d\gamma } \right)dx}= &\\
-                        &  =\int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-bx}}\cos 
-                                    \left( \gamma x \right)\,d\gamma } \right)dx}=
-                                 \int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-bx}}\cos \left( \gamma x \right)\,dx} \right)d\gamma }=&\\
-                        & \displaystyle =\int\limits_{0}^{a}{\frac{b}{{{\gamma }^{2}}+{{b}^{2}}}d\gamma}=\operatorname{arctg}\frac{a}{b}. &
-                        \end{eqnarray*}
-                         <a class="tooltip-1">=<span class="classic">Для просмотра смените уровень
-                        
-                   </span></a>
+                       \[\displaystyle J\left( a \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=
+                                 \int\limits_{0}^{+\infty }{{{e}^{-bx}}\left( \int\limits_{0}^{a}{\cos \left( \gamma x \right)d\gamma } \right)dx}= \]
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 \(\displaystyle=\int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-bx}}\cos 
+                                    \left( \gamma x \right)\,d\gamma } \right)dx}\)
+                                    <a class="tooltip-1">=<span class="classic">Для просмотра смените уровень
+                               </span></a>
+                               
+                                 \(\displaystyle  \int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-bx}}\cos \left( \gamma x \right)\,dx} \right)d\gamma }=
+                         \int\limits_{0}^{a}{\frac{b}{{{\gamma }^{2}}+{{b}^{2}}}d\gamma}=\operatorname{arctg}\frac{a}{b}.\)
                      </div>
    </details>
 </section>
 
+<!--
 <section>
    <p class="margin-top" style = "white-space: nowrap" >
       <span class = "em-wide" style="font-size: 20px">Пример 21.</span>
@@ -2076,16 +2060,15 @@
                            </p>
                         </div>
 	   <div class = "easy-text">
-	   						  \begin{eqnarray}
-                              \displaystyle \int\limits_{0}^{+\infty
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   						  \(\displaystyle \int\limits_{0}^{+\infty
                               }{\frac{{{e}^{-ax}}-{{e}^{-bx}}}{x}dx}=\int\limits_{0}^{+\infty
                               }{\left(
-                              \int\limits_{a}^{b}{{{e}^{-\gamma x}}d\gamma } \right)dx}=\int\limits_{a}^{b}{\left( \int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}dx} \right)d\gamma }=
-                              \int\limits_{a}^{b}{\frac{1}{\gamma }d\gamma =\ln \frac{b}{a}}.
-                           	  \end{eqnarray}
-		   <a class="tooltip-1">=<span class="classic">Для просмотра смените уровень
-                        
-                   </span></a>
+                              \int\limits_{a}^{b}{{{e}^{-\gamma x}}d\gamma } \right)dx}\)
+                              <a class="tooltip-1">=<span class="classic">Для просмотра смените уровень
+                              </span></a>
+                              \(\displaystyle\int\limits_{a}^{b}{\left( \int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}dx} \right)d\gamma }=
+                              \int\limits_{a}^{b}{\frac{1}{\gamma }d\gamma =\ln \frac{b}{a}}.\)
 	   				</div>
 	   </div>
                      </details>
@@ -2097,6 +2080,7 @@
  			
    </details>
 </section>
+-->
 <!-- конец нормальных примеров -->
 
 <!-- Начало кнопки
