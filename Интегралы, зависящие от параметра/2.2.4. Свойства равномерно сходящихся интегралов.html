@@ -1843,7 +1843,7 @@
                }{\mathop{\lim }}\,\frac{1}{x}=0\).</p>
             <p>Из равномерной сходимости интеграла \(\displaystyle I\left( a,b \right)\) и
                непрерывности на множестве \(\displaystyle \left\{ \left. \left( x,b \right)\,
-               \right|\,\,x\in \left[ 0,+\infty \right),\,\,b\in \left[ 0,1 \right] \right\}\)
+               \right|\,\,x\in \left[ 0,+\infty \right),\,\,b\in \left[ 0,1 \right] \right\}\) <br>
             функции </p>
             \begin{eqnarray*}
             \displaystyle \left\{ \begin{matrix}
@@ -1852,7 +1852,7 @@
             \end{eqnarray*}
             <span>следует (в силу теоремы 16) непрерывность по
                \(\displaystyle b\) функции \(\displaystyle I\left( a,b \right)\) на \(\displaystyle
-               \left[ 0,1 \right]\), а значит, в формуле (0.11) можно перейти к пределу:</span>
+               \left[ 0,1 \right]\), а значит, в формуле (0.11) можно перейти<br> к пределу:</span>
                \begin{eqnarray*}
                \displaystyle \int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\underset{b\to
                +0}{\mathop{\lim }}\,\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=\underset{b\to +0}{\mathop{\lim }}\,
@@ -1881,34 +1881,9 @@
    <br>
    <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
       <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
-     <div class="proof"><p><div class="col-blue normal"><p>1)
-                      функция \(\displaystyle {{e}^{-x\left( \gamma +1 \right)}}\) непрерывна; </p>
-                      <p>2) интеграл \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx}=\frac{1}{\gamma +1}\le 1\) 
-                        сходится равномерно относительно \(\displaystyle \gamma \) на \(\displaystyle \left[ 0,+\infty  \right)\).</p></span></div>
-            </p></div><p class="normal">Все условия теоремы <a class="shortcut" href="#0.15">(0.15)</a>
-               <a class="tooltip-1">о интегрируемости в собственном смысле<span class="classic">
-                  Если функция \(\displaystyle f(x,\gamma )\) непрерывна в полуполосе 
-            \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), а интеграл
-            \begin{eqnarray*}
-            \displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}
-            \end{eqnarray*}
-            сходится равномерно на сегменте \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),
-             то интеграл  можно интегрировать по параметру \(\displaystyle \gamma \) на сегменте
-              \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), причем
-      
-               \begin{eqnarray}
-               &\int\limits_{\gamma_1}^{\gamma_2}I(\gamma )d\gamma
-              =\int\limits_{\gamma_1}^{\gamma_2}\left(
-              \int\limits_{a}^{\mathbf{B}}f(x,\gamma )dx \right)d\gamma= &\\
-               &=\int\limits_{a}^{\mathbf{B}} \left(\int\limits_{\gamma_1}^{\gamma_2}f(x,\gamma )d\gamma  \right)dx. &
-             \end{eqnarray}
-             </span></a> выполнены, поэтому:</p>
-
-               <p class="easy-text">Все условия теоремы о интегрируемости в собственном смысле<a class="shortcut" href="#0.15">(0.15)</a>   
-                  <a class="tooltip-1">   выполнены,<span class="classic">Для просмотра смените уровень
-                     
-                </span></a> поэтому:</p>
-                        \begin{eqnarray*}
+     <div class = "normal"><div class="proof"><p>
+		 <p> Преобразуем интеграл следующим образом:</p>
+		 <p>\begin{eqnarray*}
                         & \displaystyle I\left( a \right)=\int\limits_{0}^{+\infty
                         }{\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}dx}=\int\limits_{0}^{+\infty
                         }{\frac{1}{{{e}^{x}}}\left( \int\limits_{0}^{a}{{{e}^{-\gamma x}}d\gamma } \right)dx}=
@@ -1916,35 +1891,9 @@
                         & \displaystyle =\int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx} \right)d\gamma }=
                         \int\limits_{0}^{a}{\frac{1}{\gamma +1}d\gamma =\ln \left( a+1 \right)}.&
                         \end{eqnarray*}
-   </details>
-</section>
-
-<section>
-   <p class="margin-top" style = "white-space: nowrap" >
-      <span class = "em-wide" style="font-size: 20px">Пример 20.</span>
-      Вычислить    \(\displaystyle I\left( a,b \right)=\int\limits_{0}^{+\infty
-            }{{{e}^{-bx}}\frac{\sin ax}{x}dx}, \displaystyle b&gt;0.\)
-   </p>
-   <br>
-   <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
-      <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
-      <div class="proof">
-         <div class="col-blue normal">
-            <p>1) функция \(\displaystyle {{e}^{-bx}}\cos \left( \gamma x \right)\)
-               непрерывна;</p>
-            <p>2) интеграл \(\displaystyle \underset{0}{\overset{+\infty }{\mathop
-               \int }}\,{{e}^{-bx}}\cos \left( \gamma x \right)\,dx\) сходится
-               равномерно относительно \(\displaystyle \gamma \) в силу признака
-               Вейерштрасса: 
-               \begin{eqnarray*}\displaystyle \underset{0}{\overset{+\infty }{\mathop
-               \int }}\,\left| {{e}^{-bx}}\cos \left( \gamma x \right) \right|\,dx\le
-               \int\limits_{0}^{+\infty
-               }{{{e}^{-bx}}dx}=\frac{1}{b}&lt;+\infty.
-               \end{eqnarray*}
-            </p></div>
-
-            </p></div><p class="normal">Все условия теоремы <a class="shortcut" href="#0.15">(0.15)</a>
-               <a class="tooltip-1">о интегрируемости в собственном смысле<span class="classic">
+		 </p>
+		 <div class = "col-blue">
+		 Все условия теоремы <a class="tooltip-1">об интегрируемости <span class="classic">
                   Если функция \(\displaystyle f(x,\gamma )\) непрерывна в полуполосе 
             \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), а интеграл
             \begin{eqnarray*}
@@ -1960,12 +1909,108 @@
             \int\limits_{a}^{\mathbf{B}}f(x,\gamma )dx \right)d\gamma= &\\
                &=\int\limits_{a}^{\mathbf{B}} \left(\int\limits_{\gamma_1}^{\gamma_2}f(x,\gamma )d\gamma  \right)dx. &
             \end{eqnarray}
-            </span></a> выполнены, поэтому:</p>
+            </span></a> выполнены, так как:</p>
+		
+		 				<p>&nbsp;&nbsp;&nbsp;&nbsp;1)
+                      функция \(\displaystyle {{e}^{-x\left( \gamma +1 \right)}}\) непрерывна; </p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;2) интеграл \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx}=\frac{1}{\gamma +1}\le 1\) 
+                        сходится равномерно относительно \(\displaystyle \gamma \) на \(\displaystyle \left[ 0,+\infty  \right)\), </p></span>
+		 </div>
+             <p>Следовательно,</p>
+	\begin{eqnarray*}
+                        & \displaystyle I\left( a \right)=\int\limits_{0}^{+\infty
+                        }{\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}dx}=\int\limits_{0}^{+\infty
+                        }{\frac{1}{{{e}^{x}}}\left( \int\limits_{0}^{a}{{{e}^{-\gamma x}}d\gamma } \right)dx}=
+                        \int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-x\left( \gamma +1 \right)}}d\gamma } \right)dx}=&\\
+                        & \displaystyle =\int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx} \right)d\gamma }=
+                        \int\limits_{0}^{a}{\frac{1}{\gamma +1}d\gamma =\ln \left( a+1 \right)}.&
+                        \end{eqnarray*}
+	</div>
+</div>
+               <div class="easy-text">
+				<div class = "proof">
+                        \begin{eqnarray*}
+                        & \displaystyle I\left( a \right)=\int\limits_{0}^{+\infty
+                        }{\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}dx}=\int\limits_{0}^{+\infty
+                        }{\frac{1}{{{e}^{x}}}\left( \int\limits_{0}^{a}{{{e}^{-\gamma x}}d\gamma } \right)dx}=
+                        \int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-x\left( \gamma +1 \right)}}d\gamma } \right)dx}=&\\
+                        & \displaystyle =\int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx} \right)d\gamma }=
+                        \int\limits_{0}^{a}{\frac{1}{\gamma +1}d\gamma =\ln \left( a+1 \right)}.&
+                        \end{eqnarray*}
+				   <a class="tooltip-1">   = <span class="classic">Для просмотра смените уровень
+                     
+                </span></a>
+</div>
+</div>
+   </details>
+</section>
+
+<section>
+   <p class="margin-top" style = "white-space: nowrap" >
+      <span class = "em-wide" style="font-size: 20px">Пример 20.</span>
+      Вычислить    \(\displaystyle I\left( a,b \right)=\int\limits_{0}^{+\infty
+            }{{{e}^{-bx}}\frac{\sin ax}{x}dx}, \displaystyle b&gt;0.\)
+   </p>
+   <br>
+   <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
+      <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
+      <div class="proof">
+         <div class="normal">
+			 <p> Преобразуем интеграл следующим образом:</p>
+			 <div> \begin{eqnarray*}
+                        & \displaystyle J\left( a \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=
+                                 \int\limits_{0}^{+\infty }{{{e}^{-bx}}\left( \int\limits_{0}^{a}{\cos \left( \gamma x \right)d\gamma } \right)dx}= &\\
+                        &  =\int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-bx}}\cos 
+                                    \left( \gamma x \right)\,d\gamma } \right)dx}=
+                                 \int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-bx}}\cos \left( \gamma x \right)\,dx} \right)d\gamma }=&\\
+                        & \displaystyle =\int\limits_{0}^{a}{\frac{b}{{{\gamma }^{2}}+{{b}^{2}}}d\gamma}=\operatorname{arctg}\frac{a}{b}. &
+                        \end{eqnarray*}
+			 </div>
+			 <div class = "col-blue">
+				 Все условия теоремы <a class="tooltip-1">об интегрируемости <span class="classic">
+                  Если функция \(\displaystyle f(x,\gamma )\) непрерывна в полуполосе 
+            \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), а интеграл
+            \begin{eqnarray*}
+            \displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}
+            \end{eqnarray*}
+            сходится равномерно на сегменте \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),
+            то интеграл  можно интегрировать по параметру \(\displaystyle \gamma \) на сегменте
+            \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), причем
+
+               \begin{eqnarray}
+               &\int\limits_{\gamma_1}^{\gamma_2}I(\gamma )d\gamma
+            =\int\limits_{\gamma_1}^{\gamma_2}\left(
+            \int\limits_{a}^{\mathbf{B}}f(x,\gamma )dx \right)d\gamma= &\\
+               &=\int\limits_{a}^{\mathbf{B}} \left(\int\limits_{\gamma_1}^{\gamma_2}f(x,\gamma )d\gamma  \right)dx. &
+            \end{eqnarray}
+            </span></a> выполнены, так как:</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;1) функция \(\displaystyle {{e}^{-bx}}\cos \left( \gamma x \right)\)
+               непрерывна;</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;2) интеграл \(\displaystyle \underset{0}{\overset{+\infty }{\mathop
+               \int }}\,{{e}^{-bx}}\cos \left( \gamma x \right)\,dx\) сходится
+               равномерно относительно \(\displaystyle \gamma \) в силу признака
+               Вейерштрасса: 
+               \begin{eqnarray*}\displaystyle \underset{0}{\overset{+\infty }{\mathop
+               \int }}\,\left| {{e}^{-bx}}\cos \left( \gamma x \right) \right|\,dx\le
+               \int\limits_{0}^{+\infty
+               }{{{e}^{-bx}}dx}=\frac{1}{b}&lt;+\infty.
+               \end{eqnarray*}
+            </p>
+			 </div>
+
+           <p>Cледовательно,</p>
+		  \begin{eqnarray*}
+                        & \displaystyle J\left( a \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=
+                                 \int\limits_{0}^{+\infty }{{{e}^{-bx}}\left( \int\limits_{0}^{a}{\cos \left( \gamma x \right)d\gamma } \right)dx}= &\\
+                        &  =\int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-bx}}\cos 
+                                    \left( \gamma x \right)\,d\gamma } \right)dx}=
+                                 \int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-bx}}\cos \left( \gamma x \right)\,dx} \right)d\gamma }=&\\
+                        & \displaystyle =\int\limits_{0}^{a}{\frac{b}{{{\gamma }^{2}}+{{b}^{2}}}d\gamma}=\operatorname{arctg}\frac{a}{b}. &
+                        \end{eqnarray*}
+		  
+	</div>
                    
-                  <p class="easy-text">Все условия теоремы о интегрируемости в собственном смысле<a class="shortcut" href="#0.15">(0.15)</a>   
-                     <a class="tooltip-1">   выполнены,<span class="classic">Для просмотра смените уровень
-                        
-                   </span></a> поэтому:</p>
+                  <div class="easy-text">      
                         \begin{eqnarray*}
                         & \displaystyle J\left( a \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=
                                  \int\limits_{0}^{+\infty }{{{e}^{-bx}}\left( \int\limits_{0}^{a}{\cos \left( \gamma x \right)d\gamma } \right)dx}= &\\
@@ -1974,7 +2019,9 @@
                                  \int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-bx}}\cos \left( \gamma x \right)\,dx} \right)d\gamma }=&\\
                         & \displaystyle =\int\limits_{0}^{a}{\frac{b}{{{\gamma }^{2}}+{{b}^{2}}}d\gamma}=\operatorname{arctg}\frac{a}{b}. &
                         \end{eqnarray*}
-                        </p>
+                         <a class="tooltip-1">=<span class="classic">Для просмотра смените уровень
+                        
+                   </span></a>
                      </div>
    </details>
 </section>
@@ -1989,6 +2036,7 @@
    <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
       <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
       <div class="proof">
+		  <div class = "normal">
                            <p>
                               Для нахождения 
                               \(\displaystyle I\left( a,b
@@ -2027,13 +2075,26 @@
                               </div>
                            </p>
                         </div>
+	   <div class = "easy-text">
+	   						  \begin{eqnarray}
+                              \displaystyle \int\limits_{0}^{+\infty
+                              }{\frac{{{e}^{-ax}}-{{e}^{-bx}}}{x}dx}=\int\limits_{0}^{+\infty
+                              }{\left(
+                              \int\limits_{a}^{b}{{{e}^{-\gamma x}}d\gamma } \right)dx}=\int\limits_{a}^{b}{\left( \int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}dx} \right)d\gamma }=
+                              \int\limits_{a}^{b}{\frac{1}{\gamma }d\gamma =\ln \frac{b}{a}}.
+                           	  \end{eqnarray}
+		   <a class="tooltip-1">=<span class="classic">Для просмотра смените уровень
+                        
+                   </span></a>
+	   				</div>
+	   </div>
                      </details>
                      <p class="margin-top"><span class="em-wide">Замечание.</span> Интегралы из примеров 19-21
                         были решены ранее с помощью теоремы 17 
                         о дифференцировании по параметру.
                        </p>
 
-   </div>			
+ 			
    </details>
 </section>
 <!-- конец нормальных примеров -->
