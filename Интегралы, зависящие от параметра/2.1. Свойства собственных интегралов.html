@@ -402,9 +402,9 @@
 				<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
 				<div class="proof">
 					<div class = "easy-text"> 
-						<p>Все условия теоремы о дифференцировании <a class="tooltip-1">выполнены<span class="classic">
-							Для просмотра смените уровень
-					</span></a>, поэтому
+						<p><a class="tooltip-1">Продифференцируем по параметру<span class="classic">
+										Для просмотра обоснования смените уровень
+									 </span></a>
 \[{I}'\left( a \right)=2\int\limits_{0}^{\pi /2}{\frac{dx}{1-{{a}^{2}}{{\cos }^{2}}x}}=
 \left[ t=\operatorname{tg}x \right]=2\int\limits_{0}^{+\infty }{\frac{dt}{1+{{t}^{2}}-{{a}^{2}}}}=\frac{\pi }{\sqrt{1-{{a}^{2}}}}.\]</p>
 <p>Следовательно, \[I\left( a \right)=\int{\frac{\pi \,da}{\sqrt{1-{{a}^{2}}}}}=\pi \arcsin a+C.\]</p>
@@ -475,7 +475,7 @@
 										Для просмотра обоснования смените уровень
 									 </span></a>
 						
-						<br>
+						<br><br>
 						\(\qquad \qquad \qquad 
 									\displaystyle {I}'\left( a \right)=\int\limits_{0}^{\pi /2}{\frac{dx}{1+{{a}^{2}}
 									{{\operatorname{tg}}^{2}}x}}=\left[ t=\operatorname{tg}x \right]
@@ -698,27 +698,26 @@
 				<div class = "easy-text">
 					<div class="proof">
 					<p><em style = "font-size: 22px">Способ 1. Используя теорему об интегрируемости</em>.</p>
-					<br>
-					<br>
-					<p>Преобразуем интеграл следующим образом</p>
 				\[ \displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\frac{{{x}^{b}}-{{x}^{a}}}
 				{\ln x}dx}=\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^{\gamma }}d\gamma }
-					\right)dx}.=\,\left[ x\,=\,
+					\right)dx}=\,\left[ x\,=\,
 					{{e}^{-t}} \right]=\]
 					\[=\int\limits_{a}^{b}{\left( \int\limits_{0}^{+\infty }{{{e}^
 					{-t\left( \gamma +1 \right)}}dt} \right)d\gamma }\,=\,\int\limits_{a}^{b}{\frac{1}
 					{\gamma \,+\,1}d\gamma }=\ln \frac{1\,+\,b}{1\,+\,a}.\]
-						<em style = "font-size: 22px">Способ 2. Используя теорему о дифференцируемости </em>
-					 <p><p>Все условия теоремы о дифференцировании <a class="tooltip-1">выполнены<span class="classic">
-						Для просмотра смените уровень
-				</span></a>, поэтому</p>
+						<p><em style = "font-size: 22px">Способ 2. Используя теорему о дифференцируемости </em></p>
+					 <p><p>&nbsp;&nbsp;&nbsp;&nbsp;<a class="tooltip-1">Продифференцируем по параметру<span class="classic">
+										Для просмотра обоснования смените уровень
+						</span></a></p>
 						\begin{eqnarray*}
 						\displaystyle \frac{\partial I\left( a,b \right)}{\partial b}=\int\limits_{0}^{1}{{{x}^{b}}dx}=\left.
 					\frac{{{x}^{b+1}}}{b+1} \right|_{0}^{1}=\frac{1}{b+1},
 					\end{eqnarray*}
-						<p>Следовательно, \(\displaystyle I\left( a,b \right)=\int{\frac{1}{b+1}db}=\ln
-						\left( b+1 \right)+C\left( a \right)\). Учитывая, что \(\displaystyle {{\left. I\left( a,b \right) \right|}_
-					{b=a}}=\,0\), получим, \(\displaystyle C\left( a \right)=-\ln \left( a+1 \right)\), а значит, \(\displaystyle
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Следовательно, <br> \[\displaystyle I\left( a,b \right)=\int{\frac{1}{b+1}db}=\ln
+						\left( b+1 \right)+C\left( a \right).\]
+							<br><p>&nbsp;&nbsp;&nbsp;&nbsp;Учитывая, что \(\displaystyle {{\left. I\left( a,b \right) \right|}_
+					{b=a}}=\,0\), получим,
+						<br>\[\displaystyle C\left( a \right)=-\ln \left( a+1 \right),\] <br>&nbsp;&nbsp;&nbsp;&nbsp;а значит, \(\displaystyle
 						I\left( a,b \right)=\ln \frac{b+1}{a+1}\).
 					</p>
 			</p>
