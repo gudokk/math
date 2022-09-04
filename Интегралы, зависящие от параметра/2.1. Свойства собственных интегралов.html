@@ -698,13 +698,23 @@
 				<div class = "easy-text">
 					<div class="proof">
 					<p><em style = "font-size: 22px">Способ 1. Используя теорему об интегрируемости</em>.</p>
-				\[ \displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\frac{{{x}^{b}}-{{x}^{a}}}
-				{\ln x}dx}=\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^{\gamma }}d\gamma }
-					\right)dx}=\,\left[ x\,=\,
-					{{e}^{-t}} \right]=\]
-					\[=\int\limits_{a}^{b}{\left( \int\limits_{0}^{+\infty }{{{e}^
-					{-t\left( \gamma +1 \right)}}dt} \right)d\gamma }\,=\,\int\limits_{a}^{b}{\frac{1}
-					{\gamma \,+\,1}d\gamma }=\ln \frac{1\,+\,b}{1\,+\,a}.\]
+					<p class="formula">
+						\(\displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\frac{{{x}^{b}}-{{x}^{a}}}
+						{\ln x}dx}=\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^{\gamma }}d\gamma }
+							\right)dx}\)
+							<a class="tooltip-1">\(=\)<span class="classic">
+								Для просмотра обоснования смените уровень
+				                 </span></a>
+							\(\displaystyle\int\limits_{a}^{b}{\left( \int\limits_{0}^{1}{{{x}^{\gamma }}d\gamma }
+							\right)dx}=\)
+						</p>
+						<p class="formula">
+							\(\displaystyle = \left[ x\,=\,
+							{{e}^{-t}} \right]
+							=\int\limits_{a}^{b}{\left( \int\limits_{0}^{+\infty }{{{e}^
+							{-t\left( \gamma +1 \right)}}dt} \right)d\gamma }\,=\,\int\limits_{a}^{b}{\frac{1}
+							{\gamma \,+\,1}d\gamma }=\ln \frac{1\,+\,b}{1\,+\,a}.\)
+						</p>
 						<p><em style = "font-size: 22px">Способ 2. Используя теорему о дифференцируемости </em></p>
 					 <p><p>&nbsp;&nbsp;&nbsp;&nbsp;<a class="tooltip-1">Продифференцируем по параметру<span class="classic">
 										Для просмотра обоснования смените уровень
@@ -853,7 +863,7 @@
 <br>
 	<footer class="footer">
 	  <p>Учебные материалы </p>
-		<p>Автор материалов - Рояк Светлана Хаимовна.</p>
+		<p>Автор материалов - Рояк Светлана Хаимовна; разработчики-Ватлин Илья, Гудкова Маша</p>
 	</footer>
 	<script src="../main.js"></script>
 </body>
