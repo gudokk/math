@@ -488,6 +488,7 @@
 							<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Доказательство</summary>
 											  <p>
 												<div class="proof normal">
+													<div class="col-blue">
 													Пусть \(\displaystyle{{\gamma }_{0}}\in {\Gamma }'\bigcap \Gamma \). Тогда
 													<a class="tooltip-1">существует сегмент <span class="classic">
 														<p class="margin-top">
@@ -554,7 +555,7 @@
 														  </table>
 														</p>
 													</span></a>такой, что  
-							                                                <p class="formula>
+							                                                <p class="formula">
 													\(\displaystyle {{\gamma }_{0}}\,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
 													 и \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \).
 														  </p>
@@ -567,6 +568,7 @@
 													
 													
 													</div>
+												</div>
 											</details>
 						<div class="remark">
 							<p class="margin-top"><span class="em-wide">Замечание</span>. Утверждение теоремы и ее следствия остаются
@@ -594,16 +596,75 @@
 				<br>
 				<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
 					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
-					<div class="proof">
-									 \(\displaystyle {I}'\left( a
-								  \right)=\int\limits_{0}^{{{a}^{3}}}{\frac{x}{\left( 1+ax
-								  \right)x}dx}+ 3{{a}^{2}}\cdot \frac{\ln \left( 1+a\cdot {{a}^{3}}
-								  \right)}{{{a}^{3}}}=
-									\left. \frac{\ln \left( 1+ax
-									\right)}{a} \right|_{0}^ {{{a}^{3}}}+\frac{3\ln \left(
-									1+{{a}^{4}} \right)}{a}=\frac{4\ln \left( 1+{{a}^{4}}
-									\right)}{a}\).
+					<div class = "proof">
+							<div class="easy-text">
+								<p class="formula">
+									\(\displaystyle {I}'\left( a
+								 \right)\)
+								 <a class="tooltip-1">\(=\)<span class="classic">Для просмотра обоснования смените уровень
+							   </span></a>
+							   \(\displaystyle \int\limits_{0}^{{{a}^{3}}}{\frac{x}{\left( 1+ax
+								 \right)x}dx}+ 3{{a}^{2}}\cdot \frac{\ln \left( 1+a\cdot {{a}^{3}}
+								 \right)}{{{a}^{3}}}=
+								   \left. \frac{\ln \left( 1+ax
+								   \right)}{a} \right|_{0}^ {{{a}^{3}}}+\frac{3\ln \left(
+								   1+{{a}^{4}} \right)}{a}=\frac{4\ln \left( 1+{{a}^{4}}
+								   \right)}{a}\).</p>
 									</div>
+									<div class="normal">
+										<div class="col-blue">
+											
+													Пусть \(\displaystyle f\left( x,a \right)=\frac{\ln \left( 1+ax \right)}{x}\). Так как
+													\[\displaystyle\underset{x\to 0+}{\mathop{\lim }}f\left( x,a \right)=
+													\underset{x\to 0+}{\mathop{\lim }}\frac{\ln \left( 1+ax \right)}{x}=a,\]
+													подынтегральную функцию можно доопределить до непрерывной на сегменте следующим образом
+													
+													\begin{eqnarray*}
+               \displaystyle \tilde{f}\left( x,a \right)=\left\{ \begin{matrix}
+			   {f}\left( x,a \right),\,\,x&gt;0, \\
+             a,\,\,x=0. \\
+            \end{matrix} \right.
+            \end{eqnarray*}
+													<p>
+														Функция \(\displaystyle \frac{\partial }{\partial a}\tilde{f}\left( x, \right)=
+														\frac{x}{\left( 1+ax \right)x}=\frac{1}{1+ax}\) непрерывна на произвольном
+														 прямоугольнике прямоугольнике \(\displaystyle \varPi \subset {{\left( {{\mathbb{R}}^{+}} 
+														 \right)}^{2}}.\)
+													</p>
+														
+													 <p>
+													</div>
+													<p>
+
+														Все условия
+														 <a class="tooltip-1">о дифференцировании по параметру
+															<span class="classic">
+															   Если<br>
+												1) \(\displaystyle f\left( x,\gamma  \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\)
+													непрерывны на \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),<br>
+													2) для некоторого \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+													   сходится интеграл \(\displaystyle I(\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\),<br>
+												   3) интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}\) 
+														 сходится равномерно по \(\displaystyle \gamma \) на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),
+												то функция \(\displaystyle I(\gamma )\) дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+												 и ее производная может быть вычислена по правилу Лейбница:
+												 \begin{eqnarray*}
+												 \displaystyle {I}'(\gamma )=\int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}.
+												 \end{eqnarray*}
+														 </span></a> выполнены, поэтому:
+													</p>
+													 </p>		
+										</p>
+										\[\displaystyle \int\limits_{0}^{{{a}^{3}}}{\frac{x}{\left( 1+ax
+											\right)x}dx}+ 3{{a}^{2}}\cdot \frac{\ln \left( 1+a\cdot {{a}^{3}}
+											\right)}{{{a}^{3}}}=
+											  \left. \frac{\ln \left( 1+ax
+											  \right)}{a} \right|_{0}^ {{{a}^{3}}}+\frac{3\ln \left(
+											  1+{{a}^{4}} \right)}{a}=\frac{4\ln \left( 1+{{a}^{4}}
+											  \right)}{a}.\]
+									
+								</div>
+					</div>
 				</details>
 		<div>
 			<p class="margin-top" style = "white-space: nowrap" >

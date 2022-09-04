@@ -305,6 +305,7 @@
 					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Доказательство</summary>
 									  <p>
 										<div class="proof normal">
+											<div class="col-blue">
 											Пусть
 											<span class="col-black"
 											  >\(\displaystyle {{\gamma }_{0}}\in \left[ {{\gamma
@@ -408,6 +409,7 @@
 											>
 										  </p>
 										</div>
+										</div>
 									  </p>
 									</details>
 								  </section>
@@ -424,6 +426,7 @@
 					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Доказательство</summary>
 									  <p>
 										<div class="proof normal">
+											<div class="col-blue">
 											Пусть \(\displaystyle{{\gamma }_{0}}\in {\Gamma }'\bigcap \Gamma \). Тогда
 											<a class="tooltip-1">существует сегмент <span class="classic">
 												<p class="margin-top">
@@ -502,6 +505,7 @@
 											  что функция \(\displaystyle I(\gamma )\)
 												непрерывна на всем множестве \(\displaystyle\Gamma \).</p>
 											</div>
+										</div>
 									</details>
 			</section>
 			<section class="consequence">
@@ -568,26 +572,45 @@
 					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
 					<div class="proof">
 						<div class = "normal">
+							<div class="col-blue">
 							Для вычисления предела достаточно, чтобы требования
 						  предельного перехода выполнялись в некоторой окрестности
-						  предельного значения. Пусть \(\displaystyle
-						\gamma \in \left[ 0,1 \right] \),
-						тогда \(\displaystyle 1-\gamma \in  \mathbb{C} \)
-						\(\left( \left[ 0,1 \right] \right)\), \(\displaystyle \pi \gamma
-						\in \mathbb{C}\left( \left[ 0,1 \right] \right)\), \(\displaystyle
-						\sqrt{1-{{\gamma }^{2}}{{\sin }^{2}}x}\in \mathbb{C}\left(
-							\left[ 0,\pi \right]\times \left[ 0,1 \right] \right)\), \(\displaystyle
-							0\le 1-\gamma \le 1\le \pi \), \(\displaystyle 0\le \pi \gamma
-							\le \pi \), а значит,
+						  предельного значения.
+						  <p>
 
-						</div>
-									\begin{eqnarray*}
+							  Пусть \(\displaystyle
+						   \gamma \in \left[ 0,1 \right] \),
+						   тогда</p>
+						    \[\displaystyle 1-\gamma \in  \mathbb{C} 
+							\left( \left[ 0,1 \right] \right), \quad \displaystyle \pi \gamma
+						   \in \mathbb{C}\left( \left[ 0,1 \right] \right), \quad \displaystyle
+						   \sqrt{1-{{\gamma }^{2}}{{\sin }^{2}}x}\in \mathbb{C}\left(
+							   \left[ 0,\pi \right]\times \left[ 0,1 \right] \right),\]
+							    \[\displaystyle
+							   0\le 1-\gamma \le 1\le \pi, \quad \displaystyle 0\le \pi \gamma
+							   \le \pi,\] а значит,
+							</div>
+							\begin{eqnarray*}
 									\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
 									}}\,\int\limits_{1-\gamma }^{\pi \gamma } {\sqrt{1-{{\gamma
 									}^{2}}{{\sin }^{2}}x}\,dx}=\int\limits_{0}^{\pi
 									}{\sqrt{1-{{\sin }^{2}}x}\,dx}=\int\limits_ {0}^{\pi }{\left|
 										\cos x \right|\,dx}=2.
 										\end{eqnarray*}
+						</div>
+							<div class = "easy-text">
+								<p class="formula">
+									\(\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
+									}}\,\int\limits_{1-\gamma }^{\pi \gamma } {\sqrt{1-{{\gamma
+									}^{2}}{{\sin }^{2}}x}\,dx}\)
+									<a class="tooltip-1">\(=\)<span class="classic">Для просмотра смените уровень
+									</span></a>
+									\( \displaystyle\int\limits_{0}^{\pi
+									}{\sqrt{1-{{\sin }^{2}}x}\,dx}=\int\limits_ {0}^{\pi }{\left|
+										\cos x \right|\,dx}=2.\)
+									</p>
+
+							</div>
 									</div>
 				</details>
 				<br>
