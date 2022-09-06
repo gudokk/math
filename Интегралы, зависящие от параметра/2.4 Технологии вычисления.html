@@ -1830,7 +1830,7 @@
               \displaystyle I\left( a,b \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}, 
                \displaystyle b\in \left[ 0,1 \right].
         \end{eqnarray*}
-           <p>Этот интеграл при каждом фиксированном \(\displaystyle a\ne 0\) сходится равномерно по \(\displaystyle b\)
+           <p>Этот интеграл при каждом фиксированном \(\displaystyle a\ne 0\) сходится равномерно по параметру \(\displaystyle b\)
             на отрезке \(\displaystyle \left[ 0,1 \right]\) по признаку Дирихле:</p>
            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               1) \(\displaystyle \left| \int\limits_{0}^{B}{\sin ax\,dx} \right|=\left| \left. \frac{\cos ax}{a} \right|_{0}^{B} \right|\le
@@ -1844,18 +1844,20 @@
               \underset{x\to +\infty }{\mathop{\lim }}\,\underset{b\in \left[ 0,1
               \right]}{\mathop{\sup }}\,\left| \frac{{{e}^{-bx}}}{x}-0 \right|=\underset{x\to +\infty
               }{\mathop{\lim }}\,\frac{1}{x}=0\).</p>
-           <p>Из равномерной сходимости интеграла \(\displaystyle I\left( a,b \right)\) и
-              непрерывности на множестве \(\displaystyle \left\{ \left. \left( x,b \right)\,
-              \right|\,\,x\in \left[ 0,+\infty \right),\,\,b\in \left[ 0,1 \right] \right\}\) <br>
-           функции </p>
-           \begin{eqnarray*}
+           <p>Из равномерной сходимости интеграла \(\displaystyle I\left( a,b \right)\) и непрерывности функции
+			   \begin{eqnarray*}
            \displaystyle \left\{ \begin{matrix}
               {{e}^{-bx}}\frac{\sin ax}{x},\,\,x&gt;0 \\
            a,\,\,x=0 \\ \end{matrix} \right.
-           \end{eqnarray*}
-           <span>следует (в силу теоремы 16) непрерывность по
-              \(\displaystyle b\) функции \(\displaystyle I\left( a,b \right)\) на \(\displaystyle
-              \left[ 0,1 \right]\), а значит, в формуле (0.11) можно перейти<br> к пределу:</span>
+           \end{eqnarray*} 
+           на множестве 
+		 \[\displaystyle \left\{ \left. \left( x,b \right)\,
+              \right|\,\,x\in \left[ 0,+\infty \right),\,\,b\in \left[ 0,1 \right] \right\}\]
+		 </p>
+           
+           <span>можем утверждать (в силу теоремы о непрерывности несобственного интеграла), что функция \(\displaystyle I\left( a,b \right)\) непрерывна по \(\displaystyle b\)
+            на \(\displaystyle
+              \left[ 0,1 \right]\), значит:</span>
               \begin{eqnarray*}
               \displaystyle \int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\underset{b\to
               +0}{\mathop{\lim }}\,\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=\underset{b\to +0}{\mathop{\lim }}\,
