@@ -487,6 +487,7 @@
           \int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} 
           \right)d\gamma } \right)dx.}
           \end{eqnarray*}
+		<div class="col-blue">
           <p><span class="col-blue">Пусть</span> \(\displaystyle f\left( x,\gamma  \right)={{x}^{\gamma }}\sin 
           \left( \ln \frac{1}{x} \right)\).<span class="col-blue"> Учитывая, что</span> \(\displaystyle \forall \gamma \in \left[ a,b \right]\)</p>
           \begin{eqnarray*}
@@ -505,7 +506,9 @@
           0,\,\,x=0.  \\
           \end{matrix} \right.
           \end{eqnarray*}
-          <p>В силу теоремы
+          <p>
+		</div>
+		  В силу теоремы
             <a class="tooltip-1">об интегрируемости<span class="classic">
               Если \(\displaystyle f(x,\gamma )
     \in \mathbb{C} \)
@@ -911,6 +914,7 @@
       {\ln x}dx}=\int\limits_{0}^{1}{\left( \int\limits_{a}^{b}{{{x}^{\gamma }}d\gamma }
         \right)dx}.
         \end{eqnarray*}
+	      <div class="col-blue">
         <p><span class="col-blue">Так как</span> \(\displaystyle \forall \gamma \in \left[ a,b 
         \right]\) \(\displaystyle \underset{x\to 0+}{\mathop{\lim }}\,{{x}^{\gamma }}=\,\underset
         {x\to 0+}{\mathop{\lim }}\,{{e}^{\gamma \ln x}}=\,0\),<span class="col-blue"> то подынтегральная 
@@ -922,6 +926,7 @@
          0,\,\,x=0.  \\
         \end{matrix} \right.
         \end{eqnarray*}
+	      </div>
         <p>В силу теоремы
           <a class="tooltip-1">об интегрируемости<span class="classic">
             Если \(\displaystyle f(x,\gamma )
@@ -954,6 +959,7 @@
         {\gamma \,+\,1}d\gamma }=\ln \frac{1\,+\,b}{1\,+\,a}.
         \end{eqnarray*}
         <p><em style = "font-size: 22px">Способ 2. Используя теорему о дифференцируемости </em>
+		<div class="col-blue">
         <p class = "col-blue">Пусть \(\displaystyle f\left( x,a,b \right)=\frac{{{x}^{b}}-{{x}^{a}}}{\ln x}\).
       Рассмотрим произвольный прямоугольник \(\displaystyle \subset \left[ 0,1 \right]\times
       {{\left\{ \left. t \right|t&gt;0 \right\}}^{2}}\). <span class="col-blue">Учитывая,
@@ -974,6 +980,7 @@
           b-a,\,\,x=1. \\
           \end{matrix} \right.
           \end{eqnarray*}
+	      </div>
         <p><span class="col-blue">Функции</span> \(\displaystyle \tilde{f}\left( x,a,b \right)\), \(\displaystyle
           \frac{\partial \tilde{f}\left( x,a,b \right)}{\partial b}={{x}^{b}}\)
           <span class="col-blue">непрерывны на </span> \(\displaystyle П\), поэтому</span> в силу теоремы
@@ -1308,6 +1315,8 @@
  
     Учитывая, что \(\displaystyle 0={{\left. J\left( a \right)\, \right|}_{a={{b}_{0}}}}\,=\,-\ln {{b}_{0}}\,+\,C\left( {{b}_{0}} \right)\), получаем 
     \[\displaystyle J\left( a \right)\,=\,I\left( a,{{b}_{0}} \right)\,=\,\ln \frac{{{b}_{0}}}{a}.\]
+	<p> В силу произвольности выбора \(\displaystyle {{b}_{0}}\), последняя формула справедлива
+		\(\displaystyle \forall {{b}_{0}}\,>\,0\), следовательно, \[I\left( a,b \right)\,=\,\ln \frac{b}{a}\].</p>
  </p>
  
                                </div>
@@ -1656,7 +1665,7 @@
                        <p>3) Интеграл \(\displaystyle K\left( a \right)\,=\,\int\limits_{0}^{+\infty }{\frac{\partial }{\partial a}\left( {{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x} 
                        \right)dx}\,=\,\int\limits_{0}^{+\infty }{{{e}^{-{{b}_{0}}x}}\cos ax\,dx}\) сходится равномерно относительно параметра \(\displaystyle a\) на 
                        \(\displaystyle \mathbb{R}\) в силу признака Вейерштрасса:</p>
-                       \begin{eqnarray*}
+			\begin{eqnarray*}
                        \displaystyle \int\limits_{0}^{+\infty }{\left| {{e}^{-{{b}_{0}}x}}\cos ax \right|dx}\le 
                           \int\limits_{0}^{+\infty }{{{e}^{-{{b}_{0}}x}}dx}=
                           \frac{1}{{{b}_{0}}}&lt;\infty.
@@ -1713,6 +1722,9 @@
                        \end{eqnarray*}
                           <p>Учитывая, что \(\displaystyle J\left( 0 \right)=I\left( 0,{{b}_{0}} \right)=0\),
                           получим \(\displaystyle C\left( {{b}_{0}} \right)=0\), а значит,</p>
+	\[\int\limits_{0}^{+\infty }{{{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x}dx}=\operatorname{arctg}\frac{a}{{{b}_{0}}}\].
+<p>В силу произвольности выбора \(\displaystyle {{b}_{0}}\), последняя формула справедлива \(\displaystyle \forall {{b}_{0}}\,>\,0\), следовательно, </p>
+
                           <h3 class="formula">
                              \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=\operatorname{arctg}\frac{a}{b}\)
                           </h3>
