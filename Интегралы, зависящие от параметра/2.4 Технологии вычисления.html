@@ -368,20 +368,26 @@
      <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
      <div class="proof">
       <p class="margin-top">
-    \[\int\limits_{-\infty }^{+\infty }{\sin \left( a{{x}^{2}}+2bx+c \right)dx}=\int\limits_{-\infty }^
-  {+\infty }{\sin \left( a{{\left( x+b \right)}^{2}}+c-a{{b}^{2}} \right)dx}=\] 
-  \[=\int\limits_{-\infty }^{+\infty }{\sin \left( a{{\left( x+b \right)}^{2}} \right)\cos \left( c-a{{b}^{2}} \right)dx}+\int\limits_{-\infty }^{+\infty }
-  {\cos \left( a{{\left( x+b \right)}^{2}} \right)\sin \left( c-a{{b}^{2}} \right)dx}=\]
-\[=[ \text{ Обозначим } C=\cos \left( c-a{{b}^{2}} \right),\,\,\,S=\sin \left( c-a{{b}^{2}} \right)]=\]
-\[=C\int\limits_{-\infty }^{+\infty }{\sin \left( a{{\left( x+b \right)}^{2}} \right)dx}+S\int\limits_{-\infty }^{+\infty }
-  {\cos \left( a{{\left( x+b \right)}^{2}} \right)dx}=\]
-  \[=\left[ t=\sqrt{\left| a \right|}\left( x+b \right) \right]=\]
-  \[=\frac{C}{\sqrt{\left| a \right|}}\int\limits_{-\infty }^{+\infty }{\sin \left( {{t}^{2}} \right)dt}+\frac{S}
-  {\sqrt{\left| a \right|}}\int\limits_{-\infty }^{+\infty }{\cos \left( {{t}^{2}} \right)dt}=\]
-  \[=\frac{2C}{\sqrt{\left| a \right|}}\int\limits_{0}^{+\infty }{\sin \left( {{t}^{2}} \right)dt}+\frac{2S}{\sqrt{\left| a \right|}}\int\limits_{0}^{+\infty }
-  {\cos \left( {{t}^{2}} \right)dt}=\]
-  \[=\left( \cos \left( c-a{{b}^{2}} \right)+\sin \left( c-a{{b}^{2}} \right) \right)\sqrt{\frac{\pi }{\left| a \right|}}.\]
+        \[\begin{matrix}
+         \displaystyle\int\limits_{-\infty }^{+\infty }{\sin \left( a{{x}^{2}}+2bx+c \right)dx}=
+        \int\limits_{-\infty }^{+\infty }{\sin \left( a{{\left( x+b \right)}^{2}}+\frac{c}{a}-a{{b}^{2}} \right)dx}= \\ 
+        \displaystyle =\int\limits_{-\infty }^{+\infty }{\sin \left( a{{\left( x+b \right)}^{2}}
+         \right)\cos \left( \frac{c}{a}-a{{b}^{2}} \right)dx}+\int\limits_{-\infty }^{+\infty }{\cos \left( a{{\left( x+b \right)}^{2}} 
+         \right)\sin \left( \frac{c}{a}-a{{b}^{2}} \right)dx}= \\ 
+      \end{matrix}\]
+     \[=[\text{Обозначим } \displaystyle C=\cos \left( \frac{c}{a}-a{{b}^{2}} \right),\,\,\,S=\sin \left( \frac{c}{a}-a{{b}^{2}} \right)]=\]
+      \[\begin{matrix}
+      \displaystyle =C\int\limits_{-\infty }^{+\infty }{\sin \left( a{{\left( x+b \right)}^{2}} \right)dx}+S\int\limits_{-\infty }^{+\infty }
+  {\cos \left( a{{\left( x+b \right)}^{2}} \right)dx}= \\ 
+  =\left[ t=\sqrt{\left| a \right|}\left( x+b \right) \right]= \\ 
+  \displaystyle =\frac{C}{\sqrt{\left| a \right|}}\int\limits_{-\infty }^{+\infty }{\sin \left( {{t}^{2}} \right)dt}+\frac{S}{\sqrt{\left| a
+     \right|}}\int\limits_{-\infty }^{+\infty }{\cos \left( {{t}^{2}} \right)dt}= \\ 
+  =\frac{2C}{\sqrt{\left| a \right|}}\int\limits_{0}^{+\infty }{\sin \left( {{t}^{2}} \right)dt}+\frac{2S}{\sqrt{\left| a
+     \right|}}\int\limits_{0}^{+\infty }{\cos \left( {{t}^{2}} \right)dt}= \\ 
+     \displaystyle =\left( \cos \left( \frac{c}{a}-a{{b}^{2}} \right)+\sin \left( \frac{c}{a}-a{{b}^{2}} \right) \right)\sqrt{\frac{\pi }{\left| a \right|}}. \\ 
+\end{matrix}\]
 
+      
       </p>
  </details>
 </section>
