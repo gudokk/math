@@ -733,6 +733,50 @@ hr {
   display: block;
   padding: 0.2em 0 0.6em 0;
 }
+
+.tooltip-2 {
+  border-bottom: 1px dotted #000000;
+  color: #345ae3;
+  outline: none;
+  cursor: help;
+  text-decoration: none;
+  position: relative;
+  text-align: justify;
+}
+.tooltip-2 span {
+  margin-left: -999em;
+  position: absolute;
+}
+.tooltip-2:hover span {
+  font-family: Calibri, Tahoma, Geneva, sans-serif;
+  position: absolute;
+  right: 1em;
+  color: #000000;
+  top: 2em;
+  z-index: 100;
+  margin-left: 0;
+  width: 650px;
+  border-radius: 5px 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
+.tooltip-2:hover img {
+  border: 0;
+  margin: -10px 0 0 -55px;
+  float: right;
+  position: absolute;
+}
+.tooltip-2:hover em {
+  font-family: Candara, Tahoma, Geneva, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  padding: 0.2em 0 0.6em 0;
+}
+
 .classic {
   background: #d7d7d7;
   border: 1px solid #808080;
