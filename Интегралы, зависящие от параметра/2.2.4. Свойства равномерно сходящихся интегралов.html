@@ -398,11 +398,26 @@
                         
                                  <div class="proof">
                                  <p>
-                                 \(\displaystyle \forall a&gt;0\) \(\displaystyle \int\limits_{0}^{+\infty
-                                 }{a{{e}^{-ax}}dx}=\left. -{{e}^{-ax}} \right|_{0}^{+\infty }=1\), поэтому, \(\displaystyle
-                                 \underset{a\to 0+}{\mathop{\lim }}\,\int\limits_{0}^{+\infty }{a{{e}^{-ax}}dx}=1\).</p>
-                                 <p>При этом \(\displaystyle \int\limits_{0}^{+\infty }{\underset{a\to 0+}{\mathop{\lim
-                                    }}\,\left( a{{e}^{-ax}} \right)dx}=0\).</p>
+                                 Например, для интеграла \(\displaystyle I\left( a \right)=\int\limits_{0}^{+\infty }{a{{e}^{-ax}}dx}\)
+                                  формула не верна. Действительно,</p>
+                                   \[1)\underset{a\to 0+}{\mathop{\lim }}\,\int\limits_{0}^{+\infty }{a{{e}^{-ax}}dx}=
+                                   -\underset{a\to 0+}{\mathop{\lim }}\,\int\limits_{0}^{+\infty }{{{e}^{-ax}}d\left( -ax \right)}=
+                                   \underset{a\to 0+}{\mathop{\lim }}\,1=1,\]  
+                                   \[2) \int\limits_{0}^{+\infty }{\underset{a\to 0+}{\mathop{\lim }}\,\left( a{{e}^{-ax}} \right)dx}=
+                                   \int\limits_{0}^{+\infty }{0}=0.\]
+                                   <p>
+                                    Для этого интеграл первое требование теоремы выполняется, а второе нет. Интеграл сходится к 1 неравномерно, так как
+                                   </p>
+                                   \[\begin{matrix}
+  {\mathop{\lim\limits_{\eta \to +\infty} }}\,{\mathop{\sup\limits_{a>0} }}\,\left| \varphi \left( \eta ,a \right)-1 \right|=
+  {\mathop{\lim\limits_{\eta \to +\infty} }}\,{\mathop{\sup\limits_{a>0} }}\,\left|
+   \int\limits_{0}^{\eta }{a{{e}^{-ax}}dx}-1 \right|= \\ 
+  ={\mathop{\lim\limits_{\eta \to +\infty} }}\,{\mathop{\sup\limits_{a>0} }}\,\left| 
+  -\left. {{e}^{-ax}} \right|_{0}^{\eta }-1 \right|=
+  {\mathop{\lim\limits_{\eta \to +\infty} }}\,{\mathop{\sup\limits_{a>0} }}\,\left| -{{e}^{-a\eta }}+1-1 \right|=
+  {\mathop{\lim\limits_{\eta \to +\infty} }}\,{\mathop{\lim\limits_{a\to 0+} }}\,{{e}^{-a\eta }}=1\ne 0. \\ 
+\end{matrix}\]
+
                                  </div>
                               </p>
                             </details>
@@ -700,7 +715,14 @@
                <div class="proof col-red">
                   <p>
                      <span>Учитывая, что при \(\displaystyle \frac{1}{p\left( p\,+1\right)\left( p\,+2
-                         \right)}\,=\,\frac{1}{2}\int\limits_{0}^{1}{{{\left( 1\,-\,x \right)}^{2}}{{x}^{p-1}}dx}\), получим </span>
+                         \right)}\)
+                         <a class="tooltip-1">\(=\)
+                           <span class="classic">\[\begin{matrix}
+                              \frac{1}{p\left( p\,+1 \right)\left( p\,+2 \right)}\,=\frac{1}{2}\left( \frac{1}{p}-\frac{2}{p+1}+\frac{1}{p+2} \right)= \\ 
+                              =\frac{1}{2}\int\limits_{0}^{1}{\left( {{x}^{p-1}}-2{{x}^{p}}+{{x}^{p+1}} \right)dx}=\,\frac{1}{2}\int\limits_{0}^{1}{{{\left( 1\,-\,x \right)}^{2}}{{x}^{p-1}}dx}. \\ 
+                            \end{matrix}\]
+                            </span></a>
+                          \(\displaystyle \frac{1}{2}\int\limits_{0}^{1}{{{\left( 1\,-\,x \right)}^{2}}{{x}^{p-1}}dx}\), получим </span>
                         \begin{eqnarray*}
                         &\displaystyle S\,=\sum\limits_{n=1}^{\infty }{\frac{1}{2n\cdot \left( 2n\,+\,1 \right)\cdot \left( 2n\,+\,2 \right)}}\,=\,\frac{1}{2}\sum\limits_{n=1}^{\infty }{\int\limits_{0}^{1}{{{\left( 1\,-\,x \right)}^{2}}{{x}^{2n-1}}\,dx}}\,=\,\frac{1}{2}\int\limits_{0}^{1}{\left( \sum\limits_{n=1}^{\infty }{{{\left( 1\,-\,x \right)}^{2}}{{x}^{2n-1}}}
                         \right)\,dx}\,= &\\
@@ -1218,12 +1240,16 @@
        \end{eqnarray*}
    </section>
 
+   <br>
+
    <section class="remark">
       <p class="margin-top">
          <span class="em-wide">Замечание.</span> 
-         \(\displaystyle \forall a\ne 0\) интеграл Дирихле 
-\[\displaystyle F\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\frac{\pi }{2}\,\,\operatorname{sign}a,\quad a\ne 0\]
-имеет нулевую производную. При этом формула Лейбница не работает,
+         Требования теоремы существенны, так как формула Лейбница справедлива не для всех интегралов, зависящих от параметра. 
+         Даже если интеграл, зависящий от параметра, является дифференцируемой функцией, для вычисления его производной формула Лейбница может быть неприменима. 
+         Например, интеграл Дирихле 
+         \[\displaystyle F\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\frac{\pi }{2}\,\,\operatorname{sign}a,\quad a\ne 0\]
+     имеет нулевую производную  \(\displaystyle \forall a\ne 0\). При этом формула Лейбница не работает,
  так как при любом значении параметра приводит к расходящемуся интегралу: 
  \[\displaystyle \int\limits_{0}^{+\infty }{\frac{\partial }{\partial a}\left( \frac{\sin ax}{x} \right)dx}=
  \int\limits_{0}^{+\infty }{\cos ax\,dx}.\]
@@ -1354,14 +1380,24 @@
                          }=\int\limits_{a}^{\mathbf{B}}{\left(
                          \int\limits_{{{\gamma }_{1}}}^{{{\gamma }_{2}}}{f(x,\gamma )d\gamma } \right)dx}}. \)
                         </h3>
-      </p></section> 
+      </p></section>
+      
+      <section class="consequence">
+         <p class="margin-top">
+            <p class="margin-top"><strong>Следствие</strong><strong> 1. </strong>Теорема остается справедливой, если
+               \(\displaystyle f\left( x,\gamma   \right)\)
+               можно доопределить до непрерывных на множестве \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) 
+               изменением их значений не более чем на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
+            
+         </p>
+      </section>
 
    <section class="consequence">
       <p class="margin-top">
-         <strong>Следствие.</strong> Если
+         <strong>Следствие 2.</strong> Если
          \(\displaystyle f(x,\gamma )\) непрерывна и неотрицательна в полуполосе
          \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[
-         {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и интеграл (0.13) является непрерывной функцией
+         {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и интеграл <a class="shortcut" href="#0.14">(0.14)</a> является непрерывной функцией
          на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), то справедлива
          формула <a class="shortcut" href="#0.15">(0.15)</a> . 
          
@@ -1393,6 +1429,7 @@
        </details>
    </section>
 
+  
 
    <section class="remark">
       <p class="margin-top">
@@ -1404,14 +1441,113 @@
 					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
          <div class="proof">
             <p>
-               Например,
-               \[ \displaystyle \int\limits_{0}^{1}{\left( \int\limits_{0}^{1}{\frac{\gamma
-               \,-\,x}{{{\left( x\,+\,\gamma  \right)}^{3}}}dx} \right)d\gamma }=\frac{1}{2} \]
-               \[\displaystyle \int\limits_{0}^{1}{\left( \int\limits_{0}^{1}{\frac{\gamma
-               \,-\,x}{{{\left( x\,+\,\gamma  \right)}^{3}}}d\gamma } \right)dx}=-\frac{1}{2}. \]
-               <p class="margin-top">В этих интегралах перестановка недопустима, так как подынтегральная функция в точке
-               \(\displaystyle (0,0)\) терпит неустранимый разрыв.
+               Например, для функции \(\displaystyle f\left( x,\gamma  \right)=\gamma \operatorname{arcctg}\left( 
+                  \gamma {{x}^{2}} \right)-\frac{2{{x}^{2}}{{\gamma }^{2}}}{1+{{x}^{4}}{{\gamma }^{2}}}\)
+                  <p>
+                     \(\displaystyle \int\limits_{0}^{1}{\left( \int\limits_{0}^{+\infty }{f\left( x,\gamma  \right)dx} \right)d\gamma }=0,\)
+                     <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
+                        <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
+                  
+                        <div class="proof">
+                                <div class="col-red hard">
+                                    \(\displaystyle \int\limits_{0}^{1}{\left( \int\limits_{0}^{+\infty }{f\left( x,\gamma  \right)dx} \right)d\gamma }=0\) так как
+                                     \(\displaystyle \gamma \in \left[ 0,1 \right]\) внутренний интеграл равен 0:
+                                    \[\displaystyle \begin{matrix}
+                                    \displaystyle \int\limits_{0}^{+\infty }{f\left( x,\gamma  \right)dx}=\int\limits_{0}^{+\infty }
+                                      {\gamma \operatorname{arcctg}\left( \gamma {{x}^{2}} \right)dx}-\int\limits_{0}^
+                                      {+\infty }{\frac{2{{x}^{2}}{{\gamma }^{2}}}{1+{{x}^{4}}{{\gamma }^{2}}}dx=} \\ 
+                                      \displaystyle =\left[ \begin{matrix}
+                                      \displaystyle u=\operatorname{arcctg}\left( \gamma {{x}^{2}} \right) & du=-\frac{2x\gamma }{1+{{\gamma }^{2}}{{x}^{4}}}dx  \\
+                                       dv=\gamma dx & v=\gamma x  \\
+                                    \end{matrix} \right]= \\ 
+                                    \displaystyle =\left. \left( \gamma x\operatorname{arcctg}\left( \gamma {{x}^{2}} \right) \right)
+                                       \right|_{0}^{+\infty }+\int\limits_{0}^{+\infty }{\gamma x\frac{2x\gamma }
+                                       {1+{{\gamma }^{2}}{{x}^{4}}}dx}-\int\limits_{0}^{+\infty }{\frac{2{{x}^{2}}{{\gamma }^{2}}}{1+{{x}^{4}}{{\gamma }^{2}}}dx=} \\ 
+                                      ={\mathop{\lim\limits_{x\to +\infty } }}\,\gamma x\operatorname{arcctg}\left( \gamma {{x}^{2}} \right)=\left[ \begin{matrix}
+                                      \displaystyle z=\operatorname{arcctg}\left( \gamma {{x}^{2}} \right)  \\
+                                       \gamma {{x}^{2}}=\operatorname{ctg}z  \\
+                                    \end{matrix} \right]= \\ 
+                                      ={\mathop{\lim\limits_{z\to 0+} }}\,\gamma \sqrt{\frac{\operatorname{ctg}z}{\gamma }}z
+                                      =\sqrt{\gamma }{\mathop{\lim\limits_{z\to 0+} }}\,\frac{z}{\sqrt{z}}=0. \\ 
+                                    \end{matrix}\]
+                                    
+                                    </div>
+                        </div>
+                      </details>
                </p>
+               <p>
+                  \(\displaystyle \int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{1}{f\left( x,\gamma  \right)d\gamma } \right)dx}=\frac{\pi }{\sqrt{2}}.\)
+                  <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
+                     <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
+               
+                     <div class="proof">
+                             <div class="col-red hard">
+                              <p>
+                                 Вычислим сначала внутренний интеграл. Пусть \(\displaystyle x\ne 0\), тогда
+                              </p>
+                              \[\begin{matrix}
+                              \displaystyle \varphi \left( x \right)=\int\limits_{0}^{1}{f\left( x,\gamma  \right)d\gamma }=
+                              \int\limits_{0}^{1}{\gamma \operatorname{arcctg}\left( \gamma {{x}^{2}} \right)d\gamma }-
+                              \int\limits_{0}^{1}{\frac{2{{x}^{2}}{{\gamma }^{2}}}{1+{{x}^{4}}{{\gamma }^{2}}}d\gamma }= \\ 
+                              =\left[ \begin{matrix}
+                              \displaystyle u=\operatorname{arcctg}\left( \gamma {{x}^{2}} \right) & du=-\frac{{{x}^{2}}}{1+{{\gamma }^{2}}{{x}^{4}}}d\gamma   \\
+                               dv=\gamma d\gamma  & v=\frac{{{\gamma }^{2}}}{2}  \\
+                            \end{matrix} \right]= \\ 
+                            \displaystyle =\left. \left( \frac{{{\gamma }^{2}}}{2}\operatorname{arcctg}\left( \gamma {{x}^{2}} \right) \right) 
+                              \right|_{0}^{1}+\frac{1}{2}\int\limits_{0}^{1}{\frac{{{\gamma }^{2}}{{x}^{2}}}{1+{{\gamma }
+                              ^{2}}{{x}^{4}}}d\gamma }-2\int\limits_{0}^{1}{\frac{{{x}^{2}}{{\gamma }^{2}}}{1+{{x}^{4}}{{\gamma }^{2}}}d\gamma }= \\ 
+                              \displaystyle =\frac{1}{2}\operatorname{arcctg}{{x}^{2}}-\frac{3}{2{{x}^{2}}}\int\limits_{0}^{1}{\left( 1-\frac{1}{1+{{\gamma }
+                              ^{2}}{{x}^{4}}} \right)d\gamma }= \\ 
+                              =\frac{1}{2}\operatorname{arcctg}{{x}^{2}}-\frac{3}{2{{x}^{4}}}\left. 
+                              \left( \operatorname{arctg}\left( \gamma {{x}^{2}} \right) \right) \right|_{0}^{1}-\frac{3}{2{{x}^{2}}}= \\ 
+                              =\frac{1}{2}\operatorname{arcctg}{{x}^{2}}-\frac{3}{2{{x}^{2}}}+\frac{3}{2{{x}^{4}}}\operatorname{arctg}\left( {{x}^{2}} \right). \\ 
+                            \end{matrix}\]
+                            Поскольку
+                            \[\underset{x\to 0+}{\mathop{\lim }}\,\varphi \left( x \right)=\underset{x\to 0+}
+                            {\mathop{\lim }}\,\left( \frac{1}{2}\operatorname{arcctg}{{x}^{2}}-\frac{3}{2{{x}^{2}}}+\frac{3}{2{{x}^{4}}}
+                            \operatorname{arctg}\left( {{x}^{2}} \right) \right)=\frac{\pi }{4},\]
+                            интеграл \(\displaystyle \int\limits_{0}^{+\infty }{\varphi \left( x \right)dx}\)
+                            является несобственным интегралом I рода. Для вычисления этого интеграла найдем сначала первообразную:
+                            \[\begin{matrix}
+                            \displaystyle \int{\left( \frac{1}{2}\operatorname{arcctg}{{x}^{2}}-\frac{3}{2{{x}^{2}}}+\frac{3}{2{{x}^{4}}}
+                              \operatorname{arctg}{{x}^{2}} \right)dx}= \\ 
+                              \displaystyle =\frac{x}{2}\operatorname{arcctg}{{x}^{2}}+\int{\frac{{{x}^{2}}}{1+{{x}^{4}}}dx}+\frac{3}{2x}
+                              -\frac{1}{2}\int{\operatorname{arctg}{{x}^{2}}d\left( \frac{1}{{{x}^{3}}} \right)}= \\ 
+                              =\frac{x}{2}\operatorname{arcctg}{{x}^{2}}+\int{\frac{{{x}^{2}}}{1+{{x}^{4}}}dx}+\frac{3}{2x}
+                              -\frac{1}{2{{x}^{3}}}\operatorname{arctg}{{x}^{2}}+\frac{1}{2}\int{\frac{2x}{{{x}^{3}}\left( 1+{{x}^{4}} \right)}dx}= \\ 
+                              =\frac{x}{2}\operatorname{arcctg}{{x}^{2}}+\frac{3}{2x}-\frac{1}{2{{x}^{3}}}
+                              \operatorname{arctg}{{x}^{2}}+\int{\frac{1}{{{x}^{2}}}dx}+2\int{\frac{{{x}^{2}}}{1+{{x}^{4}}}dx}= \\ 
+                              =\frac{x}{2}\operatorname{arcctg}{{x}^{2}}-\frac{1}{2{{x}^{3}}}
+                              \operatorname{arctg}{{x}^{2}}+\frac{1}{2x}+2\int{\frac{{{x}^{2}}}{1+{{x}^{4}}}dx}. \\ 
+                            \end{matrix}\]
+                            Теперь вычислим сам интеграл.
+                            \[\begin{matrix}
+                            \displaystyle \int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{1}{f\left( x,\gamma  \right)d\gamma } \right)dx}
+                              =\int\limits_{0}^{+\infty }{\varphi \left( x \right)dx}= \\ 
+                              =\left. \left( \frac{x}{2}\operatorname{arcctg}{{x}^{2}}-\frac{1}{2{{x}^{3}}}
+                              \operatorname{arctg}{{x}^{2}}+\frac{1}{2x} \right) \right|_{0}^{+\infty }+2\int\limits_{0}^{+\infty }
+                              {\frac{{{x}^{2}}}{1+{{x}^{4}}}dx}=\frac{\pi }{\sqrt{2}}, \\ 
+                            \end{matrix}\]
+                            так как:
+                          
+                             \[1) \underset{x\to +\infty }{\mathop{\lim }}\,\left( \frac{x}{2}\operatorname{arcctg}{{x}^{2}}-\frac{1}{2{{x}^{3}}}
+                            \operatorname{arctg}{{x}^{2}}+\frac{1}{2x} \right)=\]
+                            \[=\underset{x\to +\infty }{\mathop{\lim }}\,\frac{x}{2}\operatorname{arcctg}{{x}^{2}}=\left[ \begin{matrix}
+                               z=\operatorname{arcctg}{{x}^{2}}  \\
+                               {{x}^{2}}=\operatorname{ctg}z  \\
+                            \end{matrix} \right]=\underset{z\to 0+}{\mathop{\lim }}\,\frac{\sqrt{\operatorname{ctg}z}}{2}z=0.\]
+                            \[2)\underset{x\to 0}{\mathop{\lim }}\,\left( \frac{x}{2}\operatorname{arcctg}{{x}^{2}}-\frac{1}{2{{x}^{3}}}
+                            \operatorname{arctg}{{x}^{2}}+\frac{1}{2x} \right)=\]
+                            \[\underset{x\to 0}{\mathop{\lim }}\,\left( -\frac{1}{2{{x}^{3}}}\operatorname{arctg}{{x}^{2}}+\frac{1}{2x} \right)
+                            =\underset{z\to 0}{\mathop{\lim }}\,\frac{-{{x}^{2}}+\frac{{{\left( {{x}^{2}} \right)}^{3}}}{3}+{{x}^{2}}}{2{{x}^{3}}}=0.\]
+                            <p>
+                               3) Вычисление интеграла \(\displaystyle \int\limits_{0}^{+\infty }{\frac{{{x}^{2}}}{1+{{x}^{4}}}dx}=\frac{\pi }{2\sqrt{2}}\)
+                               можно посмотреть в разделе «Интегралы, зависящие от параметра / Применение для вычисления собственных и несобственных интегралов».
+                             </p>
+                                 </div>
+                     </div>
+                   </details>
+            </p>
             </p>
          </div>
        </details>
