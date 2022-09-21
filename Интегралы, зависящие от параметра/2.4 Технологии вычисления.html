@@ -476,7 +476,7 @@
           \( \frac{1}{{{\left( \gamma +1 \right)}^{2}}+1}.\)
           <p>Следовательно, \[\displaystyle I\left( a,b \right)\,=\,\int\limits_{a}^{b}{\frac{d\gamma 
           }{{{\left( \gamma \,+\,1 \right)}^{2}}\,+\,1}}\,=\,\operatorname{arctg}\left( b\,+\,1 
-          \right)\,-\,\operatorname{arctg}\left( a\,+\,1 \right)\].
+          \right)\,-\,\operatorname{arctg}\left( a\,+\,1 \right).\]
           </p>
 
         </p>		
@@ -540,9 +540,9 @@
           {\gamma }}\sin \left( \ln \frac{1}{x} \right)d\gamma } \right)\,dx}=\int\limits_{a}^{b}{\left
           ( \int\limits_{0}^{1}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} \right)dx} \right)d\gamma }.
           \end{eqnarray*}
-          <p>Вычислим внутренний интеграл:</p>
+          <p>Вычислим сначала внутренний интеграл:</p>
           \(\qquad \qquad \qquad \qquad \qquad \qquad
-            \displaystyle \int\limits_{0}^{1}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} \right)dx=\left[ 
+            \displaystyle J\left( \gamma  \right)=\int\limits_{0}^{1}{{{x}^{\gamma }}\sin \left( \ln \frac{1}{x} \right)dx=\left[ 
           x={{e}^{-t}} \right]}=\int\limits_{0}^{+\infty }{{{e}^{-t\left( \gamma +1 \right)}}\sin t\,dt}\)
           <a class="tooltip-1">\(=\)<span class="classic">
             \[ \displaystyle =\left. \left( \frac{-{{e}^{-t\left( \gamma +1 \right)}}\cos t-\left( \gamma +1 
@@ -550,13 +550,36 @@
           \right|_{0}^{+\infty }=\]
         </span></a>
           \( \frac{1}{{{\left( \gamma +1 \right)}^{2}}+1}.\)
-          <p>Следовательно, \[\displaystyle I\left( a,b \right)\,=\,\int\limits_{a}^{b}{\frac{d\gamma 
-          }{{{\left( \gamma \,+\,1 \right)}^{2}}\,+\,1}}\,=\,\operatorname{arctg}\left( b\,+\,1 
-          \right)\,-\,\operatorname{arctg}\left( a\,+\,1 \right)\].
+          <p>Окончательно получим: \[I\left( a,b \right)\,=\,\int\limits_{a}^{b}{J\left( \gamma  \right)d\gamma }=
+            \,\int\limits_{a}^{b}{\frac{1}{{{\left( \gamma \,+\,1 \right)}^{2}}\,+\,1}d\gamma }\,=
+            \,\operatorname{arctg}\left( b\,+\,1 \right)\,-\,\operatorname{arctg}\left( a\,+\,1 \right).\]
           </p>
 
       </p>
     </div>
+    <br>
+    <section class="remark">
+      <p class="margin-top"><span class="em-wide">Замечание.</span> 
+        Каждой дифференцируемой функции \(\displaystyle f\left( x \right)\) однозначно соответствует ее производная \(\displaystyle {f}'\left( x \right)\).
+         Но обратное утверждение неверно, так как 
+\[\forall C\in \mathbb{R}\,\,\,{{\left( f\left( x \right)+C \right)}^{\prime }}={f}'\left( x \right).\]</p>
+<p>
+  Поэтому, чтобы получить \(\displaystyle f\left( x \right) \text{ из } {f}'\left( x \right)\) надо знать значение \(\displaystyle f\left( x \right)\)
+   хотя бы в одной точке. Если известно значение в точке \(\displaystyle {{x}_{0}}\), то функцию можно найти двумя способами:
+</p>
+<p>
+  – с помощью определенного интегрирования:
+  \[f\left( x \right)=\int\limits_{{{x}_{0}}}^{x}{{f}'\left( x \right)dx};\]
+</p>
+<p>
+  – с помощью неопределенного интегрирования:
+  \[f\left( x \right)-C=\int{{f}'\left( x \right)dx}, \text{ где } C=-f\left( {{x}_{0}} \right).\]
+</p>
+<p>
+	Эти 2 способа имеют одинаковую трудоемкость и по сути являются лишь разными способами записи одних и
+   тех же действий (это становится понятно, если записать для определенного интеграла формулу Ньютона-Лейбница).
+</p>
+</section>
 </details>
 <div>
   <p class="margin-top" style = "white-space: nowrap" >
@@ -577,7 +600,7 @@
                  </span></a>
 \[{I}'\left( a \right)=2\int\limits_{0}^{\pi /2}{\frac{dx}{1-{{a}^{2}}{{\cos }^{2}}x}}=
 \left[ t=\operatorname{tg}x \right]=2\int\limits_{0}^{+\infty }{\frac{dt}{1+{{t}^{2}}-{{a}^{2}}}}=\frac{\pi }{\sqrt{1-{{a}^{2}}}}.\]</p>
-<p>Следовательно, \[I\left( a \right)=\int{\frac{\pi \,da}{\sqrt{1-{{a}^{2}}}}}=\pi \arcsin a+C.\]</p>
+<p>Следовательно, \[I\left( a \right)=\int{\frac{\pi \,}{\sqrt{1-{{a}^{2}}}}da}=\pi \arcsin a+C.\]</p>
 <p>Согласно условию, \( I\left( 0 \right)=\int\limits_{0}^{\pi /2}{0dx}=0\), а значит, \( I\left( a \right)=\pi \arcsin a\).
         </p>
         </div>
@@ -619,8 +642,8 @@
 </span></a> выполнены, поэтому
 \[{I}'\left( a \right)=2\int\limits_{0}^{\pi /2}{\frac{dx}{1-{{a}^{2}}{{\cos }^{2}}x}}=
 \left[ t=\operatorname{tg}x \right]=2\int\limits_{0}^{+\infty }{\frac{dt}{1+{{t}^{2}}-{{a}^{2}}}}=\frac{\pi }{\sqrt{1-{{a}^{2}}}}.\]</p>
-<p>Следовательно, \[I\left( a \right)=\int{\frac{\pi \,da}{\sqrt{1-{{a}^{2}}}}}=\pi \arcsin a+C.\]</p>
-<p>Согласно условию, \( I\left( 0 \right)=\int\limits_{0}^{\pi /2}{0dx}=0\), а значит, \( I\left( a \right)=\pi \arcsin a\).
+<p>Следовательно, \[I\left( a \right)=\int{\frac{\pi \,}{\sqrt{1-{{a}^{2}}}}da}=\pi \arcsin a+C.\]</p>
+<p>Согласно условию, \[I\left( 0 \right)=\int\limits_{0}^{\pi /2}{0dx}=0,\] а значит, \[I\left( a \right)=\pi \arcsin a.\]
         </p>
       </div>
     </details>
@@ -893,8 +916,8 @@
           \displaystyle \frac{\partial I\left( a,b \right)}{\partial b}=\int\limits_{0}^{1}{{{x}^{b}}dx}=\left.
         \frac{{{x}^{b+1}}}{b+1} \right|_{0}^{1}=\frac{1}{b+1},
         \end{eqnarray*}
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;Следовательно, <br> \[\displaystyle I\left( a,b \right)=\int{\frac{1}{b+1}db}=\ln
-          \left( b+1 \right)+C\left( a \right).\]
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Следовательно, <br> \[I\left( a,b \right)=\int{\frac{\partial I\left( a,b \right)}{\partial b}db}=
+            \int{\frac{1}{b+1}db}=\ln \left( b+1 \right)+C\left( a \right).\]
             <br><p>&nbsp;&nbsp;&nbsp;&nbsp;Учитывая, что \(\displaystyle {{\left. I\left( a,b \right) \right|}_
         {b=a}}=\,0\), получим,
           <br>\[\displaystyle C\left( a \right)=-\ln \left( a+1 \right),\] <br>&nbsp;&nbsp;&nbsp;&nbsp;а значит, \(\displaystyle
@@ -1022,8 +1045,7 @@
         \frac{{{x}^{b+1}}}{b+1} \right|_{0}^{1}=\frac{1}{b+1},
         \end{eqnarray*}
           <p>Следовательно,</p>
-           \[\displaystyle I\left( a,b \right)=\int{\frac{1}{b+1}db}=\ln
-          \left( b+1 \right)+C\left( a \right).\]
+          \[I\left( a,b \right)=\int{\frac{\partial I\left( a,b \right)}{\partial b}db}=\int{\frac{1}{b+1}db}=\ln \left( b+1 \right)+C\left( a \right).\]
           <p>
             Учитывая, что 
             \(\displaystyle {{\left. I\left( a,b \right) \right|}_
@@ -1147,10 +1169,7 @@
                    \right)dx}=\frac{1}{1+a}.
              \end{eqnarray*}
                    <p>Следовательно,</p>
-                   \begin{eqnarray*}
-                   \displaystyle I\left( a \right)=\int{\frac{da}{1+a}}=\ln \left( 1+a
-                   \right)+C.
-                   \end{eqnarray*}
+                   \[I\left( a \right)=\int{{I}'\left( a \right)da}=\int{\frac{1}{1+a}da}=\ln \left( 1+a \right)+C.\]
                    <p>Учитывая, что \(\displaystyle I\left( 0 \right)=0\), получим \(\displaystyle
                    C=0\), а значит,</p>
                    \begin{eqnarray*}
@@ -1184,10 +1203,7 @@
                    \right)dx}=\frac{1}{1+a}.
              \end{eqnarray*}
                    <p>Следовательно,</p>
-                   \begin{eqnarray*}
-                   \displaystyle I\left( a \right)=\int{\frac{da}{1+a}}=\ln \left( 1+a
-                   \right)+C.
-                   \end{eqnarray*}
+                   \[I\left( a \right)=\int{{I}'\left( a \right)da}=\int{\frac{1}{1+a}da}=\ln \left( 1+a \right)+C.\]
                    <p>Учитывая, что \(\displaystyle I\left( 0 \right)=0\), получим \(\displaystyle
                    C=0\), а значит,</p>
                    \begin{eqnarray*}
@@ -1265,7 +1281,7 @@
        <br>
        <p><em style = "font-size: 22px">Способ 2. Используя теорему о дифференцируемости</em>.</p>
        <p>
-       Найдем значение интеграла поточечно. Пусть \(\displaystyle \left( {{a}_{0}}+1,\,\,{{b}_{0}} \right)\) – некоторые положительные значения параметров. 
+       Найдем значение интеграла поточечно. Пусть \(\displaystyle \left( {{a}_{0}},\,\,{{b}_{0}} \right)\) – некоторые положительные значения параметров. 
          Зафиксируем некоторое значение \(\displaystyle {{b}_{0}}&gt;0\) и
              рассмотрим интеграл \(\displaystyle I\left( a,b \right)\) как функцию от
              \(\displaystyle a\):
@@ -1282,8 +1298,7 @@
              \right)={\frac{{{e}^{-ax}}-{{e}^{-b_0x}}}{x}}\). Учитывая, что \(\displaystyle
              \underset{x\to 0}{\mathop{\lim }}f(x,a,b_0)=b_0-a\)
          доопределим подынтегральную функцию до
-                   непрерывной по \(\displaystyle x\) на \(\displaystyle \left[ 0,+\infty
-                   \right)\): </span>
+                   непрерывной по \(\displaystyle x\) на \(\displaystyle  $\left[ 0,+\infty  \right)\times E\): </span>
                    \begin{eqnarray*}
                    \displaystyle \tilde{f}\left( x,a,{{b}_{0}} \right)=\left\{
                    \begin{matrix}
@@ -1315,9 +1330,9 @@
                 <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) \(\displaystyle \tilde{f}\left( x,a,{{b}_{0}} \right)\in\)
                    <a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
                       \(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
-                   </span></a>\(\left( {{\mathbb{R}}^{3}} \right)\) и
+                   </span></a>\(\left( {{\mathbb{R}}^{2}} \right)\) и
                    \(\displaystyle \frac{\partial \tilde{f}\left( x,a,{{b}_{0}} \right)}{\partial
-                   a}={{e}^{-ax}}\in \mathbb{C}\left( {{\mathbb{R}}^{3}} \right)\).</span></p>
+                   a}={{e}^{-ax}}\in \mathbb{C}\left( {{\mathbb{R}}^{2}} \right)\).</span></p>
                 <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) \(\displaystyle J\left( {{b}_{0}} \right)=I\left( {{b}_{0}},{{b}_{0}}
                    \right)=0\).</span></p>
                 <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) Интеграл \(\displaystyle K\left( a
@@ -1336,7 +1351,7 @@
    <p>
        Следовательно,
     </p>
- \[\displaystyle I\left( a,{{b}_{0}} \right)=J\left( a \right)=\int{-\frac{da}{a}}=-\ln a+C\left( {{b}_{0}} \right).\]
+    \[I\left( a,{{b}_{0}} \right)=J\left( a \right)=\int{{J}'\left( a \right)da}=-\int{\frac{1}{a}da}=-\ln a+C\left( {{b}_{0}} \right)\,\]
  <p>
  
     Учитывая, что \(\displaystyle 0={{\left. J\left( a \right)\, \right|}_{a={{b}_{0}}}}\,=\,-\ln {{b}_{0}}\,+\,C\left( {{b}_{0}} \right)\), получаем 
@@ -1365,11 +1380,11 @@
              </span></a></p>
         
             <p> \[\displaystyle \frac{\partial }{\partial a}I\left( a,b \right)=-\int\limits_{0}^{+\infty }{{{e}^{-ax}}dx=-\frac{1}{a}}\]</p>
-            <p>Следовательно, \[\displaystyle I\left( a,b \right)=J\left( a \right)=\int{\left( -\frac{1}{a} \right)da}=-\ln a+C\left( b \right)\,.\]</p>
-                   <p>Учитывая, что \(\displaystyle 0={{\left. I\left( a,b \right)\, \right|}_{a=b}}\,=\,-\ln b\,+\,C\left( b \right)\),</p>
-                    получим \(C\left( b \right)=\ln b\),
+            <p>Следовательно, \[I\left( a,{{b}_{0}} \right)=J\left( a \right)=\int{{J}'\left( a \right)da}=-\int{\frac{1}{a}da}=-\ln a+C\left( {{b}_{0}} \right)\,\]</p>
+                   <p>Учитывая, что \[\displaystyle 0={{\left. I\left( a,b \right)\, \right|}_{a=b}}\,=\,-\ln b\,+\,C\left( b \right),\]</p>
+                    получим \[C\left( b \right)=\ln b,\]
                     а значит,
- \(\displaystyle I\left( a,b \right)=\ln \frac{b}{a}\).
+ \[\displaystyle I\left( a,b \right)=\ln \frac{b}{a}.\]
  
           </div>
           
@@ -1551,7 +1566,8 @@
              <a class="tooltip-1"> теоремы о дифференцировании:
                            <span class="classic">
                               Если<br>
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) \(\displaystyle f\left( x,\gamma  \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\)
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) \(\displaystyle f\left( x,\gamma  \right)\) и 
+                              \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\)
                     непрерывны на \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) для некоторого \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
                        сходится интеграл \(\displaystyle I(\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\),<br>
@@ -1568,7 +1584,7 @@
 
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          \( 1) \displaystyle \tilde{f}\left( x,a \right)\in\)
+          1) \(\displaystyle \tilde{f}\left( x,a \right)\in\)
            <a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
               \(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
            </span></a>\(\left(
@@ -1582,33 +1598,32 @@
         </span></a>  была доказана сходимость интеграла
               \(\displaystyle I\left( a \right)\) на множестве \(\displaystyle \left[ 0,+\infty
               \right)\), поэтому можно утверждать, что интеграл сходится на всем отрезке
-              \(\displaystyle E\), и в частности в некоторой его точке.</p>
+              \(\displaystyle E\), и в частности в некоторой его точке.
+            </p>
         <p>
           <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           3) Интеграл \(\displaystyle K\left( a \right)=\int\limits_{0}^{+\infty
               }{\frac{\partial \tilde{f}}{\partial a}dx}=\int\limits_{0}^{+\infty
-              }{{{e}^{-ax}}\cos x\,dx}\) сходится равномерно по \(\displaystyle a\) на множестве \(\displaystyle E\) в силу признака Вейерштрасса:</p>
+              }{{{e}^{-ax}}\cos x\,dx}\) сходится равномерно по \(\displaystyle a\) на множестве \(\displaystyle E\) в силу признака Вейерштрасса:
               \begin{eqnarray}
               \displaystyle \int\limits_{0}^{+\infty }{\left| {{e}^{-ax}}\cos x \right|\,dx}\le 
                  \int\limits_{0}^{+\infty }{{{e}^{-ax}}\,dx}\le
             \int\limits_{0}^{+\infty }{{{e}^{-\frac{{{a}_{0}}}{2}x}}\,dx}=\frac{2}{{{a}_{0}}}&lt;\infty
             \end{eqnarray}
-              <p>Поэтому
-                \(\displaystyle \forall a\in E\) (а значит, и для \(\displaystyle a={{a}_{0}}\)):
-                \begin{eqnarray}
-                   \displaystyle {I}'\left( a \right)=K\left( a \right)=\int\limits_{0}^{+\infty
-                }{{{e}^{-ax}}\cos x\,dx}=\frac{a}{{{a}^{2}}+1}.
-                \end{eqnarray}
-
+              <p>Поэтому \(\displaystyle \forall a\in E\) (а значит, и для значения \( \displaystyle {{a}_{0}}\)): 
+                \[{J}'\left( a \right)=K\left( a \right)=-\int\limits_{0}^{+\infty }{{{e}^{-ax}}dx=-\frac{1}{a}},\]
+              </p>                 
               </p>
-        <p><span>Следовательно, </span></p>
         <h3 class="formula">
            <strong class="float-r" id="0.10">(0.10)</strong>
-           \( \displaystyle I\left( a \right)=\int{\frac{a\,da}{{{a}^{2}}+1}}=\frac{1}{2}\ln \left( 1+{{a}^{2}} \right)+C,\)
+           \( \displaystyle I\left( a \right)=\int{{I}'\left( a \right)da}=\int{\frac{a\,}{{{a}^{2}}+1}da}=\frac{1}{2}\ln \left( 1+{{a}^{2}} \right)+C\)
         </h3>
-        <p><span>В силу произвольности выбора <a class="shortcut" href="#0.10">(0.10)</a> \(\displaystyle {{a}_{0}}\), формула  справедлива \(\displaystyle \forall a\,&gt;\,0\). </span></p>
+        <p><span>В силу произвольности выбора <a class="shortcut" href="#0.10">(0.10)</a> \(\displaystyle {{a}_{0}}\),
+          последняя формула справедлива \(\displaystyle \forall a\,>\,0\). </span></p>
   
-        <p><span>Учитывая, доказанную в примере 11 непрерывность функции \(\displaystyle I\left( a \right)\) на \(\displaystyle \left[ 0,+\infty \right)\),
+        <p><span>Учитывая, доказанную в <a class="tooltip-1"> примере 4 <span class="classic">
+          Несобственные интегралы\Свойства\Непрерывность
+        </span></a> непрерывность функции \(\displaystyle I\left( a \right)\) на \(\displaystyle \left[ 0,+\infty \right)\),
             получим</span></p>
             \begin{eqnarray}
             \displaystyle \underset{a\to 0+}{\mathop{\lim }}\,I\left( a \right)=\underset{a\to 0+}{\mathop{\lim }}\,
@@ -1696,7 +1711,7 @@
               \displaystyle J\left( a \right)=I\left( a,{{b}_{0}} \right)=\int\limits_{0}^{+\infty }{{{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x}dx}.
               \end{eqnarray*}
                        <div class="col-blue"><p>Учитывая, что \(\displaystyle \underset{x\to 0}{\mathop{\lim }}\,{{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x}=a\),
-                           доопределим подынтегральную функцию до непрерывной по \(\displaystyle x\) на множестве \(\displaystyle \left[ 0,+\infty  \right)\):</p>
+                           доопределим подынтегральную функцию до непрерывной по \(\displaystyle x\) на множестве \(\displaystyle \left[ 0,+\infty  \right)^2\):</p>
                            \begin{eqnarray*}
                            \displaystyle \tilde{f}\left( x,a,{{b}_{0}} \right)=\left\{ \begin{matrix}
                           {{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x},\,\,x&gt;0  \\
@@ -1705,7 +1720,8 @@
                        \end{eqnarray*}
                        <p>
 
-                        Покажем, что на множестве \(\displaystyle \left[ 0,+\infty  \right)\) для функции \(\displaystyle J\left( a \right)\) выполняются  все требования
+                        Покажем, что на множестве \(\displaystyle \left[ 0,+\infty  \right)^2\) для функции \(\displaystyle J\left( a \right)\) 
+                        выполняются  все требования
                     
                         <a class="tooltip-1"> теоремы о дифференцировании:
                                       <span class="classic">
@@ -1727,9 +1743,9 @@
                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) \(\displaystyle \tilde{f}\left( x,a,{{b}_{0}} \right)\in\) 
                           <a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
                              \(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
-                          </span></a>\(\left( {{\mathbb{R}}^{3}} \right)\) и
+                          </span></a>\(\left( {{\mathbb{R}}^{2}} \right)\) и
                           \(\displaystyle \frac{\partial \tilde{f}\left( x,a,{{b}_{0}} \right)}
-                          {\partial a}={{e}^{-{{b}_{0}}x}}\cos ax\in \mathbb{C}\left( {{\mathbb{R}}^{3}} 
+                          {\partial a}={{e}^{-{{b}_{0}}x}}\cos ax\in \mathbb{C}\left( {{\mathbb{R}}^{2}} 
                           \right)\).</p>
                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) \(\displaystyle J\left( 0 \right)=0\).</p>
                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) Интеграл \(\displaystyle K\left( a \right)\,=\,\int\limits_{0}^{+\infty }{\frac{\partial }{\partial a}\left( {{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x} 
