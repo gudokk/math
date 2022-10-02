@@ -822,49 +822,25 @@
          непрерывна на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).</p>
    </section>
 
-   <section class="remark">
-      <div>
-         <p class="margin-top">
-            <span class="em-wide">Замечание.</span>
-            Непрерывность подынтегральной функции не является необходимым условием.</p>
-            <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
-					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
-            
-                     <div class="proof">
-                     <p>
-                        Например, интеграл \( F\left( y \right)=\int\limits_{0}^{1}{\operatorname{sign}\left( x-y \right)dx}\)
-                         от разрывной функции \( f\left( x,y \right)=\operatorname{sign}\left( x-y \right)\) является непрерывной функцией.
-                        Разобьем область изменения параметра на три части:
-                        \( \left( -\infty ,0 \right)\bigcup \left[ 0,1 \right]\bigcup \left( 1,+\infty  \right)\). Тогда
-                        \[F\left( y \right)=\left\{ \begin{matrix}
-                           \int\limits_{0}^{1}{dx}=1, & y\in \left( -\infty ,0 \right),  \\
-                           -\int\limits_{0}^{y}{dx}+\int\limits_{y}^{1}{dx}=1-2y, & y\in \left[ 0,1 \right],  \\
-                           -\int\limits_{0}^{1}{dx}=-1, & y\in \left( 1,+\infty  \right).  \\
-                        \end{matrix} \right.\]
-                        <p>
-                           Следовательно,
-                        </p>
-                        \[\underset{y\to 0-}{\mathop{\lim }}\,F\left( y \right)=\underset{y\to 0+}{\mathop{\lim }}\,F\left( y \right)=1,\]
-                        \[\underset{y\to 1-}{\mathop{\lim }}\,F\left( y \right)=\underset{y\to 1+}{\mathop{\lim }}\,F\left( y \right)=-1.\]
-                        </p>
-                     </div>
-                  </p>
-                </details>
-            </p>
-      </div>
-</section>
+   
 
 <!-- <a class="tooltip-1">\( \Gamma \)
                 <span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
                луч, числовая ось).</span></a> -->
-
-   <section class="consequence">
-      <p class="margin-top">
-         <strong>Следствие 1. </strong>
-         		Для непрерывности \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) на промежутке <a class="tooltip-1">\( \Gamma \)
-                <span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-               луч, числовая ось).</span></a> достаточно, чтобы условия теоремы выполнялись для произвольного сегмента \(\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \).
-               </p>
+               <section class="remark">
+                  <p class="margin-top"><span class="em-wide">Замечание 1.</span> Теорема остается справедливой, если
+                      \(\displaystyle f\left( x,\gamma   \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\) 
+                      можно доопределить до непрерывных на множестве \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) 
+                      изменением их значений не более чем на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
+            </section>
+<section class="consequence">
+      <p class="margin-top"><span class="em-wide">Замечание 2.</span> 
+         Если требуется доказать непрерывность функции \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}, \gamma \in \Gamma \) 
+          на множестве <a class="tooltip-2">\(\Gamma\)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+           луч, числовая ось).</span></a>,
+          отличном от отрезка, то достаточно доказать, что условия теоремы выполняются для произвольного 
+          \(\displaystyle \left[ {{\gamma }{1}},{{\gamma }_{2}} \right]\subset \Gamma.\)
+   </p>
 	   <br>
       <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
          <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Доказательство</summary>
@@ -952,6 +928,39 @@
                            </div>
                      </details>
    </section>
+   <section class="remark">
+      <div>
+         <p class="margin-top">
+            <span class="em-wide">Замечание 3.</span>
+            Непрерывность подынтегральной функции не является необходимым условием.</p>
+            <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
+					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
+            
+                     <div class="proof">
+                     <p>
+                        Например, интеграл \( F\left( y \right)=\int\limits_{0}^{1}{\operatorname{sign}\left( x-y \right)dx}\)
+                         от разрывной функции \( f\left( x,y \right)=\operatorname{sign}\left( x-y \right)\) является непрерывной функцией.
+                        Разобьем область изменения параметра на три части:
+                        \( \left( -\infty ,0 \right)\bigcup \left[ 0,1 \right]\bigcup \left( 1,+\infty  \right)\). Тогда
+                        \[F\left( y \right)=\left\{ \begin{matrix}
+                           \int\limits_{0}^{1}{dx}=1, & y\in \left( -\infty ,0 \right),  \\
+                           -\int\limits_{0}^{y}{dx}+\int\limits_{y}^{1}{dx}=1-2y, & y\in \left[ 0,1 \right],  \\
+                           -\int\limits_{0}^{1}{dx}=-1, & y\in \left( 1,+\infty  \right).  \\
+                        \end{matrix} \right.\]
+                        <p>
+                           Следовательно,
+                        </p>
+                        \[\underset{y\to 0-}{\mathop{\lim }}\,F\left( y \right)=\underset{y\to 0+}{\mathop{\lim }}\,F\left( y \right)=1,\]
+                        \[\underset{y\to 1-}{\mathop{\lim }}\,F\left( y \right)=\underset{y\to 1+}{\mathop{\lim }}\,F\left( y \right)=-1.\]
+                        </p>
+                     </div>
+                  </p>
+                </details>
+            </p>
+      </div>
+</section>
+
+
    <p class="margin-top" style = "white-space: nowrap" >
       <span class = "em-wide" style="font-size: 20px">Пример 4.</span>
       Докажем непрерывность на \(\displaystyle
@@ -1242,31 +1251,18 @@
 
    <br>
 
-   <section class="remark">
-      <p class="margin-top">
-         <span class="em-wide">Замечание.</span> 
-         Требования теоремы существенны, так как формула Лейбница справедлива не для всех интегралов, зависящих от параметра. 
-         Даже если интеграл, зависящий от параметра, является дифференцируемой функцией, для вычисления его производной формула Лейбница может быть неприменима. 
-         Например, интеграл Дирихле 
-         \[\displaystyle F\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\frac{\pi }{2}\,\,\operatorname{sign}a,\quad a\ne 0\]
-     имеет нулевую производную  \(\displaystyle \forall a\ne 0\). При этом формула Лейбница не работает,
- так как при любом значении параметра приводит к расходящемуся интегралу: 
- \[\displaystyle \int\limits_{0}^{+\infty }{\frac{\partial }{\partial a}\left( \frac{\sin ax}{x} \right)dx}=
- \int\limits_{0}^{+\infty }{\cos ax\,dx}.\]
-
-   </p>
-</section>
-   <section class="consequence">
-      <p class="margin-top"><strong>Следствие</strong><strong> 1. </strong>Теорема остается справедливой, если
+<section class="remark">
+      <p class="margin-top"><span class="em-wide">Замечание 1.</span> Теорема остается справедливой, если
           \(\displaystyle f\left( x,\gamma   \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\) 
           можно доопределить до непрерывных на множестве \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) 
           изменением их значений не более чем на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
 
-          <p class="margin-top"><strong>Следствие 2. </strong>Для дифференцируемости \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\)
-             на промежутке <a class="tooltip-2">\(\Gamma \)
-                <span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-               луч, числовая ось).</span></a> достаточно, чтобы условия теоремы выполнялись для произвольного сегмента 
-               \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \).
+          <p class="margin-top"><span class="em-wide">Замечание 2.</span> 
+            Если требуется доказать дифференцируемость функции \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}, \gamma \in \Gamma \) 
+             на множестве <a class="tooltip-2">\(\Gamma\)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+              луч, числовая ось).</span></a>,
+             отличном от отрезка, то достаточно доказать, что условия теоремы выполняются для произвольного 
+             \(\displaystyle \left[ {{\gamma }{1}},{{\gamma }_{2}} \right]\subset \Gamma ].\)
       </p>
    </section>
    <br>
@@ -1354,7 +1350,21 @@
 	   </div>
                         </div>
                   </details>
+         
+   <section class="remark">
+      <p class="margin-top">
+         <span class="em-wide">Замечание 3.</span> 
+         Требования теоремы существенны, так как формула Лейбница справедлива не для всех интегралов, зависящих от параметра. 
+         Даже если интеграл, зависящий от параметра, является дифференцируемой функцией, для вычисления его производной формула Лейбница может быть неприменима. 
+         Например, интеграл Дирихле 
+         \[\displaystyle F\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\frac{\pi }{2}\,\,\operatorname{sign}a,\quad a\ne 0\]
+     имеет нулевую производную  \(\displaystyle \forall a\ne 0\). При этом формула Лейбница не работает,
+ так как при любом значении параметра приводит к расходящемуся интегралу: 
+ \[\displaystyle \int\limits_{0}^{+\infty }{\frac{\partial }{\partial a}\left( \frac{\sin ax}{x} \right)dx}=
+ \int\limits_{0}^{+\infty }{\cos ax\,dx}.\]
 
+   </p>
+</section>
 
 
 
@@ -1365,15 +1375,11 @@
    <section class="theorem">
       <p class="margin-top"><strong>Теорема (Интегрируемость в собственном смысле). </strong>Если функция \(\displaystyle f(x,\gamma )\) непрерывна в полуполосе 
       \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), а интеграл
-      <h3 class="formula">
-         <strong class="float-r">(0.14)</strong>
-         \( \displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\)
-            </h3>
-      сходится равномерно на сегменте \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),
-       то интеграл  можно интегрировать по параметру \(\displaystyle \gamma \) на сегменте
-        \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), причем
+         \[\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\]
+      сходится равномерно на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),
+       то интеграл  можно интегрировать по параметру \(\displaystyle \gamma \) на нем, причем
         <h3 class="formula">
-           <strong class="float-r">(0.15)</strong>
+           <strong class="float-r">(*)</strong>
            \( \displaystyle \int\limits_{{{\gamma }_{1}}}^{{{\gamma }_{2}}}{I(\gamma )d\gamma
                          =\int\limits_{{{\gamma }_{1}}}^{{{\gamma }_{2}}}{\left(
                          \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx} \right)d\gamma
@@ -1384,7 +1390,7 @@
       
       <section class="consequence">
          <p class="margin-top">
-            <p class="margin-top"><strong>Следствие</strong><strong> 1. </strong>Теорема остается справедливой, если
+            <p class="margin-top"><span class="em-wide">Замечание 1.</span>Теорема остается справедливой, если
                \(\displaystyle f\left( x,\gamma   \right)\)
                можно доопределить до непрерывных на множестве \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) 
                изменением их значений не более чем на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
@@ -1394,12 +1400,12 @@
 
    <section class="consequence">
       <p class="margin-top">
-         <strong>Следствие 2.</strong> Если
+         <strong>Следствие.</strong> Если
          \(\displaystyle f(x,\gamma )\) непрерывна и неотрицательна в полуполосе
          \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[
-         {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и интеграл <a class="shortcut" href="#0.14">(0.14)</a> является непрерывной функцией
+         {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и интеграл \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) является непрерывной функцией
          на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), то справедлива
-         формула <a class="shortcut" href="#0.15">(0.15)</a> . 
+         формула <a class="shortcut" href="#*">(*)</a> . 
          
       </p>
 	   <br>
@@ -1442,16 +1448,16 @@
          <div class="proof">
             <p>
                Например, для функции \(\displaystyle f\left( x,\gamma  \right)=\gamma \operatorname{arcctg}\left( 
-                  \gamma {{x}^{2}} \right)-\frac{2{{x}^{2}}{{\gamma }^{2}}}{1+{{x}^{4}}{{\gamma }^{2}}}\)
+                  \gamma {{x}^{2}} \right)-\frac{2{{x}^{2}}{{\gamma }^{2}}}{1+{{x}^{4}}{{\gamma }^{2}}}\):
                   <p>
-                     \(\displaystyle \int\limits_{0}^{1}{\left( \int\limits_{0}^{+\infty }{f\left( x,\gamma  \right)dx} \right)d\gamma }=0,\)
+                     \[\displaystyle \int\limits_{0}^{1}{\left( \int\limits_{0}^{+\infty }{f\left( x,\gamma  \right)dx} \right)d\gamma }=0,\]
                      <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
                         <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
                   
                         <div class="proof">
                                 <div class="col-red hard">
                                     \(\displaystyle \int\limits_{0}^{1}{\left( \int\limits_{0}^{+\infty }{f\left( x,\gamma  \right)dx} \right)d\gamma }=0\) так как
-                                     \(\displaystyle \gamma \in \left[ 0,1 \right]\) внутренний интеграл равен 0:
+                                     \(\displaystyle \forall \gamma \in \left[ 0,1 \right]\) внутренний интеграл равен 0:
                                     \[\displaystyle \begin{matrix}
                                     \displaystyle \int\limits_{0}^{+\infty }{f\left( x,\gamma  \right)dx}=\int\limits_{0}^{+\infty }
                                       {\gamma \operatorname{arcctg}\left( \gamma {{x}^{2}} \right)dx}-\int\limits_{0}^
@@ -1476,7 +1482,8 @@
                       </details>
                </p>
                <p>
-                  \(\displaystyle \int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{1}{f\left( x,\gamma  \right)d\gamma } \right)dx}=\frac{\pi }{\sqrt{2}}.\)
+          
+                  \[\displaystyle \int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{1}{f\left( x,\gamma  \right)d\gamma } \right)dx}=\frac{\pi }{\sqrt{2}}.\]
                   <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
                      <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
                
@@ -1507,7 +1514,7 @@
                             {\mathop{\lim }}\,\left( \frac{1}{2}\operatorname{arcctg}{{x}^{2}}-\frac{3}{2{{x}^{2}}}+\frac{3}{2{{x}^{4}}}
                             \operatorname{arctg}\left( {{x}^{2}} \right) \right)=\frac{\pi }{4},\]
                             интеграл \(\displaystyle \int\limits_{0}^{+\infty }{\varphi \left( x \right)dx}\)
-                            является несобственным интегралом I рода. Для вычисления этого интеграла найдем сначала первообразную:
+                            является несобственным интегралом I рода. Сделаем сначала некоторые преобразования:
                             \[\begin{matrix}
                             \displaystyle \int{\left( \frac{1}{2}\operatorname{arcctg}{{x}^{2}}-\frac{3}{2{{x}^{2}}}+\frac{3}{2{{x}^{4}}}
                               \operatorname{arctg}{{x}^{2}} \right)dx}= \\ 

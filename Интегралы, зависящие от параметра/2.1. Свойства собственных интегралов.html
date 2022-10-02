@@ -276,28 +276,23 @@
 		<section class="theorem">
 			<p class="margin-top">
 
-				<strong>Теорема (Непрерывность). </strong> Если
+				<strong>Теорема (Непрерывность). </strong> Пусть \(\displaystyle \varPi \,=\,\left[a,b \right]\times \left[\displaystyle
+				{{\gamma }_{1}},{{\gamma }_{2}} \right]\). Если
 			</p>
 			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				1) \(\displaystyle
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) \(\displaystyle
 				f(x,\gamma ) \in\)
 				<a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
 					\(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
-					</span></a>\((\)<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
-						\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
-						{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-					</span></a>\(),\) 
+					</span></a>\((\displaystyle \varPi)\) 
 					
 				</p>
 				<p>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					2) \(\displaystyle a(\gamma )\in \mathbb{C} \left( \left[ {{\gamma
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) \(\displaystyle a(\gamma )\in \mathbb{C} \left( \left[ {{\gamma
 					}_{1}},{{\gamma }_{2}} \right] \right),\quad b(\gamma ) \in \mathbb{C} \left( \left[ {{\gamma
 					}_{1}},{{\gamma }_{2}} \right] \right).\)</p>
 				 <p>
-					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					 3) \(\forall \gamma \in
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) \(\forall \gamma \in
 					 \Gamma\,\,\left\{ \begin{matrix} a\le a\left( \gamma \right)\le b, \\
 					 a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.\).</p>
 					 
@@ -392,8 +387,15 @@
 			  </p>
 			</details>
 		  </section>
-<section class="consequence">
-<p class="margin-top"><strong>Следствие 1.</strong>
+		  <br>
+		  <section class="remark">
+			<p class="margin-top"><span class="em-wide">Замечание 1.</span> Теорема остается справедливой, если функция
+			  \(\displaystyle f(x,\gamma )\) может быть доопределена до непрерывной на прямоугольнике
+			  \(\displaystyle \varPi\)  изменением ее значений не более чем
+			  на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
+			</section>
+<section class="remark">
+	<p class="margin-top"><span class="em-wide">Замечание 2.</span>
 Для непрерывности \(\displaystyle I\left( \gamma  \right)=\underset{a\left( \gamma  \right)}
 {\overset{b\left( \gamma  \right)}{\mathop \int }}\,f\left( x,\gamma  \right)dx\)
 на промежутке <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
@@ -487,9 +489,10 @@
 				</div>
 			</details>
 </section>
+<br>
 <section class="consequence">
 <p class="margin-top">
-<strong>Следствие 2 (Предельный переход). </strong>Если \(\displaystyle
+<strong>Следствие (Предельный переход). </strong>Если \(\displaystyle
 a(\gamma )\,\in \, \mathbb{C} \)
 \( (\)
 <a class="tooltip-1">\( \Gamma \)<span class="classic"
@@ -593,6 +596,7 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 			</div>
 </details>
 <br>
+<section class="remark">
 <p class="margin-top">
 
 <span class="em-wide">Замечание 1.</span> Применять формулу 
@@ -600,6 +604,7 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 для граничных точек, не входящих во множество
 \( \Gamma \), на котором подынтегральная функция непрерывна, нельзя.
 </p>
+</section>
 <br>
 <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
 <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
@@ -622,10 +627,9 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 </div>
 </details>
 <section class="remark">
-<p class="margin-top"><span class="em-wide">Замечание 2.</span> Теорема 
-  и ее следствия остаются справедливыми, если функция
+<p class="margin-top"><span class="em-wide">Замечание 2.</span> Следствие остается справедливым, если функция
   \(\displaystyle f(x,\gamma )\) может быть доопределена до непрерывной на множестве
-  \(\displaystyle \left[ a,b \right]\times\) <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+  \(\displaystyle \left[ a,b \right]\times\)<a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
 	  луч, числовая ось).</span></a> изменением ее значений не более чем
   на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
 </section>
@@ -637,20 +641,18 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 	<p class="margin-top">
 
 		<strong>Теорема (Дифференцируемость). </strong>
-		Пусть \(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
-		{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+		Пусть \(\displaystyle \varPi \,=\,\left[a,b \right]\times \left[\displaystyle
+		{{\gamma }_{1}},{{\gamma }_{2}} \right]\).
 		Тогда если
 	</p>
 		<p class="margin-top">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) \(\displaystyle
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			1) \(\displaystyle
 			f(x,\gamma ) \in\)
-			<a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
+			<a class="tooltip-1">\( \mathbb{C}\)<span class="classic">
 				\(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
 			</span></a>
-			\((\)<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
-				\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
-{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-			</span></a>\(),\)
+			\((\displaystyle \varPi)\),
 		</p>
 			<p class="margin-top">
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -817,113 +819,108 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 	  </p>
 	</details>
   </section>
-  <section class="consequence">
-	<p class="margin-top"><strong>Следствие.</strong> 
-			Для дифференцируемости \(\displaystyle  I\left( \gamma  \right)=\underset{a\left( \gamma  \right)}
-			{\overset{b\left( \gamma  \right)}{\mathop \int }}\,f\left( x,\gamma  \right)dx\) на промежутке 
-			<a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-			луч, числовая ось).</span></a> достаточно, чтобы условия теоремы выполнялись для произвольного сегмента
-			 \(\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \).
-				 </p>
-				 <br>
-				 <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
-					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Доказательство</summary>
-									  <p>
-										<div class="proof normal">
-											<div class="col-blue">
-											Пусть \(\displaystyle{{\gamma }_{0}}\in {\Gamma }'\bigcap \Gamma \). Тогда
-											<a class="tooltip-1">существует сегмент <span class="classic">
-												<p class="margin-top">
-													Действительно, такой отрезок можно подобрать для произвольного промежутка. 
-													Ниже приведены возможные варианты выбора отрезка в зависимости от промежутка \(\displaystyle \Gamma.\) 
-													<table style="margin-right:50px;margin-top:0; margin-bottom:0;margin-left:150px; padding:0; text-align: center">
-													<tbody>
-													  <tr>
-														<td>
-														\(\displaystyle \Gamma\)
-														  </td>
-														  <td>
-															\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-														</td>
-													  </tr>
-													  <tr>
-														<td>
-														  
-															\(\displaystyle \left[ a,b \right)\)
-														  
-														</td>
-														<td>
-														 
-															\(\displaystyle \left[ a,\frac{{{\gamma }_{0}}+b}{2} \right]\)
-														
-														</td>
-													  </tr>
-													  <tr>
-														<td>
-														 
-															\(\displaystyle \left[ a,+\infty  \right)\)
-														 
-														</td>
-														<td>
-															  \(\displaystyle \left[ \frac{a+{{\gamma }_{0}}}{2},{{\gamma }_{0}}+1 \right]\)
-														
-														  </td>
-													  </tr>
-													  <tr>
-														<td>
-															\(\displaystyle \left( a,b \right]\)
-														</td>
-														<td>
-															\(\displaystyle \left[ \frac{a+{{\gamma }_{0}}}{2},b \right]\)
-														</td>
-													  </tr>
-													  <tr>
-														<td>
-															\(\displaystyle \left( -\infty ,b \right]\)
-														</td>
-														<td>
-															\(\displaystyle \left[ {{\gamma }_{0}}-1,\frac{{{\gamma }_{0}}+b}{2} \right]\)
-														</td>
-													  </tr>
-													  <tr>
-														<td>
-															\(\displaystyle \left( a,b \right)\)
-														</td>
-														<td>
-															\(\displaystyle \left[ \frac{a+{{\gamma }_{0}}}{2},\frac{{{\gamma }_{0}}+b}{2} \right]\)
-														</td>
-													  </tr>
-													</tbody>
-												  </table>
-												</p>
-											</span></a>такой, что  
-																	<p class="formula">
-											\(\displaystyle {{\gamma }_{0}}\,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-											 и \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \).
-												  </p>
-											<p>Согласно условию на сегменте \( \displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) 
-											все требования теоремы о дифференцируемости  выполняются, поэтому функция \( \displaystyle I(\gamma )\) 
-											дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), а значит, и в точке
-											 \(\displaystyle {{\gamma }_{0}}\,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
-											  В силу произвольности выбора точки \(\displaystyle {{\gamma }_{0}}\), можно утверждать,
-											   что функция \(\displaystyle I(\gamma )\) дифференцируема на всем множестве \(\displaystyle \Gamma. \)</p>
-											
-											
-											</div>
-										</div>
-									</details>
-				<div class="remark">
-					<p class="margin-top"><span class="em-wide">Замечание</span>. Утверждение теоремы и ее следствия остаются
-						справедливым, если функции
-						\(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) могут
-						быть доопределены по непрерывности в прямоугольнике \(\displaystyle \left[ a,b \right]\times \left[ {{\gamma 
-						}_{1}},{{\gamma }_{2}} \right]\), \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\subset\) 
-						\( \Gamma \)
-							изменением их значений не более чем на конечном множестве прямых
-							\(\displaystyle x=\text{const}\).
-						</p>
-					</div>
-				</section>	
+  <section class="remark">
+	<p class="margin-top"><span class="em-wide">Замечание 1.</span> Теорема остается справедливой, если функция
+	  \(\displaystyle f(x,\gamma )\) может быть доопределена до непрерывной на прямоугольнике
+	  \(\displaystyle \varPi\)  изменением ее значений не более чем
+	  на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
+	</section>
+<section class="remark">
+<p class="margin-top"><span class="em-wide">Замечание 2.</span>
+Для дифференцируемости \(\displaystyle I\left( \gamma  \right)=\underset{a\left( \gamma  \right)}
+{\overset{b\left( \gamma  \right)}{\mathop \int }}\,f\left( x,\gamma  \right)dx\)
+на промежутке <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+луч, числовая ось).</span></a> достаточно,
+чтобы условия теоремы выполнялись для произвольного сегмента \(\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \).
+</p>
+<br>
+<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
+	<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Доказательство</summary>
+					  <p>
+						<div class="proof normal">
+							<div class="col-blue">
+							Пусть \(\displaystyle{{\gamma }_{0}}\in {\Gamma }'\bigcap \Gamma \). Тогда
+							<a class="tooltip-1">существует сегмент <span class="classic">
+								<p class="margin-top">
+									Действительно, такой отрезок можно подобрать для произвольного промежутка. 
+									Ниже приведены возможные варианты выбора отрезка в зависимости от промежутка \(\displaystyle \Gamma.\) 
+									<table style="margin-right:50px;margin-top:0; margin-bottom:0;margin-left:150px; padding:0; text-align: center">
+									<tbody>
+									  <tr>
+										<td>
+										\(\displaystyle \Gamma\)
+										  </td>
+										  <td>
+											\(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+										</td>
+									  </tr>
+									  <tr>
+										<td>
+										  
+											\(\displaystyle \left[ a,b \right)\)
+										  
+										</td>
+										<td>
+										 
+											\(\displaystyle \left[ a,\frac{{{\gamma }_{0}}+b}{2} \right]\)
+										
+										</td>
+									  </tr>
+									  <tr>
+										<td>
+										 
+											\(\displaystyle \left[ a,+\infty  \right)\)
+										 
+										</td>
+										<td>
+											  \(\displaystyle \left[ \frac{a+{{\gamma }_{0}}}{2},{{\gamma }_{0}}+1 \right]\)
+										
+										  </td>
+									  </tr>
+									  <tr>
+										<td>
+											\(\displaystyle \left( a,b \right]\)
+										</td>
+										<td>
+											\(\displaystyle \left[ \frac{a+{{\gamma }_{0}}}{2},b \right]\)
+										</td>
+									  </tr>
+									  <tr>
+										<td>
+											\(\displaystyle \left( -\infty ,b \right]\)
+										</td>
+										<td>
+											\(\displaystyle \left[ {{\gamma }_{0}}-1,\frac{{{\gamma }_{0}}+b}{2} \right]\)
+										</td>
+									  </tr>
+									  <tr>
+										<td>
+											\(\displaystyle \left( a,b \right)\)
+										</td>
+										<td>
+											\(\displaystyle \left[ \frac{a+{{\gamma }_{0}}}{2},\frac{{{\gamma }_{0}}+b}{2} \right]\)
+										</td>
+									  </tr>
+									</tbody>
+								  </table>
+								</p>
+							</span></a>такой, что  
+													<p class="formula">
+							\(\displaystyle {{\gamma }_{0}}\,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+							 и \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \).
+								  </p>
+							<p>Согласно условию на сегменте \( \displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) 
+							все требования теоремы о дифференцируемости  выполняются, поэтому функция \( \displaystyle I(\gamma )\) 
+							дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), а значит, и в точке
+							 \(\displaystyle {{\gamma }_{0}}\,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
+							  В силу произвольности выбора точки \(\displaystyle {{\gamma }_{0}}\), можно утверждать,
+							   что функция \(\displaystyle I(\gamma )\) дифференцируема на всем множестве \(\displaystyle \Gamma. \)</p>
+							
+							
+							</div>
+						</div>
+					</details>
+</section>
 <!-- <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
 			луч, числовая ось).</span></a> -->
 			<div>
@@ -1152,10 +1149,7 @@ a(\gamma )\) и \(\displaystyle b(\gamma )\) дифференцируемы на
 			{{\gamma }_{1}},{{\gamma }_{2}} \right]\).
 			Тогда если \(\displaystyle f(x,\gamma )\in\) <a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
 					\(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
-				</span></a>\((\)<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
-				\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
-{{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-			</span></a>\()\), то
+				</span></a>\((\displaystyle \varPi)\), то
 			функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\)
 			интегрируема
 			на сегменте \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и справедливо равенство
@@ -1183,9 +1177,7 @@ a(\gamma )\) и \(\displaystyle b(\gamma )\) дифференцируемы на
 <section class="remark">
   <p class="margin-top"><span class="em-wide">Замечание 1</span>. Теорема остается справедливой, если функции
 	  \(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) могут
-	  быть доопределены по непрерывности в прямоугольнике \(\displaystyle =\left[ a,b \right]\times \left[ {{\gamma 
-	  }_{1}},{{\gamma }_{2}} \right]\), \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\subset\) 
-	  \( \Gamma \)
+	  быть доопределены по непрерывности в прямоугольнике \(\displaystyle \varPi\)
 		  изменением их значений не более чем на конечном множестве прямых
 		  \(\displaystyle x=\text{const}\).
 	  </p>
