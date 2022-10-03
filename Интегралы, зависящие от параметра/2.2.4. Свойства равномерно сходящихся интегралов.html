@@ -814,12 +814,18 @@
    Непрерывность</strong></h3>
 
    <section class="theorem">
-      <p class="margin-top"><strong>Теорема (Непрерывность).</strong> Пусть функция
-         \(\displaystyle f(x,\gamma )\) непрерывна в полуполосе \(\displaystyle \left[ a,\mathbf{B}
-         \right)\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), а интеграл \(\displaystyle I(\gamma
-         )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) сходится равномерно на сегменте \(\displaystyle
-         \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\). Тогда функция \(\displaystyle I(\gamma )\)
-         непрерывна на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).</p>
+      <p class="margin-top"><strong>Теорема (Непрерывность).</strong>
+      Если
+         <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            1) \(\displaystyle f\left( x,\gamma  \right)\in\)
+            <a class="tooltip-1">\( \mathbb{C}\)<span class="classic">
+               \(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
+            </span></a>\((\varPi)\),</p>
+                <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  2) интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}\) 
+                  сходится равномерно по \(\displaystyle \gamma \) на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),</p>
+         то функция \(\displaystyle I(\gamma )\) непрерывна на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+      </p>
    </section>
 
    
@@ -828,15 +834,14 @@
                 <span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
                луч, числовая ось).</span></a> -->
                <section class="remark">
-                  <p class="margin-top"><span class="em-wide">Замечание 1.</span> Теорема остается справедливой, если
-                      \(\displaystyle f\left( x,\gamma   \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\) 
-                      можно доопределить до непрерывных на множестве \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) 
-                      изменением их значений не более чем на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
+                  <p class="margin-top"><span class="em-wide">Замечание 1.</span> Теорема остается справедливой, если функция
+                      \(\displaystyle f\left( x,\gamma   \right)\) может быть доопредлена до непрерывной  на множестве \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) 
+                      изменением ее значений не более чем на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
             </section>
 <section class="consequence">
       <p class="margin-top"><span class="em-wide">Замечание 2.</span> 
          Если требуется доказать непрерывность функции \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}, \gamma \in \Gamma \) 
-          на множестве <a class="tooltip-2">\(\Gamma\)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+          на множестве <a class="tooltip-2">\(\Gamma\)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал,
            луч, числовая ось).</span></a>,
           отличном от отрезка, то достаточно доказать, что условия теоремы выполняются для произвольного 
           \(\displaystyle \left[ {{\gamma }{1}},{{\gamma }_{2}} \right]\subset \Gamma.\)
@@ -1233,14 +1238,26 @@
 
    <section class="theorem">
       <p class="margin-top"><strong>Теорема (Дифференцируемость).</strong> Если</p>
-      <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         1) \(\displaystyle f\left( x,\gamma  \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\)
-          непрерывны на \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),</p>
+      <p class="margin-top">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			1) \(\displaystyle
+			f(x,\gamma ) \in\)
+			<a class="tooltip-1">\( \mathbb{C}\)<span class="classic">
+				\(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
+			</span></a>
+			\((\displaystyle \varPi)\),
+		</p>
+      <p class="margin-top">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			2) \(\displaystyle \frac{\partial f(x,\gamma )}{\partial
+		\gamma }\in \mathbb{C} (\displaystyle \varPi),\) </p>
+
           <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            2) для некоторого \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+            3) для некоторого \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
              сходится интеграл \(\displaystyle I(\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\),</p>
+
              <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-               3) интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}\) 
+               4) интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}\) 
                сходится равномерно по \(\displaystyle \gamma \) на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),</p>
       то функция \(\displaystyle I(\gamma )\) дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
        и ее производная может быть вычислена <strong><em>по правилу Лейбница:</em></strong>
@@ -1259,10 +1276,10 @@
 
           <p class="margin-top"><span class="em-wide">Замечание 2.</span> 
             Если требуется доказать дифференцируемость функции \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}, \gamma \in \Gamma \) 
-             на множестве <a class="tooltip-2">\(\Gamma\)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+             на множестве <a class="tooltip-2">\(\Gamma\)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал,
               луч, числовая ось).</span></a>,
              отличном от отрезка, то достаточно доказать, что условия теоремы выполняются для произвольного 
-             \(\displaystyle \left[ {{\gamma }{1}},{{\gamma }_{2}} \right]\subset \Gamma ].\)
+             \(\displaystyle \left[ {{\gamma }{1}},{{\gamma }_{2}} \right]\subset \Gamma.\)
       </p>
    </section>
    <br>
@@ -1373,11 +1390,20 @@
 
 
    <section class="theorem">
-      <p class="margin-top"><strong>Теорема (Интегрируемость в собственном смысле). </strong>Если функция \(\displaystyle f(x,\gamma )\) непрерывна в полуполосе 
-      \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), а интеграл
-         \[\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\]
-      сходится равномерно на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),
-       то интеграл  можно интегрировать по параметру \(\displaystyle \gamma \) на нем, причем
+      <p class="margin-top"><strong>Теорема (Интегрируемость в собственном смысле). </strong>Если
+         <p class="margin-top">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            1) \(\displaystyle
+            f(x,\gamma ) \in\)
+            <a class="tooltip-1">\( \mathbb{C}\)<span class="classic">
+               \(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
+            </span></a>
+            \((\displaystyle \varPi)\),
+         </p>
+                <p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  2) интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}\) 
+                  сходится равномерно по \(\displaystyle \gamma \) на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),</p>
+        то функция \(\displaystyle I(\gamma)\) интегрируема на сегменте \(\displaystyle [\gamma_1,\gamma_2] \) и справедливо равенство:
         <h3 class="formula">
            <strong class="float-r">(*)</strong>
            \( \displaystyle \int\limits_{{{\gamma }_{1}}}^{{{\gamma }_{2}}}{I(\gamma )d\gamma
@@ -1398,48 +1424,9 @@
          </p>
       </section>
 
-   <section class="consequence">
-      <p class="margin-top">
-         <strong>Следствие.</strong> Если
-         \(\displaystyle f(x,\gamma )\) непрерывна и неотрицательна в полуполосе
-         \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[
-         {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и интеграл \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) является непрерывной функцией
-         на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), то справедлива
-         формула <a class="shortcut" href="#*">(*)</a> . 
-         
-      </p>
-	   <br>
-      <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
-					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Доказательство</summary>
-         <div class="proof normal">
-            <div class="col-blue">
-            <p>
-            Следует из теоремы в силу <a class="tooltip-1">признака Дини<span class="classic">
-               Пусть функция \(\displaystyle f(x,\gamma )\) непрерывна и
-               неотрицательна в полуполосе \(\displaystyle \left[
-               a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},{{\gamma }_{2}}
-               \right]\), и пусть для каждого \(\displaystyle \gamma \in \left[
-               {{\gamma }_{1}},{{\gamma }_{2}} \right]\) сходится несобственный
-               интеграл \(\displaystyle I(\gamma
-               )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\), причем функция
-               \(\displaystyle I(\gamma )\) непрерывна на \(\displaystyle \left[
-               {{\gamma }_{1}},{{\gamma }_{2}} \right]\). Тогда интеграл
-               \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma
-               )dx}\) сходится равномерно по \(\displaystyle \gamma \) на
-               \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}}
-               \right]\).
-            </span></a>.  
-            </p>
-            </div>
-         </div>
-       </details>
-   </section>
-
-  
-
    <section class="remark">
       <p class="margin-top">
-         <span class="em-wide">Замечание.</span> В общем случае перестановка порядка
+         <span class="em-wide">Замечание 2.</span> В общем случае перестановка порядка
          интегрирования недопустима.
       </p>
 	   <br>
@@ -1560,6 +1547,44 @@
        </details>
    </section>
    
+   <section class="consequence">
+      <p class="margin-top">
+         <strong>Следствие.</strong> Если
+         \(\displaystyle f(x,\gamma )\) непрерывна и неотрицательна в полуполосе
+         \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[
+         {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и интеграл \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) является непрерывной функцией
+         на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), то справедлива
+         формула <a class="shortcut" href="#*">(*)</a> . 
+         
+      </p>
+	   <br>
+      <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
+					<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Доказательство</summary>
+         <div class="proof normal">
+            <div class="col-blue">
+            <p>
+            Следует из теоремы в силу <a class="tooltip-1">признака Дини<span class="classic">
+               Пусть функция \(\displaystyle f(x,\gamma )\) непрерывна и
+               неотрицательна в полуполосе \(\displaystyle \left[
+               a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},{{\gamma }_{2}}
+               \right]\), и пусть для каждого \(\displaystyle \gamma \in \left[
+               {{\gamma }_{1}},{{\gamma }_{2}} \right]\) сходится несобственный
+               интеграл \(\displaystyle I(\gamma
+               )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\), причем функция
+               \(\displaystyle I(\gamma )\) непрерывна на \(\displaystyle \left[
+               {{\gamma }_{1}},{{\gamma }_{2}} \right]\). Тогда интеграл
+               \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma
+               )dx}\) сходится равномерно по \(\displaystyle \gamma \) на
+               \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}}
+               \right]\).
+            </span></a>.  
+            </p>
+            </div>
+         </div>
+       </details>
+   </section>
+
+  
 
    
 

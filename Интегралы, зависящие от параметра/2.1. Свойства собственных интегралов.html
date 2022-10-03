@@ -293,7 +293,7 @@
 					}_{1}},{{\gamma }_{2}} \right] \right).\)</p>
 				 <p>
 					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) \(\forall \gamma \in
-					 \Gamma\,\,\left\{ \begin{matrix} a\le a\left( \gamma \right)\le b, \\
+					[{{\gamma }_{1}},{{\gamma }_{2}}]\,\,\left\{ \begin{matrix} a\le a\left( \gamma \right)\le b, \\
 					 a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.\).</p>
 					 
 					 то функция \(\displaystyle I(\gamma
@@ -396,11 +396,11 @@
 			</section>
 <section class="remark">
 	<p class="margin-top"><span class="em-wide">Замечание 2.</span>
-Для непрерывности \(\displaystyle I\left( \gamma  \right)=\underset{a\left( \gamma  \right)}
+ Если требуется доказать непрерывность функции  \(\displaystyle I\left( \gamma  \right)=\underset{a\left( \gamma  \right)}
 {\overset{b\left( \gamma  \right)}{\mathop \int }}\,f\left( x,\gamma  \right)dx\)
-на промежутке <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-луч, числовая ось).</span></a> достаточно,
-чтобы условия теоремы выполнялись для произвольного сегмента \(\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \).
+на множестве <a class="tooltip-2">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал,
+луч, числовая ось).</span></a>, отличном от отрезка, то достаточно доказать, что
+условия теоремы выполняются для произвольного \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \).
 </p>
 <br>
 <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
@@ -542,59 +542,7 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 </section>
 
 <br>
-<p class="margin-top" style = "white-space: nowrap" >
-<span class = "em-wide" style="font-size: 20px">Пример 1.</span>
-Вычислить \(\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
-}}\, \int\limits_{1-\gamma }^{\pi \gamma }{\sqrt{1-{{\gamma
-}^{2}}{{\sin }^{2}}x}\,dx}\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<span class = "em-wide" style="font-size: 20px">Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid;">2</button>
-</p>
-<br>
-<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
-<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
-<div class="proof">
-<div class = "normal">
-	<div class="col-blue">
-	Для вычисления предела достаточно, чтобы требования
-  предельного перехода выполнялись в некоторой окрестности
-  предельного значения.
-  <p>
 
-	  Пусть \(\displaystyle
-   \gamma \in \left[ 0,1 \right] \),
-   тогда</p>
-	\[\displaystyle 1-\gamma \in  \mathbb{C} 
-	\left( \left[ 0,1 \right] \right), \quad \displaystyle \pi \gamma
-   \in \mathbb{C}\left( \left[ 0,1 \right] \right), \quad \displaystyle
-   \sqrt{1-{{\gamma }^{2}}{{\sin }^{2}}x}\in \mathbb{C}\left(
-	   \left[ 0,\pi \right]\times \left[ 0,1 \right] \right),\]
-		\[\displaystyle
-	   0\le 1-\gamma \le 1\le \pi, \quad \displaystyle 0\le \pi \gamma
-	   \le \pi,\] а значит,
-	</div>
-	\begin{eqnarray*}
-			\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
-			}}\,\int\limits_{1-\gamma }^{\pi \gamma } {\sqrt{1-{{\gamma
-			}^{2}}{{\sin }^{2}}x}\,dx}=\int\limits_{0}^{\pi
-			}{\sqrt{1-{{\sin }^{2}}x}\,dx}=\int\limits_ {0}^{\pi }{\left|
-				\cos x \right|\,dx}=2.
-				\end{eqnarray*}
-</div>
-	<div class = "easy-text">
-		<p class="formula">
-			\(\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
-			}}\,\int\limits_{1-\gamma }^{\pi \gamma } {\sqrt{1-{{\gamma
-			}^{2}}{{\sin }^{2}}x}\,dx}\)
-			<a class="tooltip-1">\(=\)<span class="classic">Для просмотра смените уровень
-			</span></a>
-			\( \displaystyle\int\limits_{0}^{\pi
-			}{\sqrt{1-{{\sin }^{2}}x}\,dx}=\int\limits_ {0}^{\pi }{\left|
-				\cos x \right|\,dx}=2.\)
-			</p>
-
-	</div>
-			</div>
-</details>
 <br>
 <section class="remark">
 <p class="margin-top">
@@ -633,6 +581,59 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 	  луч, числовая ось).</span></a> изменением ее значений не более чем
   на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
 </section>
+<p class="margin-top" style = "white-space: nowrap" >
+	<span class = "em-wide" style="font-size: 20px">Пример 1.</span>
+	Вычислить \(\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
+	}}\, \int\limits_{1-\gamma }^{\pi \gamma }{\sqrt{1-{{\gamma
+	}^{2}}{{\sin }^{2}}x}\,dx}\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class = "em-wide" style="font-size: 20px">Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid;">2</button>
+	</p>
+	<br>
+	<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
+	<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
+	<div class="proof">
+	<div class = "normal">
+		<div class="col-blue">
+		Для вычисления предела достаточно, чтобы требования
+	  предельного перехода выполнялись в некоторой окрестности
+	  предельного значения.
+	  <p>
+	
+		  Пусть \(\displaystyle
+	   \gamma \in \left[ 0,1 \right] \),
+	   тогда</p>
+		\[\displaystyle 1-\gamma \in  \mathbb{C} 
+		\left( \left[ 0,1 \right] \right), \quad \displaystyle \pi \gamma
+	   \in \mathbb{C}\left( \left[ 0,1 \right] \right), \quad \displaystyle
+	   \sqrt{1-{{\gamma }^{2}}{{\sin }^{2}}x}\in \mathbb{C}\left(
+		   \left[ 0,\pi \right]\times \left[ 0,1 \right] \right),\]
+			\[\displaystyle
+		   0\le 1-\gamma \le 1\le \pi, \quad \displaystyle 0\le \pi \gamma
+		   \le \pi,\] а значит,
+		</div>
+		\begin{eqnarray*}
+				\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
+				}}\,\int\limits_{1-\gamma }^{\pi \gamma } {\sqrt{1-{{\gamma
+				}^{2}}{{\sin }^{2}}x}\,dx}=\int\limits_{0}^{\pi
+				}{\sqrt{1-{{\sin }^{2}}x}\,dx}=\int\limits_ {0}^{\pi }{\left|
+					\cos x \right|\,dx}=2.
+					\end{eqnarray*}
+	</div>
+		<div class = "easy-text">
+			<p class="formula">
+				\(\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim
+				}}\,\int\limits_{1-\gamma }^{\pi \gamma } {\sqrt{1-{{\gamma
+				}^{2}}{{\sin }^{2}}x}\,dx}\)
+				<a class="tooltip-1">\(=\)<span class="classic">Для просмотра смените уровень
+				</span></a>
+				\( \displaystyle\int\limits_{0}^{\pi
+				}{\sqrt{1-{{\sin }^{2}}x}\,dx}=\int\limits_ {0}^{\pi }{\left|
+					\cos x \right|\,dx}=2.\)
+				</p>
+	
+		</div>
+				</div>
+	</details>
 
 <br>
 <br>
@@ -829,7 +830,7 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 <p class="margin-top"><span class="em-wide">Замечание 2.</span>
 Для дифференцируемости \(\displaystyle I\left( \gamma  \right)=\underset{a\left( \gamma  \right)}
 {\overset{b\left( \gamma  \right)}{\mathop \int }}\,f\left( x,\gamma  \right)dx\)
-на промежутке <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
+на промежутке <a class="tooltip-2">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
 луч, числовая ось).</span></a> достаточно,
 чтобы условия теоремы выполнялись для произвольного сегмента \(\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \).
 </p>
@@ -1175,10 +1176,10 @@ a(\gamma )\) и \(\displaystyle b(\gamma )\) дифференцируемы на
 </section>
 <br>
 <section class="remark">
-  <p class="margin-top"><span class="em-wide">Замечание 1</span>. Теорема остается справедливой, если функции
-	  \(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) могут
-	  быть доопределены по непрерывности в прямоугольнике \(\displaystyle \varPi\)
-		  изменением их значений не более чем на конечном множестве прямых
+  <p class="margin-top"><span class="em-wide">Замечание 1</span>. Теорема остается справедливой, если функция
+	  \(\displaystyle f(x,\gamma )\) может быть доопределена до непрерывной на прямоугольнике
+ \(\displaystyle \varPi\)
+		  изменением ее значений не более чем на конечном множестве прямых
 		  \(\displaystyle x=\text{const}\).
 	  </p>
   </section>
