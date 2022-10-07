@@ -561,7 +561,7 @@
 <br>
 <section class="remark">
   <p class="margin-top">
-Перед тем как перейти к следующим примерам обратим внимание на то, что вычисление интеграла с помощью теоремы о дифференцируемости обязательно содержит 
+    Перед тем как перейти к примерам, использующим теорему о дифференцировании, обратим внимание на то, что вычисление интеграла с помощью теоремы о дифференцируемости обязательно содержит 
 «обратный ход», т.е. восстановление функции по ее производной. При этом каждой дифференцируемой функции \(\displaystyle f\left( x \right)\) однозначно 
 соответствует ее производная \(\displaystyle {f}'\left( x \right)\).
      Но обратное утверждение неверно, так как 
@@ -583,6 +583,14 @@
 тех же действий (это становится понятно, если записать для определенного интеграла формулу Ньютона-Лейбница).
 </p>
 </section>
+<p class="margin-top">
+  Если требуется найти значение интеграла, зависящего от нескольких параметров 
+  \(\displaystyle I\left( a,b,c,...,m \right)\), то сначала выбирается один параметр, по которому будет производиться дифференцирование.
+   В этом случае выполняя «обратный ход» требуется помнить, что констан-та может быть функцией всех оставшихся параметров, т.е.
+  \[I\left( {{a}_{1}},{{a}_{2}},...,{{a}_{m}} \right)+C\left( {{a}_{2}},...,{{a}_{m}} \right)=\int{\frac{\partial }{\partial 
+    {{a}_{1}}}}I\left( {{a}_{1}},{{a}_{2}},...,{{a}_{m}} \right)d{{a}_{1}}.\]
+  
+</p>
 <div>
   <p class="margin-top" style = "white-space: nowrap" >
       <span class = "em-wide" style="font-size: 20px">Пример 2.2.</span>
@@ -930,14 +938,14 @@
           </p>
           <p><em style = "font-size: 22px">Способ 2. Используя теорему о дифференцируемости </em></p>
           <p>
-            Пусть \(\displaystyle f\left( x,a,b \right)=\frac{{{x}^{b}}-{{x}^{a}}}{\ln x}\). 
             Зафиксируем некоторое значение \(\displaystyle {{a}_{0}}>0\) и рассмотрим интеграл как функцию от \(\displaystyle b\):
-\[J\left( b \right)=I\left( {{a}_{0}},b \right).\]</p>
+\[J\left( b \right)=I\left( {{a}_{0}},b \right)=\int\limits_
+{0}^{1}{\frac{{{x}^{b}}-{{x}^{a_0}}}{\ln x}dx}.\]</p>
 <p><p>&nbsp;&nbsp;&nbsp;&nbsp;<a class="tooltip-1">Продифференцируем по параметру<span class="classic">
   Для просмотра обоснования смените уровень
 </span></a></p>
-\[{{\left. \frac{\partial I\left( a,b \right)}{\partial b} \right|}_{a={{a}_{0}}}}={J}'\left( b \right)=
-\int\limits_{0}^{1}{\frac{\partial \tilde{f}\left( x,b \right)}{\partial b}dx}=\int\limits_{0}^{1}{{{x}^{b}}dx}=\left.
+\[{{\left. \frac{\partial I\left( a,b \right)}{\partial b} \right|}_{a={{a}_{0}}}}={J}'\left( b \right)
+=\int\limits_{0}^{1}{{{x}^{b}}dx}=\left.
  \frac{{{x}^{b+1}}}{b+1} \right|_{0}^{1}=\frac{1}{b+1}.\]
 <p>
   Следовательно, 
@@ -950,7 +958,7 @@
   \[I\left( {{a}_{0}},b \right)=\ln \frac{b+1}{{{a}_{0}}+1}.\]
 </p><p>
 
-  В силу произвольности выбора \(\displaystyle {{a}_{0}}>0\), последняя формула справедлива \(\displaystyle {{a}_{0}}>0\), а значит,
+  В силу произвольности выбора \(\displaystyle {{a}_{0}}\), последняя формула справедлива \(\displaystyle \forall {{a}_{0}}>0\), а значит,
   \[I\left( a,b \right)=\ln \frac{b+1}{a+1}.\]
 </p>
       </div>
@@ -1161,7 +1169,7 @@
 <p>
   Покажем, что для интеграла функции 
   \(\int\limits_{0}^{+\infty }{\tilde{f}\left( x,a \right)dx}=\int\limits_{0}^{+\infty }{f\left( x,a \right)dx}=I\left( a \right)\)
-  выполняются все требования теоремы <a class="tooltip-2"> о дифференцировании:
+  выполняются все требования теоремы <a class="tooltip-1"> о дифференцировании:
     <span class="classic">
        Если<br>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) \(\displaystyle f\left( x,\gamma  \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\)
@@ -1176,14 +1184,14 @@
 \displaystyle {I}'(\gamma )=\int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}.
 \end{eqnarray*}
        </span></a></p>
-<p>
+       <p class="numbers">
   1) \(\displaystyle \tilde{f}\left( x,a \right)\in \mathbb{C}\left( {{\mathbb{R}}^{2}} \right) \text{и} \frac{\partial \tilde{f}\left( x,a \right)}{\partial a}=
   {{e}^{-\left( a+1 \right)x}}\in \mathbb{C}\left( {{\mathbb{R}}^{2}} \right)\).
 </p>
-<p>
+<p class="numbers">
   2) \(\displaystyle I\left( 0 \right)=0.\)
 </p>
-<p>
+<p class="numbers">
   3) Интеграл \(\displaystyle K\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\partial \tilde{f}}{\partial a}dx}=\int\limits_{0}^{+\infty }{{{e}^
   {-\left( a+1 \right)x}}dx}\le \int\limits_{0}^{+\infty }{{{e}^{-x}}dx}=1\) сходится равномерно по \(\displaystyle a \) на множестве \(\displaystyle \left[ 0,+\infty  \right)\) 
   (по признаку Вейерштрасса).
@@ -1319,20 +1327,17 @@
                         </span>
                   </a>
  </p>
- <p>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   1) \(\displaystyle {{e}^{-ax}}\cos \left( bx \right)\) и \(\displaystyle \frac{\partial }{\partial b}\left( {{e}^{-ax}}\cos \left( bx \right) \right)
+ <p class="numbers">
+  1) \(\displaystyle {{e}^{-ax}}\cos \left( bx \right)\) и \(\displaystyle \frac{\partial }{\partial b}\left( {{e}^{-ax}}\cos \left( bx \right) \right)
     =-x{{e}^{-ax}}\sin \left( bx \right)\) непрерывны, 
  </p>
- <p>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <p class="numbers">
   2) \(\displaystyle J\left( b \right)\) сходится на \(\displaystyle \,\left[ 0.5,\,2 \right]\): 
     \(\displaystyle \int\limits_{0}^{+\infty }{\left| {{e}^{-ax}}\cos \left( bx \right) \right|\,dx}\,=\,\int\limits_{0}^{+\infty }{{{e}^{-ax}}\,dx}\,
     =\,\frac{1}{a}\,<\,+\,\infty \),
  </p>
-
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    3) на множестве \(\displaystyle \,\left[ 0.5,\,2 \right]\) интеграл \(\displaystyle K\left( b \right)={J}'\left( b \right)
+ <p class="numbers">
+  3) на множестве \(\displaystyle \,\left[ 0.5,\,2 \right]\) интеграл \(\displaystyle K\left( b \right)={J}'\left( b \right)
     =-\int\limits_{0}^{+\infty }{x{{e}^{-ax}}\sin \left( bx \right)\,dx}\) сходится равномерно по параметру \(b\) в силу 
     <a class="tooltip-1"> признака Вейерштрасса:
          <span class="classic">
@@ -1349,7 +1354,7 @@
           интеграла \(\displaystyle \int\limits_{a}^{\mathbf{B}}{g(x)dx}\)
           следует равномерная по \(\displaystyle \gamma \) на множестве
           \( \Gamma \) сходимость интеграла \(\displaystyle
-          I(\gamma )\,=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\).</span></a><br>
+          I(\gamma )\,=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\).</span></a></p>
           <p>
 
             \(\qquad \qquad \qquad \qquad \qquad \qquad
@@ -1442,114 +1447,116 @@
      <br>
      <p><em style = "font-size: 22px">Способ 2. Используя теорему о дифференцируемости</em>.</p>
      <p>
-     Найдем значение интеграла поточечно. Пусть \(\displaystyle \left( {{a}_{0}},\,\,{{b}_{0}} \right)\) – некоторые положительные значения параметров. 
-       Зафиксируем некоторое значение \(\displaystyle {{b}_{0}}&gt;0\) и
-           рассмотрим интеграл \(\displaystyle I\left( a,b \right)\) как функцию от
-           \(\displaystyle a\):
-           \begin{eqnarray*}
-           \displaystyle J\left( a \right)=I\left( a,{{b}_{0}}
-              \right)=\int\limits_{0}^{+\infty }{\frac{{{e}^{-ax}}-{{e}^{-{{b}_{0}}x}}}{x}dx}
-              \end{eqnarray*}
-           на отрезке \(\displaystyle E=\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),
-              \(\displaystyle {{\gamma }_{1}}=\min \left\{ {a}_{0} , {b}_{0} \right\}/2\), \(\displaystyle
-              {{\gamma }_{2}}=\max \left\{ {{a}_{0}}+1,\,\,{{b}_{0}}+1 \right\}\).
-     </p>
-     <p>
-       <div class = "col-blue">Пусть \(\displaystyle f\left( x,a,b_0
-           \right)={\frac{{{e}^{-ax}}-{{e}^{-b_0x}}}{x}}\). Учитывая, что \(\displaystyle
-           \underset{x\to 0}{\mathop{\lim }}f(x,a,b_0)=b_0-a\)
-       доопределим подынтегральную функцию до
-                 непрерывной по \(\displaystyle x\) на \(\displaystyle  \left[ 0,+\infty  \right)\times E\): </span>
-                 \begin{eqnarray*}
-                 \displaystyle \tilde{f}\left( x,a,{{b}_{0}} \right)=\left\{
-                 \begin{matrix}
-                 f\left( x,a,{{b}_{0}} \right),\,\,x&gt;0 \\
-                 {{b}_{0}}-a,\,\,x=0 \\
-                 \end{matrix} \right.
-                 \end{eqnarray*}
-                 <p>
-
-                  Покажем, что на \(\displaystyle E\) для функции \(\displaystyle J\left( a \right)\) выполняются  все требования
-                     
-                     <a class="tooltip-2"> теоремы о дифференцировании:
-                                   <span class="classic">
-                                      Если<br>
-                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) \(\displaystyle f\left( x,\gamma  \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\)
-                            непрерывны на \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) для некоторого \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-                               сходится интеграл \(\displaystyle I(\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\),<br>
-                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}\) 
-                                 сходится равномерно по \(\displaystyle \gamma \) на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),
-                        то функция \(\displaystyle I(\gamma )\) дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
-                         и ее производная может быть вычислена по правилу Лейбница:
-                         \begin{eqnarray*}
-                         \displaystyle {I}'(\gamma )=\int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}.
-                         \end{eqnarray*}
-                                      </span>
-                                </a>
-               </p>
-              <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) \(\displaystyle \tilde{f}\left( x,a,{{b}_{0}} \right)\in\)
-                 <a class="tooltip-1">\( \mathbb{C} \)<span class="classic">
-                    \(\mathbb{C}(\Omega)\)– класс функций, непрерывных на множестве \( \Omega.\)
-                 </span></a>\(\left( {{\mathbb{R}}^{2}} \right)\) и
-                 \(\displaystyle \frac{\partial \tilde{f}\left( x,a,{{b}_{0}} \right)}{\partial
-                 a}={{e}^{-ax}}\in \mathbb{C}\left( {{\mathbb{R}}^{2}} \right)\).</span></p>
-              <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) \(\displaystyle J\left( {{b}_{0}} \right)=I\left( {{b}_{0}},{{b}_{0}}
-                 \right)=0\).</span></p>
-              <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) Интеграл \(\displaystyle K\left( a
-                 \right)\,=\,\int\limits_{0}^{+\infty }{\frac{\partial \tilde{f}}{\partial
-                 a}dx}\,=\,-\,\int\limits_{0}^{+\infty
-                 }{{{e}^{-ax}}dx}\) сходится равномерно на \(\displaystyle E\) в силу признака Вейерштрасса, 
-                 так как \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-ax}}\,dx}\le \int\limits_{0}^{+\infty }{{{e}^{-{{\gamma }_{1}}x}}\,dx}
-                 =\frac{2}{{{\gamma }_{1}}}&lt;+\infty
-                 \).</span></p>
-    </div>
-     <p> Поэтому
-           \(\displaystyle \forall a\in E\) (а значит, и для значения \(\displaystyle {{a}_{0}}\)):
-        </p>
-    \[\displaystyle {J}'\left( a \right)=K(a)=-\int\limits_{0}^{+\infty }{{{e}^{-ax}}dx}=-\frac{1}{a }\]
-
- <p>
-     Следовательно,
-  </p>
-  \[I\left( a,{{b}_{0}} \right)=J\left( a \right)=\int{{J}'\left( a \right)da}=-\int{\frac{1}{a}da}=-\ln a+C\left( {{b}_{0}} \right)\,\]
+      Пусть \(\displaystyle f\left( x,a,b \right)\,=\,\frac{{{e}^{-ax}}-\,{{e}^{-bx}}}{x}\). Зафиксируем некоторое значение \(\displaystyle {{b}_{0}}>0\)
+       и рассмотрим интеграл как функцию от \(\displaystyle a\):
+\[J\left( a \right)=I\left( a,{{b}_{0}} \right).\]</p>
+<div class="col-blue">
 <p>
-
-  Учитывая, что \(\displaystyle 0={{\left. J\left( a \right)\, \right|}_{a={{b}_{0}}}}\,=\,-\ln {{b}_{0}}\,+\,C\left( {{b}_{0}} \right)\), получаем 
-  \[\displaystyle J\left( a \right)\,=\,I\left( a,{{b}_{0}} \right)\,=\,\ln \frac{{{b}_{0}}}{a}.\]
-<p> В силу произвольности выбора \(\displaystyle {{b}_{0}}\), последняя формула справедлива
-  \(\displaystyle \forall {{b}_{0}}\,>\,0\), следовательно, \[I\left( a,b \right)\,=\,\ln \frac{b}{a}.\]</p>
+  Функция \(\displaystyle f( x,a,{{b}_{0}}\) не является непрерывной на \(\displaystyle {{\left[ 0,\,+\infty  \right)}^{2}}\), 
+  так как она не определена при \(\displaystyle x=0\), при этом \(\displaystyle \forall {{b}_{0}}>0\)
+  \[\underset{x\to 0+}{\mathop{\lim }}\,f\left( x,a,{{b}_{0}} \right)\,=\,{{b}_{0}}-\,a,\]
 </p>
+а значит, \(\displaystyle f\left( x,a,{{b}_{0}} \right)\) можно доопределить по непрерывности:
+\[\displaystyle \tilde{f}\left( x,a \right)=\left\{ \begin{matrix}
+   f\left( x,a,{{b}_{0}} \right),\,\,x>0  \\
+   {{b}_{0}}-a,\,\,x=0.  \\
+\end{matrix} \right.\]
 
-                             </div>
-    <div class = "easy-text">
-       <p><em style = "font-size: 22px">Способ 1. Используя теорему об интегрируемости</em>.</p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  \(\displaystyle \int\limits_{0}^{+\infty
-                             }{\frac{{{e}^{-ax}}-{{e}^{-bx}}}{x}dx}=\int\limits_{0}^{+\infty
-                             }{\left(
-                             \int\limits_{a}^{b}{{{e}^{-\gamma x}}d\gamma } \right)dx}\)
-                             <a class="tooltip-1">=<span class="classic">Для просмотра обоснования смените уровень
-                             </span></a>
-                             \(\displaystyle\int\limits_{a}^{b}{\left( \int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}dx} \right)d\gamma }=
-                             \int\limits_{a}^{b}{\frac{1}{\gamma }d\gamma =\ln \frac{b}{a}}.\)
-            <br>
-            <br>
-          <p><em style = "font-size: 22px">Способ 2. Используя теорему о дифференцируемости</em>.</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;<a class="tooltip-1">Продифференцируем по параметру<span class="classic">
-                   Для просмотра обоснования смените уровень
-           </span></a></p>
+<p>
+	Определим значение интеграла для произвольного значения \(\displaystyle {{a}_{0}}>0\). Для этого рассмотрим интеграл \(\displaystyle J\left( a \right)\)
+  <a class="tooltip-2"> на отрезке 
+    <span class="classic">
       
-          <p> \[\displaystyle \frac{\partial }{\partial a}I\left( a,b \right)=-\int\limits_{0}^{+\infty }{{{e}^{-ax}}dx=-\frac{1}{a}}\]</p>
-          <p>Следовательно, \[I\left( a,{{b}_{0}} \right)=J\left( a \right)=\int{{J}'\left( a \right)da}=-\int{\frac{1}{a}da}=-\ln a+C\left( {{b}_{0}} \right)\,\]</p>
-                 <p>Учитывая, что \[\displaystyle 0={{\left. I\left( a,b \right)\, \right|}_{a=b}}\,=\,-\ln b\,+\,C\left( b \right),\]</p>
-                  получим \[C\left( b \right)=\ln b,\]
-                  а значит,
+      &nbsp;&nbsp;&nbsp; Использовать теорему о дифференцировании для интеграла
+  \[\int\limits_{0}^{+\infty }{\tilde{f}\left( x,a \right)dx}=\int\limits_{0}^{+\infty }{f\left( x,a,{{b}_{0}} \right)dx}=I\left( a,{{b}_{0}} \right)=J\left( a \right)\]
+  на множестве \(\displaystyle \left( 0,\,+\infty  \right)\) не получится, так как на этом множестве интеграл
+  \[K\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\partial \tilde{f}\left( x,a \right)}{\partial a}dx}=
+  \,-\,\int\limits_{0}^{+\infty }{{{e}^{-ax}}dx}=-\frac{1}{a}\]
+сходится неравномерно (сходится поточечно, а в граничной точке \(\displaystyle a=0\) расходится). <br>
+&nbsp;&nbsp;&nbsp;Отрезок выбираем так, чтобы он содержал точки a0 и b0. Целесообразность такого выбора будет понятна позже.
+    </span></a>
+\[E=\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right],\quad{{\gamma }_{1}}=\frac{1}{2}\min \left\{ {{a}_{0}},{{b}_{0}} \right\},\quad
+ {{\gamma }_{2}}=\max \left\{ {{a}_{0}}+1,\,\,{{b}_{0}}+1 \right\}.\]
+</p><p>
+  Покажем, что на множестве \(\displaystyle E\) для функции \(\displaystyle J\left( a \right)\) выполняются все требования
+  <a class="tooltip-2"> теоремы о дифференцировании:
+    <span class="classic">
+       Если<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) \(\displaystyle f\left( x,\gamma  \right)\text{и} \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\)
+непрерывны на \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) для некоторого \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+сходится интеграл \(\displaystyle I(\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}\) 
+  сходится равномерно по \(\displaystyle \gamma \) на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),
+то функция \(\displaystyle I(\gamma )\) дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)
+и ее производная может быть вычислена по правилу Лейбница:
+\begin{eqnarray*}
+\displaystyle {I}'(\gamma )=\int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}.
+\end{eqnarray*}</span></a>
+</p>
+<p class="numbers">
+  1) \(\displaystyle  \tilde{f}\left( x,a,{{b}_{0}} \right)\in \mathbb{C}\left( {{\mathbb{R}}^{2}} \right) \ text{и} 
+  \frac{\partial \tilde{f}\left( x,a,{{b}_{0}} \right)}
+  {\partial a}={{e}^{-ax}}\in \mathbb{C}\left( {{\mathbb{R}}^{2}} \right),\)
+</p>
+<p class="numbers">
+2) \(\displaystyle  J\left( {{b}_{0}} \right)={{\left. I\left( a,{{b}_{0}} \right) \right|}_{a={{b}_{0}}}}=0, \text{ где } {{b}_{0}}\in E\),
+</p>
+<p class="numbers">
+  3) интеграл \(\displaystyle  K\left( a \right)\) сходится равномерно на \(\displaystyle  E\) в силу признака Вейерштрасса, так как 
+  \(\displaystyle  \,\int\limits_{0}^{+\infty }{\left| {{e}^{-ax}} \right|dx}=\frac{1}{a}\le \frac{2}{{{\gamma }_{1}}}<\infty \).
+</p>
+</p></div>
+<p>
+  Поэтому 
+    \(\displaystyle \forall a\in E\): 
+  \[{J}'\left( a \right)=K\left( a \right)=-\int\limits_{0}^{+\infty }{{{e}^{-ax}}dx=-\frac{1}{a}}.\]
+</p>
+<p>
+  Следовательно, 
+  \[I\left( a,{{b}_{0}} \right)=J\left( a \right)=\int{{J}'\left( a \right)da}=\int{\left( -\frac{1}{a} \right)da}=-\ln a+C\left( {{b}_{0}} \right).\]
+</p>
+<p>
+  Учитывая, что 
+  \[0={{\left. J\left( a \right)\, \right|}_{a={{b}_{0}}}}\,=\,-\ln {{b}_{0}}\,+\,C\left( {{b}_{0}} \right) \text{ и } {{b}_{0}}\in E,\]
+  получим \(\displaystyle \forall a\in E\) (а значит, и для для \(\displaystyle{{a}_{0}}\))  
+  \[J\left( a \right)\,=\,I\left( a,{{b}_{0}} \right)\,=\,\ln \frac{{{b}_{0}}}{a}.\]
+</p>
+<p>
+  В силу произвольности выбора \(\displaystyle {{a}_{0}}\), последняя формула справедлива \(\displaystyle \forall a\,>\,0\). 
+  Поскольку и второй параметр выбирался произвольно, окончательно получим 
+  \[\forall b\,>\,0 \quad \forall a\,>\,0 \quad I\left( a,b \right)\,=\,\ln \frac{b}{a}.\]
+</p></p>
+</div>
+<div class = "easy-text">
+   <p><em style = "font-size: 22px">Способ 1. Используя теорему об интегрируемости</em>.</p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              \(\displaystyle \int\limits_{0}^{+\infty
+                         }{\frac{{{e}^{-ax}}-{{e}^{-bx}}}{x}dx}=\int\limits_{0}^{+\infty
+                         }{\left(
+                         \int\limits_{a}^{b}{{{e}^{-\gamma x}}d\gamma } \right)dx}\)
+                         <a class="tooltip-1">=<span class="classic">Для просмотра обоснования смените уровень
+                         </span></a>
+                         \(\displaystyle\int\limits_{a}^{b}{\left( \int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}dx} \right)d\gamma }=
+                         \int\limits_{a}^{b}{\frac{1}{\gamma }d\gamma =\ln \frac{b}{a}}.\)
+        <br>
+        <br>
+      <p><em style = "font-size: 22px">Способ 2. Используя теорему о дифференцируемости</em>.</p>
+      <p>
+        Пусть \(\displaystyle f\left( x,a,b \right)\,=\,\frac{{{e}^{-ax}}-\,{{e}^{-bx}}}{x}\). Зафиксируем некоторое значение \(\displaystyle {{b}_{0}}>0\)
+         и рассмотрим интеграл как функцию от \(\displaystyle a\):
+  \[J\left( a \right)=I\left( a,{{b}_{0}} \right).\]</p>
+      <p><a class="tooltip-1">Продифференцируем по параметру<span class="classic">
+               Для просмотра обоснования смените уровень
+       </span></a></p>
+  
+      <p> \[\displaystyle \frac{\partial }{\partial a}I\left( a,b \right)=-\int\limits_{0}^{+\infty }{{{e}^{-ax}}dx=-\frac{1}{a}}\]</p>
+      <p>Следовательно, \[I\left( a,{{b}_{0}} \right)=J\left( a \right)=\int{{J}'\left( a \right)da}=-\int{\frac{1}{a}da}=-\ln a+C\left( {{b}_{0}} \right)\,\]</p>
+             <p>Учитывая, что \[\displaystyle 0={{\left. I\left( a,b \right)\, \right|}_{a=b}}\,=\,-\ln b\,+\,C\left( b \right),\]</p>
+              получим \[C\left( b \right)=\ln b,\]
+              а значит,
 \[\displaystyle I\left( a,b \right)=\ln \frac{b}{a}.\]
-
-        </div>
-        
-    </div>
+        </div></div>
     </details> 			
   </details>
 </section>

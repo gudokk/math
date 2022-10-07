@@ -869,3 +869,8 @@ button {
 .hide {
   display: none;
 }
+
+.numbers {
+  text-indent: 70px;
+  margin-top: 20px;
+}
