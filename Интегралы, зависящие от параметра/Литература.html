@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav>
+  <nav>
       <div class="hamburger" id="toggle-menu">
         <div class="line"></div>
         <div class="line"></div>
@@ -202,6 +202,7 @@
       </div>
     </nav>
 	<!-- Фиксированная навигация-->
+<!--
 	<style>
 		#navbar {
 		  background-color: #959595;
@@ -245,8 +246,8 @@
 	</style>
 	
 	<div id="navbar">
-	  <a href="#">Равномерная по параметру сходимость функции</a>
-	  <a href="#">Основные понятия</a>
+	  <a href="#">Интегралы, зависящие от параметра</a>
+	  <a href="#">Приложение</a>
 	  <span >
 		<label>Выберите уровень: </label>
 			<select id="level">
@@ -271,61 +272,36 @@
 	}
 	
 	</script>
-	
+	-->
 	<main class="main small">
-		<h3 class="centered"><strong id = "up1" style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Основные понятия </strong></h3>
-		<div>
-			<p class="margin-top">Пусть функция \(\displaystyle f(x,\gamma )\) определена на множестве
-				 \(\displaystyle X\times\) <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-				луч, числовая ось).</span></a> и
-				\(\displaystyle {{x}_{0}}\) – некоторая предельная точка множества \(\displaystyle X\).
-			</p>
-			<p class="margin-top">Функция \(\displaystyle f(x,\gamma )\) при \(\displaystyle x\to {{x}_{0}}\) <strong><i>стремится к
-						предельной функции</i></strong> \(\displaystyle \varphi \left( \gamma \right)\)
-				<strong><i>равномерно относительно</strong></i> \(\displaystyle \gamma \) в области \( \Gamma \), если:</p>
-					<p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) \(\displaystyle\,\forall \gamma \in  \Gamma \scriptscriptstyle\underset{x\to {{x}_{0}}}{\lim
-				}\!f(x,\gamma )=\varphi \left( \gamma \right)<\infty \),</p>
-				<p class="margin-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) \(\displaystyle \forall \varepsilon >0\) \(\displaystyle\exists \delta >0\)
-						\(\displaystyle\forall x\in X\) \(\displaystyle\forall \gamma \in \Gamma \displaystyle\left| x-{{x}_{0}} \right|<\delta \) \(\displaystyle\Rightarrow \)
-							\(\displaystyle\left| f\left( x,\gamma \right)-\varphi \left( \gamma \right)
-							\right|<\varepsilon \).</p>
-							<p class="margin-top" ><span class="em-wide">Замечание.</span> Второе условие эквивалентно тому, что
-								</h2>
-								\begin{eqnarray*}
-								\lim\limits_{x\to {{x}_{0}}}\!\underset{\gamma \in \Gamma
-								}{\sup }\,\left| f(x,\gamma )-\varphi \left( \gamma \right) \right|=0.
-								\end{eqnarray*}
-							</p>
-						
-		</div>
-
-		<section class="theorem">
-			<p class="margin-top"><strong>Теорема (Критерий равномерной сходимости Коши).</strong>
-				 Для того чтобы функция \(\displaystyle
-				f(x,\gamma )\) при \(\displaystyle x\,\to \,{{x}_{0}}\) имела предельную функцию и стремилась к ней
-				равномерно относительно \(\displaystyle \gamma \) в области <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-					луч, числовая ось).</span></a>, необходимо и
-				достаточно, чтобы
-				\begin{eqnarray*}
-				\displaystyle \forall \varepsilon >0 \quad \displaystyle\exists \delta >0\quad  \displaystyle \forall x\in X
-				\quad \displaystyle \forall {x}'\in X \displaystyle
-         \quad \forall \gamma \in \Gamma \quad \displaystyle \left| x-{x}' \right|<\delta \quad \displaystyle \Rightarrow & 
-				\displaystyle \left| f\left( x,\gamma \right)-f\left( {x}',\gamma\right) \right|<\varepsilon.&
-				\end{eqnarray*}
-				</p>
-		</section>
-		<section class="theorem">
-			<p class="margin-top">
-				<strong>Теорема (Критерий равномерной сходимости Гейне).</strong> Для того чтобы функция \(\displaystyle f(x,\gamma )\) при
-				\(\displaystyle x\to {{x}_{0}}\) стремилась
-				к \(\displaystyle\varphi \left( \gamma \right)\) равномерно относительно \(\displaystyle\gamma
-				\) в области <a class="tooltip-1">\( \Gamma \)<span class="classic">Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-					луч, числовая ось).</span></a>, необходимо и достаточно, чтобы к \(\displaystyle\varphi
-				\left( \gamma \right)\) равномерно сходилась каждая ФП
-				\( \left\{ f({{x}_{n}},\gamma )\right\} \), где \(\displaystyle\left\{ {{x}_{n}} \right\}\) – произвольная
-				сходящаяся к \(\displaystyle{{x}_{0}}\) последовательность.
-			</p>
-		</section>
+		<h3 class="centered"><strong id = "up1" style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Литература </strong></h3>
+		
+	<table border="0,5" bordercolor="#000000" cellspacing="100" cellpadding="100" width="100%">
+	  <colgroup>
+		<col span="2" style="background:#EBE9E9"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+		<col style="background-color:#EBE9E9"><!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+	  </colgroup>
+	  <tr>
+		<th>№ п/п</th>
+		<th>Наименование</th>
+		<th>Ссылка</th>
+	  </tr>
+	  <tr>
+		<td>1</td>
+		<td>Книга 1</td>
+		<td>00</td>
+	  </tr>
+	  <tr>
+		<td>2</td>
+		<td>Книга 2</td>
+		<td>00</td>
+	  </tr>
+	  <tr>
+		<td>3</td>
+		<td>Книга 3</td>
+		<td>00</td>
+	  </tr>
+	</table>
 	<br>
 	</main>
 	<footer class="footer">
