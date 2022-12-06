@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Математический анализ</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="../style.css" type="text/css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script
-      id="MathJax-script"
-      async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-    ></script>
-  </head>
 
-  <body>
-    <nav>
+<head>
+	<title>Математический анализ</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="../style.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+   <nav>
       <div class="hamburger" id="toggle-menu">
         <div class="line"></div>
         <div class="line"></div>
@@ -255,10 +249,12 @@
 	</style>
 	
 	<div id="navbar">
-	  <a href="#">Интегралы, зависящие от параметра</a>
-	  <a href="#">Несобственные интегралы</a>
-	  <a href="#">Равномерная сходимость</a>
-		<a href="#">Определение</a>
+	  <a href="#">Задачи для самостоятельного решения:</a>
+	  <a href="#">Сходимость</a>
+	  <a href="#">Предельный переход</a>
+	  <a href="#">Непрерывность</a>
+	  <a href="#">Дифференцирование</a>
+	  <a href="#">Вычисление интегралов</a>
 	  <span >
 		<label>Выберите уровень: </label>
 			<select id="level">
@@ -284,99 +280,173 @@
 	
 	</script>
 	
-    <main class="main small">
-	  <h3 class="centered"><strong id = "up4" style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Равномерная сходимость несобственных интегралов </strong></h3>
-      <div>
-        <p class="margin-top">
-          <strong><em>Несобственный интеграл </em></strong>называется
-          <strong><em>равномерно сходящимся по параметру</em></strong
-          ><strong>
-            \(\displaystyle \gamma \)
-            <em
-              >на
-            </em></strong>
-              <a class="tooltip-2"
-                >\( \Gamma \)<span class="classic"
-                  >Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-                  луч, числовая ось).</span
-                ></a>, если он сходится на \( \Gamma \) и выполняется одно из следующих
-          эквивалентных условий:
-        </p>
-        <p class="margin-top">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) \(\displaystyle \forall
-          \varepsilon &gt;0\) \(\displaystyle \exists {{\eta }_{\varepsilon
-          }}\ge a\) \(\displaystyle \forall \eta \in \left( {{\eta
-          }_{\varepsilon }},\mathbf{B} \right)\) \(\displaystyle \forall \gamma
-          \in \Gamma \) \(\displaystyle \left| \int\limits_{\eta
-          }^{\mathbf{B}}{f(x,\gamma )dx} \right|&lt;\text{
-          }\!\!\varepsilon\!\!\text{ }\),
-        </p>
-        <p class="margin-top">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) \(\displaystyle \forall
-          \varepsilon &gt;0\) \(\displaystyle \exists {{\eta }_{\varepsilon
-          }}\ge a\) \(\displaystyle \forall \eta \in \left( {{\eta
-          }_{\varepsilon }},\mathbf{B} \right)\) \(\displaystyle
-          \underset{\gamma \in \Gamma }{\mathop{\sup }}\,\) \(\displaystyle
-          \left| \int\limits_{\eta }^{\mathbf{B}}{f(x,\gamma ) dx}
-          \right|&lt;\text{ }\!\!\varepsilon\!\!\text{ }\),
-        </p>
-        <p class="margin-top">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) \(\displaystyle
-          \underset{\eta \to \mathbf{B}}{\mathop{\lim }}\,\underset{\gamma \in
-          \Gamma } {\mathop{\sup }}\,\left| \int\limits_{\eta
-          }^{\mathbf{B}}{f\left( x,\gamma \right)dx} \right|=0.\)
-        </p>
-      </div>
-
-      <section class="theorem">
-        <p class="margin-top">
-          <strong>Теорема (критерий равномерной сходимости Коши). </strong>
-          Для равномерной по параметру \(\displaystyle \gamma \) на
-          <a class="tooltip-2"
-            >\( \Gamma \)<span class="classic"
-              >Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-              луч, числовая ось).</span
-            ></a
-          >
-          сходимости несобственного интеграла
-        </p>
-
-        \[ \displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}
-        \text{,}\quad \displaystyle \gamma \in \Gamma \]
-        <p>необходимо и достаточно, чтобы</p>
-        \[\displaystyle \forall \varepsilon &gt;0 \quad\displaystyle \exists
-        {{\eta }_{\varepsilon }}\ge a\quad\displaystyle \forall {\eta }'\in
-        \left( {{\eta }_{\varepsilon }},\mathbf{B} \right)\,\,\,\forall {\eta
-        }''\in \left( {{\eta }_{\varepsilon }},\mathbf{B} \right)\quad
-        \displaystyle \underset{\gamma \in \Gamma }{\mathop{\sup
-        }}\,\displaystyle \left| \int\limits_{{{\eta }'}}^{{{\eta }''}}
-        {f(x,\gamma )\,dx} \right|&lt;\text{ }\!\!\varepsilon\!\!\text{ }\].
-      </section>
-      <section class="consequence">
-        <p class="margin-top">
-          <strong>Следствие (связь с функциональными рядами).</strong>
-          Равномерная по \(\displaystyle \gamma \) сходимость интеграла
-          \(\displaystyle I(\gamma )\), \(\displaystyle \gamma \in\)
-          <a class="tooltip-2"
-            >\( \Gamma \)<span class="classic"
-              >Г - произвольный промежуток (интервал, полуинтервал, отрезок,
-              луч, числовая ось).</span
-            ></a
-          >
-          эквивалентна равномерной сходимости всех рядов вида \(\displaystyle
-          \sum\limits_{n=0}^{+\infty }{\int\limits_{{{c}_{n}}}^{{{c}_{n+1}}}
-          {f(x,\gamma )dx}}\), где \(\displaystyle \left\{ {{c}_{n}} \right\}\)
-          – произвольная, сходящаяся к \(\displaystyle \mathbf{B}\)
-          последовательность.
-        </p>
-      </section>
-    </main>
+	<main class="main small">
+    <h3 class="centered"><strong  style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Сходимость</strong></h3>
+		<br>
+		<br>
+		<br>
+	<h3 class="centered"><strong  style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Предельный переход</strong></h3>	
+    <p class="margin-top">
+      Вычислить предел:</p>
+		
+<section>
+	<p class="margin-top" >
+	  <span class = "em-wide" style="font-size: 20px">Пример 1:</span>
+			<span style="display: inline">
+			\( \displaystyle {\lim }\limits_{y \to 0} \int\limits_{ - 1}^{{y^2} + 1} {\sqrt {{x^2} + {y^2}} dx}\)
+			</span>
+	  <span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;<span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; ">
+          \(\displaystyle 1\)</button>
+		  </span>
+	</p>
+</section>
 <br>
+<section>
+	<p class="margin-top" >
+	  <span class = "em-wide" style="font-size: 20px">Пример 2:</span>
+			<span style="display: inline">
+			\( \displaystyle \mathop {\lim }\limits_{y \to 0} \int\limits_y^{\sqrt 3  + y} {\frac{{dx}}{{1 + {x^2} + {y^2}}}} \)
+			</span>
+	  <span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; ">
+          \(\displaystyle \frac{\pi }{3}\)</button>
+	</p>
+</section>
+<br>
+<section>
+	<p class="margin-top" >
+	  <span class = "em-wide" style="font-size: 20px">Пример 3:</span>
+			<span style="display: inline"> 
+			\( \displaystyle {\lim }\limits_{y \to 0} \int\limits_0^\pi  {\sqrt {1 - {y^2}{{\sin }^2}x} \,dx}\)
+			</span>
+	  <span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; ">
+          \(\displaystyle \pi\)</button>
+	</p>
+</section>
+<br>
+<section>
+	<p class="margin-top" >
+	  <span class = "em-wide" style="font-size: 20px">Пример 4:</span>
+			<span style="display: inline"> 
+			\( \displaystyle {\lim }\limits_{y \to 1} \int\limits_0^\pi  {\sqrt {1 - {y^2}{{\sin }^2}x} \,dx}\)
+			</span>
+	  <span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;<span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; ">
+          \(\displaystyle 2\)</button>
+		  </span>
+	</p>
+</section>
+<br>
+<section>
+	<p class="margin-top" >
+	  <span class = "em-wide" style="font-size: 20px">Пример 5:</span>
+			<span style="display: inline">
+			\( \displaystyle {\lim }\limits_{y \to  + \infty } \int\limits_1^3 {\frac{{\ln \left( {x + y} \right)}}{{\ln \left( {{x^2} + {y^2}} \right)}}\,dx}\)
+			</span>
+	  <span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;<span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; ">
+          \(\displaystyle 1\)</button>
+		  </span>
+	</p>
+</section>
+<br>
+<section>
+	<p class="margin-top" >
+	  <span class = "em-wide" style="font-size: 20px">Пример 6:</span>
+			<span style="display: inline">
+			\( \displaystyle {\lim }\limits_{n \to \infty } \int\limits_0^{\pi /2} {{e^{ - n\sin x}}\,dx}\)
+			</span>
+	  <span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; ">
+          \(\displaystyle \frac{\pi }{2}\)</button>
+	</p>
+</section>
+<br>
+<section>
+	<p class="margin-top" >
+	  <span class = "em-wide" style="font-size: 20px">Пример 7:</span>
+			<span style="display: inline">
+			\( \displaystyle {\lim }\limits_{n \to \infty } \int\limits_0^{\pi /2} {\frac{{{{\sin }^n}x}}{{1 + {x^2}}}\,dx} \)
+			</span>
+	  <span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;<span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; ">
+          \(\displaystyle 0\)</button>
+		</span>
+	</p>
+</section>
+<br>
+<h3 class="centered"><strong  style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Непрерывность</strong></h3>	
+ <br>
+<p class="margin-top">
+      <strong style="font-size: 22px">1.</strong> Доказать, что функция \( \displaystyle F\left( y \right)\)  непрерывна на указанном множестве:</p>
+		
+<section>
+	<p class="margin-top" >
+	  <span >&nbsp;&nbsp;&nbsp;&nbsp;1)</span>
+			<span style="display: inline">
+			\( \displaystyle F\left( y \right) = \int\limits_0^1 {{\mathop{\rm arctg}\nolimits} \frac{x}{y}dx}\), \( \displaystyle M = \left( {0; + \infty } \right)\),
+			</span>
+	</p>
+</section>
+<section>
+	<p class="margin-top" >
+	  <span  style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;2)</span>
+			<span style="display: inline">
+			\( \displaystyle F\left( y \right) = \int\limits_0^1 {{{\sin }^2}\left( {a{x^2}} \right)dx} \), \( \displaystyle M = R\),
+			</span>
+	</p>
+</section>
+<section>
+	<p class="margin-top" >
+	  <span  style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;3)</span>
+			<span style="display: inline">
+			\( \displaystyle F\left( y \right) = \int\limits_0^1 {{\mathop{\rm sign}\nolimits} \left( {x - y} \right)dx}\), \( \displaystyle M = R\),
+			</span>
+	</p>
+</section>
+<p class="margin-top">
+      <strong style="font-size: 22px">2.</strong> Исследовать на непрерывность на указанном множестве \( \displaystyle M\) следующую функцию:</p>
+		
+<section>
+	<p class="margin-top" >
+	  <span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;1)</span>
+			<span style="display: inline">
+			\( \displaystyle F\left( y \right) = \int\limits_0^{ + \infty } {\frac{x}{{10 - 4x + {x^a}}}dx} \), \( \displaystyle M = \left( {2; + \infty } \right)\),
+			</span>
+	  <span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;<span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; ">
+          Непрерывна</button>
+		  </span>
+	</p>
+</section>
+<br>
+<section>
+	<p class="margin-top" >
+	  <span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;2)</span>
+			<span style="display: inline">
+			\( \displaystyle F\left( y \right) = \int\limits_0^{ + \infty } {\frac{{\cos \left( {ax} \right)}}{{\sqrt {1 + {x^3}} }}dx}\), \( \displaystyle M = R\),
+			</span>
+	  <span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; ">
+          Непрерывна</button>
+	</p>
+</section>
+<br>
+<section>
+	<p class="margin-top" >
+	  <span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;3)</span>
+			<span style="display: inline"> 
+			\( \displaystyle F\left( y \right) = \int\limits_0^{ + \infty } {a{e^{ - xa}}dx} \), \( \displaystyle M = \left( {0; + \infty } \right)\),
+			</span>
+	  <span class = "em-wide" style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid; ">
+          Непрерывна</button>
+	</p>
+</section>
+<br>
+<br>
+
+</main>
 <footer class="footer">
   <p>Учебные материалы </p>
   <p>Автор материалов - Рояк Светлана Хаимовна.</p>
   <p>Разработчики - Ватлин Илья и Гудкова Маша</p>
 </footer>
-    <script src="../main.js"></script>
-  </body>
+	<script src="../main.js"></script>
+</body>
+
+				  
+</body>
 </html>
