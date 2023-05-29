@@ -11,7 +11,7 @@
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-<body>
+<body style="background-color: #f8f8f8;" >
    <nav>
       <div class="hamburger" id="toggle-menu">
         <div class="line"></div>
@@ -248,13 +248,13 @@
 
 	</style>
 	
-	<div id="navbar">
+	<div id="navbar" style="background-color: rgb(33, 103, 174);">
 	  <a href="#">Интегралы, зависящие от параметра</a>
 	  <a href="2.4 Технологии Вычислении">Технологии вычисления</a>
 	  <span >
 		<label>Выберите уровень: </label>
 			<select id="level">
-				<option class='level-easy' type="button" value="easy">Минимальный</option>
+				<option class='level-easy' type="button" value="easy">Начальный</option>
 				<option class='level-normal' type="button" value="normal">Базовый</option>
 				<option class='level-hard' type="button" value="hard">Продвинутый</option>
 			</select> 
@@ -276,13 +276,14 @@
 	
 	</script>
 	
-	<main class="main small">
-    <h3 class="centered"><strong id = "nepreriv" style="font-size: 26px;border-bottom: 1px solid black;padding-bottom: 3px; ">Технологии вычисления</strong></h3>
-		
+	<main class="main small" style=" background-color: white;">
+    <div style="background-color: rgba(188, 215, 243, 0.78); margin-right: -20px; margin-left: -20px;">
+		  <h3 class="centered"><strong id = "nepreriv" style="font-size: 26px; ">
+         Технологии вычисления </strong></h3></div>
 		<p class="margin-top">
       Методы вычисления интегралов, зависящих от параметра можно разделить на две группы:</p>
       <p class="margin-top">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Стандартные методы интегрирования:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>1. Стандартные методы интегрирования:</strong><br>
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           – интегрирование по частям (см. пример 1.1), <br>
@@ -292,7 +293,7 @@
           – эквивалентные преобразования (см. пример 1.4).
       </p>
       <p class="margin-top">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Использование свойств интеграла как функции:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>2. Использование свойств интеграла как функции:</strong><br>
 
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -716,7 +717,7 @@
                 {{\operatorname{tg}}^{2}}x}}=\left[ t=\operatorname{tg}x \right]
                  =\int\limits_{0}^{+\infty }{\frac{dt}{\left( 1+{{a}^{2}}{{t}^{2}} 
                 \right)\left( 1+{{t}^{2}} \right)}}\)
-                <a class="tooltip-1">\(=\)<span class="classic">
+                <a class="tooltip-2">\(=\)<span class="classic">
                   \[ =\frac{1}{{{a}^{2}}-1}\int\limits_{0}^{+\infty }
                 {\left( \frac{{{a}^{2}}}{1+{{a}^{2}}{{t}^{2}}}-\frac{1}{1+{{t}^{2}}} \right)dt}=\]
                 \[ \displaystyle =\frac{1}{{{a}^{2}}-1}\left. \left( a\,\,\operatorname{arctg}\left( 
@@ -1976,13 +1977,11 @@
            </div>
   </details>
 </section>
- <br>
-		  
 </main>
 <footer class="footer">
   <p>Учебные материалы </p>
-  <p>Автор материалов - Рояк Светлана Хаимовна.</p>
-  <p>Разработчики - Ватлин Илья и Гудкова Маша</p>
+  <p>Автор материалов - Рояк Светлана Хаимовна</p>
+  <p>Разработчики - Ватлин Илья и Гудкова Мария</p>
 </footer>
 	<script src="../main.js"></script>
 </body>
