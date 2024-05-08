@@ -855,6 +855,10 @@ button {
   background-color: #93b8fc;
 }
 
+.normal {
+  background-color: var(--light-blue) !important;
+}
+
 .level-hard {
   color: #b22222;
   padding: 5px 10px;
