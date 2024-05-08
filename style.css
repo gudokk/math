@@ -857,6 +857,7 @@ button {
 
 .normal {
   background-color: var(--light-blue) !important;
+  color: black;
 }
 
 .level-hard {
